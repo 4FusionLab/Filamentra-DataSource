@@ -1,7 +1,15 @@
-name: Publish catalog demo (manual)
+name: Build and publish catalog demo
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog/**'
+      - 'demo/**'
+      - 'tools/build_demo.py'
+      - 'tools/validate_catalog.py'
+      - '.github/workflows/publish-demo.yml'
 
 permissions:
   contents: read
