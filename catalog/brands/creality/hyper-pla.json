@@ -151,11 +151,32 @@
       "name": "Brown",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "estimated",
+      "visual_data_status": "measured",
       "hex": "#9F523F",
-      "hex_source": "estimated",
-      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
-      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
+      "hex_source": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/creality--hyper-pla--brown",
+      "color_reference_note": "Измерение физического отпечатка FilamentSelect; параметры печати и колориметрии раскрыты не полностью.",
+      "measured_sample": {
+        "hex": "#9F523F",
+        "lab": [
+          43.92,
+          30.17,
+          25.42
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/creality--hyper-pla--brown",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/creality--hyper-pla--brown",
+          "checked_on": "2026-11-04",
+          "note": "FilamentSelect lists exact Hyper PLA Brown as measured from a physical print, but does not publish complete calibration conditions."
+        }
+      ]
     },
     {
       "id": "yellow",
