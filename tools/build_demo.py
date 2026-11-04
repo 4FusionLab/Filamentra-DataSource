@@ -66,6 +66,10 @@ def make_catalog() -> dict:
                 "colors": [public_color(c) for c in line["colors"]],
             })
 
+    # Research-only manufacturers are not shown until a numeric color-bearing line exists.
+    active_brands = {line["brand"] for line in lines}
+    brands = [brand for brand in brands if brand["id"] in active_brands]
+
     favored = {"bambu-lab": 0, "esun": 1, "sunlu": 2}
     brands.sort(key=lambda item: (favored.get(item["id"], 9), item["name"].lower()))
     positions = {brand["id"]: index for index, brand in enumerate(brands)}
@@ -81,7 +85,7 @@ def make_catalog() -> dict:
     return {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            "distribution": "manually published GitHub Pages snapshot",
+            "distribution": "validated GitHub Pages CI snapshot",
             "counts": {
                 "brands": len(brands), "lines": len(lines), "colors": len(colors),
                 "with_swatch": with_swatch,
