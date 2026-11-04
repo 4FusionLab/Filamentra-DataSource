@@ -53,7 +53,7 @@ class MaterialPreviewTests(unittest.TestCase):
             opaque_brightness = sum(solid.getpixel((x, y)))
             tinted_brightness = sum(tinted.getpixel((x, y)))
             clear_brightness = sum(clear.getpixel((x, y)))
-            self.assertLess(abs(clear_brightness - sum(clear.getpixel((135, y)))), 300)
+            self.assertGreater(abs(clear_brightness - sum(clear.getpixel((135, y)))), 70)
             self.assertNotEqual(solid.tobytes(), tinted.tobytes())
             self.assertNotEqual(tinted.tobytes(), clear.tobytes())
             self.assertGreater(abs(clear_brightness - opaque_brightness), 25)
