@@ -53,6 +53,17 @@ def scan() -> list[dict]:
                 if color.get("hex") or color.get("rgba_swatches") or color.get("measured_sample"):
                     continue
                 reason, next_step = research_status(line, color)
+                # A verified SKU does not imply a numeric color swatch.
+                sku_evidence = [
+                    e for e in color.get("evidence", [])
+                    if e.get("claim") == "sku_verified" and e.get("url")
+                ]
+                manufacturer_skus = [
+                    v["sku"] for v in color.get("variants", [])
+                    if isinstance(v.get("sku"), str) and v["sku"]
+                ] if sku_evidence else []
+                if manufacturer_skus and reason == "numeric_swatch_not_found":
+                    next_step = "SKU verified; find per-SKU swatch or physical-sample measurement"
                 missing.append({
                     "full_id": line["id"] + "/" + color["id"],
                     "manufacturer": line["brand"],
@@ -61,6 +72,8 @@ def scan() -> list[dict]:
                     "color": color["name"],
                     "reason": reason,
                     "next_step": next_step,
+                    "manufacturer_skus": manufacturer_skus,
+                    "sku_evidence_urls": sorted({e["url"] for e in sku_evidence}),
                     "official_url": color.get("source_url") or line.get("source_url"),
                 })
     return missing
@@ -78,6 +91,7 @@ def as_markdown(items: list[dict]) -> str:
         "Generated from existing source JSON. No suggested color below is inferred from its name.",
         "",
         f"**Unresolved: {len(items)}** across {len(by_line)} lines.",
+        f"**Unresolved with independently linked SKU:** {sum(bool(i['manufacturer_skus']) for i in items)}.",
         "",
         "## Manufacturer counts",
         "",
@@ -91,10 +105,11 @@ def as_markdown(items: list[dict]) -> str:
     for key, colors in sorted(by_line.items()):
         brand, polymer, line = key
         text += [f"### {brand} → {polymer} → {line} ({len(colors)})", "",
-                 "| Existing color ID | Reason | Next evidence |",
-                 "| --- | --- | --- |"]
+                 "| Existing color ID | SKU verified | Reason | Next evidence |",
+                 "| --- | --- | --- | --- |"]
         for entry in colors:
-            text.append(f"| \`{entry['full_id']}\` | \`{entry['reason']}\` | {entry['next_step']} |")
+            skus = ', '.join(entry['manufacturer_skus']) or '—'
+            text.append(f"| \`{entry['full_id']}\` | {skus} | \`{entry['reason']}\` | {entry['next_step']} |")
         text.append("")
     text += ["## Caveats", "",
              "- Manufacturer product URLs remain in individual JSON records and are included in the JSON audit output.",
@@ -118,7 +133,9 @@ def main() -> None:
                             ensure_ascii=False, indent=2) + "\n"
     else:
         counts = Counter(item["manufacturer"] for item in items)
+        sku_count = sum(bool(i["manufacturer_skus"]) for i in items)
         output = f"Unresolved PLA/PETG: {len(items)}\n"
+        output += f"Exact SKU verified: {sku_count}\\n"
         output += "\n".join(f"{k}: {v}" for k, v in sorted(counts.items())) + "\n"
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)
