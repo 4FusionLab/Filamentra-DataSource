@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "id": "esun/pla-plus",
+  "brand": "esun",
+  "name": "PLA+",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://www.esun3d.com/pla-pro-product",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "almond-yellow",
+      "name": "Almond Yellow",
+      "hex": "#E9E199",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "apricot",
+      "name": "Apricot",
+      "hex": "#E68A1D",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "aqua",
+      "name": "Aqua",
+      "hex": "#6BBFE3",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "hex": "#FDC094",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#272729",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#01378D",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "bone-white",
+      "name": "Bone White",
+      "hex": "#C7B494",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brick-red",
+      "name": "Brick Red",
+      "hex": "#9B5347",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "hex": "#664033",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cold-white",
+      "name": "Cold White",
+      "hex": "#DBD6DC",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "concrete-grey",
+      "name": "Concrete Grey",
+      "hex": "#B7B7B5",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "coral-orange",
+      "name": "Coral Orange",
+      "hex": "#FF8C49",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-blue",
+      "name": "Dark Blue",
+      "hex": "#262431",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "fire-engine-red",
+      "name": "Fire Engine Red",
+      "hex": "#BB2028",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "hex": "#EDA10F",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grass-green",
+      "name": "Grass Green",
+      "hex": "#2B6439",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#1B2D39",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#606783",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "haze-blue",
+      "name": "Haze Blue",
+      "hex": "#7AB9EF",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "holly-green",
+      "name": "Holly Green",
+      "hex": "#03594E",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "jade-green",
+      "name": "Jade Green",
+      "hex": "#53ECD0",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-beige",
+      "name": "Light Beige",
+      "hex": "#E5C0A3",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-blue",
+      "name": "Light Blue",
+      "hex": "#169BEA",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-brown",
+      "name": "Light Brown",
+      "hex": "#C99367",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-khaki",
+      "name": "Light Khaki",
+      "hex": "#C6C0A8",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lilac",
+      "name": "Lilac",
+      "hex": "#C78DBF",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "magenta",
+      "name": "Magenta",
+      "hex": "#E02552",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "matcha-green",
+      "name": "Matcha Green",
+      "hex": "#989F4F",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "milky-white",
+      "name": "Milky White",
+      "hex": "#C9C9C9",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mint-green",
+      "name": "Mint Green",
+      "hex": "#69C296",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mustard-green",
+      "name": "Mustard Green",
+      "hex": "#E4E6A5",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#1B1F11",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF821B",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "peach-pink",
+      "name": "Peach Pink",
+      "hex": "#EEB9B3",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "peak-green",
+      "name": "Peak Green",
+      "hex": "#38D844",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pine-green",
+      "name": "Pine Green",
+      "hex": "#43634E",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FF7F6F",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "hex": "#793EB6",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#B40200",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rgb-blue",
+      "name": "RGB Blue",
+      "hex": "#1E4FCF",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rgb-green",
+      "name": "RGB Green",
+      "hex": "#9AEE74",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rgb-red",
+      "name": "RGB Red",
+      "hex": "#E6413F",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "hex": "#68676C",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "soft-blue",
+      "name": "Soft Blue",
+      "hex": "#71D6E8",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "soft-pink",
+      "name": "Soft Pink",
+      "hex": "#F89F93",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "space-blue",
+      "name": "Space Blue",
+      "hex": "#50D3FF",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "very-peri",
+      "name": "Very Peri",
+      "hex": "#22047E",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#F6F6F6",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#FFFC01",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/pla-pro-product",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

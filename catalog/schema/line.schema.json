@@ -425,6 +425,10 @@
             "type": "string",
             "pattern": "^#[0-9A-Fa-f]{8}$"
           }
+        },
+        "visual_note": {
+          "type": "string",
+          "minLength": 1
         }
       },
       "allOf": [

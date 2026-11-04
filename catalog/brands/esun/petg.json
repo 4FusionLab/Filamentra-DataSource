@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "id": "esun/petg",
+  "brand": "esun",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "glossy",
+  "source_url": "https://www.esun3d.com/petg-product",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#272729",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#01378D",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "bone-white",
+      "name": "Bone White",
+      "hex": "#C7B494",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "hex": "#664033",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "clear",
+      "name": "Clear",
+      "hex": "#DEDBCC",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "cold-white",
+      "name": "Cold White",
+      "hex": "#DBD6DC",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "fire-engine-red",
+      "name": "Fire Engine Red",
+      "hex": "#BB2028",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#1B2D39",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#606783",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-beige",
+      "name": "Light Beige",
+      "hex": "#E5C0A3",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-green",
+      "name": "Light Green",
+      "hex": "#90EE90",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "oak",
+      "name": "Oak",
+      "hex": "#C3A48A",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#1B1F11",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF821B",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FF7F6F",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#B40200",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rgb-green",
+      "name": "RGB Green",
+      "hex": "#9AEE74",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "hex": "#68676C",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "soft-pink",
+      "name": "Soft Pink",
+      "hex": "#F89F93",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-blue",
+      "name": "Translucent Blue",
+      "hex": "#01458E",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-green",
+      "name": "Translucent Green",
+      "hex": "#A8E6CF",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-light-blue",
+      "name": "Translucent Light Blue",
+      "hex": "#0053B0",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-light-green",
+      "name": "Translucent Light Green",
+      "hex": "#05A59B",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-light-orange",
+      "name": "Translucent Light Orange",
+      "hex": "#FFBD3A",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-light-pink",
+      "name": "Translucent Light Pink",
+      "hex": "#E298B3",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-light-purple",
+      "name": "Translucent Light Purple",
+      "hex": "#463C9D",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-orange",
+      "name": "Translucent Orange",
+      "hex": "#D65400",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "translucent-red",
+      "name": "Translucent Red",
+      "hex": "#7C1317",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent",
+        "roughness": 0.25
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent surface approximates official translucent/clear shade label; not a measured transmission model."
+        },
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Initial transparent-PETG estimate; requires calibration with a printed test sample."
+        }
+      },
+      "visual_note": "The published HEX is a manufacturer's web swatch, not a measured bulk transmission or attenuation value."
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#F6F6F6",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#FFFC01",
+      "hex_source": "manufacturer",
+      "color_mode": "solid",
+      "source_url": "https://www.esun3d.com/petg-product",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

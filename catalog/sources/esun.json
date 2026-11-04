@@ -1,0 +1,18 @@
+{
+  "manufacturer": "eSUN",
+  "verified_on": "2026-11-04",
+  "source_urls": [
+    "https://www.esun3d.com/pla-pro-product",
+    "https://www.esun3d.com/petg-product"
+  ],
+  "scope": "Only two official product pages (PLA+ and PETG) have been transcribed so far; manufacturer offers further PLA and PETG lines that remain to be imported.",
+  "summary": {
+    "product_lines": 2,
+    "color_variants": 79
+  },
+  "notes": [
+    "HEX values were taken from the manufacturer's page swatches, not measured physical print colors.",
+    "eSUN region/language storefront variants can show a different WHITE HEX; this import consistently uses the canonical English URL without locale parameters.",
+    "Translucent eSUN PETG shades use an uncalibrated transparent-surface override to approximate their appearance."
+  ]
+}
