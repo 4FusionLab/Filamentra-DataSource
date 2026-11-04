@@ -439,6 +439,16 @@
             "estimated"
           ],
           "description": "name_only colors are cataloged but cannot receive a reliable Fusion base color until numeric visual data is added."
+        },
+        "color_reference_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "The independent third-party or instrument reference used for an estimated/measured HEX; not a manufacturer claim."
+        },
+        "color_reference_note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Details about provenance and uncertainty of the reported visual color."
         }
       },
       "allOf": [
