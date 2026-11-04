@@ -19,37 +19,102 @@
     {
       "id": "white",
       "name": "White",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-pluspla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#F5F5F5",
+      "hex_source": "estimated",
+      "color_reference_url": "https://layerlookup.com/kingroon/pla/",
+      "color_reference_note": "Reference code for the exact 'Plus (+) White' entry in Layer Lookup (Open Filament Database/SpoolmanDB aggregation). Third-party display value, not independently authenticated manufacturer HEX or measured printed sample; excluded from default curated preview.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://layerlookup.com/kingroon/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Exact 'Plus (+) White' shade name in Layer Lookup; numeric estimate only, official attribution not verified."
+        }
+      ]
     },
     {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-pluspla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#292824",
+      "hex_source": "estimated",
+      "color_reference_url": "https://layerlookup.com/kingroon/pla/",
+      "color_reference_note": "Reference code for the exact 'Plus (+) Black' entry in Layer Lookup (Open Filament Database/SpoolmanDB aggregation). Third-party display value, not independently authenticated manufacturer HEX or measured printed sample; excluded from default curated preview.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://layerlookup.com/kingroon/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Exact 'Plus (+) Black' shade name in Layer Lookup; numeric estimate only, official attribution not verified."
+        }
+      ]
     },
     {
       "id": "grey",
       "name": "Grey",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-pluspla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#808080",
+      "hex_source": "estimated",
+      "color_reference_url": "https://layerlookup.com/kingroon/pla/",
+      "color_reference_note": "Reference code for the exact 'Plus (+) Grey' entry in Layer Lookup (Open Filament Database/SpoolmanDB aggregation). Third-party display value, not independently authenticated manufacturer HEX or measured printed sample; excluded from default curated preview.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://layerlookup.com/kingroon/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Exact 'Plus (+) Grey' shade name in Layer Lookup; numeric estimate only, official attribution not verified."
+        }
+      ]
     },
     {
       "id": "red",
       "name": "Red",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-pluspla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#EC0000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://layerlookup.com/kingroon/pla/",
+      "color_reference_note": "Reference code for the exact 'Plus (+) Red' entry in Layer Lookup (Open Filament Database/SpoolmanDB aggregation). Third-party display value, not independently authenticated manufacturer HEX or measured printed sample; excluded from default curated preview.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://layerlookup.com/kingroon/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Exact 'Plus (+) Red' shade name in Layer Lookup; numeric estimate only, official attribution not verified."
+        }
+      ]
     },
     {
       "id": "yellow",
       "name": "Yellow",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-pluspla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FADB24",
+      "hex_source": "estimated",
+      "color_reference_url": "https://layerlookup.com/kingroon/pla/",
+      "color_reference_note": "Reference code for the exact 'Plus (+) Yellow' entry in Layer Lookup (Open Filament Database/SpoolmanDB aggregation). Third-party display value, not independently authenticated manufacturer HEX or measured printed sample; excluded from default curated preview.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://layerlookup.com/kingroon/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Exact 'Plus (+) Yellow' shade name in Layer Lookup; numeric estimate only, official attribution not verified."
+        }
+      ]
     },
     {
       "id": "orange",
@@ -75,9 +140,22 @@
     {
       "id": "skin",
       "name": "Skin",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-pluspla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#DBC9AD",
+      "hex_source": "estimated",
+      "color_reference_url": "https://layerlookup.com/kingroon/pla/",
+      "color_reference_note": "Reference code for the exact 'Plus (+) Skin' entry in Layer Lookup (Open Filament Database/SpoolmanDB aggregation). Third-party display value, not independently authenticated manufacturer HEX or measured printed sample; excluded from default curated preview.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://layerlookup.com/kingroon/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Exact 'Plus (+) Skin' shade name in Layer Lookup; numeric estimate only, official attribution not verified."
+        }
+      ]
     },
     {
       "id": "transparent",
