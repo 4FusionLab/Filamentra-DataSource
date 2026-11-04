@@ -1,15 +1,9 @@
 name: Build and publish catalog demo
 
+# Pages publishes only after an explicit Run workflow request.
+# Normal pushes still run the independent Validate catalog workflow.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'catalog/**'
-      - 'demo/**'
-      - 'tools/build_demo.py'
-      - 'tools/validate_catalog.py'
-      - '.github/workflows/publish-demo.yml'
 
 concurrency:
   group: filamentra-catalog-pages
@@ -35,6 +29,8 @@ jobs:
         run: python -m pip install "jsonschema>=4.21,<5"
       - name: Validate all catalog entries
         run: python tools/validate_catalog.py
+      - name: Check browser JavaScript syntax
+        run: node --check demo/app.js
       - name: Build snapshot from current main
         run: python tools/build_demo.py --out dist
       - name: Verify built snapshot

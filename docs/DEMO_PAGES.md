@@ -18,9 +18,9 @@ If GitHub reports an organization policy, Pages permission, or environment prote
 
 ## When the website updates
 
-The site is **automatically rebuilt and deployed** for relevant pushes to `main` affecting `catalog/**`, `demo/**`, `tools/build_demo.py`, `tools/validate_catalog.py`, or the Pages workflow itself. Each deployment runs JSON validation and snapshot consistency checks; errors stop publication.
+The site is **rebuilt and deployed only on an explicit manual request** via **Actions → Build and publish catalog demo → Run workflow** on `main`. Each deployment validates the JSON, checks browser JavaScript syntax, and verifies the generated snapshot before publishing; errors stop publication.
 
-You can also trigger **Build and publish catalog demo → Run workflow** manually from GitHub Actions. Pull requests do not deploy Pages, and documentation-only commits do not trigger a new deployment. The independent `validate.yml` workflow checks code and catalog quality without deploying.
+Regular pushes and pull requests do not deploy Pages. The independent `validate.yml` workflow continues to check code and catalog quality automatically without publishing. A successful build always represents the `main` commit selected for that manual run.
 
 The demo is a static snapshot of the `main` commit checked out by the corresponding Pages deployment, not a live API feed.
 
@@ -48,7 +48,8 @@ The build script needs only the Python standard library and copies `demo/index.h
 - Distinct links for manufacturer source, independent sample measurement and approximate color reference.
 - Name-only placeholders when no numeric color is available.
 - Detail panel for origin references, manufacturer color codes, and estimated surface roughness.
-- Mobile-compatible layout and responsive swatch grid.
+- Mobile-compatible layout with collapsible filters and responsive swatch grid.
+- The hero samples six source-backed colors from the generated catalog snapshot; they are not invented placeholders.
 
 The UI approximates multiple manufacturer swatches with a flat CSS gradient. It is **not** a Fusion 360 rendering or physically accurate simulation of extruded multicolor filament.
 
@@ -57,3 +58,9 @@ The UI approximates multiple manufacturer swatches with a flat CSS gradient. It 
 No catalog changes are made by visiting the demo. No private tokens are exposed, and the static site contains only already-public data. Catalog data and client-side scripts are bundled during the CI build. Anyone can access a public GitHub Pages site after it has been enabled.
 
 When the repo is made private, public distribution may require a separate visibility and access review.
+
+## Visual design
+
+The catalog UI follows a product-specific Material Workbench direction. Its visual polish was informed by [unslop](https://github.com/heydamir/unslop), created by Damir Sokolovsky (CC BY 4.0): quiet neutrals and controls, consistent spacing and type, restrained emphasis, and real filament colors as the main visual content. This is an independent adaptation, not an official unslop release.
+
+The card gradients for multi-color filament represent source-provided color combinations; they are intentionally **not** decorative interface gradients or calibrated physical renders.
