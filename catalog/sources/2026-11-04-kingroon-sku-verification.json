@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-04",
+  "scope": "Kingroon existing PLA Basic and PETG Basic color entries without numeric reference",
+  "validation": "Each SKU from an exact-brand exact-line exact-color 3DJake product page. All remain name_only; no HEX/RGB imported.",
+  "manufacturer_line_sources": [
+    "https://kingroon.com/products/kingroon-pla-basic",
+    "https://kingroon.com/products/kingroon-petg-basic"
+  ],
+  "sku_verified_colors": [
+    {
+      "line": "kingroon/pla-basic",
+      "color": "Cyan",
+      "sku": "KR-PLA719Y-1CH",
+      "retailer": "https://www.3djake.com/kingroon/pla-basic-cyan-2"
+    },
+    {
+      "line": "kingroon/pla-basic",
+      "color": "Apple Green",
+      "sku": "KR-PLA718Y-1CH",
+      "retailer": "https://www.3djake.com/kingroon/pla-basic-apple-green"
+    },
+    {
+      "line": "kingroon/pla-basic",
+      "color": "Turquoise Green",
+      "sku": "KR-PLA720Y-1CH",
+      "retailer": "https://www.3djake.com/kingroon/pla-basic-turquoise-green"
+    },
+    {
+      "line": "kingroon/petg-basic",
+      "color": "Sky Blue",
+      "sku": "NPETG002",
+      "retailer": "https://www.3djake.com/kingroon/petg-basic-sky-blue"
+    },
+    {
+      "line": "kingroon/petg-basic",
+      "color": "Pink",
+      "sku": "NPETG004",
+      "retailer": "https://www.3djake.com/kingroon/petg-basic-pink"
+    },
+    {
+      "line": "kingroon/petg-basic",
+      "color": "Skin",
+      "sku": "NPETG005",
+      "retailer": "https://www.3djake.com/kingroon/petg-basic-skin"
+    },
+    {
+      "line": "kingroon/petg-basic",
+      "color": "Metallic Silver",
+      "sku": "NPETG008",
+      "retailer": "https://www.3djake.com/kingroon/petg-basic-metallic-silver"
+    }
+  ],
+  "excluded": {
+    "third_party_unverified_color_code": {
+      "shade": "Kingroon PETG Basic Sky Blue",
+      "value": "#45C4EF",
+      "source": "https://tuconsumible.com.ve/shop?category=6",
+      "reason": "Retailer description claims an exact slicer profile code without linking the primary profile or instrument; nearby product descriptions conflate PLA/PETG and distinct shades. Not sufficient for numeric import."
+    },
+    "ambiguous_copper_alias": {
+      "name_in_filamentra": "Metallic Copper",
+      "retailer_name": "Copper",
+      "retailer_sku": "NPETG009",
+      "url": "https://www.3djake.com/kingroon/petg-basic-copper",
+      "reason": "No direct evidence tying Copper SKU to official Metallic Copper option, so the SKU was not merged."
+    },
+    "basic_vs_high_speed": {
+      "reason": "Layer Lookup numeric colors for 'High Speed PETG' must not be assigned to ordinary PETG Basic; also its standard PETG list lacks the extended shades in manufacturer's store."
+    }
+  },
+  "next_action": "Find primary manufacturer HEX/RGB or independent exact-SKU sample measurement, with original acquisition method/lighting; for image-based values, explicitly record as non-calibrated estimate and identify the original photo."
+}
