@@ -1,109 +1,88 @@
-# Catalog format
+# Filamentra catalog format
 
-> **Draft specification.** Schema v1 is the proposed initial contract for Filamentra DataSource. It has not yet been validated against a shipped add-in.
+> **Pre-release Schema v1.** This document describes the current source-data contract. For exact properties, inheritance, provenance and Autodesk Fusion API mapping, see [Material Appearance Specification](MATERIAL_APPEARANCE_SPEC.md).
 
-## Organization
+## Directory structure
 
 ```text
 catalog/
-  brands/
-    example-maker/
-      brand.json
-      matte-pla.json
-  schema/
-    line.schema.json
+├── brands/
+│   ├── README.md
+│   └── bambu-lab/
+│       ├── brand.json
+│       └── pla-matte.json
+├── presets/
+│   ├── pla-matte.json
+│   ├── pla-glossy.json
+│   ├── pla-silk.json
+│   ├── petg-standard.json
+│   ├── petg-translucent.json
+│   ├── fiber-matte.json
+│   └── sparkle-polymer.json
+├── assets/                     # Optional future maps with redistribution rights
+└── schema/
+    ├── line.schema.json
+    └── preset.schema.json
 ```
 
-Each manufacturer's directory has one `brand.json` and **one JSON file per product line**. Colors are entries in that line's `colors` array. Do not group data by polymer or finish at the filesystem level: those are searchable attributes.
+**Hierarchy:** manufacturer → product line → color variant. One JSON file per line. Polymer, finish and other properties are attributes for filtering, not directory levels.
 
-## Identifiers
+## Product identities
 
-- Brand: `example-maker` — unique, stable lowercase slug.
-- Product line: `example-maker/matte-pla` — unique across the catalog.
-- Color: `sample-gray` — unique within its product line.
-- Full color ID: `example-maker/matte-pla/sample-gray` — composed from the line ID and color ID.
+- Brand ID: `bambu-lab`
+- Product line ID: `bambu-lab/pla-matte`
+- Color ID: `ash-gray`
+- Full appearance identity: `bambu-lab/pla-matte/ash-gray`
 
-Do not derive IDs from display names at runtime. Renaming a color or line should not change an existing ID. A manufacturer SKU is **not** a canonical ID because packaging, regional distribution, and product revisions may differ.
+The full ID must remain stable independently of SKU or translated display name. Packaging sizes, spools and refills are not additional colors.
 
-## Manufacturer record
-
-```json
-{
-  "id": "example-maker",
-  "name": "Example Maker",
-  "website": "https://example.com/"
-}
-```
-
-## Product line record
-
-**Illustrative fictitious data — not an actual manufacturer's specification.**
+## Line JSON
 
 ```json
 {
   "schema_version": 1,
-  "id": "example-maker/matte-pla",
-  "brand": "example-maker",
-  "name": "Matte PLA",
+  "id": "bambu-lab/pla-matte",
+  "brand": "bambu-lab",
+  "name": "PLA Matte",
   "polymer": "PLA",
   "finish": "matte",
-  "source_url": "https://example.com/filaments",
+  "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+  "appearance_preset": "pla-matte",
   "colors": [
     {
-      "id": "sample-gray",
-      "name": "Sample Gray",
-      "hex": "#777777",
-      "hex_source": "estimated",
-      "source_url": "https://example.com/filaments/sample-gray",
-      "verified_on": "2026-11-04",
-      "appearance": {
-        "roughness": 0.85
-      },
-      "variants": [
-        {
-          "sku": "EXAMPLE-SKU",
-          "diameter_mm": 1.75,
-          "weight_g": 1000,
-          "packaging": "spool"
-        }
-      ]
+      "id": "ash-gray",
+      "name": "Ash Gray",
+      "manufacturer_color_code": "11102",
+      "hex": "#9B9EA0",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
     }
   ]
 }
 ```
 
-The accompanying [line JSON Schema](../catalog/schema/line.schema.json) defines the initial field types and required fields. Adding a new optional field may be backwards-compatible; changing the meaning, nesting, or type of a field requires a new schema version.
+This excerpt contains one color. The [actual line file](../catalog/brands/bambu-lab/pla-matte.json) holds 17 officially published HEX values and codes from the Bambu Lab PLA Matte product page.
 
-## Semantics
+## Appearance inheritance and field provenance
 
-| Field | Meaning |
-| --- | --- |
-| `schema_version` | Integer data-format version, independent of catalog release version |
-| `id` | Stable machine ID; use a lowercase kebab-case path |
-| `brand` | Existing manufacturer ID |
-| `polymer` | Base material, e.g. PLA, PETG, ABS, ASA, TPU |
-| `finish` | Appearance category, e.g. matte, glossy, silk |
-| `hex` | Optional sRGB-like visual reference, not necessarily a measured print color |
-| `hex_source` | `manufacturer`, `measured`, or `estimated`; required when `hex` is set |
-| `appearance` | Optional rendering hints; not certified physical properties |
-| `variants` | Packaging-specific SKUs; do not duplicate color records for different spools |
-| `source_url` | Source used to verify product claims |
-| `verified_on` | Date source was last checked; does not imply manufacturer certification |
+The add-in resolves `preset.appearance`, then the line's optional `appearance`, then the specific color's optional `appearance`, **key by key**. The base color is the color variant's `hex`, not a preset property.
 
-The `appearance.roughness` value is a proposed generic 0–1 hint, **not** a promise that Fusion API exposes or interprets a property of the same name in every Appearance type. Translation into Fusion properties belongs in the add-in.
+The renderer supports direct or advanced Fusion mappings for `surface_type`, `roughness`, `opacity`, `ior`, `attenuation_distance_mm`, and optional `textures`. Advanced transparency scale requires verification inside Fusion.
 
-## Data integrity rules
+A line or color that specifies an `appearance` override should include `appearance_sources` with each modified key marked `manufacturer`, `measured` or `filamentra_estimate`. Published HEX has independent `hex_source` provenance.
 
-1. Product lines must refer to an existing brand.
-2. Brand, product-line, and full-color IDs must be unique.
-3. Never invent a product or turn an unverified visual estimate into a manufacturer's official value.
-4. Missing color reference is preferable to an invented HEX. Omit `hex` (and `hex_source`) when no defensible estimate exists.
-5. Preserve `source_url` and classify the origin of numerical or visual properties.
-6. Packaging variants are optional and must not affect Appearance identity.
-7. Do not redistribute product photos, logos, texture maps, or manufacturer assets without the necessary rights.
+Presets are **explicit estimates** until separately calibrated and Fusion-tested. They do not automatically become manufacturer specifications. Missing color values stay missing.
 
-## Versioning
+## Validators
 
-A **catalog release** tracks the dataset's changes. A **schema version** tracks how it must be parsed. The add-in must use schema compatibility information from the published index rather than assuming every catalog release has the same data shape.
+- [Line Schema](../catalog/schema/line.schema.json)
+- [Preset Schema](../catalog/schema/preset.schema.json)
+- [Validation script](../tools/validate_catalog.py)
+- [Material Appearance Specification](MATERIAL_APPEARANCE_SPEC.md)
 
-See [distribution design](DISTRIBUTION.md).
+Breaking changes after the first release require a new schema version. Dataset content versions are independent and distributed using [GitHub Releases](DISTRIBUTION.md).
+
+## Content rights and quality
+
+Manufacturer brand names and factual product attributes are references, not endorsement. Do not redistribute photos, logos or shader textures without rights. Published HEX values are display references; **not calibrated print measurements**. Filamentra creates visual Appearances, not engineering physical Materials.
