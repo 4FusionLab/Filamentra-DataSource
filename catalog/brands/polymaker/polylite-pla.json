@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "polymaker/polylite-pla",
+  "brand": "polymaker",
+  "name": "PolyLite PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#DDD7D3",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "natural",
+      "name": "Natural",
+      "hex": "#DFD3C3",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lemon-yellow",
+      "name": "Lemon Yellow",
+      "hex": "#EED230",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lime-green",
+      "name": "Lime Green",
+      "hex": "#D5D701",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "azure-blue",
+      "name": "Azure Blue",
+      "hex": "#0061D5",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#D90102",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "aqua-blue",
+      "name": "Aqua Blue",
+      "hex": "#5EBDDB",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#30A45F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#F36201",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#013178",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "jungle-green",
+      "name": "Jungle Green",
+      "hex": "#4E742D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#8B8E96",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

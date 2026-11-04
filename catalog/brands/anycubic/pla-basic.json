@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "id": "anycubic/pla-basic",
+  "brand": "anycubic",
+  "name": "PLA Basic",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://store.anycubic.com/products/pla-filament",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#EFF0F1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mia-white",
+      "name": "Mia White",
+      "hex": "#F1E9E0",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mia-pink",
+      "name": "Mia Pink",
+      "hex": "#FAD6C6",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "peach-pink",
+      "name": "Peach Pink",
+      "hex": "#FFC196",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#F3E500",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "hex": "#FFB81C",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF7F32",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FF8DA1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "magenta",
+      "name": "Magenta",
+      "hex": "#CF4F80",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "texture-red",
+      "name": "Texture Red",
+      "hex": "#EF3340",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#CE3845",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "hex": "#6A6DCD",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "interstellar-violet",
+      "name": "Interstellar Violet",
+      "hex": "#5B618F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "hex": "#23A3C7",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "tropical-turquoise",
+      "name": "Tropical Turquoise",
+      "hex": "#009CBD",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#003594",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "spring-leaf",
+      "name": "Spring Leaf",
+      "hex": "#89A84F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#658946",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#009639",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "hex": "#D4B996",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "hex": "#927968",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "hex": "#7C4D3A",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-grey",
+      "name": "Light Grey",
+      "hex": "#DAD9DB",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#B1B3B3",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "texture-silver",
+      "name": "Texture Silver",
+      "hex": "#8A8D8F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "texture-grey",
+      "name": "Texture Grey",
+      "hex": "#75787B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue-grey",
+      "name": "Blue Grey",
+      "hex": "#768692",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#212721",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

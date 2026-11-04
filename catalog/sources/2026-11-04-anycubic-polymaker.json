@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-11-04",
+  "quality": "manufacturer_display_swatch",
+  "source_selection": [
+    "Anycubic Color Type / Hex Code tables for PLA Basic, PLA+ and PETG",
+    "Polymaker own HueForge wiki enumerating HEX for the exact PolyLite PLA/Panchroma Matte/PolyLite PLA Pro shade"
+  ],
+  "sources": [
+    {
+      "line": "anycubic/pla-basic",
+      "source_url": "https://store.anycubic.com/products/pla-filament",
+      "colors": 28
+    },
+    {
+      "line": "anycubic/pla-plus",
+      "source_url": "https://store.anycubic.com/products/pla-plus-filament",
+      "colors": 20
+    },
+    {
+      "line": "anycubic/petg",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "colors": 20
+    },
+    {
+      "line": "polymaker/polylite-pla",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "colors": 12
+    },
+    {
+      "line": "polymaker/panchroma-matte",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "colors": 2
+    },
+    {
+      "line": "polymaker/polylite-pla-pro",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "colors": 1
+    }
+  ],
+  "limitations": [
+    "Do not convert Clear/no-code shades to generic white or alpha; only numerical manufacturer swatches were imported.",
+    "Anycubic PLA+ storefront locales show some inconsistent HEX (notably White); this snapshot uses a single global-store Color Type table for the whole line. Region-specific variation is a future reconciliation task.",
+    "Polymaker HueForge pack color codes document a finite selected subset, not the complete product palette.",
+    "Neither manufacturer's display HEX is a calibrated colorimetry measurement of printed parts."
+  ]
+}

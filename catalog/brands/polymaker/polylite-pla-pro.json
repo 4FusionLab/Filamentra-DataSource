@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "polymaker/polylite-pla-pro",
+  "brand": "polymaker",
+  "name": "PolyLite PLA Pro",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "light-red",
+      "name": "Light Red",
+      "hex": "#DC605A",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://wiki.polymaker.com/the-basics/applications/hueforge-painting",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

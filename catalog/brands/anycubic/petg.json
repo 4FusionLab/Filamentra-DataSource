@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "anycubic/petg",
+  "brand": "anycubic",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://eu.anycubic.com/products/petg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#212721",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#EFF0F1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#97999B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#C8102E",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#F3E500",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#003594",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#009639",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "hex": "#6A6DCD",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF7F32",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FB637E",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "texture-grey",
+      "name": "Texture Grey",
+      "hex": "#75787B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "texture-silver",
+      "name": "Texture Silver",
+      "hex": "#8A8D8F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-grey",
+      "name": "Dark Grey",
+      "hex": "#7E868A",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "hex": "#927968",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "hex": "#D4B996",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "peanut-brown",
+      "name": "Peanut Brown",
+      "hex": "#A9754F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cream",
+      "name": "Cream",
+      "hex": "#F9DFB9",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lake-blue",
+      "name": "Lake Blue",
+      "hex": "#0084D4",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "forest-green",
+      "name": "Forest Green",
+      "hex": "#43523B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lime-green",
+      "name": "Lime Green",
+      "hex": "#78D64B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://eu.anycubic.com/products/petg",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}
