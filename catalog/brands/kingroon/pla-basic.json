@@ -177,7 +177,24 @@
       "name": "Cyan",
       "visual_data_status": "name_only",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "KR-PLA719Y-1CH",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/pla-basic-cyan-2",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PLA Basic Cyan page on 3DJake; manufacturer number KR-PLA719Y-1CH. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     },
     {
       "id": "light-apricot",
@@ -219,7 +236,24 @@
       "name": "Apple Green",
       "visual_data_status": "name_only",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "KR-PLA718Y-1CH",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/pla-basic-apple-green",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PLA Basic Apple Green page on 3DJake; manufacturer number KR-PLA718Y-1CH. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     },
     {
       "id": "mint-green",
@@ -233,7 +267,24 @@
       "name": "Turquoise Green",
       "visual_data_status": "name_only",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "KR-PLA720Y-1CH",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/pla-basic-turquoise-green",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PLA Basic Turquoise Green page on 3DJake; manufacturer number KR-PLA720Y-1CH. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     },
     {
       "id": "lilac-purple",
