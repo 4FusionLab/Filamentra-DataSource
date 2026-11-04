@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "star-plast/petg",
+  "brand": "star-plast",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://star-plast.com/catalog/petg_filament/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "yellow",
+      "name": "Жёлтый",
+      "source_url": "https://star-plast.com/catalog/petg_filament/823/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Exact physical variant and SKU verified, but manufacturer has not published a usable variant-specific numerical RGB/HEX/RAL.",
+      "variants": [
+        {
+          "sku": "SP2D10120/0",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/petg_filament/823/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Жёлтый; SKU SP2D10120/0, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    },
+    {
+      "id": "pink",
+      "name": "Розовый",
+      "source_url": "https://star-plast.com/catalog/petg_filament/843/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Exact physical variant and SKU verified, but manufacturer has not published a usable variant-specific numerical RGB/HEX/RAL.",
+      "variants": [
+        {
+          "sku": "SP2K10120/0",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/petg_filament/843/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Розовый; SKU SP2K10120/0, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "source_url": "https://star-plast.com/catalog/petg_filament/831/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Exact physical variant and SKU verified, but manufacturer has not published a usable variant-specific numerical RGB/HEX/RAL.",
+      "variants": [
+        {
+          "sku": "SP2F10120/0",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/petg_filament/831/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Синий; SKU SP2F10120/0, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    },
+    {
+      "id": "purple",
+      "name": "Фиолетовый",
+      "source_url": "https://star-plast.com/catalog/petg_filament/835/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Exact physical variant and SKU verified, but manufacturer has not published a usable variant-specific numerical RGB/HEX/RAL.",
+      "variants": [
+        {
+          "sku": "SP2S10120/0",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/petg_filament/835/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Фиолетовый; SKU SP2S10120/0, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    }
+  ]
+}

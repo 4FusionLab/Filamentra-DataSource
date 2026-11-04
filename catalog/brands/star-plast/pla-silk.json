@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "star-plast/pla-silk",
+  "brand": "star-plast",
+  "name": "PLA Silk",
+  "polymer": "PLA",
+  "finish": "silk",
+  "source_url": "https://star-plast.com/catalog/pla_filament/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-silk",
+  "effects": [
+    "silk"
+  ],
+  "colors": [
+    {
+      "id": "sky-blue",
+      "name": "Голубой",
+      "source_url": "https://star-plast.com/catalog/pla_filament/795/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Exact physical variant and SKU verified, but manufacturer has not published a usable variant-specific numerical RGB/HEX/RAL.",
+      "variants": [
+        {
+          "sku": "SP3AR10120/6",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/pla_filament/795/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Голубой; SKU SP3AR10120/6, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    }
+  ]
+}

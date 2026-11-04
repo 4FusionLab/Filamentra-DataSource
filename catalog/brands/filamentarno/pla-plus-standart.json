@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "id": "filamentarno/pla-plus-standart",
+  "brand": "filamentarno",
+  "name": "PLA+ Standart",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://filamentarno.ru/catalog.html",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Чёрный",
+      "hex": "#151515",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PLA+ Standart / Чёрный, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PLA+ Standart / Чёрный, HEX #151515; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "white",
+      "name": "Белый",
+      "hex": "#F1F0EA",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PLA+ Standart / Белый, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PLA+ Standart / Белый, HEX #F1F0EA; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "dark-gray",
+      "name": "Тёмно-серый",
+      "hex": "#555A5C",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PLA+ Standart / Тёмно-серый, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PLA+ Standart / Тёмно-серый, HEX #555A5C; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "hex": "#2869A8",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PLA+ Standart / Синий, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PLA+ Standart / Синий, HEX #2869A8; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Зелёный",
+      "hex": "#3E914B",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PLA+ Standart / Зелёный, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PLA+ Standart / Зелёный, HEX #3E914B; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "khaki",
+      "name": "Хаки",
+      "hex": "#77734B",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PLA+ Standart / Хаки, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PLA+ Standart / Хаки, HEX #77734B; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    }
+  ]
+}

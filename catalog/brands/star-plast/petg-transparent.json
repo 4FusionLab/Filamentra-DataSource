@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "star-plast/petg-transparent",
+  "brand": "star-plast",
+  "name": "PETG прозрачный",
+  "polymer": "PETG",
+  "finish": "translucent",
+  "source_url": "https://star-plast.com/catalog/petg_filament/petg_prozrachnyy/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-translucent",
+  "effects": [
+    "translucent"
+  ],
+  "colors": [
+    {
+      "id": "transparent-green",
+      "name": "Зелёный прозрачный",
+      "source_url": "https://star-plast.com/catalog/petg_filament/846/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Officially listed as transparent PETG; spectral tint, transmission and thickness response are not numerically specified. No calibrated color preview.",
+      "variants": [
+        {
+          "sku": "SP2AM10120/0",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/petg_filament/846/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Зелёный прозрачный; SKU SP2AM10120/0, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    },
+    {
+      "id": "transparent-red",
+      "name": "Красный прозрачный",
+      "source_url": "https://star-plast.com/catalog/petg_filament/petg_prozrachnyy/814/",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "color_mode": "solid",
+      "visual_note": "Officially listed as transparent PETG; spectral tint, transmission and thickness response are not numerically specified. No calibrated color preview.",
+      "variants": [
+        {
+          "sku": "SP2AE10120/0",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://star-plast.com/catalog/petg_filament/petg_prozrachnyy/814/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer product detail: Красный прозрачный; SKU SP2AE10120/0, PLA/PETG formulation, 1.75 mm, 1 kg. Identity only; no numerical swatch."
+        }
+      ]
+    }
+  ]
+}

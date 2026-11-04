@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "filamentarno/petg-standart",
+  "brand": "filamentarno",
+  "name": "PETg Standart",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://filamentarno.ru/catalog.html",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Чёрный",
+      "hex": "#151515",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PETg Standart / Чёрный, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PETg Standart / Чёрный, HEX #151515; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "white",
+      "name": "Белый",
+      "hex": "#F1F0EA",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PETg Standart / Белый, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PETg Standart / Белый, HEX #F1F0EA; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "name": "Красный",
+      "hex": "#C14950",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PETg Standart / Красный, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PETg Standart / Красный, HEX #C14950; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "hex": "#3F78A7",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PETg Standart / Синий, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PETg Standart / Синий, HEX #3F78A7; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    },
+    {
+      "id": "turquoise",
+      "name": "Бирюзовый",
+      "hex": "#3DA6A1",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_mode": "solid",
+      "source_url": "https://filamentarno.ru/catalog.html",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+      "color_reference_note": "Independent Filament Labels screen estimate, extracted from commercial product imagery, not manufacturer-published RGB, not a physically measured print. Same exact material line and shade are independently listed in Filamentarno!'s official catalog. Reference pinned to upstream commit 39a5717.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://filamentarno.ru/catalog.html",
+          "checked_on": "2026-11-04",
+          "note": "Official Filamentarno! listing of PETg Standart / Бирюзовый, 1.75 mm / 750 g. Manufacturer SKU is not published; do not fabricate it."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Filament Labels PETg Standart / Бирюзовый, HEX #3DA6A1; third-party screen estimate with colorAccuracy=estimated, not calibrated."
+        }
+      ]
+    }
+  ]
+}

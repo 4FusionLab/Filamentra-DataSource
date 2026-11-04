@@ -22,18 +22,20 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 | [SUNLU](../catalog/brands/sunlu/) | China | 8 | 130 | Official [initial](../catalog/sources/sunlu-kingroon-creality.json) and [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json) HEX tables |
 | [Anycubic](../catalog/brands/anycubic/) | China | 3 | 68 | Official PLA Basic, PLA+ and PETG color HEX tables |
 | [Polymaker](../catalog/brands/polymaker/) | China | 3 | 15 | Official HueForge color-reference table for selected PolyLite and Panchroma PLA |
+| [STAR PLAST](../catalog/brands/star-plast/) | Russia | 5 | 13 | 13 exact official per-variant 1 kg SKUs; name-only (no numeric display swatches) |
+| [Filamentarno!](../catalog/brands/filamentarno/) | Russia | 3 | 12 | Exact official PLA+/PETg names + 12 clearly attributed third-party estimated HEX |
 | [REC](../catalog/brands/rec/) | Russia | 2 | 24 | Official RAL and SKU; third-party RAL→HEX tagged estimated |
-| **Total with material lines** | | **83** | **1019** | **13 manufacturers** |
 | [FDplast](../catalog/brands/fdplast/) | Russia | 1 | 4 | Official exact PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
 | [НИТ](../catalog/brands/nit/) | Russia | 0 | 0 | Official PLA/PETG variants and SKUs verified; numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
 | [BestFilament](../catalog/brands/bestfilament/) | Russia | 2 | 6 | Exact PLA/PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
+| **Total with material lines** | | **91** | **1044** | **15 manufacturers with lines; 16 total brands** |
 
 **Important:** these totals are **cataloged manufacturer color variants**, not physically calibrated appearances or proof of inventory availability. The Bambu Lab source is an official software color list, potentially including historical variants; other brands still have unimported lines and colors.
 
 ## Visual fidelity
 
 - **598 variants** have a manufacturer numeric display swatch: 246 Bambu Lab, 139 eSUN, 130 SUNLU, 68 Anycubic, 15 Polymaker.
-- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **301** variants remain estimated-only, **113** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1019-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
+- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **313** variants remain estimated-only, **126** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1044-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
@@ -56,6 +58,12 @@ A retailer claiming Kingroon PETG Sky Blue `#45C4EF` was **rejected** as untrace
 **No new HEX values were imported.** Neither the retailer pages nor the official color option names supply a defensible numeric shade for these exact line/color variants. Generic ELEGOO PLA / PLA Basic / PLA Plus screen swatches have intentionally **not** been reused for PLA Pro. ELEGOO remains at **59 unresolved**, and the entire catalog at **113 unresolved**. Including the earlier KINGROON batch, **16 previously unresolved shade identities now have exact SKU evidence**, enabling targeted photo/measurement research.
 
 The official ELEGOO PLA Basic site spells one variant `Megenta`; a similarly misspelled Bambu Lab CMYK product is not acceptable evidence for its identity or HEX. The ELEGOO record remains unresolved.
+
+## STAR PLAST + Filamentarno! pilot import (2026-11-04)
+
+- Imported **8 product lines / 25 shade variants** across two Russian manufacturers, with **13 exact STAR PLAST SKU-only name records** and **12 Filamentarno! exact-line third-party screen estimates**. No STAR PLAST HEX or per-variant RAL was inferred. Filamentarno! estimates are `estimated`, hidden in the curated default preview. Optical properties of translucent/fluorescent products were **not** claimed to be measured.
+- Source and rejected cross-line mappings: [pilot manifest](../catalog/sources/2026-11-04-star-plast-filamentarno-pilot.json). [STAR PLAST current PLA/PETG catalogs](https://star-plast.com/catalog/) and [Filamentarno! official catalog](https://filamentarno.ru/catalog.html).
+- Current totals: **16 brands**, **91 product lines** (15 brands with lines), **1044 color records**: **605 curated**, **313 estimated-only**, **126 name-only**. This import does not increase the number of calibrated materials.
 
 ## Next Chinese import priorities
 

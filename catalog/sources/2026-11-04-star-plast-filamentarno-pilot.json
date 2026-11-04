@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "First curated PLA/PETG imports of STAR PLAST and Filamentarno!; schema_version unchanged (1).",
+  "star_plast": {
+    "manufacturer": "https://star-plast.com/",
+    "official_catalogs": [
+      "https://star-plast.com/catalog/pla_filament/",
+      "https://star-plast.com/catalog/petg_filament/"
+    ],
+    "imported_lines": 5,
+    "imported_colors": 13,
+    "manufacturer_sku_status": "exact per-color official 1 kg / 1.75 mm SKU",
+    "numeric_color_status": "none; all are name_only",
+    "notes": "Manufacturer describes production palette as RAL-based but individual variant pages do not publish their exact RAL identifiers; never guess an RAL or HEX by shade name. Transparent and fluorescent variants keep distinct appearance lines."
+  },
+  "filamentarno": {
+    "manufacturer": "https://filamentarno.ru/catalog.html",
+    "third_party_numeric_reference": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/filamentarno-filaments.json",
+    "reference_source_blob_sha": "6ba744052ca9680ae9b7a15e3de9486aa63cc0ba",
+    "reference_commit": "39a571763a52209533ca87237c09d02d18b6df23",
+    "reference_verified_at": "2026-08-31",
+    "imported_lines": 3,
+    "imported_colors": 12,
+    "manufacturer_sku_status": "not available on browsed official catalog pages; do not invent",
+    "numeric_color_status": "exact-line/name third-party display estimates only, never manufacturer or measured",
+    "selection": "Only shades appearing in both the current official Filamentarno! manufacturer catalog and the pinned third-party JSON. The third-party PLA+ red, PETG gray and PETG natural have not been imported, because an exact current official line/color identity was not independently confirmed."
+  },
+  "unimported_items": [
+    "STAR PLAST additional official standard, PLA HS, Silk and translucent variants pending exact numeric color/optics",
+    "Filamentarno! PLA+ pink, orange, violet, yellow and ivory missing source-backed numeric swatches",
+    "Filamentarno! PETg transparent/Lumi variants need hue and optical/emissive separation before visual import"
+  ],
+  "quality_policy": "Manufacturer variants and SKUs are factual product identity; label all third-party HEX as estimated. Never promote estimated to manufacturer or measured and never infer transparency from a 2D screen HEX."
+}

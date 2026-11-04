@@ -36,6 +36,10 @@ Other possible later candidates: Bamtco, Geeetech, Hi Tech Plast, LIDER-3D, Cybe
 
 The source-backed research queue now contains **13 exact STAR PLAST SKUs** from its official product catalog: **5 PLA + 8 PETG**. Their color names, formulation distinctions, article numbers and primary URLs are stored in [STAR PLAST candidate manifest](../catalog/sources/2026-11-04-star-plast-official-sku-queue.json). These are **not yet accepted as visually usable color records**: numeric manufacturer/third-party swatches and optical attributes remain pending. This is a traceable path to the first import without filling the public catalog with unnamed or guessed colors.
 
+## Import status — 2026-11-04
+
+**STAR PLAST and Filamentarno! imported into `catalog/brands/`** as a deliberately small first batch: 5 and 3 lines respectively, 25 total variants. 13 STAR PLAST shades are exact official per-SKU name-only records, while 12 Filamentarno! matches have independent clearly labelled third-party estimated color references. [Pilot manifest](../catalog/sources/2026-11-04-star-plast-filamentarno-pilot.json). The earlier [STAR PLAST 13-SKU research queue](../catalog/sources/2026-11-04-star-plast-official-sku-queue.json) remains a research snapshot and must not be confused with the specific 13 variants selected for this import.
+
 ## Import acceptance gate
 
 1. **Identity:** official manufacturer or exact distributor source identifies `Manufacturer → Polymer → Product line → Shade`. All of `brand`, `polymer`, `line`, `color` must map to the **same** physical product formulation. Spool weight/refill/RFID usually belongs to a variant, not a new visual line.
