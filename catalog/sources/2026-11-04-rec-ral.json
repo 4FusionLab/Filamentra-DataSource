@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-11-04",
+  "manufacturer": "REC",
+  "scope": "REC official 1.75 mm / 750 g PLA and Relax (PETG) exact RAL+SKU rows, only numerical RAL-mapped shades",
+  "sources": [
+    "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+    "https://rec3d.ru/plastik-dlya-3d-printerov/relax/"
+  ],
+  "reference": "https://ralcolor.app/colors/",
+  "warning": "RAL code is manufacturer-specified but displayed HEX comes from an independent digital chart and is explicitly an estimate; it is not printed-sample colorimetry. Natural and transparent colors without a published numeric color reference are intentionally excluded."
+}

@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "id": "rec/pla",
+  "brand": "rec",
+  "name": "PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "red",
+      "name": "Красный",
+      "manufacturer_color_code": "RAL 3028",
+      "hex": "#CC2C24",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2111",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 3028 and 750 g / 1.75 mm variant identified by SKU RR1S2111"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "brown",
+      "name": "Коричневый",
+      "manufacturer_color_code": "RAL 8016",
+      "hex": "#4C2F27",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2112",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 8016 and 750 g / 1.75 mm variant identified by SKU RR1S2112"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "gray",
+      "name": "Серый",
+      "manufacturer_color_code": "RAL 7004",
+      "hex": "#9EA0A1",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2113",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 7004 and 750 g / 1.75 mm variant identified by SKU RR1S2113"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "name": "Жёлтый",
+      "manufacturer_color_code": "RAL 1003",
+      "hex": "#F9A800",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2115",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 1003 and 750 g / 1.75 mm variant identified by SKU RR1S2115"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "name": "Оранжевый",
+      "manufacturer_color_code": "RAL 2008",
+      "hex": "#F3752C",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2116",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 2008 and 750 g / 1.75 mm variant identified by SKU RR1S2116"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "name": "Чёрный",
+      "manufacturer_color_code": "RAL 9004",
+      "hex": "#2E2E2C",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2117",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 9004 and 750 g / 1.75 mm variant identified by SKU RR1S2117"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "white",
+      "name": "Белый",
+      "manufacturer_color_code": "RAL 9003",
+      "hex": "#F4F4F4",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2118",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 9003 and 750 g / 1.75 mm variant identified by SKU RR1S2118"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Зелёный",
+      "manufacturer_color_code": "RAL 6026",
+      "hex": "#005D52",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2119",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 6026 and 750 g / 1.75 mm variant identified by SKU RR1S2119"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "beige",
+      "name": "Бежевый",
+      "manufacturer_color_code": "RAL 1035",
+      "hex": "#A29985",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2121",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 1035 and 750 g / 1.75 mm variant identified by SKU RR1S2121"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "manufacturer_color_code": "RAL 5003",
+      "hex": "#2A3756",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2122",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 5003 and 750 g / 1.75 mm variant identified by SKU RR1S2122"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "raspberry",
+      "name": "Малиновый",
+      "manufacturer_color_code": "RAL 3027",
+      "hex": "#B42041",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2123",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 3027 and 750 g / 1.75 mm variant identified by SKU RR1S2123"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "khaki",
+      "name": "Хаки",
+      "manufacturer_color_code": "RAL 6028",
+      "hex": "#2E5D51",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2124",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 6028 and 750 g / 1.75 mm variant identified by SKU RR1S2124"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "turquoise",
+      "name": "Бирюзовый",
+      "manufacturer_color_code": "RAL 6029",
+      "hex": "#007243",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2125",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 6029 and 750 g / 1.75 mm variant identified by SKU RR1S2125"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "golden",
+      "name": "Золотистый",
+      "manufacturer_color_code": "RAL 1034",
+      "hex": "#EDAB56",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR1S2126",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/pla/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 1034 and 750 g / 1.75 mm variant identified by SKU RR1S2126"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "id": "rec/relax-petg",
+  "brand": "rec",
+  "name": "Relax PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "gray",
+      "name": "Серый",
+      "manufacturer_color_code": "RAL 7005",
+      "hex": "#6B716F",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2133",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 7005 and 750 g / 1.75 mm variant identified by SKU RR2S2133"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "name": "Красный",
+      "manufacturer_color_code": "RAL 3001",
+      "hex": "#A02128",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2112",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 3001 and 750 g / 1.75 mm variant identified by SKU RR2S2112"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "manufacturer_color_code": "RAL 5010",
+      "hex": "#0E518D",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2113",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 5010 and 750 g / 1.75 mm variant identified by SKU RR2S2113"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "white",
+      "name": "Белый",
+      "manufacturer_color_code": "RAL 9003",
+      "hex": "#F4F4F4",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2114",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 9003 and 750 g / 1.75 mm variant identified by SKU RR2S2114"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "name": "Жёлтый",
+      "manufacturer_color_code": "RAL 1003",
+      "hex": "#F9A800",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2115",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 1003 and 750 g / 1.75 mm variant identified by SKU RR2S2115"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Серебристый",
+      "manufacturer_color_code": "RAL 9023",
+      "hex": "#828282",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2116",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 9023 and 750 g / 1.75 mm variant identified by SKU RR2S2116"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "name": "Чёрный",
+      "manufacturer_color_code": "RAL 9017",
+      "hex": "#1E1E1E",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2117",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 9017 and 750 g / 1.75 mm variant identified by SKU RR2S2117"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "name": "Оранжевый",
+      "manufacturer_color_code": "RAL 2010",
+      "hex": "#D4652F",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2118",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 2010 and 750 g / 1.75 mm variant identified by SKU RR2S2118"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Зелёный",
+      "manufacturer_color_code": "RAL 6029",
+      "hex": "#007243",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2119",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 6029 and 750 g / 1.75 mm variant identified by SKU RR2S2119"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    },
+    {
+      "id": "khaki",
+      "name": "Хаки",
+      "manufacturer_color_code": "RAL 6028",
+      "hex": "#2E5D51",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://ralcolor.app/colors/",
+      "color_reference_note": "REC указывает RAL в официальном каталоге; HEX взят из независимой экранной таблицы RAL Classic (sRGB). Это не измерение физического отпечатка и не собственный RGB производителя.",
+      "source_url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "RR2S2135",
+          "diameter_mm": 1.75,
+          "weight_g": 750
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://rec3d.ru/plastik-dlya-3d-printerov/relax/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's original RAL 6028 and 750 g / 1.75 mm variant identified by SKU RR2S2135"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://ralcolor.app/colors/",
+          "checked_on": "2026-11-04",
+          "note": "Independent approximate digital RAL color chart; not a calibrated printed filament measurement."
+        }
+      ]
+    }
+  ]
+}
