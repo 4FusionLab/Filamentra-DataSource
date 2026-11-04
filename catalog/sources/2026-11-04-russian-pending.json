@@ -1,0 +1,84 @@
+{
+  "verified_on": "2026-11-04",
+  "scope": "PLA/PETG numeric visual evidence only",
+  "status": "research_only_no_color_lines",
+  "brand_ids": [
+    "fdplast",
+    "bestfilament",
+    "nit"
+  ],
+  "policy": "Do not create manufacturer material/color records without numerical evidence tied to the exact product variant.",
+  "manufacturers": [
+    {
+      "id": "fdplast",
+      "name": "FDplast",
+      "source": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/",
+      "examples": [
+        {
+          "polymer": "PLA",
+          "line": "PLA",
+          "name": "Терракотовый воин",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/",
+          "numeric_swatch_found": false
+        },
+        {
+          "polymer": "PETG",
+          "line": "PETG",
+          "name": "Пионерский галстук",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+          "numeric_swatch_found": false
+        }
+      ],
+      "caveat": "SILK and standard PLA share selector but need separate visual line profiles."
+    },
+    {
+      "id": "bestfilament",
+      "name": "BestFilament",
+      "source": "https://bestfilament.ru/",
+      "examples": [
+        {
+          "polymer": "PLA",
+          "line": "PLA",
+          "name": "Синий",
+          "sku": "st_pla_1kg_1.75_blue",
+          "url": "https://bestfilament.ru/nsk/pla-1-1.75-blue/",
+          "numeric_swatch_found": false
+        },
+        {
+          "polymer": "PETG",
+          "line": "PETG",
+          "name": "Красный",
+          "sku": "st_petg_2.5kg_1.75_red",
+          "url": "https://bestfilament.ru/chlb/petg-25-175-red/",
+          "numeric_swatch_found": false
+        }
+      ],
+      "caveat": "Do not substitute ABS swatch HEX from differently formulated BestFilament products."
+    },
+    {
+      "id": "nit",
+      "name": "НИТ",
+      "source": "https://plastik-nit.ru/",
+      "examples": [
+        {
+          "polymer": "PETG",
+          "line": "PETG",
+          "name": "Изумрудный",
+          "sku": "0021",
+          "url": "https://plastik-nit.ru/product/nit-7861/",
+          "numeric_swatch_found": false
+        },
+        {
+          "polymer": "PETG",
+          "line": "PETG Matte",
+          "name": "Шоколадный",
+          "sku": "0160",
+          "url": "https://plastik-nit.ru/product/nit-8069/",
+          "numeric_swatch_found": false
+        }
+      ],
+      "caveat": "Store Q&A RAL numbers cannot be mapped across aggregate variants without individual SKU evidence."
+    }
+  ],
+  "next_step": "Get manufacturer/distributor RAL, Pantone, HEX/RGB or documented printed-sample measurements for exact SKU. Publish only verified color-bearing lines."
+}
