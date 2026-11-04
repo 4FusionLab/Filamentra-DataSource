@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-glossy",
+  "name": "Glossy PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.28,
+    "opacity": 255
+  },
+  "notes": "Sharpened highlights; tune per real line and calibration renders."
+}
