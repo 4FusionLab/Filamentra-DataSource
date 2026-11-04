@@ -2,7 +2,7 @@
 
 Снимок исходных данных: **4 ноября 2026 года**. Это список **каждого** оставшегося цвета, у которого в каталоге нет ни `hex`, ни `rgba_swatches`, ни `measured_sample`. Новые товары не добавлялись. Наличие названия в каталоге само по себе **не доказывает** существования корректного цветового кода.
 
-**До текущей партии:** 138 записей без цвета. **Заполнено:** 19 (только с точными ссылками на источники, со статусом `estimated`). **Остаётся:** 119.
+**После предыдущей партии:** 119 записей без цвета. **Дополнено в этой партии:** 6 точных вариантов KINGROON PLA+ числовыми экранными референсами Layer Lookup (только `estimated`, не официальный HEX). **Остаётся:** 113.
 
 ## Разбивка по производителям
 
@@ -11,8 +11,8 @@
 | creality | 6 | Смешение оттенков PETG-CF, прозрачность, вспененный PLA |
 | deeplee | 1 | Нет точной карточки цвета |
 | elegoo | 59 | Особые Silk, CMYK, Glow, Translucent и базовые цвета без точной плашки |
-| kingroon | 53 | Дополнительные оттенки PLA/PETG и отсутствие числовых данных |
-| **Всего** | **119** | **Не заменять догадками** |
+| kingroon | 47 | Дополнительные оттенки PLA/PETG и отсутствие числовых данных |
+| **Всего** | **113** | **Не заменять догадками** |
 
 ## Построчный реестр
 
@@ -230,22 +230,18 @@
 | `kingroon/pla-matte/matte-rainbow` | Matte Rainbow | `gradient_underdetermined` | Нужны цвета переходов и длина градиента |
 | `kingroon/pla-matte/skin` | Skin | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
 
-### kingroon → PLA → PLA Plus (PLA+) (12)
+### kingroon → PLA → PLA Plus (PLA+) (6)
 
 Исходная карточка: [страница линейки](https://kingroon.com/products/kingroon-pla-pluspla). JSON: [`kingroon/pla-plus`](../catalog/brands/kingroon/pla-plus.json).
+
+Шесть ранее пустых цветов (Black, Grey, Red, Skin, White, Yellow) получили только **оценочные** референсы по точным записям `Plus (+)` в [Layer Lookup](https://layerlookup.com/kingroon/pla/). Это не подтверждённые производителем измерения, поэтому они остаются за пределами строгого предпросмотра.
 
 | ID цвета | Официальное название | Причина | Что нужно подтвердить |
 | --- | --- | --- | --- |
 | `kingroon/pla-plus/blue` | Blue | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
-| `kingroon/pla-plus/white` | White | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
-| `kingroon/pla-plus/black` | Black | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
-| `kingroon/pla-plus/grey` | Grey | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
-| `kingroon/pla-plus/red` | Red | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
-| `kingroon/pla-plus/yellow` | Yellow | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
 | `kingroon/pla-plus/orange` | Orange | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
 | `kingroon/pla-plus/green` | Green | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
 | `kingroon/pla-plus/purple` | Purple | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
-| `kingroon/pla-plus/skin` | Skin | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
 | `kingroon/pla-plus/transparent` | Transparent | `transmission_underdetermined` | Нужны оттенок конкретного SKU и оптические свойства |
 | `kingroon/pla-plus/silver` | Silver | `numeric_swatch_not_found` | Точный магазинный образец или измерение для этого SKU |
 
