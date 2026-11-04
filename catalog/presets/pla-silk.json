@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-silk",
+  "name": "Silk PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.22,
+    "opacity": 255
+  },
+  "notes": "High gloss proxy for silk effect; directional anisotropy requires validated advanced API support."
+}
