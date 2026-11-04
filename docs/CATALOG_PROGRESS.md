@@ -1,67 +1,58 @@
 # Catalog population progress — 2026-11-04
 
-> **Scope:** 3D-printing filaments based on PLA and PETG, including blends/modifications such as PLA-CF, PETG-CF, Silk, Matte, High Flow and Translucent. Other base polymers are out of scope for now.
+> **Scope:** PLA and PETG families, including PLA+/Silk/Matte/CF, PETG-CF/GF/HF, translucent and other derived formulations. ABS, ASA, TPU, PA and PC are out of scope.
 
-## Import priority
+## Source priority and status
 
-**Bambu Lab first → Chinese manufacturers → Russian manufacturers.** The source screenshot grouped ELEGOO / DeepLee, but these are separate brands in the data model.
+**Bambu Lab → other Chinese manufacturers → Russian manufacturers.** The BambuStudio color-registry snapshot is imported; expansion of Chinese lines is under way. Russian-brand data import has not started yet.
 
-Current logical hierarchy: **Manufacturer → Polymer (PLA/PETG) → Product Line → Color**. Files are physically organized by manufacturer and line; the `polymer` field supplies the logical material level.
+The logical selection path is **Manufacturer → Material (PLA/PETG) → Product Line → Color**. Physical files are grouped by manufacturer and product line; the polymer is an attribute.
 
-## Snapshot
+## Verified source records
 
-| Manufacturer | Region | PLA/PETG lines | Color variants | Source / status |
+| Manufacturer | Country | PLA/PETG lines | Color variants | Evidence |
 | --- | --- | ---: | ---: | --- |
-| [Bambu Lab](../catalog/brands/bambu-lab/) | China | 24 | 246 | Official pinned BambuStudio color registry; 8-bit RGBA swatches, codes, multi-color preserved |
-| [eSUN](../catalog/brands/esun/) | China | 2 | 79 | Official eSUN PLA+ and PETG color HEX lists |
-| [ERYONE](../catalog/brands/eryone/) | China | 1 | 6 | Official Hyper Speed PLA image labels; no verified numeric colors |
-| [ELEGOO](../catalog/brands/elegoo/) | China | 3 | 39 | Official PLA Matte, PETG Pro, Rapid PETG color names; HEX unknown |
-| [DeepLee](../catalog/brands/deeplee/) | China | 1 | 1 | Official PLA Black description; numeric color unknown |
-| [Creality](../catalog/brands/creality/) | China | 1 | 15 | Official Hyper PLA product variants; numeric color unknown |
-| [KINGROON](../catalog/brands/kingroon/) | China | 1 | 35 | Official PETG Basic product variants; numeric color unknown |
-| [SUNLU](../catalog/brands/sunlu/) | China | 3 | 60 | Official color-code tables for PLA+, PLA+2.0 and PETG |
-| **Current total** | | **36** | **481** | **8 manufacturers represented** |
-| FDplast | Russia | 0 | 0 | Queued; [manufacturer catalog](https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/) |
-| НИТ | Russia | 0 | 0 | Queued; [manufacturer catalog](https://plastik-nit.ru/) |
-| Bestfilament | Russia | 0 | 0 | Queued; [manufacturer catalog](https://bestfilament.ru/) |
+| [Bambu Lab](../catalog/brands/bambu-lab/) | China | 24 | 246 | [Pinned official BambuStudio RGBA registry](../catalog/sources/bambu-lab.json), with multi-color variants |
+| [eSUN](../catalog/brands/esun/) | China | 7 | 139 | Official [original](../catalog/sources/esun.json), [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json), [expanded](../catalog/sources/esun-expanded-2026-11-04.json) color tables |
+| [ERYONE](../catalog/brands/eryone/) | China | 1 | 6 | Product names and manufacturer imagery; no verified numeric swatches |
+| [ELEGOO](../catalog/brands/elegoo/) | China | 19 | 195 | Official [initial](../catalog/sources/next-chinese-brands.json) and [expanded product pages](../catalog/sources/elegoo-expanded-2026-11-04.json); no verified HEX |
+| [DeepLee](../catalog/brands/deeplee/) | China | 1 | 1 | Manufacturer name-only product record |
+| [Creality](../catalog/brands/creality/) | China | 5 | 39 | Official [initial](../catalog/sources/sunlu-kingroon-creality.json) and [extended](../catalog/sources/creality-expanded-2026-11-04.json) line options; selected CR-PETG SKU codes |
+| [KINGROON](../catalog/brands/kingroon/) | China | 4 | 87 | Official [PETG](../catalog/sources/sunlu-kingroon-creality.json) and [PLA product pages](../catalog/sources/kingroon-pla-2026-11-04.json) |
+| [SUNLU](../catalog/brands/sunlu/) | China | 8 | 130 | Official [initial](../catalog/sources/sunlu-kingroon-creality.json) and [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json) HEX tables |
+| **Total** | | **69** | **843** | **8 manufacturers** |
+| FDplast | Russia | 0 | 0 | Scheduled after Chinese import; [official website](https://fdplast.ru/) |
+| НИТ | Russia | 0 | 0 | Scheduled after Chinese import |
+| Bestfilament | Russia | 0 | 0 | Scheduled after Chinese import; [official website](https://bestfilament.ru/) |
 
-These are **seeded catalog entries, not full retail assortment coverage** for each brand. In particular, Bambu Lab coverage reflects everything in a specific official **BambuStudio registry snapshot**; it may include discontinued products. Other Chinese manufacturers have additional PLA/PETG lines still to collect.
+**Important:** these totals are **cataloged manufacturer color variants**, not physically calibrated appearances or proof of inventory availability. The Bambu Lab source is an official software color list, potentially including historical variants; other brands still have unimported lines and colors.
 
-## Visual completeness
+## Visual fidelity
 
-- **246 Bambu Lab variants:** manufacturer RGBA swatches from its own software repository; 18 gradient/multicolor variants retain multiple color components. One Clear variant uses an entirely transparent swatch and deliberately has no solid HEX.
-- **79 eSUN variants + 60 SUNLU variants:** manufacturer web HEX values recorded, but these are not calibrated printed-surface measurements.
-- **96 variants from ERYONE, ELEGOO, DeepLee, Creality and KINGROON:** official names verified, **no invented HEX**. These must not receive a falsely color-matched Fusion appearance until a trustworthy visual color estimate or measurement is added.
-- **18 visual finish presets:** `uncalibrated` Filamentra estimates, not manufacturer optical measurements.
+- **515 variants** have at least one *manufacturer-published numeric display swatch*: 246 Bambu Lab (RGBA, including 18 gradient/multicolor), 139 eSUN (including 7 dual-shade entries), and 130 SUNLU.
+- **328 variants** currently have only an official name or visual product listing, with **no invented HEX**. These need a verified/estimated visual color before a color-matched Fusion Appearance can be installed.
+- **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
+- Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
+- For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
+- ELEGOO RFID/emoji spools and Creality Hyper PLA RFID are not automatically separate *visual materials* when the published color/formulation is equivalent; packaging functionality is not a new Appearance identity.
 
-Manufacturer swatch values, physical colorimetry, and rendering fidelity are **different levels of evidence**. Do not equate them.
+For meaning, provenance, source fidelity and Fusion API constraints see [material appearance specification](MATERIAL_APPEARANCE_SPEC.md).
 
-## Next import batches
+## Next Chinese import priorities
 
-### Chinese manufacturers — expand each real product line
+1. **ERYONE:** verify remaining standard/matte/PLA-Lite/Silk/Speed PLA and PETG products; its pages frequently provide photographs without precise swatch values. Avoid transcribing opaque filenames as official color names.
+2. **Creality:** ordinary PLA/Ender and special PLA/PETG lines; look for official color codes and check differences between the product family and RFID packaging.
+3. **eSUN:** special PLA/PETG finishes and multi-color/rainbow filaments. Do not misrepresent a gradient spool by one solid HEX.
+4. **SUNLU:** additional PETG/PLA finishes, dual-color variants, specialized Matte/HS/Silk. Prefer official `Color Code` tables.
+5. **KINGROON and ELEGOO:** close gaps between official color variant names and reliable numeric shade references. Maintain separate color identity and packaging SKU.
+6. **DeepLee:** confirm remaining official product lines and product-specific color lists, not generic marketplace references.
 
-1. eSUN: PLA-Basic, PLA-Matte, PLA+HS, PLA Silk, PETG variants; use official eSUN product color/HEX tables when available.
-2. ERYONE: Standard PLA, PLA+, PETG, matte, silk, fast/transparent; product pages often show image labels without numeric values.
-3. ELEGOO and DeepLee independently: additional PLA/PETG collections; verify each available color and separate packaging from color identity.
-4. Creality: Hyper PETG, Hyper PLA RFID, Ender PLA, and PLA/PETG modifications.
-5. KINGROON: PLA lines and PETG color swatch measurements.
-6. SUNLU: PLA, PLA Matte, Silk, PETG2.0 and special appearance lines with official HEX tables.
+## Russian manufacturers (queued)
 
-### Russian manufacturers — after the Chinese phase
+After the above Chinese stage: **FDplast → НИТ → Bestfilament**. Create one official-source-verified line at a time, covering PLA/PETG only. Russian-language display names can remain original and use stable transliterated IDs.
 
-7. FDplast: standard PLA/PETG and separately identified SILK PLA variants; manufacturer uses named shades such as “Терракотовый воин”.
-8. НИТ: official PLA/PETG ranges, PLA Matte and PLA Aero; verify line separation and product-level source links.
-9. Bestfilament: PLA, PLA-шёлк and PETG based on official Bestfilament product pages.
+## Validation and distribution
 
-**Do not automatically include other materials** (ABS, TPU, ASA, PA, PC). Do not introduce arbitrary color references for products without manufacturer numeric color values. For non-published optical data, add labeled uncalibrated presets and test them in Fusion.
-
-## Source and quality trace
-
-- Pinned [Bambu Lab source revision](../catalog/sources/bambu-lab.json).
-- [eSUN import record](../catalog/sources/esun.json).
-- [ERYONE/ELEGOO/DeepLee sources](../catalog/sources/next-chinese-brands.json).
-- [SUNLU/KINGROON/Creality sources](../catalog/sources/sunlu-kingroon-creality.json).
-- [Catalog specification](MATERIAL_APPEARANCE_SPEC.md) and [data schema](../catalog/schema/line.schema.json).
-- [GitHub validation](../.github/workflows/validate.yml) checks shape, duplicate identifiers, references, HEX formats and source metadata. Successful validation does not prove physical visual fidelity or current inventory.
-
-**Distribution:** A public release ZIP and compatibility index are still planned; no release pipeline or published catalog version is implied by these source entries.
+- [Schema](../catalog/schema/line.schema.json) and [validators](../tools/validate_catalog.py): structural validation, identifier uniqueness, preset references and color-provenance invariants.
+- [GitHub Actions](../.github/workflows/validate.yml) runs the validator. Passing tests does not establish Fusion rendering/optical accuracy.
+- [Release distribution](DISTRIBUTION.md) is still **planned**. Catalog source JSON in GitHub is not yet a downloadable signed/versioned ZIP release.

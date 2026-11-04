@@ -47,7 +47,8 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 ### Initial verified data
 
 - **Bambu Lab:** [24 lines / 246 PLA+PETG color variants](catalog/brands/bambu-lab/) from a pinned official [BambuStudio source revision](catalog/sources/bambu-lab.json), preserving multi-color swatches and manufacturer identifiers.
-- **Chinese brands:** eSUN, ERYONE, ELEGOO, DeepLee, Creality, KINGROON and SUNLU have initial source-backed entries; some variants have only official color names and **no numeric color yet**.
+- **Catalog today:** **8 manufacturers / 69 PLA+PETG product lines / 843 color variants**, including 515 manufacturer numerical swatches (some multi-color) and 328 name-only records. [Coverage and limitations](docs/CATALOG_PROGRESS.md).
+- **Chinese brands:** eSUN, ERYONE, ELEGOO, DeepLee, Creality, KINGROON and SUNLU have source-backed records, but coverage and optical fidelity remain incomplete. Russian manufacturers follow the Chinese stage.
 - **Visual profiles:** [18 experimental surface presets](catalog/presets/), explicitly not measured optical manufacturer properties.
 - **Progress and priorities:** [catalog population status](docs/CATALOG_PROGRESS.md), including remaining Chinese lines and Russian brands.
 - **Validation:** [JSON Schemas](catalog/schema/) and [catalog validation workflow](.github/workflows/validate.yml) check data structure, references and stable IDs.
