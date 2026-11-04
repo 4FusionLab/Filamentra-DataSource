@@ -59,6 +59,21 @@
           "claim": "product_line_listed",
           "url": "https://store.sunlu.com/products/over-6kg-bulk-sale-pla-matte-filament-neatly-wound-filament",
           "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/sunlu/pla-matt-black",
+          "checked_on": "2026-11-04",
+          "note": "3DJake lists this exact PLA Matte color and a 1.75 mm, 1000 g package; retail SKU is not canonical color identity."
+        }
+      ],
+      "variants": [
+        {
+          "sku": "6933582309626",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
         }
       ]
     },

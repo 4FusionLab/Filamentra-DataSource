@@ -70,6 +70,21 @@
           "claim": "measured_color",
           "url": "https://www.filamentselect.com/filaments/bambu-lab--pla-matte--ash-gray",
           "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/bambu-lab/pla-matte-ash-gray",
+          "checked_on": "2026-11-04",
+          "note": "3DJake lists this exact PLA Matte color and a 1.75 mm, 1000 g package; retail SKU is not canonical color identity."
+        }
+      ],
+      "variants": [
+        {
+          "sku": "A01-D3-1.75-1000-SPLFREE",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "refill"
         }
       ]
     },

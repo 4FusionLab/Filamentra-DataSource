@@ -117,7 +117,24 @@
       "hex": "#BB2C2E",
       "hex_source": "estimated",
       "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
-      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия.",
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/elegoo/pla-matte-ruby-red?sai=22787",
+          "checked_on": "2026-11-04",
+          "note": "3DJake lists this exact PLA Matte color and a 1.75 mm, 1000 g package; retail SKU is not canonical color identity."
+        }
+      ],
+      "variants": [
+        {
+          "sku": "50.203.0252",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ]
     },
     {
       "id": "sakura-pink",
