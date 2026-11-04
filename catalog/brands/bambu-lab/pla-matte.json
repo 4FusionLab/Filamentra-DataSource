@@ -51,7 +51,27 @@
       "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
       "verified_on": "2026-11-04",
       "hex": "#9B9EA0",
-      "hex_source": "manufacturer"
+      "hex_source": "manufacturer",
+      "measured_sample": {
+        "hex": "#8D9499",
+        "lab": [
+          60.89,
+          -1.26,
+          -4.11
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/bambu-lab--pla-matte--ash-gray",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/bambu-lab--pla-matte--ash-gray",
+          "checked_on": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "bone-white",

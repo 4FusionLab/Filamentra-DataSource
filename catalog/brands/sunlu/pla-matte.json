@@ -34,7 +34,33 @@
       "hex_source": "manufacturer",
       "visual_data_status": "manufacturer_swatch",
       "source_url": "https://www.sunlu.com/products/pla-matte-filament",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "measured_sample": {
+        "hex": "#454546",
+        "lab": [
+          29.42,
+          -0.03,
+          -0.58
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/sunlu--pla-matte--black",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/sunlu--pla-matte--black",
+          "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "manufacturer_store",
+          "claim": "product_line_listed",
+          "url": "https://store.sunlu.com/products/over-6kg-bulk-sale-pla-matte-filament-neatly-wound-filament",
+          "checked_on": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "red",

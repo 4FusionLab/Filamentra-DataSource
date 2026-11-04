@@ -449,6 +449,101 @@
           "type": "string",
           "minLength": 1,
           "description": "Details about provenance and uncertainty of the reported visual color."
+        },
+        "measured_sample": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hex",
+            "lab",
+            "source_url",
+            "source_type",
+            "measurement_conditions",
+            "verified_on"
+          ],
+          "properties": {
+            "hex": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "lab": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "source_url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "source_type": {
+              "enum": [
+                "third_party_physical_print"
+              ]
+            },
+            "measurement_conditions": {
+              "enum": [
+                "not_provided",
+                "documented"
+              ]
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_type",
+              "claim",
+              "url",
+              "checked_on"
+            ],
+            "properties": {
+              "source_type": {
+                "enum": [
+                  "manufacturer",
+                  "manufacturer_store",
+                  "authorized_distributor",
+                  "retailer",
+                  "marketplace",
+                  "community_measurement"
+                ]
+              },
+              "claim": {
+                "enum": [
+                  "product_line_listed",
+                  "color_variant_listed",
+                  "sku_verified",
+                  "numeric_swatch",
+                  "measured_color"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "checked_on": {
+                "type": "string",
+                "format": "date"
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
         }
       },
       "allOf": [

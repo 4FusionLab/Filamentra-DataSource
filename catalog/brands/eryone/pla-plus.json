@@ -24,12 +24,38 @@
       "id": "army-green",
       "name": "Army Green",
       "hex": "#5D644D",
-      "hex_source": "estimated",
-      "visual_data_status": "estimated",
-      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
-      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "hex_source": "measured",
+      "visual_data_status": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-plus--army-green",
+      "color_reference_note": "FilamentSelect помечает этот оттенок как измеренный на физическом отпечатке. Условия печати и измерений не полностью раскрыты; результат не гарантирует совпадения другой партии.",
       "source_url": "https://eryone3d.com/products/pla",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "measured_sample": {
+        "hex": "#5D644D",
+        "lab": [
+          41.27,
+          -6.97,
+          11.8
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/eryone--pla-plus--army-green",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/eryone--pla-plus--army-green",
+          "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "manufacturer_store",
+          "claim": "product_line_listed",
+          "url": "https://eryone3d.com/collections/filament",
+          "checked_on": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "blue",

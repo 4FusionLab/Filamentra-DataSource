@@ -45,13 +45,39 @@
     {
       "id": "red",
       "name": "Red",
-      "visual_data_status": "estimated",
+      "visual_data_status": "measured",
       "source_url": "https://kingroon.com/products/10kg-matte-pla-filament-1-75mm",
       "verified_on": "2026-11-04",
       "hex": "#D4454B",
-      "hex_source": "estimated",
-      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
-      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
+      "hex_source": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--red",
+      "color_reference_note": "FilamentSelect помечает этот оттенок как измеренный на физическом отпечатке. Условия печати и измерений не полностью раскрыты; результат не гарантирует совпадения другой партии.",
+      "measured_sample": {
+        "hex": "#D4454B",
+        "lab": [
+          50.37,
+          56.3,
+          27.84
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--red",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--red",
+          "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "manufacturer_store",
+          "claim": "product_line_listed",
+          "url": "https://kingroon3d.com/products/kingroon-pla-matte",
+          "checked_on": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "blue",
@@ -78,13 +104,39 @@
     {
       "id": "yellow",
       "name": "Yellow",
-      "visual_data_status": "estimated",
+      "visual_data_status": "measured",
       "source_url": "https://kingroon.com/products/10kg-matte-pla-filament-1-75mm",
       "verified_on": "2026-11-04",
       "hex": "#F1CB57",
-      "hex_source": "estimated",
-      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
-      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
+      "hex_source": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--yellow",
+      "color_reference_note": "FilamentSelect помечает этот оттенок как измеренный на физическом отпечатке. Условия печати и измерений не полностью раскрыты; результат не гарантирует совпадения другой партии.",
+      "measured_sample": {
+        "hex": "#F1CB57",
+        "lab": [
+          82.93,
+          1.12,
+          60.65
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--yellow",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--yellow",
+          "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "manufacturer_store",
+          "claim": "product_line_listed",
+          "url": "https://kingroon3d.com/products/kingroon-pla-matte",
+          "checked_on": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "green",
@@ -118,13 +170,39 @@
     {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "estimated",
+      "visual_data_status": "measured",
       "source_url": "https://kingroon.com/products/10kg-matte-pla-filament-1-75mm",
       "verified_on": "2026-11-04",
       "hex": "#454646",
-      "hex_source": "estimated",
-      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
-      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
+      "hex_source": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--black",
+      "color_reference_note": "FilamentSelect помечает этот оттенок как измеренный на физическом отпечатке. Условия печати и измерений не полностью раскрыты; результат не гарантирует совпадения другой партии.",
+      "measured_sample": {
+        "hex": "#454646",
+        "lab": [
+          29.45,
+          -0.13,
+          -0.49
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--black",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/kingroon--matte-pla--black",
+          "checked_on": "2026-11-04"
+        },
+        {
+          "source_type": "manufacturer_store",
+          "claim": "product_line_listed",
+          "url": "https://kingroon3d.com/products/kingroon-pla-matte",
+          "checked_on": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "matte-rainbow",
