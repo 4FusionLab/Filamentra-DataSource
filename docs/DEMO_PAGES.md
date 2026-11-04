@@ -18,7 +18,7 @@ If GitHub reports an organization policy, Pages permission, or environment prote
 
 ## When the website updates
 
-The site is **rebuilt and deployed after relevant pushes to `main`** affecting `catalog/**`, `demo/**`, `tools/build_demo.py`, `tools/validate_catalog.py`, or the Pages workflow. You can also publish explicitly with **Actions → Build and publish catalog demo → Run workflow**.
+The demo is **published manually only**. Use **Actions → Build and publish catalog demo → Run workflow** when a fresh snapshot is needed. Catalog pushes to `main` trigger separate validation, **not** Pages deployment.
 
 Each deployment validates source JSON, checks browser JavaScript syntax, and verifies the generated snapshot before publishing; errors block publication. Pull requests do not deploy Pages. The independent `validate.yml` continues to validate without deploying.
 
