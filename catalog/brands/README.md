@@ -9,7 +9,7 @@ brands/
     └── pla-matte.json
 ```
 
-The first source-backed entry is **Bambu Lab → PLA Matte**, containing 17 manufacturer-published color HEX values and codes from the [official product page](https://bambu-lab-global.myshopify.com/products/pla-matte).
+**Bambu Lab** has 24 imported PLA/PETG families and 246 variants from a pinned [BambuStudio registry revision](../sources/bambu-lab.json). Other Chinese brands have partial verified imports; see [population status](../../docs/CATALOG_PROGRESS.md).
 
 Each line refers to a baseline visual preset in `../presets/`. The line and individual colors may override preset parameters **when evidence is available**; manufacturer color data and Filamentra visual estimates are clearly separated. Do not create a separate color file, or treat an estimated roughness as an official manufacturer specification.
 

@@ -12,7 +12,7 @@ For every visual parameter, prefer **manufacturer measurement → reproducible m
 
 1. **Preset**: `catalog/presets/<id>.json` — an estimated family-wide baseline such as `pla-matte`, `pla-silk`, `petg-translucent` or `fiber-matte`.
 2. **Product line**: `catalog/brands/<brand>/<line>.json` — references the preset; overrides it only when the specific manufacturer line has better evidence or an intentionally reviewed profile.
-3. **Color variant**: one record in the product line's `colors` array — official manufacturer code and HEX; may override the line's appearance for special transparent/sparkle/metallic shades.
+3. **Color variant**: one record in the line's `colors` array — official manufacturer code, optional HEX, or multiple RGBA swatches. The color may override the line's appearance for special transparent, sparkle or metallic-look shades. Verified name-only entries must not be rendered as guessed colors.
 
 The add-in resolves the visual state with a **property-level merge**:
 
@@ -64,7 +64,7 @@ The full ID is stable; line names, colors, storefront codes and SKU can change. 
 }
 ```
 
-See [the complete Bambu Lab PLA Matte line](../catalog/brands/bambu-lab/pla-matte.json) for **17** color variants with official HEX values and manufacturer color codes. Bambu calls this line **Matte Surface Texture**, but publishes **no measured microfacet roughness or scattering coefficient on the referenced product page**. Therefore `pla-matte`'s roughness is an **estimated visual baseline**, never a Bambu Lab specification.
+See [Bambu Lab PLA Matte](../catalog/brands/bambu-lab/pla-matte.json) for **25** variants from the pinned [official BambuStudio registry](../catalog/sources/bambu-lab.json). The official color swatches do **not** supply physically measured microfacet roughness or scattering coefficients, so `pla-matte` remains a **Filamentra estimate**. Across the complete Bambu PLA/PETG import, gradient/multi-color RGBA components are preserved rather than collapsed to one invented color.
 
 ## Supported schema v1 visual parameters
 

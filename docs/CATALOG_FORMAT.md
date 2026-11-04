@@ -25,7 +25,7 @@ catalog/
     └── preset.schema.json
 ```
 
-**Hierarchy:** manufacturer → product line → color variant. One JSON file per line. Polymer, finish and other properties are attributes for filtering, not directory levels.
+**Logical hierarchy:** manufacturer → base polymer (PLA or PETG) → product line → color. One JSON file per line; polymer is stored as a property, not a physical directory. Finish and optical effects remain attributes.
 
 ## Product identities
 
@@ -62,7 +62,7 @@ The full ID must remain stable independently of SKU or translated display name. 
 }
 ```
 
-This excerpt contains one color. The [actual line file](../catalog/brands/bambu-lab/pla-matte.json) holds 17 officially published HEX values and codes from the Bambu Lab PLA Matte product page.
+This excerpt contains one color. The [current Bambu Lab PLA Matte file](../catalog/brands/bambu-lab/pla-matte.json) holds **25 official color variants** sourced from the pinned [BambuStudio manufacturer registry](../catalog/sources/bambu-lab.json).
 
 ## Appearance inheritance and field provenance
 
@@ -73,6 +73,15 @@ The renderer supports direct or advanced Fusion mappings for `surface_type`, `ro
 A line or color that specifies an `appearance` override should include `appearance_sources` with each modified key marked `manufacturer`, `measured` or `filamentra_estimate`. Published HEX has independent `hex_source` provenance.
 
 Presets are **explicit estimates** until separately calibrated and Fusion-tested. They do not automatically become manufacturer specifications. Missing color values stay missing.
+
+### Multi-color and transparency
+
+- `rgba_swatches` preserves one or more exact 8-digit manufacturer RGBA display swatches when available (currently BambuStudio).
+- `color_mode`: `solid`, `gradient`, `multicolor` or `unknown`. Gradient and multicolor retain all published colors, **not a made-up single HEX**.
+- RGBA alpha from a vendor UI is **not** a measured optical transmission coefficient; `Clear` in BambuStudio is represented as `#00000000` and deliberately lacks `hex`.
+- `visual_data_status: name_only` means a verified product/shade exists but no trustworthy numerical display color is available. The add-in **must not claim a color-correct Appearance** until a source-backed or clearly estimated color has been supplied.
+- `manufacturer_color_code` and `manufacturer_palette_code` are optional identifiers distinct from the stable Filamentra color ID. Keep the original IDs for traceability.
+- `catalog_status: listed_in_manufacturer_software` is not proof of current retail stock. BambuStudio may contain historical variants.
 
 ## Validators
 

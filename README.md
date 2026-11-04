@@ -40,14 +40,16 @@ docs/
 └── DISTRIBUTION.md
 ```
 
-One JSON document per product line, containing its color variants. The hierarchy is **manufacturer → product line → color**; polymer, finish, and effects are metadata used for filtering rather than nested directory names.
+One JSON document per product line, containing its color variants. The logical hierarchy is **manufacturer → material (PLA/PETG) → product line → color**. Polymer is a field for grouping and filtering, so it does not require a physical directory level.
 
 See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appearance specification](docs/MATERIAL_APPEARANCE_SPEC.md) for the data model, visual inheritance, API support, and evidence rules.
 
 ### Initial verified data
 
-- **Bambu Lab → PLA Matte:** [17 official color names, HEX codes and manufacturer color codes](catalog/brands/bambu-lab/pla-matte.json) sourced from Bambu Lab’s [official PLA Matte product page](https://bambu-lab-global.myshopify.com/products/pla-matte).
-- **Seven provisional finish presets:** [matte PLA, glossy PLA, silk PLA, standard PETG, translucent PETG, fiber-matte, and sparkle polymer](catalog/presets/). Values are Filamentra estimates, not measured manufacturer characteristics.
+- **Bambu Lab:** [24 lines / 246 PLA+PETG color variants](catalog/brands/bambu-lab/) from a pinned official [BambuStudio source revision](catalog/sources/bambu-lab.json), preserving multi-color swatches and manufacturer identifiers.
+- **Chinese brands:** eSUN, ERYONE, ELEGOO, DeepLee, Creality, KINGROON and SUNLU have initial source-backed entries; some variants have only official color names and **no numeric color yet**.
+- **Visual profiles:** [18 experimental surface presets](catalog/presets/), explicitly not measured optical manufacturer properties.
+- **Progress and priorities:** [catalog population status](docs/CATALOG_PROGRESS.md), including remaining Chinese lines and Russian brands.
 - **Validation:** [JSON Schemas](catalog/schema/) and [catalog validation workflow](.github/workflows/validate.yml) check data structure, references and stable IDs.
 
 **Visual fidelity policy:** retain official colors when published; approximate missing optical properties with clearly labeled, line-specific presets, then calibrate against real print samples. Rendering may differ across Fusion viewport, Render workspace and physical output.
@@ -74,7 +76,7 @@ The intended distribution model separates **catalog content version** from **JSO
 
 The add-in will select the newest **compatible** snapshot and cache it locally for offline use. Catalog changes must not silently overwrite appearances already installed in an existing Fusion design.
 
-**Status: initial catalog population / experimental appearance profiles.** The first manufacturer line and visual presets are present, but the presets have not been calibrated in Fusion, and no verified GitHub Release distribution is available yet. See [distribution design](docs/DISTRIBUTION.md).
+**Status: first import complete for the official BambuStudio registry; other manufacturers are partially populated.** Visual presets remain uncalibrated in Fusion, and no validated GitHub Release distribution has been published. See [progress](docs/CATALOG_PROGRESS.md) and [distribution design](docs/DISTRIBUTION.md).
 
 ## Contribute a filament
 
