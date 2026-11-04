@@ -6,6 +6,7 @@ Requires: pip install jsonschema
 from __future__ import annotations
 
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -28,6 +29,24 @@ def validate_schema(schema_path: Path, data: dict, label: str, errors: list[str]
     for problem in sorted(validator.iter_errors(data), key=lambda issue: str(issue.path)):
         path = "/".join(str(piece) for piece in problem.path) or "<root>"
         errors.append(f"{label} ({path}): {problem.message}")
+
+
+def lab_from_srgb(hex_rgb: str) -> tuple[float, float, float]:
+    """D65 sRGB -> CIELAB, sufficient to catch transcription mistakes in color tables."""
+    encoded = [int(hex_rgb[index:index + 2], 16) / 255.0 for index in (1, 3, 5)]
+    r, g, b = [v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4
+               for v in encoded]
+    normalized_xyz = (
+        (0.4124564 * r + 0.3575761 * g + 0.1804375 * b) / 0.95047,
+        0.2126729 * r + 0.7151522 * g + 0.0721750 * b,
+        (0.0193339 * r + 0.1191920 * g + 0.9503041 * b) / 1.08883,
+    )
+    eps = (6.0 / 29.0) ** 3
+    transformed = [v ** (1.0 / 3.0) if v > eps
+                   else v / (3.0 * (6.0 / 29.0) ** 2) + (4.0 / 29.0)
+                   for v in normalized_xyz]
+    x, y, z = transformed
+    return (116 * y - 16, 500 * (x - y), 200 * (y - z))
 
 
 def main() -> int:
@@ -130,6 +149,15 @@ def main() -> int:
                         ]
                         if not direct_evidence:
                             errors.append(f"{rel}: measured sample missing exact source evidence: {full_id}")
+                        reference_lab = measured_sample.get("lab", [])
+                        reference_hex = measured_sample.get("hex", "")
+                        if len(reference_lab) == 3 and re.fullmatch(r"#[0-9a-fA-F]{6}", reference_hex):
+                            delta_e76 = math.dist(lab_from_srgb(reference_hex), reference_lab)
+                            if delta_e76 > 2.5:
+                                errors.append(
+                                    f"{rel}: reported CIELAB and sRGB HEX disagree "
+                                    f"(Delta E76 {delta_e76:.2f} > 2.5): {full_id}"
+                                )
                         if color.get("hex_source") == "measured" and color.get("hex", "").upper() != measured_sample["hex"].upper():
                             errors.append(f"{rel}: measured primary HEX must match measured sample: {full_id}")
                     if color.get("hex_source") == "measured" and not measured_sample:
