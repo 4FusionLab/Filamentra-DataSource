@@ -37,7 +37,26 @@
         "#00000000"
       ],
       "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "roughness": 0.12,
+        "transmission": 0.94,
+        "attenuation_distance_mm": 75
+      },
+      "appearance_sources": {
+        "roughness": {
+          "kind": "filamentra_estimate",
+          "notes": "Clear grade is likely smoother than tinted translucent grades; no measured BRDF."
+        },
+        "transmission": {
+          "kind": "filamentra_estimate",
+          "notes": "Visually clear grade; 0.94 is a renderer control, not a measurement. Transparent brand RGBA swatch alpha is not used as optical transmittance."
+        },
+        "attenuation_distance_mm": {
+          "kind": "filamentra_estimate",
+          "notes": "Longer optical attenuation for clear transparent grade; uncalibrated."
+        }
+      }
     },
     {
       "id": "translucent-pink",

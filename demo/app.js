@@ -43,6 +43,22 @@ function sampleHex(color) {
   return null;
 }
 
+function previewHex(line, color) {
+  const source = sampleHex(color);
+  if (source) return source;
+  const appearance = resolveAppearance(line, color);
+  const swatches = color.rgba_swatches || [];
+  if (appearance.surface_type === "transparent"
+      && appearance.transmission > 0
+      && (color.color_mode || "solid") === "solid"
+      && swatches.length === 1
+      && /^#[0-9a-fA-F]{6}00$/.test(swatches[0])) {
+    // Clear swatch has no measured RGB. Use a neutral preview-only tint.
+    return "#F6F9F7";
+  }
+  return null;
+}
+
 function resolveAppearance(line, color) {
   const preset = state.data.presets[line.appearance_preset]?.appearance || {};
   const lineAppearance = line.appearance || {};
@@ -289,7 +305,7 @@ function addRow(container, label, value) {
 
 async function attachMaterialViewer(host, fallback, line, color, status) {
   const requestId = ++viewerRequest;
-  const hex = sampleHex(color);
+  const hex = previewHex(line, color);
   const appearance = resolveAppearance(line, color);
   if (!color.preview_image || !hex || !appearance.textures?.normal_gl || !appearance.textures?.roughness) {
     return;
@@ -299,7 +315,8 @@ async function attachMaterialViewer(host, fallback, line, color, status) {
     const module = await import("./material-viewer.js");
     if (requestId !== viewerRequest) return;
     const instance = await module.createMaterialViewer(host, {
-      hex, appearance, basePath: "./", shape: "sphere"
+      hex, appearance, basePath: "./", shape: "sphere",
+      baseRoughness: state.data.presets[line.appearance_preset]?.appearance?.roughness
     });
     if (requestId !== viewerRequest) {
       instance?.destroy();
@@ -391,6 +408,13 @@ function openDetails(line, color) {
   const appearance = resolveAppearance(line, color);
   addRow(rows, "Визуальный пресет", preset.name);
   addRow(rows, "Параметр roughness", appearance.roughness);
+  if (appearance.surface_type === "transparent") {
+    addRow(rows, "Светопередача · PBR-оценка",
+      Math.round((appearance.transmission ?? 0) * 100) + "%");
+    addRow(rows, "Поглощение · оценка", appearance.attenuation_distance_mm
+      ? appearance.attenuation_distance_mm + " мм" : undefined);
+    addRow(rows, "Коэффициент преломления · оценка", appearance.ior);
+  }
   addRow(rows, "Точность пресета", preset.status === "uncalibrated" ? "Приближённый, не откалиброван" : preset.status);
   addRow(rows, "Проверено", color.verified_on);
   target.appendChild(rows);
@@ -415,6 +439,14 @@ function openDetails(line, color) {
     refLink.target = "_blank";
     refLink.rel = "noopener noreferrer";
     target.appendChild(refLink);
+  }
+  if (appearance.surface_type === "transparent") {
+    target.appendChild(el("p", "caution",
+      "Светопередача указана как параметр PBR-визуализации, а не измеренный процент пропускаемого света. Предпросмотр рассчитан для условной стенки толщиной 2 мм: реальная прозрачность зависит от толщины, пигмента, печати и освещения."));
+    if (!sampleHex(color) && color.preview_image) {
+      target.appendChild(el("p", "caution",
+        "Бесцветный Clear визуализируется с нейтральным оттенком. Официальный HEX и физический цвет ему не приписываются."));
+    }
   }
   if (color.color_reference_note) target.appendChild(el("p", "caution", color.color_reference_note));
   if (color.visual_note) target.appendChild(el("p", "caution", color.visual_note));

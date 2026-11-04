@@ -74,14 +74,15 @@ See [Bambu Lab PLA Matte](../catalog/brands/bambu-lab/pla-matte.json) for **25**
 | --- | --- | --- | --- |
 | `surface_type` | `opaque`, `transparent`, `metallic` | `Appearances.add(name, AppearanceSurfaceTypes.*)` | Documented |
 | `roughness` | Microfacet highlight roughness 0–1, not profilometer Ra | `Appearance.roughness` | Documented |
-| `opacity` | Alpha 0–255; **not** physically accurate bulk transmission | `Color.create(r,g,b,opacity)` → `Appearance.color` | Documented |
+| `opacity` | Alpha 0–255; **not** bulk light transmission | `Color.create(r,g,b,opacity)` → `Appearance.color` | Documented |
+| `transmission` | Filamentra PBR light-transmission estimate 0–1; not measured visible-light transmittance | Three.js `MeshPhysicalMaterial.transmission` for Pages; Fusion adapter mapping TBD | Procedural estimate |
 | Color `hex` | Manufacturer swatch, measured or estimated sRGB | RGB via `Appearance.color`; slot depends on surface type | Documented |
 | `textures.base_color` | Optional source/locally generated albedo texture | `Appearance.colorTexture` | Documented |
 | `textures.normal_gl` | OpenGL tangent-space normal map | `Appearance.normalTexture` | Documented |
 | `textures.roughness` | Grayscale microfacet-roughness map | `Appearance.roughnessTexture` | Documented |
 | `textures.tile_width_mm`, `tile_height_mm` | Intended real-world texture scale | `texture_RealWorldScaleX/Y` via `appearanceProperties` | Requires in-Fusion unit test |
 | `ior` | Transparent volume refractive index | `appearanceProperties.itemById('transparent_ior')` | Documented property ID; adapter must check type/availability |
-| `attenuation_distance_mm` | Length controlling transparent color attenuation | `appearanceProperties.itemById('transparent_distance')` | Documented property ID; **API unit conversion must be measured in Fusion** |
+| `attenuation_distance_mm` | Estimate of light-absorption length in millimetres; used together with `transmission` and tint | Three.js `attenuationDistance` via specimen scale; Fusion `appearanceProperties.itemById('transparent_distance')` | Approximation; Fusion unit conversion needs verification |
 
 Autodesk references: [Appearances.add](https://help.autodesk.com/cloudhelp/ENU/Fusion-360-API/files/core_Appearances_add.htm), [Appearance](https://help.autodesk.com/cloudhelp/ENU/Fusion-360-API/files/core_Appearance.htm), [AppearanceSurfaceTypes](https://help.autodesk.com/cloudhelp/ENU/Fusion-360-API/files/core_AppearanceSurfaceTypes.htm).
 
@@ -90,7 +91,7 @@ Autodesk references: [Appearances.add](https://help.autodesk.com/cloudhelp/ENU/F
 ## Choosing the right surface model
 
 - **Opaque dielectric**: PLA Matte, PLA Basic, most PETG/ABS/ASA, standard silk and fiber-filled plastic. Even metallic-colored or silk filaments remain **dielectrics** unless a calibrated rendering experiment justifies a different shader. Do not select `metallic` solely from a product name.
-- **Transparent volume**: truly clear/tinted products with through-volume transmission. Use `transparent` plus `ior` and `attenuation_distance_mm` only after validating the unit semantics. A `Color` alpha less than 255 on opaque appearance is a different rendering effect.
+- **Transparent volume**: truly clear/tinted products with through-volume transmission. Use `transparent`, `transmission` (0–1), `ior` and `attenuation_distance_mm`. The latter three are initially **Filamentra estimates**, not measured optical properties. A manufacturer RGBA swatch alpha is a display value, not a transmission coefficient. A `Color` alpha less than 255 on opaque appearance is a different rendering effect.
 - **Metallic surface**: metal-like optical behavior, only if actually justified; not a default for shiny plastic.
 - **Carbon/glass fiber, glitter, marble, layer lines**: require properly licensed or procedurally generated maps, calibrated in real-world scale. Roughness alone cannot create flakes, fibers or printed ridges.
 

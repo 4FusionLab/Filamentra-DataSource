@@ -10,7 +10,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-from generate_material_previews import IMAGE_SIZE, make_thumbnail, numeric_color, prepare_specimen, preview_path
+from generate_material_previews import (IMAGE_SIZE, make_thumbnail, numeric_color,
+                                        prepare_specimen, preview_path, preview_tint,
+                                        resolve_appearance)
 
 
 class MaterialPreviewTests(unittest.TestCase):
@@ -23,6 +25,38 @@ class MaterialPreviewTests(unittest.TestCase):
         self.assertIsNone(numeric_color({"color_mode": "gradient", "rgba_swatches": ["#445566FF"]}))
         self.assertIsNone(numeric_color({"rgba_swatches": ["#00112200"]}))
         self.assertIsNone(numeric_color({"rgba_swatches": ["#112233FF", "#334455FF"]}))
+
+    def test_transparent_clear_without_inventing_hex(self):
+        clear = {"id": "clear", "rgba_swatches": ["#00000000"], "color_mode": "solid"}
+        base = {"surface_type": "transparent", "roughness": 0.20, "transmission": 0.68}
+        override = {"transmission": 0.94, "attenuation_distance_mm": 75}
+        appearance = resolve_appearance(base, None, override)
+        self.assertEqual(appearance["transmission"], 0.94)
+        self.assertIsNone(numeric_color(clear))
+        self.assertEqual(preview_tint(clear, appearance), "#F6F9F7")
+        self.assertIsNone(preview_tint(clear, {"surface_type": "opaque"}))
+        with self.assertRaises(ValueError):
+            resolve_appearance({"surface_type": "opaque"}, None, {"transmission": 0.5})
+
+    def test_transparency_and_thickness_change_render(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            normal, rough = root / "normal.png", root / "rough.png"
+            Image.new("RGB", (64, 64), (128, 128, 255)).save(normal)
+            Image.new("L", (64, 64), 190).save(rough)
+            surface = prepare_specimen(normal, rough)
+            solid = make_thumbnail("#F6F9F7", surface, {"transmission": 0})
+            tinted = make_thumbnail("#F6F9F7", surface, {"transmission": 0.49, "attenuation_distance_mm": 7.5})
+            clear = make_thumbnail("#F6F9F7", surface, {"transmission": 0.94, "attenuation_distance_mm": 75})
+            # At the reference bar centre, more transparent specimens reveal more detail.
+            x, y = 106, 96
+            opaque_brightness = sum(solid.getpixel((x, y)))
+            tinted_brightness = sum(tinted.getpixel((x, y)))
+            clear_brightness = sum(clear.getpixel((x, y)))
+            self.assertGreater(abs(clear_brightness - sum(clear.getpixel((135, y)))), 70)
+            self.assertNotEqual(solid.tobytes(), tinted.tobytes())
+            self.assertNotEqual(tinted.tobytes(), clear.tobytes())
+            self.assertGreater(abs(clear_brightness - opaque_brightness), 25)
 
     def test_safe_paths(self):
         self.assertEqual(preview_path("bambu-lab/pla-matte", "ash-gray"),
