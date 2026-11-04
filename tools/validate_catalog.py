@@ -116,6 +116,24 @@ def main() -> int:
                         color_codes.add(code)
                     if color.get("hex_source") == "manufacturer" and not color.get("source_url"):
                         errors.append(f"{rel}: manufacturer HEX without source URL: {full_id}")
+                    visual_status = color.get("visual_data_status")
+                    has_hex = "hex" in color
+                    swatches = color.get("rgba_swatches") or []
+                    mode = color.get("color_mode")
+                    if visual_status == "name_only" and (has_hex or swatches):
+                        errors.append(f"{rel}: name_only color has numeric swatch: {full_id}")
+                    if visual_status == "manufacturer_swatch" and not (has_hex or swatches):
+                        errors.append(f"{rel}: manufacturer_swatch color missing numeric swatch: {full_id}")
+                    if visual_status == "manufacturer_swatch" and color.get("hex_source") in ("estimated", "measured"):
+                        errors.append(f"{rel}: claimed manufacturer swatch has incompatible HEX provenance: {full_id}")
+                    if visual_status in ("estimated", "measured") and has_hex and color.get("hex_source") != visual_status:
+                        errors.append(f"{rel}: visual status disagrees with HEX source: {full_id}")
+                    if mode == "solid" and len(swatches) > 1:
+                        errors.append(f"{rel}: solid shade has several RGBA swatches: {full_id}")
+                    if mode in ("gradient", "multicolor") and has_hex:
+                        errors.append(f"{rel}: multicolor shade must not be reduced to one primary HEX: {full_id}")
+                    if len(swatches) == 1 and has_hex and swatches[0][:7].upper() != color["hex"].upper():
+                        errors.append(f"{rel}: HEX disagrees with manufacturer RGBA swatch: {full_id}")
             except Exception as exc:
                 errors.append(f"{path}: cannot parse/validate line: {exc}")
 
