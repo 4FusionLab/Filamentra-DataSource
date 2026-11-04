@@ -43,8 +43,10 @@ The build script needs only the Python standard library and copies `demo/index.h
 
 - Manufacturer, PLA/PETG, and product-line filters.
 - Full-text search by color name, product line, manufacturer, manufacturer code, and HEX.
-- Manufacturer color chips, RGBA swatches, multicolor/gradient approximations.
-- Name-only placeholders when no reliable numeric color is available.
+- Manufacturer RGBA/HEX swatches, documented physical-print measurements, and multicolor/gradient approximations.
+- Curated source-backed colors shown by default. Toggle estimated HEX references or disable the swatch-only filter to see incomplete research entries.
+- Distinct links for manufacturer source, independent sample measurement and approximate color reference.
+- Name-only placeholders when no numeric color is available.
 - Detail panel for origin references, manufacturer color codes, and estimated surface roughness.
 - Mobile-compatible layout and responsive swatch grid.
 
