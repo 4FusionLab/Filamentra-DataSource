@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "sparkle-polymer",
+  "name": "Sparkle polymer",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.38,
+    "opacity": 255
+  },
+  "notes": "Only a base approximation. Real glitter needs properly licensed/generated normal and color texture maps."
+}
