@@ -4,6 +4,22 @@
 
 **После предыдущей партии:** 119 записей без цвета. **Дополнено в этой партии:** 6 точных вариантов KINGROON PLA+ числовыми экранными референсами Layer Lookup (только `estimated`, не официальный HEX). **Остаётся:** 113.
 
+## Проверка артикулов для поиска цветовых референсов
+
+У семи записей без числового цвета теперь есть подтверждённый SKU от дистрибьютора 3DJake (1 кг, 1,75 мм). **Цветового HEX у них по-прежнему нет**. SKU поможет искать конкретный образец вместо подстановки «похожего цвета» из другой линейки.
+
+| Линейка | Цвет | SKU |
+| --- | --- | --- |
+| KINGROON PLA Basic | Cyan | `KR-PLA719Y-1CH` |
+| KINGROON PLA Basic | Apple Green | `KR-PLA718Y-1CH` |
+| KINGROON PLA Basic | Turquoise Green | `KR-PLA720Y-1CH` |
+| KINGROON PETG Basic | Sky Blue | `NPETG002` |
+| KINGROON PETG Basic | Pink | `NPETG004` |
+| KINGROON PETG Basic | Skin | `NPETG005` |
+| KINGROON PETG Basic | Metallic Silver | `NPETG008` |
+
+Точные URL источников и сознательно отклонённые сомнительные цветовые совпадения: [манифест SKU](../catalog/sources/2026-11-04-kingroon-sku-verification.json). Воспроизводимый [скрипт аудита](../tools/audit_missing_colors.py) показывает подтверждённые SKU отдельно от наличия числового цвета.
+
 ## Разбивка по производителям
 
 | Производитель | Без цвета | Причина |
