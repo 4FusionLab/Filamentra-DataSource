@@ -29,9 +29,16 @@ jobs:
       - name: Validate all catalog entries
         run: python tools/validate_catalog.py
       - name: Check browser JavaScript syntax
-        run: node --check demo/app.js
+        run: |
+          node --check demo/app.js
+          node --check demo/material-viewer.js
       - name: Build snapshot from current main
         run: python tools/build_demo.py --out dist
+      - name: Build self-hosted WebGL viewer
+        run: |
+          npm install --no-audit --no-fund --package-lock=false
+          npm run build:viewer
+          test -s dist/assets/material-viewer.js
       - name: Verify built snapshot
         run: |
           python - <<'PY'
@@ -46,6 +53,10 @@ jobs:
           assert (root / "index.html").exists()
           assert (root / "assets/app.js").exists()
           assert (root / "assets/app.css").exists()
+          assert (root / "assets/material-viewer.js").stat().st_size > 50000
+          previews = [c["preview_image"] for line in doc["lines"] for c in line["colors"] if "preview_image" in c]
+          assert len(previews) == counts["material_previews"] and len(previews) > 200
+          assert all((root / file).is_file() for file in previews)
           assert (root / "textures.html").exists()
           textures = json.loads((root / "data/textures.json").read_text(encoding="utf-8"))["items"]
           assert len(textures) == 18

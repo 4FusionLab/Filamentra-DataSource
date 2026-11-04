@@ -8,6 +8,9 @@ import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
+from generate_material_previews import build_material_previews, numeric_color, preview_path
+from generate_texture_maps import build_textures
+
 from generate_texture_maps import build_textures
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,7 +18,7 @@ BRANDS = ROOT / "catalog" / "brands"
 DEMO = ROOT / "demo"
 
 
-def public_color(color: dict) -> dict:
+def public_color(color: dict, line_id: str, preset_id: str | None) -> dict:
     swatches = color.get("rgba_swatches") or []
     hexadecimal = color.get("hex")
     status = color.get("visual_data_status") or (
@@ -29,6 +32,8 @@ def public_color(color: dict) -> dict:
               "appearance", "appearance_sources")
     result = {key: color[key] for key in fields if key in color}
     result["visual_data_status"] = status
+    if preset_id and numeric_color(result):
+        result["preview_image"] = preview_path(line_id, result["id"])
     return result
 
 
@@ -65,7 +70,8 @@ def make_catalog() -> dict:
                 "appearance_preset": line.get("appearance_preset"),
                 "source_url": line.get("source_url"),
                 "catalog_status": line.get("catalog_status", "unknown"),
-                "colors": [public_color(c) for c in line["colors"]],
+                "appearance": line.get("appearance", {}),
+                "colors": [public_color(c, line["id"], line.get("appearance_preset")) for c in line["colors"]],
             })
 
     # Research-only manufacturers are not shown until a numeric color-bearing line exists.
@@ -120,12 +126,14 @@ def main() -> None:
     shutil.copy2(DEMO / "index.html", destination / "index.html")
     shutil.copy2(DEMO / "app.css", destination / "assets" / "app.css")
     shutil.copy2(DEMO / "app.js", destination / "assets" / "app.js")
+    build_textures(destination)
+    preview_count = build_material_previews(payload, destination)
+    payload["meta"]["counts"]["material_previews"] = preview_count
     (destination / "data" / "catalog.json").write_text(
         json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
     )
     (destination / ".nojekyll").write_text("", encoding="utf-8")
-    build_textures(destination)
     print("Filamentra demo:", payload["meta"]["counts"], "->", destination)
 
 
