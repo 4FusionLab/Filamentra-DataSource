@@ -5,11 +5,15 @@ on:
     paths:
       - "catalog/**"
       - "tools/validate_catalog.py"
+      - "tools/build_demo.py"
+      - "demo/**"
       - ".github/workflows/validate.yml"
   pull_request:
     paths:
       - "catalog/**"
       - "tools/validate_catalog.py"
+      - "tools/build_demo.py"
+      - "demo/**"
       - ".github/workflows/validate.yml"
   workflow_dispatch:
 
@@ -28,3 +32,17 @@ jobs:
         run: python -m pip install 'jsonschema>=4.21,<5'
       - name: Validate sources, references, IDs and schemas
         run: python tools/validate_catalog.py
+      - name: Smoke-test preview build without deploying Pages
+        run: |
+          python tools/build_demo.py --out dist
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          doc = json.loads(Path("dist/data/catalog.json").read_text(encoding="utf-8"))
+          c = doc["meta"]["counts"]
+          assert c["manufacturer_swatch"] == 515, c
+          assert c["measured_samples"] >= 6, c
+          assert c["curated_preview"] <= c["colors"], c
+          assert c["curated_preview"] + c["estimated"] + c["name_only"] == c["colors"], c
+          print("Preview quality gate passed:", c)
+          PY
