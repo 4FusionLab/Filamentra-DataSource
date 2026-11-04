@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Additional manufacturer-published optical color swatches for SUNLU and eSUN",
+  "lines": [
+    {
+      "id": "sunlu/pla-matte",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "colors": 16
+    },
+    {
+      "id": "sunlu/silk-pla-plus",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "colors": 16
+    },
+    {
+      "id": "sunlu/silk-pla-plus-2-0",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "colors": 16
+    },
+    {
+      "id": "sunlu/high-speed-matte-pla",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "colors": 15
+    },
+    {
+      "id": "sunlu/petg-2-0",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "colors": 7
+    },
+    {
+      "id": "esun/pla-hs",
+      "source_url": "https://www.esun3d.com/epla-hs-product",
+      "colors": 7
+    }
+  ],
+  "method": "Transcribed manufacturer-published Color Code tables / Available Colors section. No measurement of printed objects implied.",
+  "notice": "Surface roughness and optical transmission are not manufacturer measured; assigned visual profiles are uncalibrated Filamentra estimates."
+}

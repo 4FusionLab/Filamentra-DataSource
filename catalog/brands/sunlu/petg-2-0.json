@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "sunlu/petg-2-0",
+  "brand": "sunlu",
+  "name": "PETG2.0",
+  "polymer": "PETG",
+  "finish": "matte",
+  "source_url": "https://www.sunlu.com/products/PETG2.0",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-matte",
+  "colors": [
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#75787B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "hex": "#F0E0D6",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#5A6D3D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "hex": "#00A3E0",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lavender-purple",
+      "name": "Lavender Purple",
+      "hex": "#685BC7",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sunny-orange",
+      "name": "Sunny Orange",
+      "hex": "#ED7334",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/PETG2.0",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

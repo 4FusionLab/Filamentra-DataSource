@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "sunlu/pla-matte",
+  "brand": "sunlu",
+  "name": "PLA Matte",
+  "polymer": "PLA",
+  "finish": "matte",
+  "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#75787B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#000000",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#BC2726",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#FFF13F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#1DAA27",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#E684B4",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "bone-white",
+      "name": "Bone White",
+      "hex": "#EEE7D4",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "oak",
+      "name": "Oak",
+      "hex": "#C2B29A",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "hex": "#978F81",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sunny-orange",
+      "name": "Sunny Orange",
+      "hex": "#ED7334",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sprout-green",
+      "name": "Sprout Green",
+      "hex": "#DDF650",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#5A6D3D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "ocean-blue",
+      "name": "Ocean Blue",
+      "hex": "#A6D4E8",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "klein-blue",
+      "name": "Klein Blue",
+      "hex": "#1729AB",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lavender-purple",
+      "name": "Lavender Purple",
+      "hex": "#685BC7",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/pla-matte-filament",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

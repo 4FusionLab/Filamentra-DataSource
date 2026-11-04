@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "sunlu/high-speed-matte-pla",
+  "brand": "sunlu",
+  "name": "High Speed Matte PLA",
+  "polymer": "PLA",
+  "finish": "matte",
+  "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "cherry-red",
+      "name": "Cherry Red",
+      "hex": "#FD404B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#FFFFF9",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#63666A",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#1F2123",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sunny-orange",
+      "name": "Sunny Orange",
+      "hex": "#FF8C54",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lemon-yellow",
+      "name": "Lemon Yellow",
+      "hex": "#F2F0A1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#5A6D3D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mint-green",
+      "name": "Mint Green",
+      "hex": "#00C7B1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sky-blue",
+      "name": "Sky Blue",
+      "hex": "#AEEAFF",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sakura-pink",
+      "name": "Sakura Pink",
+      "hex": "#FFE0E8",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "chocolate",
+      "name": "Chocolate",
+      "hex": "#906557",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pri-magenta",
+      "name": "Pri-Magenta",
+      "hex": "#D5419E",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pri-white",
+      "name": "Pri-White",
+      "hex": "#F9FDFF",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pri-yellow",
+      "name": "Pri-Yellow",
+      "hex": "#F0EA02",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pri-cyan",
+      "name": "Pri-Cyan",
+      "hex": "#00A4E1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/high-speed-matte-pla-filament",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

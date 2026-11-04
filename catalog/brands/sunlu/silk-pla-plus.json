@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "sunlu/silk-pla-plus",
+  "brand": "sunlu",
+  "name": "Silk PLA+",
+  "polymer": "PLA",
+  "finish": "silk",
+  "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-silk",
+  "colors": [
+    {
+      "id": "light-gold",
+      "name": "Light Gold",
+      "hex": "#F1BE48",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#FFFFF9",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#7F95A5",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#1D1C1B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#E13E52",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF7F32",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#F7DE02",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#04C7B1",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#00AAEA",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FFC2D8",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "hex": "#91A2C0",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brass",
+      "name": "Brass",
+      "hex": "#FFAE11",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red-copper",
+      "name": "Red Copper",
+      "hex": "#A45E49",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "hex": "#779E7C",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "candy-dandy",
+      "name": "Candy Dandy",
+      "hex": "#FB637E",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black-jade",
+      "name": "Black Jade",
+      "hex": "#3D493E",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/silk-pla-plus-filament",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

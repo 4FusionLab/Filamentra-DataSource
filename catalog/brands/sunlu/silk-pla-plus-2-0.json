@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "sunlu/silk-pla-plus-2-0",
+  "brand": "sunlu",
+  "name": "Silk PLA+2.0",
+  "polymer": "PLA",
+  "finish": "silk",
+  "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-silk-plus",
+  "colors": [
+    {
+      "id": "violet",
+      "name": "Violet",
+      "hex": "#753BBD",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#000000",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "copper-red",
+      "name": "Copper Red",
+      "hex": "#A55F49",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "hex": "#919CAC",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "titanium-steel",
+      "name": "Titanium Steel",
+      "hex": "#8C8B89",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-gilded-gold",
+      "name": "Light Gilded Gold",
+      "hex": "#AC906A",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "hex": "#F1BE48",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "metallic-green",
+      "name": "Metallic Green",
+      "hex": "#679A6F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glossy-lake-cyan",
+      "name": "Glossy Lake Cyan",
+      "hex": "#009CA6",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "shiny-blue",
+      "name": "Shiny Blue",
+      "hex": "#0072CE",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "vivid-rose",
+      "name": "Vivid Rose",
+      "hex": "#E31C79",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "luxury-bright-red",
+      "name": "Luxury Bright Red",
+      "hex": "#D6001C",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "satin-glow-orange",
+      "name": "Satin Glow Orange",
+      "hex": "#FF6720",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "soft-satin-pink",
+      "name": "Soft Satin Pink",
+      "hex": "#F8B5C4",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "streamer-blue",
+      "name": "Streamer Blue",
+      "hex": "#A7C6ED",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.sunlu.com/products/Silk%20PLA%2B2.0",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}
