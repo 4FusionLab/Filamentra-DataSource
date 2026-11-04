@@ -128,6 +128,13 @@ def main() -> int:
                         errors.append(f"{rel}: claimed manufacturer swatch has incompatible HEX provenance: {full_id}")
                     if visual_status in ("estimated", "measured") and has_hex and color.get("hex_source") != visual_status:
                         errors.append(f"{rel}: visual status disagrees with HEX source: {full_id}")
+                    if color.get("hex_source") == "estimated":
+                        if visual_status != "estimated":
+                            errors.append(f"{rel}: estimated HEX must have visual_data_status=estimated: {full_id}")
+                        if not color.get("color_reference_url") or not color.get("color_reference_note"):
+                            errors.append(f"{rel}: estimated HEX is missing independent source/provenance: {full_id}")
+                        if color.get("color_reference_url") == color.get("source_url"):
+                            errors.append(f"{rel}: third-party estimate URL cannot masquerade as manufacturer source: {full_id}")
                     if mode == "solid" and len(swatches) > 1:
                         errors.append(f"{rel}: solid shade has several RGBA swatches: {full_id}")
                     if mode in ("gradient", "multicolor") and has_hex:
