@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "id": "eryone/petg",
+  "brand": "eryone",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://eryone3d.com/products/petg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#3A4045",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gray",
+      "name": "Gray",
+      "hex": "#5B605E",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#F0EFF2",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "trans-red",
+      "name": "TRANS Red",
+      "hex": "#93343B",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent finish proxy based on manufacturer naming; true volume scattering and attenuation unmeasured."
+        }
+      }
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#D71B14",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FFA60E",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#0690F5",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#F8E449",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "transparent",
+      "name": "Transparent",
+      "hex": "#DBDADF",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent finish proxy based on manufacturer naming; true volume scattering and attenuation unmeasured."
+        }
+      }
+    },
+    {
+      "id": "trans-blue",
+      "name": "TRANS Blue",
+      "hex": "#024892",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/petg",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Transparent finish proxy based on manufacturer naming; true volume scattering and attenuation unmeasured."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "id": "eryone/pla-plus",
+  "brand": "eryone",
+  "name": "PLA+",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://eryone3d.com/products/pla",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#161616",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "army-green",
+      "name": "Army Green",
+      "hex": "#5D644D",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#0762D3",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#E7E5E3",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#EC0C0D",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gray",
+      "name": "Gray",
+      "hex": "#505050",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#018F42",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cool-white",
+      "name": "Cool White",
+      "hex": "#EFE2DF",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "ivory-white",
+      "name": "Ivory White",
+      "hex": "#E8DDD5",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#909779",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "skin",
+      "name": "Skin",
+      "hex": "#FFBF9A",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#FDE63E",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF7832",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+      "color_reference_note": "Оценочный оттенок независимого FilamentSelect; не опубликованный производителем HEX. Цветовые названия проверены в магазине ERYONE.",
+      "source_url": "https://eryone3d.com/products/pla",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

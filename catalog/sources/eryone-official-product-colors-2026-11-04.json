@@ -1,0 +1,32 @@
+{
+  "manufacturer": "ERYONE",
+  "verified_on": "2026-11-04",
+  "official_sources": [
+    {
+      "line": "eryone/pla-plus",
+      "url": "https://eryone3d.com/products/pla",
+      "color_options": 13
+    },
+    {
+      "line": "eryone/petg",
+      "url": "https://eryone3d.com/products/petg",
+      "color_options": 10
+    },
+    {
+      "line": "eryone/petg-cf",
+      "url": "https://eryone3d.com/products/petg",
+      "color_options": 7
+    }
+  ],
+  "independent_color_references": [
+    "https://www.filamentselect.com/filaments?brands=eryone&materials=PLA%2B",
+    "https://www.filamentselect.com/filaments?brands=eryone&materials=PETG",
+    "https://www.filamentselect.com/brands/eryone"
+  ],
+  "notes": [
+    "Manufacturers verify color names and product variants on official product page, not the numeric HEX.",
+    "All RGB estimates are sourced from external FilamentSelect and tagged estimated. No manufacturer HEX has been claimed.",
+    "PETG Carbon Fiber is modeled as separate line even though ERYONE storefront combines products in one listing.",
+    "Translucent PETG shader is an uncalibrated optical approximation."
+  ]
+}
