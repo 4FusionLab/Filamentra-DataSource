@@ -14,14 +14,22 @@
       "name": "Very Peri",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#6768D2",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "white",
       "name": "White",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#E7E6DE",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "black",
@@ -42,77 +50,121 @@
       "name": "Red",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#C63D44",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "blue",
       "name": "Blue",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#0087BE",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "green",
       "name": "Green",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#40C04D",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "skin",
       "name": "Skin",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#EDCDB1",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "orange",
       "name": "Orange",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#FD9639",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "brown",
       "name": "Brown",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#9F523F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "yellow",
       "name": "Yellow",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#FFE044",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "purple",
       "name": "Purple",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#A91EAB",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "peach-fuzz",
       "name": "Peach Fuzz",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#FFCBB7",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "viva-magenta",
       "name": "Viva Magenta",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#F26D97",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "gold",
       "name": "Gold",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#DAB255",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     }
   ]
 }

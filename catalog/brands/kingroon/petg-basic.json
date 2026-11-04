@@ -14,42 +14,66 @@
       "name": "Black",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#000000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "white",
       "name": "White",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#F5F5F5",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "gray",
       "name": "Gray",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#808080",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "red",
       "name": "Red",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#EC0000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "blue",
       "name": "Blue",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#0353BA",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "yellow",
       "name": "Yellow",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#F8CC00",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "sky-blue",
@@ -63,21 +87,33 @@
       "name": "Green",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#62E480",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "orange",
       "name": "Orange",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#FFB031",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "silver",
       "name": "Silver",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#949597",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "pink",
@@ -98,7 +134,7 @@
       "name": "Transparent",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "appearance": {
         "surface_type": "transparent"
       },
@@ -107,7 +143,11 @@
           "kind": "filamentra_estimate",
           "notes": "Named transparent by manufacturer; optical attenuation and accurate tint are not provided."
         }
-      }
+      },
+      "hex": "#D9D8DE",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "grass-green",

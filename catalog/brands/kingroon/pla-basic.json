@@ -12,84 +12,128 @@
     {
       "id": "white",
       "name": "White",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "orange",
       "name": "Orange",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FFB031",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#000000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "gray",
       "name": "Gray",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#9C9D9D",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "red",
       "name": "Red",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#C01616",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "blue",
       "name": "Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#0353BA",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "skin",
       "name": "Skin",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#F3CEA6",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "pink",
       "name": "Pink",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#F09BB5",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "silver",
       "name": "Silver",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#6F727E",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "yellow",
       "name": "Yellow",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#E2FF4D",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "purple",
       "name": "Purple",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#BE2ED6",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "transparent",
       "name": "Transparent",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
       "verified_on": "2026-11-04",
       "appearance": {
@@ -100,21 +144,33 @@
           "kind": "filamentra_estimate",
           "notes": "Manufacturer labels transparent shade; actual tint, IOR, and transmission are unknown."
         }
-      }
+      },
+      "hex": "#F5F5F5",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "green",
       "name": "Green",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#5AEB90",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "brown",
       "name": "Brown",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://kingroon.com/products/kingroon-pla-basic",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#E5B7A0",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=kingroon&materials=PLA",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "cyan",

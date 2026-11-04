@@ -14,36 +14,48 @@
       "name": "Red",
       "source_url": "https://vip.creality.com/en/goods-detail/1786",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "variants": [
         {
           "sku": "3301030038"
         }
-      ]
+      ],
+      "hex": "#C01616",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "black",
       "name": "Black",
       "source_url": "https://vip.creality.com/en/goods-detail/1786",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "variants": [
         {
           "sku": "3301030035"
         }
-      ]
+      ],
+      "hex": "#414142",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "blue",
       "name": "Blue",
       "source_url": "https://vip.creality.com/en/goods-detail/1786",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "variants": [
         {
           "sku": "3301030032"
         }
-      ]
+      ],
+      "hex": "#0353BA",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "yellow",
@@ -62,19 +74,23 @@
       "name": "White",
       "source_url": "https://vip.creality.com/en/goods-detail/1786",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "variants": [
         {
           "sku": "3301030034"
         }
-      ]
+      ],
+      "hex": "#E3E5E1",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "transparent",
       "name": "Transparent",
       "source_url": "https://vip.creality.com/en/goods-detail/1786",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "appearance": {
         "surface_type": "transparent"
       },
@@ -88,7 +104,11 @@
         {
           "sku": "3301030037"
         }
-      ]
+      ],
+      "hex": "#E4E7E5",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "transparent-blue",

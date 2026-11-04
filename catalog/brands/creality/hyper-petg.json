@@ -14,28 +14,40 @@
       "name": "Black",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#030304",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "white",
       "name": "White",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#EAE5E3",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "grey",
       "name": "Grey",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#C9C6BE",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "transparent",
       "name": "Transparent",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "appearance": {
         "surface_type": "transparent"
       },
@@ -44,35 +56,55 @@
           "kind": "filamentra_estimate",
           "notes": "Manufacturer identifies this color as transparent; optical tint/attenuation still unmeasured."
         }
-      }
+      },
+      "hex": "#DCD6D3",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "red",
       "name": "Red",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#E70A10",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "yellow",
       "name": "Yellow",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#FDEB64",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "green",
       "name": "Green",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#52A66E",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     },
     {
       "id": "blue",
       "name": "Blue",
       "source_url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "estimated",
+      "hex": "#09176E",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PETG",
+      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
     }
   ]
 }
