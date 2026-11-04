@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-matte",
+  "name": "Matte PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.86,
+    "opacity": 255
+  },
+  "notes": "Broad diffuse highlights. Baseline only, not a measured Bambu Lab value."
+}
