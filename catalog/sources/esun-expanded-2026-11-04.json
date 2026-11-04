@@ -1,0 +1,34 @@
+{
+  "manufacturer": "eSUN",
+  "checked_on": "2026-11-04",
+  "product_lines": [
+    {
+      "id": "esun/pla",
+      "colors": 12
+    },
+    {
+      "id": "esun/pla-matte",
+      "colors": 18
+    },
+    {
+      "id": "esun/pla-silk",
+      "colors": 16
+    },
+    {
+      "id": "esun/pla-matte-dual",
+      "colors": 7
+    }
+  ],
+  "manufacturer_page_urls": [
+    "https://www.esun3d.com/pla-product",
+    "https://www.esun3d.com/epla-matte-product",
+    "https://www.esun3d.com/esilk-pla-product",
+    "https://www.esun3d.com/epla-matte-dual-product"
+  ],
+  "method": "Manufacturer official 'Available Colors' sections with exact RGB HEX. For dual-color, pairs are preserved as two RGBA swatches with 0xFF alpha.",
+  "notes": [
+    "Dual-color appearance needs directional/multicolor geometry; a two-color set is not a physically complete Fusion appearance.",
+    "No reflective-roughness measurements were available; silk/matte presets remain explicit estimates.",
+    "PLA-Silk Rainbow products excluded from this batch to avoid collapsing complex spool gradient into one HEX."
+  ]
+}

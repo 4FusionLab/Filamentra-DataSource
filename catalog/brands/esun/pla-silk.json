@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "esun/pla-silk",
+  "brand": "esun",
+  "name": "PLA-Silk",
+  "polymer": "PLA",
+  "finish": "silk",
+  "source_url": "https://www.esun3d.com/esilk-pla-product",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-silk",
+  "colors": [
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF821B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FF7F6F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#272729",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "hex": "#B40200",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "hex": "#68676C",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#E3E4D4",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "aqua",
+      "name": "Aqua",
+      "hex": "#6BBFE3",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#01378D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "hex": "#EDA10F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hex": "#1B2D39",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#606783",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "hex": "#793EB6",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "hex": "#AA3D16",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rose-gold",
+      "name": "Rose Gold",
+      "hex": "#EC896C",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "hex": "#0077CB",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "hex": "#9C957B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/esilk-pla-product",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

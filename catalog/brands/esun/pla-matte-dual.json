@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "esun/pla-matte-dual",
+  "brand": "esun",
+  "name": "PLA-Matte Dual",
+  "polymer": "PLA",
+  "finish": "matte",
+  "effects": [
+    "dual-color"
+  ],
+  "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "black-red",
+      "name": "Black Red",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#3D3D3FFF",
+        "#EC4235FF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red-blue",
+      "name": "Red Blue",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#B93C44FF",
+        "#526BE2FF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green-pink",
+      "name": "Green Pink",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#7DD274FF",
+        "#D556BDFF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green-purple",
+      "name": "Green Purple",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#81DA7EFF",
+        "#423270FF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red-yellow",
+      "name": "Red Yellow",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#F9634AFF",
+        "#FE8F64FF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue-purple",
+      "name": "Blue Purple",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#5F71F1FF",
+        "#C683D0FF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black-white",
+      "name": "Black White",
+      "color_mode": "multicolor",
+      "rgba_swatches": [
+        "#292A2CFF",
+        "#DADAE2FF"
+      ],
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-dual-product",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

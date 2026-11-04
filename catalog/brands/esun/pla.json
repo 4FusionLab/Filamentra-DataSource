@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "esun/pla",
+  "brand": "esun",
+  "name": "PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://www.esun3d.com/pla-product",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hex": "#FF821B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pine-green",
+      "name": "Pine Green",
+      "hex": "#43634E",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hex": "#FF7F6F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#272729",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "hex": "#68676C",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "hex": "#F6F6F6",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hex": "#FFFC01",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hex": "#01378D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cold-white",
+      "name": "Cold White",
+      "hex": "#DBD6DC",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "fire-engine-red",
+      "name": "Fire Engine Red",
+      "hex": "#BB2028",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "hex": "#606783",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "peacock-blue",
+      "name": "Peacock Blue",
+      "hex": "#006980",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/pla-product",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

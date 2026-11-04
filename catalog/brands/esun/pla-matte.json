@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "id": "esun/pla-matte",
+  "brand": "esun",
+  "name": "PLA-Matte",
+  "polymer": "PLA",
+  "finish": "matte",
+  "source_url": "https://www.esun3d.com/epla-matte-product",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "milky-white",
+      "name": "Milky White",
+      "hex": "#C9C9C9",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mint-green",
+      "name": "Mint Green",
+      "hex": "#69C296",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "hex": "#1B1F11",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "peach-pink",
+      "name": "Peach Pink",
+      "hex": "#EEB9B3",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "hex": "#272729",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "almond-yellow",
+      "name": "Almond Yellow",
+      "hex": "#E9E199",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "aqua",
+      "name": "Aqua",
+      "hex": "#6BBFE3",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "fire-engine-red",
+      "name": "Fire Engine Red",
+      "hex": "#BB2028",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-blue",
+      "name": "Light Blue",
+      "hex": "#169BEA",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-khaki",
+      "name": "Light Khaki",
+      "hex": "#C6C0A8",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lilac",
+      "name": "Lilac",
+      "hex": "#C78DBF",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "matcha-green",
+      "name": "Matcha Green",
+      "hex": "#989F4F",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "concrete-grey",
+      "name": "Concrete Grey",
+      "hex": "#B7B7B5",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "strawberry-red",
+      "name": "Strawberry Red",
+      "hex": "#F18579",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "tangerine",
+      "name": "Tangerine",
+      "hex": "#CE4D0B",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "morandi-green",
+      "name": "Morandi Green",
+      "hex": "#0D353D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "morandi-purple",
+      "name": "Morandi Purple",
+      "hex": "#C17B7D",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-grey",
+      "name": "Dark Grey",
+      "hex": "#5F6366",
+      "hex_source": "manufacturer",
+      "visual_data_status": "manufacturer_swatch",
+      "source_url": "https://www.esun3d.com/epla-matte-product",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}
