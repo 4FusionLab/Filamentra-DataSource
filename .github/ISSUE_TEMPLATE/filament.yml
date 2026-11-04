@@ -1,0 +1,57 @@
+name: Suggest a filament
+description: Propose a real manufacturer, product line, or color for the Filamentra catalog
+title: "[Filament] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping build a source-backed catalog.
+        Please provide manufacturer references. Photos alone are not reliable color measurements.
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      description: Exact official brand name
+      placeholder: Manufacturer name
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Product line
+      description: Exact manufacturer name for the product family
+      placeholder: Product line name
+    validations:
+      required: true
+  - type: input
+    id: color
+    attributes:
+      label: Color name or variant
+      description: Leave blank when proposing an entire line
+      placeholder: Official color name
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      description: Manufacturer product or specification page
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: color_provenance
+    attributes:
+      label: Color reference
+      options:
+        - No HEX/RGB available
+        - Manufacturer-published HEX/RGB
+        - Measured color value
+        - Estimated visual value
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Material, finish, SKU, and other details
+      description: Include only verifiable facts; distinguish estimates and corrections
+    validations:
+      required: false
