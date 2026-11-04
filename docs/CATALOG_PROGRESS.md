@@ -49,6 +49,14 @@ Seven previously name-only KINGROON shades now have **exact manufacturer SKUs** 
 
 A retailer claiming Kingroon PETG Sky Blue `#45C4EF` was **rejected** as untraceable to a primary palette/profile or measured sample. A retail `Copper` SKU was **not** merged into `Metallic Copper` without verified alias mapping. The missing-color audit now reports which unresolved records have SKU evidence, so further research can target measured swatches instead of repeatedly confirming product existence.
 
+## ELEGOO PLA Basic / PLA Pro SKU verification — 2026-11-04
+
+**Nine additional name-only ELEGOO variants** are tied to exact manufacturer part numbers by line and color (PLA Basic: Cream Yellow, Dark Green, Deep Grey, Light Cyan, Olive Green; PLA Pro: Beige, Hot Pink, Neon Green, True Red). Each keeps a per-record 3DJake URL and a separate `sku_verified` evidence claim. See [verified SKU manifest](../catalog/sources/2026-11-04-elegoo-basic-pro-sku-verification.json).
+
+**No new HEX values were imported.** Neither the retailer pages nor the official color option names supply a defensible numeric shade for these exact line/color variants. Generic ELEGOO PLA / PLA Basic / PLA Plus screen swatches have intentionally **not** been reused for PLA Pro. ELEGOO remains at **59 unresolved**, and the entire catalog at **113 unresolved**. Including the earlier KINGROON batch, **16 previously unresolved shade identities now have exact SKU evidence**, enabling targeted photo/measurement research.
+
+The official ELEGOO PLA Basic site spells one variant `Megenta`; a similarly misspelled Bambu Lab CMYK product is not acceptable evidence for its identity or HEX. The ELEGOO record remains unresolved.
+
 ## Next Chinese import priorities
 
 1. **ERYONE:** expanded to PLA+, PETG, PETG-CF and full High Speed PLA color references. Next verify remaining standard/matte/Silk/Speed PLA and PETG products from its [official collection](https://eryone3d.com/collections/filament) and [download center](https://www.eryone.com/download-center/).
