@@ -1,15 +1,16 @@
-# Manufacturer catalog
+# Filamentra manufacturer catalog
 
-Add one directory per manufacturer using a stable lowercase kebab-case ID:
+One directory per manufacturer, containing one `brand.json` and one JSON file for each real product line.
 
 ```text
 brands/
-└── manufacturer-id/
+└── bambu-lab/
     ├── brand.json
-    ├── product-line-one.json
-    └── product-line-two.json
+    └── pla-matte.json
 ```
 
-A `brand.json` contains the manufacturer's ID, display name, and official website. Each product-line JSON contains its polymer, finish, sources, and `colors` array. Do not create a separate file per color or nest by polymer.
+The first source-backed entry is **Bambu Lab → PLA Matte**, containing 17 manufacturer-published color HEX values and codes from the [official product page](https://bambu-lab-global.myshopify.com/products/pla-matte).
 
-No manufacturer entries have been verified and published yet. Please start with the [catalog format](../../docs/CATALOG_FORMAT.md) and [contribution guide](../../CONTRIBUTING.md); do not insert invented example products into the production catalog.
+Each line refers to a baseline visual preset in `../presets/`. The line and individual colors may override preset parameters **when evidence is available**; manufacturer color data and Filamentra visual estimates are clearly separated. Do not create a separate color file, or treat an estimated roughness as an official manufacturer specification.
+
+See [catalog format](../../docs/CATALOG_FORMAT.md), [Fusion Appearance mapping](../../docs/MATERIAL_APPEARANCE_SPEC.md), and [contribution guide](../../CONTRIBUTING.md).
