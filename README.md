@@ -47,7 +47,7 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 ### Initial verified data
 
 - **Bambu Lab:** [24 lines / 246 PLA+PETG color variants](catalog/brands/bambu-lab/) from a pinned official [BambuStudio source revision](catalog/sources/bambu-lab.json), preserving multi-color swatches and manufacturer identifiers.
-- **Curated preview first:** **522** source-backed color candidates from manufacturer swatches or documented physical print measurements; **237** reference-only estimates and **143** name-only research records are excluded by default. Full source: **8 brands / 72 PLA+PETG lines / 902 variants**. [Quality policy](docs/VISUAL_DATA_QUALITY.md) · [Measured-color review](docs/MEASURED_COLOR_REVIEW.md) · [Coverage](docs/CATALOG_PROGRESS.md).
+- **Curated preview first:** **522** source-backed color candidates from manufacturer swatches or documented physical print measurements; **242** reference-only estimates and **138** name-only research records are excluded by default. Full source: **8 brands / 72 PLA+PETG lines / 902 variants**. [Quality policy](docs/VISUAL_DATA_QUALITY.md) · [Measured-color review](docs/MEASURED_COLOR_REVIEW.md) · [Coverage](docs/CATALOG_PROGRESS.md).
 - **Chinese brands:** eSUN, ERYONE, ELEGOO, DeepLee, Creality, KINGROON and SUNLU have source-backed records, but coverage and optical fidelity remain incomplete. Russian manufacturers follow the Chinese stage.
 - **Visual profiles:** [18 experimental surface presets](catalog/presets/), explicitly not measured optical manufacturer properties.
 - **Progress and priorities:** [catalog population status](docs/CATALOG_PROGRESS.md), including remaining Chinese lines and Russian brands.
@@ -59,7 +59,7 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 
 **[Filamentra Catalog Demo](https://4fusionlab.github.io/Filamentra-DataSource/)** — a searchable, responsive preview of PLA/PETG manufacturers, product lines, colors, and their data provenance. Colorful gradients are illustrative, not physically calibrated Fusion renderings.
 
-The site updates **only when the [manual GitHub Actions workflow](.github/workflows/publish-demo.yml) is run** — not on every commit. The first GitHub Pages deployment **succeeded on November 4, 2026** ([workflow run](https://github.com/4FusionLab/Filamentra-DataSource/actions/runs/41860887983)). Future publishing remains manual-only: [how to rebuild the preview](docs/DEMO_PAGES.md).
+The site is built and deployed through [GitHub Actions](.github/workflows/publish-demo.yml) **automatically after catalog/demo changes on `main` pass validation**, or manually with **Run workflow**. The first deployment succeeded on November 4, 2026. [Deployment rules and local preview](docs/DEMO_PAGES.md).
 
 ## Catalog quality comes first
 

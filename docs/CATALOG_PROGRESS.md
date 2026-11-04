@@ -15,7 +15,7 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 | [Bambu Lab](../catalog/brands/bambu-lab/) | China | 24 | 246 | [Pinned official BambuStudio RGBA registry](../catalog/sources/bambu-lab.json), with multi-color variants |
 | [eSUN](../catalog/brands/esun/) | China | 7 | 139 | Official [original](../catalog/sources/esun.json), [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json), [expanded](../catalog/sources/esun-expanded-2026-11-04.json) color tables |
 | [ERYONE](../catalog/brands/eryone/) | China | 4 | 36 | 36 independent estimated HEX references; official PLA+/PETG/PETG-CF and High Speed PLA listings |
-| [ELEGOO](../catalog/brands/elegoo/) | China | 19 | 224 | Official [manufacturer product pages](../catalog/sources/elegoo-expanded-2026-11-04.json) and 147 independent estimated HEX references |
+| [ELEGOO](../catalog/brands/elegoo/) | China | 19 | 224 | Official [manufacturer product pages](../catalog/sources/elegoo-expanded-2026-11-04.json); five additional exact-variant estimated swatches (PLA-CF/Silk) documented in [backfill review](MISSING_COLOR_BACKFILL.md) |
 | [DeepLee](../catalog/brands/deeplee/) | China | 1 | 1 | Manufacturer name-only product record |
 | [Creality](../catalog/brands/creality/) | China | 5 | 39 | Official [product lines](../catalog/sources/creality-expanded-2026-11-04.json); 26 independent estimated HEX values |
 | [KINGROON](../catalog/brands/kingroon/) | China | 4 | 87 | Official [PLA and PETG lines](../catalog/sources/kingroon-pla-2026-11-04.json); 34 independent estimated HEX values |
@@ -30,7 +30,7 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 ## Visual fidelity
 
 - **515 variants** have at least one *manufacturer-published numeric display swatch*: 246 Bambu Lab (RGBA, including 18 gradient/multicolor), 139 eSUN (including 7 dual-shade entries), and 130 SUNLU.
-- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **237** variants remain estimated-only, **143** name-only. The curated preview now has **522** source-backed entries from the 902-record research corpus. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
+- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **242** variants remain estimated-only, **138** name-only. The curated preview now has **522** source-backed entries from the 902-record research corpus. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.

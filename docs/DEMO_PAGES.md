@@ -1,4 +1,4 @@
-# Filamentra Catalog Demo — manual GitHub Pages snapshot
+# Filamentra Catalog Demo — GitHub Pages CI
 
 This is a read-only, interactive static visualization of the Filamentra PLA/PETG source catalog. It is **not** a live feed, does not make API calls to GitHub, and does not modify the catalog.
 
@@ -10,7 +10,7 @@ https://4fusionlab.github.io/Filamentra-DataSource/
 
 1. Open the repository **Settings → Pages**.
 2. Under **Build and deployment → Source**, select **GitHub Actions**.
-3. Open **Actions → Publish catalog demo (manual)**.
+3. Open **Actions → Build and publish catalog demo**.
 4. Click **Run workflow**, select `main`, and start the run.
 5. The job validates source JSON, builds static assets, and deploys the result to Pages. After a successful deployment, the website is available at the URL above.
 
@@ -18,11 +18,11 @@ If GitHub reports an organization policy, Pages permission, or environment prote
 
 ## When the website updates
 
-**Only when somebody manually runs the workflow.** No `push`, `pull_request`, `schedule` or automatic deployment events are configured for this demo.
+The site is **automatically rebuilt and deployed** for relevant pushes to `main` affecting `catalog/**`, `demo/**`, `tools/build_demo.py`, `tools/validate_catalog.py`, or the Pages workflow itself. Each deployment runs JSON validation and snapshot consistency checks; errors stop publication.
 
-The separate `validate.yml` workflow may continue to validate JSON on commits; this does **not** rebuild or publish Pages.
+You can also trigger **Build and publish catalog demo → Run workflow** manually from GitHub Actions. Pull requests do not deploy Pages, and documentation-only commits do not trigger a new deployment. The independent `validate.yml` workflow checks code and catalog quality without deploying.
 
-The demo represents a snapshot of `main` at the exact commit that was checked out by the manually triggered workflow. New brand/line/color commits remain invisible on the website until another manual publication.
+The demo is a static snapshot of the `main` commit checked out by the corresponding Pages deployment, not a live API feed.
 
 ## Build locally
 
@@ -54,6 +54,6 @@ The UI approximates multiple manufacturer swatches with a flat CSS gradient. It 
 
 ## Security and scope
 
-No catalog changes are made by visiting the demo. No private tokens are exposed, and the static site contains only already-public data. Catalog data and client-side scripts are bundled during the manual build. Anyone can access a public GitHub Pages site after it has been enabled.
+No catalog changes are made by visiting the demo. No private tokens are exposed, and the static site contains only already-public data. Catalog data and client-side scripts are bundled during the CI build. Anyone can access a public GitHub Pages site after it has been enabled.
 
 When the repo is made private, public distribution may require a separate visibility and access review.

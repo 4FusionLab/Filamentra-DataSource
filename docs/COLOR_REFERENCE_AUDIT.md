@@ -11,7 +11,7 @@
 
 **Every product entry still retains its official manufacturer `source_url`** to document the existence of the product/variant. A third-party color reference is stored separately. Never convert `estimated` to `manufacturer` without obtaining a manufacturer publication for that exact shade.
 
-The demo UI distinguishes **manufacturer**, **physical-print measurement** and **estimated** HEX. Only source-backed manufacturer or directly documented physical-print references appear in its curated default view; estimates require opt-in. GitHub Pages still publishes **only manually** via its dedicated workflow.
+The demo UI distinguishes **manufacturer**, **physical-print measurement** and **estimated** HEX. Only source-backed manufacturer or directly documented physical-print references appear in its curated default view; estimates require opt-in. GitHub Pages deploys **automatically after validated `main` source changes**, or manually using the dedicated workflow.
 
 ## Official catalogs rechecked
 
@@ -47,12 +47,12 @@ FilamentSelect can contain screen-level approximations as well as some measured 
 | Evidence level | Records |
 | --- | ---: |
 | Manufacturer numeric swatch, including multi-color RGBA | 515 |
-| Independently sourced estimated HEX, no physical measurement | 237 |
+| Independently sourced estimated HEX, no physical measurement | 242 |
 | Third-party physical measurement, no manufacturer swatch | 7 |
-| Confirmed variant name, no defensible numeric color | 143 |
+| Confirmed variant name, no defensible numeric color | 138 |
 | **Total** | **902** |
 
-Twelve individual physical-print measurement records are now linked with direct evidence: seven have no manufacturer numeric swatch, while five supplement official manufacturer swatches without overwriting them. The curated default preview therefore has **522** distinct source-backed entries (515 manufacturer + 7 measured-only); **237** estimated-only references require opt-in. See [measurement review](MEASURED_COLOR_REVIEW.md). All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
+Twelve individual physical-print measurement records are now linked with direct evidence: seven have no manufacturer numeric swatch, while five supplement official manufacturer swatches without overwriting them. The curated default preview therefore has **522** distinct source-backed entries (515 manufacturer + 7 measured-only); **242** estimated-only references require opt-in. See [measurement review](MEASURED_COLOR_REVIEW.md). All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
 
 ## Pending work
 

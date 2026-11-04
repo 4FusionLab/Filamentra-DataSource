@@ -62,19 +62,19 @@ These appear in `variants[]` and `evidence[]`; they **do not** replace stable fu
 6. **Never automatically promote a manufacturer's photo to `hex_source: manufacturer`.** If sampling a promotional picture, mark `estimated` with URL, calibration procedure, and uncertainty.
 7. **Differentiate “brand official color code”, “brand swatch” and “physical measurement”.** All are useful, but not interchangeable.
 
-## Pipeline and manual publication
+## Pipeline and GitHub Pages CI publication
 
 - `tools/validate_catalog.py` enforces JSON schema, stable identity, consistency of swatches and direct evidence on measured samples.
 - The ordinary validation workflow can build/test the static demo without **publishing** it.
-- Publishing GitHub Pages is **manual-only** via `workflow_dispatch` in `.github/workflows/publish-demo.yml`.
-- A successful CI build **does not** update GitHub Pages. A manual Pages deployment publishes the current curated view.
+- GitHub Pages is published **automatically on relevant `main` pushes** after source validation, using `.github/workflows/publish-demo.yml`. Manual `workflow_dispatch` is also supported.
+- The Pages workflow validates JSON and builds the static demo before deploying. Failed validation blocks publication. The independent validation workflow remains available for build-only checks.
 
 ## Current status
 
-At 2026-11-04, the source catalog has **8 brands, 72 lines, 902 variants**: 515 with manufacturer numeric swatches, **12** with linked third-party physical measurements (five of those also retain official manufacturer swatches), **237** remaining estimated-only references, and **143** unresolved names.
+At 2026-11-04, the source catalog has **8 brands, 72 lines, 902 variants**: 515 with manufacturer numeric swatches, **12** with linked third-party physical measurements (five of those also retain official manufacturer swatches), **242** remaining estimated-only references, and **138** unresolved names.
 
 This yields **522 curated preview candidates** from official numeric source or physical-sample evidence, **not** 522 physically accurate Fusion materials. Finish, BRDF, transmission and print-layer effects remain uncalibrated.
 
 See [six additional measured sample confirmations](MEASURED_COLOR_REVIEW.md). The CI now checks HEX-versus-Lab conversion consistency, but cannot certify the external measurement protocol.
 
-**Next work:** resolve exact SKU-level references and expand physical-sample coverage for existing PLA/PETG color families. Do not pad catalog totals with weakly sourced colors.
+**Next work:** address the 138 name-only color variants using exact product-specific color references; avoid overwriting already populated colors. Do not pad catalog totals with weakly sourced colors.
