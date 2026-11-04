@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "fiber-matte",
+  "name": "Fiber-filled matte polymer",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.93,
+    "opacity": 255
+  },
+  "notes": "Low reflectance proxy for CF/GF composites; microstructure textures must be sourced or generated separately."
+}
