@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "bestfilament/pla",
+  "brand": "bestfilament",
+  "name": "PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://bestfilament.ru/nsk/pla-1-1.75-blue/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Чёрный",
+      "hex": "#151515",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/prm/pla-1-1.75-black/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_black",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/prm/pla-1-1.75-black/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PLA PLA Чёрный color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "hex": "#2869A8",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/nsk/pla-1-1.75-blue/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_blue",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/nsk/pla-1-1.75-blue/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PLA PLA Синий color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "name": "Красный",
+      "hex": "#BE3038",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/msk/pla-1-175-red-2/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "st_pla_0.5kg_1.75_red",
+          "diameter_mm": 1.75,
+          "weight_g": 500
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/msk/pla-1-175-red-2/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PLA PLA Красный color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    }
+  ]
+}

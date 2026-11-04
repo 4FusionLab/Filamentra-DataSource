@@ -1,0 +1,47 @@
+{
+  "imported_on": "2026-11-04",
+  "policy": "Only exact PLA/PETG variants for which manufacturer name+SKU and third-party numeric color estimates agree in broad hue family. All numeric shades are estimated, not manufacturer measured.",
+  "third_party_catalog": "https://github.com/KazOFF/filament-lables",
+  "third_party_data": [
+    "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+    "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json"
+  ],
+  "official_manufacturer_palette": "https://www.fdplast.ru/assets/files/2021/Plastik_dly_3D_pechaty_FDplast.pdf",
+  "lines": [
+    {
+      "id": "fdplast/petg",
+      "colors": 4,
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/"
+    },
+    {
+      "id": "bestfilament/pla",
+      "colors": 3,
+      "source_url": "https://bestfilament.ru/nsk/pla-1-1.75-blue/"
+    },
+    {
+      "id": "bestfilament/petg",
+      "colors": 3,
+      "source_url": "https://bestfilament.ru/mskptc/zeleniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "FDplast PETG Советское шампанское",
+      "catalog_estimate": "#C9AE70",
+      "rejection": "Manufacturer 2022 product palette names it dark-green; unverified gold estimate conflicts with official shade family."
+    },
+    {
+      "name": "FDplast PLA generic Black/White/Blue",
+      "rejection": "Manufacturer currently markets PLA with different named variants such as Дикая пантера, Белоснежка, Дети индиго. Third-party generic color names are not exact product variant matches."
+    },
+    {
+      "name": "FDplast PETG Переходной",
+      "rejection": "Multicolor spool distribution is unknown; cannot represent faithfully with a single sRGB estimate."
+    },
+    {
+      "name": "НИТ PLA/PETG",
+      "rejection": "No direct, reliable per-SKU numerical color code or sample was found; retain pending brand without color line."
+    }
+  ],
+  "limitations": "Colors are screen estimates of vendor photos; no calibrated image processing nor physical measurement protocol available. These entries are hidden from the quality-first demo unless estimated HEX is explicitly enabled."
+}

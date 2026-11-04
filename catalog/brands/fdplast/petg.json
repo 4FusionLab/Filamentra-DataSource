@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "id": "fdplast/petg",
+  "brand": "fdplast",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black-raven",
+      "name": "Чёрный ворон",
+      "hex": "#151515",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg_plastik_chernyy_voron/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "11111281",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg_plastik_chernyy_voron/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Чёрный ворон color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "Аватар",
+      "hex": "#2475A8",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2664",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "11111267",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2664",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Аватар color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "wasabi",
+      "name": "Васаби",
+      "hex": "#91A84A",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg_plastik_vasabi/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "11111266",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg_plastik_vasabi/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Васаби color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "frog-princess",
+      "name": "Царевна-лягушка",
+      "hex": "#4F8A4E",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2662",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "11111265",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2662",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Царевна-лягушка color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    }
+  ]
+}

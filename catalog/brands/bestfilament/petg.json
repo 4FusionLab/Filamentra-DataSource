@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "bestfilament/petg",
+  "brand": "bestfilament",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://bestfilament.ru/mskptc/zeleniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Чёрный",
+      "hex": "#151515",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/krdar/chernyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "st_petg_black_1kg_1.75_natural",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/krdar/chernyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Чёрный color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "name": "Красный",
+      "hex": "#C14950",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/krasnyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "st_petg_red_1kg_1.75_natural",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/krasnyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Красный color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Зелёный",
+      "hex": "#4C8F56",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/mskptc/zeleniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+      "verified_on": "2026-11-04",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Приблизительный HEX из независимого проекта Filament Labels, созданный по товарным изображениям; не официальный RGB и не измеренный образец. Соответствие названия и SKU сверено по каталогу производителя; для FDplast дополнительно проверено цветовое семейство по фирменной PDF-палитре 2022.",
+      "variants": [
+        {
+          "sku": "st_petg_green_1kg_1.75",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/mskptc/zeleniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+          "checked_on": "2026-11-04",
+          "note": "Manufacturer's own exact PETG PETG Зелёный color variant and package SKU"
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/main/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-04",
+          "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
+        }
+      ]
+    }
+  ]
+}
