@@ -32,9 +32,22 @@
     {
       "id": "carbon-fiber-grey",
       "name": "Carbon Fiber Grey",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-cf-filament-1-75mm-black-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#525154",
+      "hex_source": "estimated",
+      "color_reference_url": "https://findfilament.com/filaments/elegoo-pla-carbon-fiber-grey",
+      "color_reference_note": "Оценочный экранный HEX FindFilament для конкретной марки/линейки/цвета; не колориметрическое измерение.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://findfilament.com/filaments/elegoo-pla-carbon-fiber-grey",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page: FindFilament labels its HEX as Estimated Color, not a physical color measurement."
+        }
+      ]
     },
     {
       "id": "carbon-fiber-red",
@@ -97,9 +110,22 @@
     {
       "id": "carbon-fiber-brown",
       "name": "Carbon Fiber Brown",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-cf-filament-1-75mm-black-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#523322",
+      "hex_source": "estimated",
+      "color_reference_url": "https://findfilament.com/filaments/elegoo-pla-carbon-fiber-brown",
+      "color_reference_note": "Оценочный экранный HEX FindFilament для конкретной марки/линейки/цвета; не колориметрическое измерение.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://findfilament.com/filaments/elegoo-pla-carbon-fiber-brown",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page: FindFilament labels its HEX as Estimated Color, not a physical color measurement."
+        }
+      ]
     }
   ]
 }

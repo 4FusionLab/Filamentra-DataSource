@@ -34,9 +34,22 @@
     {
       "id": "blue",
       "name": "Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.elegoo.com/products/pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#0E21AE",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--pla--blue",
+      "color_reference_note": "Оценочный экранный HEX с точной карточки FilamentSelect; первичный источник HEX не подтверждён.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--pla--blue",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page; site labels HEX as approximate screen color with unverified source authority."
+        }
+      ]
     },
     {
       "id": "bone-white",
@@ -123,9 +136,22 @@
     {
       "id": "green",
       "name": "Green",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.elegoo.com/products/pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#96EEA3",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--pla--green",
+      "color_reference_note": "Оценочный экранный HEX с точной карточки FilamentSelect; первичный источник HEX не подтверждён.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--pla--green",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page; site labels HEX as approximate screen color with unverified source authority."
+        }
+      ]
     },
     {
       "id": "grey",

@@ -12,16 +12,42 @@
     {
       "id": "light-brown",
       "name": "Light Brown",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-wood",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#C4AC99",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--pla-wood--oaklight-brown",
+      "color_reference_note": "Оценочный экранный HEX с точной карточки FilamentSelect; первичный источник HEX не подтверждён. У справочника название Oak/Light Brown, в магазине ELEGOO — Light Brown; соответствие вероятное, но не подтверждено SKU.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--pla-wood--oaklight-brown",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page; site labels HEX as approximate screen color with unverified source authority."
+        }
+      ]
     },
     {
       "id": "medium-brown",
       "name": "Medium Brown",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-wood",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#8B5733",
+      "hex_source": "estimated",
+      "color_reference_url": "https://findfilament.com/filaments/elegoo-pla-medium-brown",
+      "color_reference_note": "Оценочный экранный HEX FindFilament для конкретной марки/линейки/цвета; не колориметрическое измерение.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://findfilament.com/filaments/elegoo-pla-medium-brown",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page: FindFilament labels its HEX as Estimated Color, not a physical color measurement."
+        }
+      ]
     },
     {
       "id": "rosewood",

@@ -199,9 +199,22 @@
     {
       "id": "silk-true-red",
       "name": "Silk True Red",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FF0000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--silk-pla--true-red",
+      "color_reference_note": "Оценочный экранный HEX с точной карточки FilamentSelect; первичный источник HEX не подтверждён.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--silk-pla--true-red",
+          "checked_on": "2026-11-04",
+          "note": "Exact manufacturer/line/color page; site labels HEX as approximate screen color with unverified source authority."
+        }
+      ]
     },
     {
       "id": "silk-white",
