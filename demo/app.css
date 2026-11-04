@@ -242,3 +242,45 @@ footer a:hover { color: var(--text); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Material specimen preview — unslop: quiet chrome, real catalog colors as the focus.
+   The preview is procedural, not a color-calibrated photograph of a printed part. */
+.swatch .material-render,
+.detail-swatch .material-render {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #181e1b;
+}
+.swatch .pigment.pigment-strip,
+.detail-swatch .pigment.pigment-strip {
+  position: absolute;
+  inset: auto 10px 10px auto;
+  width: 38px;
+  height: 10px;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 4px;
+  z-index: 1;
+}
+.detail-swatch .pigment.pigment-strip { width: 52px; height: 14px; bottom: 16px; right: 16px; }
+.hero-sample-pigment { position: relative; overflow: hidden; }
+.hero-sample-render { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.material-stage { position: relative; height: 264px; margin: 24px 0 12px; overflow: hidden; border: 1px solid var(--stroke); border-radius: 12px; background: #181e1b; }
+.material-stage .detail-swatch { height: 100%; margin: 0; border: 0; border-radius: 0; }
+.material-viewer-host { position: absolute; inset: 0; overflow: hidden; background: #1b211d; }
+.material-canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+.material-canvas:active { cursor: grabbing; }
+.material-viewer-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.viewer-note { color: var(--muted); font-size: 11px; line-height: 1.5; flex: 1; min-width: 170px; }
+.viewer-shapes { display: flex; align-items: center; gap: 4px; padding: 4px; border: 1px solid var(--stroke); border-radius: 8px; }
+.shape-choice { min-height: 28px; padding: 4px 9px; border: 0; border-radius: 5px; background: transparent; color: var(--secondary); font-size: 11px; }
+.shape-choice.active { background: var(--raised); color: var(--text); }
+.shape-choice:hover { color: var(--text); }
+.swatch-card .swatch { background-color: #181e1b; }
+@media (max-width: 700px) {
+  .material-stage { height: 248px; margin-top: 20px; }
+  .viewer-note { min-width: 100%; }
+}

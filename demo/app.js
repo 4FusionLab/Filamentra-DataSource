@@ -14,6 +14,8 @@ const state = {
 };
 
 const byId = id => document.getElementById(id);
+let materialViewer = null;
+let viewerRequest = 0;
 const el = (tag, className, value) => {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -30,6 +32,30 @@ const norm = text => String(text || "").toLocaleLowerCase("ru-RU");
 const allColors = () => state.data.lines.flatMap(line =>
   line.colors.map(color => ({ line, color })));
 const sourceType = color => color.measured_sample || color.hex || (color.rgba_swatches || []).length ? "sample" : "missing";
+
+function sampleHex(color) {
+  const value = color.measured_sample?.hex || color.hex;
+  if (hexValid(value)) return value.slice(0, 7);
+  const swatches = (color.rgba_swatches || []).filter(hexValid);
+  if (swatches.length === 1 && swatches[0].length === 9 && swatches[0].slice(-2).toUpperCase() === "FF") {
+    return swatches[0].slice(0, 7);
+  }
+  return null;
+}
+
+function resolveAppearance(line, color) {
+  const preset = state.data.presets[line.appearance_preset]?.appearance || {};
+  const lineAppearance = line.appearance || {};
+  const colorAppearance = color.appearance || {};
+  return {
+    ...preset, ...lineAppearance, ...colorAppearance,
+    textures: {
+      ...(preset.textures || {}),
+      ...(lineAppearance.textures || {}),
+      ...(colorAppearance.textures || {})
+    }
+  };
+}
 
 function colorBackground(color) {
   if (hexValid(color.measured_sample?.hex)) return color.measured_sample.hex;
@@ -99,6 +125,14 @@ function renderHeroSamples() {
     const item = el("div", "hero-sample");
     const pigment = el("div", "hero-sample-pigment");
     pigment.style.background = colorBackground(color);
+    if (color.preview_image) {
+      const image = el("img", "hero-sample-render");
+      image.src = "./" + color.preview_image;
+      image.alt = "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      pigment.appendChild(image);
+    }
     item.appendChild(pigment);
     item.appendChild(el("span", "hero-sample-name", color.name));
     item.appendChild(el("span", "hero-sample-meta", brandName(line.brand) + " · " + line.polymer));
@@ -112,12 +146,25 @@ function swatchNode(color, detail = false) {
   if (background) {
     const pigment = el("div", "pigment");
     pigment.style.background = background;
+    if (color.preview_image) {
+      const image = el("img", "material-render" + (detail ? " detail-render" : ""));
+      image.src = "./" + color.preview_image;
+      image.alt = "Типовой объёмный образец · " + color.name;
+      image.loading = detail ? "eager" : "lazy";
+      image.decoding = "async";
+      image.addEventListener("error", () => {
+        image.remove();
+        pigment.classList.remove("pigment-strip");
+      }, {once: true});
+      node.appendChild(image);
+      pigment.classList.add("pigment-strip");
+    }
     node.appendChild(pigment);
   } else {
-    node.appendChild(el("div", "no-swatch", "Цвет пока не определён"));
+    node.appendChild(el("div", "no-swatch", "Нет числового цвета"));
   }
   if (!detail) {
-    let status = "HEX";
+    let status = "Цвет производителя";
     if (!background) status = "Нет образца";
     else if (color.measured_sample) status = "Измеренный";
     else if (color.visual_data_status === "estimated" || color.hex_source === "estimated") status = "Оценочный";
@@ -239,13 +286,87 @@ function addRow(container, label, value) {
   container.appendChild(row);
 }
 
+
+async function attachMaterialViewer(host, fallback, line, color, status) {
+  const requestId = ++viewerRequest;
+  const hex = sampleHex(color);
+  const appearance = resolveAppearance(line, color);
+  if (!color.preview_image || !hex || !appearance.textures?.normal_gl || !appearance.textures?.roughness) {
+    return;
+  }
+  status.textContent = "Подготавливаем интерактивный 3D-образец…";
+  try {
+    const module = await import("./material-viewer.js");
+    if (requestId !== viewerRequest) return;
+    const instance = await module.createMaterialViewer(host, {
+      hex, appearance, basePath: "./", shape: "sphere"
+    });
+    if (requestId !== viewerRequest) {
+      instance?.destroy();
+      return;
+    }
+    if (!instance) return;
+    materialViewer = instance;
+    host.hidden = false;
+    fallback.hidden = true;
+    status.textContent = "Вращайте образец мышью или пальцем · фактура расчётная";
+  } catch (error) {
+    if (requestId !== viewerRequest) return;
+    host.hidden = true;
+    fallback.hidden = false;
+    status.textContent = "3D недоступен: показан рассчитанный статический образец";
+    console.warn("Filamentra 3D viewer:", error);
+  }
+}
+
+function addMaterialStage(target, line, color) {
+  const stage = el("div", "material-stage");
+  const staticPreview = swatchNode(color, true);
+  stage.appendChild(staticPreview);
+  if (!color.preview_image) {
+    target.appendChild(stage);
+    return;
+  }
+  const host = el("div", "material-viewer-host");
+  host.hidden = true;
+  stage.appendChild(host);
+  target.appendChild(stage);
+  const toolbar = el("div", "material-viewer-tools");
+  const note = el("span", "viewer-note", "Визуализация по типовому PBR-профилю · не фотография");
+  toolbar.appendChild(note);
+  const controls = el("div", "viewer-shapes");
+  const sphere = el("button", "shape-choice active", "Сфера");
+  sphere.type = "button";
+  const coupon = el("button", "shape-choice", "Образец");
+  coupon.type = "button";
+  const switchShape = value => {
+    materialViewer?.setShape(value);
+    sphere.classList.toggle("active", value === "sphere");
+    coupon.classList.toggle("active", value === "coupon");
+    sphere.setAttribute("aria-pressed", String(value === "sphere"));
+    coupon.setAttribute("aria-pressed", String(value === "coupon"));
+  };
+  sphere.setAttribute("aria-pressed", "true");
+  coupon.setAttribute("aria-pressed", "false");
+  sphere.addEventListener("click", () => switchShape("sphere"));
+  coupon.addEventListener("click", () => switchShape("coupon"));
+  controls.append(sphere, coupon);
+  toolbar.appendChild(controls);
+  target.appendChild(toolbar);
+  // Mount only the selected color's WebGL scene. The catalog has no live canvases.
+  void attachMaterialViewer(host, staticPreview, line, color, note);
+}
+
 function openDetails(line, color) {
+  viewerRequest += 1;
+  materialViewer?.destroy();
+  materialViewer = null;
   const target = byId("detailContent");
   target.replaceChildren();
   state.previousFocus = document.activeElement;
   target.appendChild(el("h3", "", color.name));
   target.appendChild(el("p", "detail-sub", brandName(line.brand) + " / " + line.polymer + " / " + line.name));
-  target.appendChild(swatchNode(color, true));
+  addMaterialStage(target, line, color);
   const status = sourceType(color) === "missing"
     ? "Цвет не определён: есть название производителя, но нет достоверного HEX/RGB."
     : color.measured_sample
@@ -267,8 +388,9 @@ function openDetails(line, color) {
   addRow(rows, "Код производителя", color.manufacturer_color_code);
   addRow(rows, "Код палитры", color.manufacturer_palette_code);
   const preset = state.data.presets[line.appearance_preset] || {};
+  const appearance = resolveAppearance(line, color);
   addRow(rows, "Визуальный пресет", preset.name);
-  addRow(rows, "Микрошероховатость", preset.appearance?.roughness);
+  addRow(rows, "Параметр roughness", appearance.roughness);
   addRow(rows, "Точность пресета", preset.status === "uncalibrated" ? "Приближённый, не откалиброван" : preset.status);
   addRow(rows, "Проверено", color.verified_on);
   target.appendChild(rows);
@@ -305,6 +427,9 @@ function openDetails(line, color) {
 }
 
 function closeDetails() {
+  viewerRequest += 1;
+  materialViewer?.destroy();
+  materialViewer = null;
   byId("details").classList.remove("open");
   byId("details").setAttribute("aria-hidden", "true");
   byId("overlay").hidden = true;
