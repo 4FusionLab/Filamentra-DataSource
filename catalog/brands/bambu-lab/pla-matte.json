@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-matte",
+  "brand": "bambu-lab",
+  "name": "PLA Matte",
+  "polymer": "PLA",
+  "finish": "matte",
+  "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "ivory-white",
+      "name": "Ivory White",
+      "manufacturer_color_code": "11100",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "desert-tan",
+      "name": "Desert Tan",
+      "manufacturer_color_code": "11401",
+      "hex": "#E8DBB7",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "latte-brown",
+      "name": "Latte Brown",
+      "manufacturer_color_code": "11800",
+      "hex": "#D3B7A7",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sakura-pink",
+      "name": "Sakura Pink",
+      "manufacturer_color_code": "11201",
+      "hex": "#E8AFCF",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lilac-purple",
+      "name": "Lilac Purple",
+      "manufacturer_color_code": "11700",
+      "hex": "#AE96D4",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lemon-yellow",
+      "name": "Lemon Yellow",
+      "manufacturer_color_code": "11400",
+      "hex": "#F7D959",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grass-green",
+      "name": "Grass Green",
+      "manufacturer_color_code": "11500",
+      "hex": "#61C680",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "ice-blue",
+      "name": "Ice Blue",
+      "manufacturer_color_code": "11601",
+      "hex": "#A3D8E1",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "marine-blue",
+      "name": "Marine Blue",
+      "manufacturer_color_code": "11600",
+      "hex": "#0078BF",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mandarin-orange",
+      "name": "Mandarin Orange",
+      "manufacturer_color_code": "11300",
+      "hex": "#F99963",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "scarlet-red",
+      "name": "Scarlet Red",
+      "manufacturer_color_code": "11200",
+      "hex": "#DE4343",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-red",
+      "name": "Dark Red",
+      "manufacturer_color_code": "11202",
+      "hex": "#BB3D43",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-brown",
+      "name": "Dark Brown",
+      "manufacturer_color_code": "11801",
+      "hex": "#7D6556",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-green",
+      "name": "Dark Green",
+      "manufacturer_color_code": "11501",
+      "hex": "#68724D",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "dark-blue",
+      "name": "Dark Blue",
+      "manufacturer_color_code": "11602",
+      "hex": "#042F56",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal",
+      "manufacturer_color_code": "11101",
+      "hex": "#000000",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "ash-gray",
+      "name": "Ash Gray",
+      "manufacturer_color_code": "11102",
+      "hex": "#9B9EA0",
+      "hex_source": "manufacturer",
+      "source_url": "https://bambu-lab-global.myshopify.com/products/pla-matte",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}
