@@ -4,7 +4,7 @@
 
 ## Source priority and status
 
-**Bambu Lab → other Chinese manufacturers → Russian manufacturers.** The BambuStudio color-registry snapshot is imported; expansion of Chinese lines is under way. Russian-brand data import has not started yet.
+**Bambu Lab → other Chinese manufacturers → Russian manufacturers.** The BambuStudio color-registry snapshot is imported; expansion of Chinese lines is under way. REC PLA/PETG has been imported; FDplast, BestFilament, and НИТ have been source-researched but lack verified numerical color swatches.
 
 The logical selection path is **Manufacturer → Material (PLA/PETG) → Product Line → Color**. Physical files are grouped by manufacturer and product line; the polymer is an attribute.
 
@@ -20,17 +20,20 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 | [Creality](../catalog/brands/creality/) | China | 5 | 39 | Official [product lines](../catalog/sources/creality-expanded-2026-11-04.json) and third-party color references; **6 unresolved** |
 | [KINGROON](../catalog/brands/kingroon/) | China | 4 | 87 | Official [PLA and PETG lines](../catalog/sources/kingroon-pla-2026-11-04.json); **53 unresolved** |
 | [SUNLU](../catalog/brands/sunlu/) | China | 8 | 130 | Official [initial](../catalog/sources/sunlu-kingroon-creality.json) and [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json) HEX tables |
-| **Total** | | **72** | **902** | **8 manufacturers** |
-| FDplast | Russia | 0 | 0 | Scheduled after Chinese import; [official website](https://fdplast.ru/) |
-| НИТ | Russia | 0 | 0 | Scheduled after Chinese import |
-| Bestfilament | Russia | 0 | 0 | Scheduled after Chinese import; [official website](https://bestfilament.ru/) |
+| [Anycubic](../catalog/brands/anycubic/) | China | 3 | 68 | Official PLA Basic, PLA+ and PETG color HEX tables |
+| [Polymaker](../catalog/brands/polymaker/) | China | 3 | 15 | Official HueForge color-reference table for selected PolyLite and Panchroma PLA |
+| [REC](../catalog/brands/rec/) | Russia | 2 | 24 | Official RAL and SKU; third-party RAL→HEX tagged estimated |
+| **Total with material lines** | | **80** | **1009** | **11 manufacturers** |
+| [FDplast](../catalog/brands/fdplast/) | Russia | 0 | 0 | Official PLA/PETG product pages checked, numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
+| [НИТ](../catalog/brands/nit/) | Russia | 0 | 0 | Official PLA/PETG variants and SKUs verified; numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
+| [BestFilament](../catalog/brands/bestfilament/) | Russia | 0 | 0 | Official PLA/PETG SKUs verified; numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
 
 **Important:** these totals are **cataloged manufacturer color variants**, not physically calibrated appearances or proof of inventory availability. The Bambu Lab source is an official software color list, potentially including historical variants; other brands still have unimported lines and colors.
 
 ## Visual fidelity
 
-- **515 variants** have at least one *manufacturer-published numeric display swatch*: 246 Bambu Lab (RGBA, including 18 gradient/multicolor), 139 eSUN (including 7 dual-shade entries), and 130 SUNLU.
-- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **261** variants remain estimated-only, **119** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **522** source-backed entries from the 902-record research corpus. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
+- **598 variants** have a manufacturer numeric display swatch: 246 Bambu Lab, 139 eSUN, 130 SUNLU, 68 Anycubic, 15 Polymaker.
+- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **285** variants remain estimated-only, **119** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1009-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
@@ -49,7 +52,7 @@ For meaning, provenance, source fidelity and Fusion API constraints see [materia
 
 ## Russian manufacturers (queued)
 
-After the above Chinese stage: **FDplast → НИТ → Bestfilament**. Create one official-source-verified line at a time, covering PLA/PETG only. Russian-language display names can remain original and use stable transliterated IDs.
+**REC** PLA and PETG are now imported (24 RAL/SKU-based shades). **FDplast, BestFilament and НИТ** are registered for source research; their line/color files are deferred pending exact numerical references, per [Russian source audit](RUSSIAN_COLOR_SOURCE_AUDIT.md).
 
 ## Validation and distribution
 
