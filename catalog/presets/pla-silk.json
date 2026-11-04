@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.22,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/pla-silk/normal_gl.png",
+      "roughness": "assets/presets/pla-silk/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "High gloss proxy for silk effect; directional anisotropy requires validated advanced API support."
+  "notes": "High gloss proxy for silk effect; directional anisotropy requires validated advanced API support. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

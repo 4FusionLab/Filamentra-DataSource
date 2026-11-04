@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "transparent",
     "roughness": 0.2,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/petg-translucent/normal_gl.png",
+      "roughness": "assets/presets/petg-translucent/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Transparent-volume starting point. Transmission distance and IOR need runtime verification and per-color calibration."
+  "notes": "Transparent-volume starting point. Transmission distance and IOR need runtime verification and per-color calibration. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

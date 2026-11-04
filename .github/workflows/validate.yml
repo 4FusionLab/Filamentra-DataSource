@@ -6,6 +6,7 @@ on:
       - "catalog/**"
       - "tools/validate_catalog.py"
       - "tools/build_demo.py"
+      - "tools/generate_texture_maps.py"
       - "tools/audit_missing_colors.py"
       - "demo/**"
       - "tests/**"
@@ -32,7 +33,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install validator
-        run: python -m pip install 'jsonschema>=4.21,<5'
+        run: python -m pip install 'jsonschema>=4.21,<5' 'numpy>=2,<3' 'Pillow>=11,<13'
       - name: Validate sources, references, IDs and schemas
         run: python tools/validate_catalog.py
       - name: Unit-test colorimetry
@@ -64,3 +65,30 @@ jobs:
           assert c["colors"] == sum(len(line["colors"]) for line in doc["lines"]), c
           print("Preview quality gate passed:", c)
           PY
+      - name: Verify PBR textures and gallery
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          root = Path("dist")
+          items = json.loads((root / "data" / "textures.json").read_text(encoding="utf-8"))["items"]
+          assert len(items) == len(list(Path("catalog/presets").glob("*.json"))) == 18
+          assert (root / "textures.html").exists()
+          for item in items:
+              for key in ("normal_gl", "roughness_map", "preview"):
+                  path = root / item[key]
+                  assert path.is_file() and path.stat().st_size > 0, str(path)
+                  with Image.open(path) as image:
+                      image.verify()
+              assert item["calibrated"] is False
+          print(f"Validated {len(items)} procedural texture profiles")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: filamentra-typical-pbr-textures
+          path: |
+            dist/textures.html
+            dist/data/textures.json
+            dist/assets/presets/
+          if-no-files-found: error

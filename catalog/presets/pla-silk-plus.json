@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.19,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/pla-silk-plus/normal_gl.png",
+      "roughness": "assets/presets/pla-silk-plus/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Silk highlight proxy; true anisotropy and layer geometry not modeled."
+  "notes": "Silk highlight proxy; true anisotropy and layer geometry not modeled. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }
