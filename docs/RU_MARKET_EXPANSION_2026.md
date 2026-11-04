@@ -32,6 +32,10 @@ Ranked by **Filamentra usefulness + verified source accessibility**, not K3D qua
 
 Other possible later candidates: Bamtco, Geeetech, Hi Tech Plast, LIDER-3D, CyberFiber, Prusament, QIDI, and RITTSUN; do not use availability or brand familiarity as a surrogate for verified color data.
 
+## First verified manufacturer SKU batch
+
+The source-backed research queue now contains **13 exact STAR PLAST SKUs** from its official product catalog: **5 PLA + 8 PETG**. Their color names, formulation distinctions, article numbers and primary URLs are stored in [STAR PLAST candidate manifest](../catalog/sources/2026-11-04-star-plast-official-sku-queue.json). These are **not yet accepted as visually usable color records**: numeric manufacturer/third-party swatches and optical attributes remain pending. This is a traceable path to the first import without filling the public catalog with unnamed or guessed colors.
+
 ## Import acceptance gate
 
 1. **Identity:** official manufacturer or exact distributor source identifies `Manufacturer → Polymer → Product line → Shade`. All of `brand`, `polymer`, `line`, `color` must map to the **same** physical product formulation. Spool weight/refill/RFID usually belongs to a variant, not a new visual line.
