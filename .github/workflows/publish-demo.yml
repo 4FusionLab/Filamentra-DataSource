@@ -1,9 +1,16 @@
 name: Build and publish catalog demo
 
-# Pages publishes only after an explicit Run workflow request.
-# Normal pushes still run the independent Validate catalog workflow.
+# Publish on relevant validated main-branch changes; manual Run workflow remains available.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "catalog/**"
+      - "demo/**"
+      - "tools/build_demo.py"
+      - "tools/validate_catalog.py"
+      - ".github/workflows/publish-demo.yml"
 
 concurrency:
   group: filamentra-catalog-pages
