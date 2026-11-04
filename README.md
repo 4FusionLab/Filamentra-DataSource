@@ -42,7 +42,15 @@ docs/
 
 One JSON document per product line, containing its color variants. The hierarchy is **manufacturer → product line → color**; polymer, finish, and effects are metadata used for filtering rather than nested directory names.
 
-See [catalog format](docs/CATALOG_FORMAT.md) for the data model and quality rules.
+See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appearance specification](docs/MATERIAL_APPEARANCE_SPEC.md) for the data model, visual inheritance, API support, and evidence rules.
+
+### Initial verified data
+
+- **Bambu Lab → PLA Matte:** [17 official color names, HEX codes and manufacturer color codes](catalog/brands/bambu-lab/pla-matte.json) sourced from Bambu Lab’s [official PLA Matte product page](https://bambu-lab-global.myshopify.com/products/pla-matte).
+- **Seven provisional finish presets:** [matte PLA, glossy PLA, silk PLA, standard PETG, translucent PETG, fiber-matte, and sparkle polymer](catalog/presets/). Values are Filamentra estimates, not measured manufacturer characteristics.
+- **Validation:** [JSON Schemas](catalog/schema/) and [catalog validation workflow](.github/workflows/validate.yml) check data structure, references and stable IDs.
+
+**Visual fidelity policy:** retain official colors when published; approximate missing optical properties with clearly labeled, line-specific presets, then calibrate against real print samples. Rendering may differ across Fusion viewport, Render workspace and physical output.
 
 ## Catalog quality comes first
 
@@ -66,7 +74,7 @@ The intended distribution model separates **catalog content version** from **JSO
 
 The add-in will select the newest **compatible** snapshot and cache it locally for offline use. Catalog changes must not silently overwrite appearances already installed in an existing Fusion design.
 
-**Status: planning / initial repository setup.** No populated catalog, validated release pipeline, or downloadable dataset is claimed yet. The layout and distribution contract are proposals until implemented and tested. See [distribution design](docs/DISTRIBUTION.md).
+**Status: initial catalog population / experimental appearance profiles.** The first manufacturer line and visual presets are present, but the presets have not been calibrated in Fusion, and no verified GitHub Release distribution is available yet. See [distribution design](docs/DISTRIBUTION.md).
 
 ## Contribute a filament
 
