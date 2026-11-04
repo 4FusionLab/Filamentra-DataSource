@@ -66,7 +66,8 @@
         </div>
 
         <div class="filter-section">
-          <label class="checkbox-row"><input type="checkbox" id="onlySwatches"> Только с образцом цвета</label>
+          <label class="checkbox-row"><input type="checkbox" id="onlySwatches" checked> Только с образцом цвета</label>
+          <label class="checkbox-row"><input type="checkbox" id="includeEstimates"> Показывать оценочные HEX</label>
           <label class="checkbox-row"><input type="checkbox" id="onlyMulticolor"> Многоцветные и градиенты</label>
         </div>
 
@@ -80,14 +81,14 @@
           <div class="catalog-meta"><span id="resultCount">Загрузка…</span><span class="bullet">•</span><span id="snapshotDate">—</span></div>
         </div>
         <div class="legend">
-          <span><i class="legend-dot source"></i> Образец производителя</span>
+          <span><i class="legend-dot source"></i> Производитель / физический образец</span>
           <span><i class="legend-dot approximation"></i> Оценочный цвет</span>
           <span><i class="legend-dot missing"></i> Оттенок не определён</span>
           <span><i class="legend-dot approximation"></i> Примерная фактура</span>
         </div>
         <div id="grid" class="swatch-grid" aria-live="polite"></div>
         <div id="empty" class="empty" hidden><strong>Ничего не найдено</strong><p>Попробуй изменить фильтры или запрос.</p></div>
-        <div class="catalog-footer">Цвета экрана и рендер Autodesk Fusion могут отличаться от напечатанной детали. Доступные цветовые образцы не являются результатом колориметрического измерения.</div>
+        <div class="catalog-footer">По умолчанию показаны только материалы с числовым образцом производителя или измеренной физической пробой. Оценочные HEX можно включить отдельно. Цвета экрана и рендер Autodesk Fusion могут отличаться от напечатанной детали. Доступные цветовые образцы не являются результатом колориметрического измерения.</div>
       </section>
     </div>
   </main>

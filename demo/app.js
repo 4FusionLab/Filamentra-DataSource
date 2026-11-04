@@ -6,7 +6,8 @@ const state = {
   polymer: "all",
   line: "all",
   search: "",
-  onlySwatches: false,
+  onlySwatches: true,
+  includeEstimates: false,
   onlyMulticolor: false,
   limit: 144,
   previousFocus: null
@@ -28,9 +29,10 @@ const brandName = brandId => {
 const norm = text => String(text || "").toLocaleLowerCase("ru-RU");
 const allColors = () => state.data.lines.flatMap(line =>
   line.colors.map(color => ({ line, color })));
-const sourceType = color => color.hex || (color.rgba_swatches || []).length ? "sample" : "missing";
+const sourceType = color => color.measured_sample || color.hex || (color.rgba_swatches || []).length ? "sample" : "missing";
 
 function colorBackground(color) {
+  if (hexValid(color.measured_sample?.hex)) return color.measured_sample.hex;
   const swatches = (color.rgba_swatches || []).filter(hexValid);
   if (color.color_mode === "gradient" && swatches.length > 1) {
     return "linear-gradient(112deg, " + swatches.join(", ") + ")";
@@ -61,6 +63,7 @@ function swatchNode(color, detail = false) {
   if (!detail) {
     let status = "HEX";
     if (!background) status = "NAME ONLY";
+    else if (color.measured_sample) status = "MEASURED";
     else if (color.visual_data_status === "estimated" || color.hex_source === "estimated") status = "ESTIMATE";
     else if (color.color_mode === "gradient") status = "GRADIENT";
     else if (color.color_mode === "multicolor") status = "MULTICOLOR";
@@ -123,6 +126,7 @@ function filteredColors() {
     if (state.polymer !== "all" && line.polymer !== state.polymer) return false;
     if (state.line !== "all" && state.line !== line.id) return false;
     if (state.onlySwatches && sourceType(color) === "missing") return false;
+    if (!state.includeEstimates && color.hex_source === "estimated" && !color.measured_sample) return false;
     if (state.onlyMulticolor && !["multicolor", "gradient"].includes(color.color_mode)) return false;
     if (!query) return true;
     return norm([
@@ -188,6 +192,8 @@ function openDetails(line, color) {
   target.appendChild(swatchNode(color, true));
   const status = sourceType(color) === "missing"
     ? "Цвет не определён: есть название производителя, но нет достоверного HEX/RGB."
+    : color.measured_sample
+      ? "Есть измерение физического отпечатка из внешнего каталога. Условия печати, освещение и партия могут влиять на результат."
     : color.visual_data_status === "estimated" || color.hex_source === "estimated"
       ? "Оценочный оттенок по внешнему справочнику. Не является официальным HEX производителя или проверенным совпадением с печатью."
       : "Цветовой образец производителя. Не является результатом измерения готовой печати.";
@@ -196,7 +202,9 @@ function openDetails(line, color) {
   addRow(rows, "Полимер", line.polymer);
   addRow(rows, "Линейка", line.name);
   addRow(rows, "Фактура", line.finish);
-  addRow(rows, "HEX", color.hex);
+  addRow(rows, "HEX производителя / справочника", color.hex);
+  addRow(rows, "Измеренный HEX отпечатка", color.measured_sample?.hex);
+  addRow(rows, "CIELAB отпечатка", color.measured_sample?.lab?.join(" · "));
   addRow(rows, "Источник HEX", color.hex_source === "estimated" ? "Оценка третьей стороны" : color.hex_source === "manufacturer" ? "Производитель" : color.hex_source);
   addRow(rows, "RGBA-образцы", (color.rgba_swatches || []).join("  ·  "));
   addRow(rows, "Тип цвета", color.color_mode || "solid");
@@ -216,7 +224,14 @@ function openDetails(line, color) {
     link.rel = "noopener noreferrer";
     target.appendChild(link);
   }
-  if (color.color_reference_url && /^https:\/\//.test(color.color_reference_url)) {
+  if (color.measured_sample?.source_url && /^https:\/\//.test(color.measured_sample.source_url)) {
+    const measuredLink = el("a", "source-link", "Измерение физического образца ↗");
+    measuredLink.href = color.measured_sample.source_url;
+    measuredLink.target = "_blank";
+    measuredLink.rel = "noopener noreferrer";
+    target.appendChild(measuredLink);
+  }
+  if (color.color_reference_url && /^https:\/\//.test(color.color_reference_url) && color.color_reference_url !== color.measured_sample?.source_url) {
     const refLink = el("a", "source-link", "Открыть источник приблизительного цвета ↗");
     refLink.href = color.color_reference_url;
     refLink.target = "_blank";
@@ -298,6 +313,11 @@ byId("onlySwatches").addEventListener("change", event => {
   state.limit = 144;
   if (state.data) renderResults();
 });
+byId("includeEstimates").addEventListener("change", event => {
+  state.includeEstimates = event.target.checked;
+  state.limit = 144;
+  if (state.data) renderResults();
+});
 byId("onlyMulticolor").addEventListener("change", event => {
   state.onlyMulticolor = event.target.checked;
   state.limit = 144;
@@ -306,10 +326,11 @@ byId("onlyMulticolor").addEventListener("change", event => {
 byId("reset").addEventListener("click", () => {
   Object.assign(state, {
     brand: "all", polymer: "all", line: "all", search: "",
-    onlySwatches: false, onlyMulticolor: false, limit: 144
+    onlySwatches: true, includeEstimates: false, onlyMulticolor: false, limit: 144
   });
   byId("search").value = "";
-  byId("onlySwatches").checked = false;
+  byId("onlySwatches").checked = true;
+  byId("includeEstimates").checked = false;
   byId("onlyMulticolor").checked = false;
   if (state.data) update();
 });
