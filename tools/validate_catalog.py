@@ -120,6 +120,20 @@ def main() -> int:
                     has_hex = "hex" in color
                     swatches = color.get("rgba_swatches") or []
                     mode = color.get("color_mode")
+                    measured_sample = color.get("measured_sample")
+                    if measured_sample:
+                        direct_evidence = [
+                            evidence for evidence in color.get("evidence", [])
+                            if evidence.get("source_type") == "community_measurement"
+                            and evidence.get("claim") == "measured_color"
+                            and evidence.get("url") == measured_sample.get("source_url")
+                        ]
+                        if not direct_evidence:
+                            errors.append(f"{rel}: measured sample missing exact source evidence: {full_id}")
+                        if color.get("hex_source") == "measured" and color.get("hex", "").upper() != measured_sample["hex"].upper():
+                            errors.append(f"{rel}: measured primary HEX must match measured sample: {full_id}")
+                    if color.get("hex_source") == "measured" and not measured_sample:
+                        errors.append(f"{rel}: measured HEX requires a directly sourced measured_sample: {full_id}")
                     if visual_status == "name_only" and (has_hex or swatches):
                         errors.append(f"{rel}: name_only color has numeric swatch: {full_id}")
                     if visual_status == "manufacturer_swatch" and not (has_hex or swatches):
