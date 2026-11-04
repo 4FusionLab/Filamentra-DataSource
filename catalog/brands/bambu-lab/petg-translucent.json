@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/petg-translucent",
+  "brand": "bambu-lab",
+  "name": "PETG Translucent",
+  "polymer": "PETG",
+  "finish": "translucent",
+  "effects": [
+    "transmission"
+  ],
+  "manufacturer_filament_id": "GFG01",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "petg-translucent",
+  "colors": [
+    {
+      "id": "translucent-gray",
+      "name": "Translucent Gray",
+      "manufacturer_color_code": "32100",
+      "manufacturer_palette_code": "D0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#8E8E8E80"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#8E8E8E",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "clear",
+      "name": "Clear",
+      "manufacturer_color_code": "32101",
+      "manufacturer_palette_code": "C0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#00000000"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-pink",
+      "name": "Translucent Pink",
+      "manufacturer_color_code": "32200",
+      "manufacturer_palette_code": "P1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F9C1BD80"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F9C1BD",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "translucent-orange",
+      "name": "Translucent Orange",
+      "manufacturer_color_code": "32300",
+      "manufacturer_palette_code": "A0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#FF911A80"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#FF911A",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "translucent-olive",
+      "name": "Translucent Olive",
+      "manufacturer_color_code": "32500",
+      "manufacturer_palette_code": "G0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#748C4580"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#748C45",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "translucent-teal",
+      "name": "Translucent Teal",
+      "manufacturer_color_code": "32501",
+      "manufacturer_palette_code": "G1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#77EDD780"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#77EDD7",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "translucent-light-blue",
+      "name": "Translucent Light Blue",
+      "manufacturer_color_code": "32600",
+      "manufacturer_palette_code": "B0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#61B0FF80"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#61B0FF",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "translucent-purple",
+      "name": "Translucent Purple",
+      "manufacturer_color_code": "32700",
+      "manufacturer_palette_code": "P0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#D6ABFF80"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#D6ABFF",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "translucent-brown",
+      "name": "Translucent Brown",
+      "manufacturer_color_code": "32800",
+      "manufacturer_palette_code": "N0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#C9A38180"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#C9A381",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

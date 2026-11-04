@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-palette",
+  "brand": "bambu-lab",
+  "name": "PLA Palette",
+  "polymer": "PLA",
+  "finish": "standard",
+  "effects": [],
+  "manufacturer_filament_id": "GFA20",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "white",
+      "name": "White",
+      "manufacturer_color_code": "18100",
+      "manufacturer_palette_code": "W00",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#FFFFFFFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "key",
+      "name": "Key",
+      "manufacturer_color_code": "18101",
+      "manufacturer_palette_code": "K00",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#000000FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#000000",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "magenta",
+      "name": "Magenta",
+      "manufacturer_color_code": "18200",
+      "manufacturer_palette_code": "R00",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#E24585FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#E24585",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "manufacturer_color_code": "18400",
+      "manufacturer_palette_code": "Y00",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#FCE300FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#FCE300",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "manufacturer_color_code": "18600",
+      "manufacturer_palette_code": "B00",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#0090DAFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#0090DA",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-wood",
+  "name": "Wood-filled PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.77,
+    "opacity": 255
+  },
+  "notes": "Wood-like base finish; fibers and grain need real texture maps."
+}

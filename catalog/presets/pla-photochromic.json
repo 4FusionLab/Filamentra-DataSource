@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-photochromic",
+  "name": "Color-changing PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.43,
+    "opacity": 255
+  },
+  "notes": "Single color state only; photochromic transition NOT reproduced."
+}

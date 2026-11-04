@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-silk-plus",
+  "name": "PLA Silk+",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.19,
+    "opacity": 255
+  },
+  "notes": "Silk highlight proxy; true anisotropy and layer geometry not modeled."
+}

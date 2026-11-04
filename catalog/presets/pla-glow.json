@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-glow",
+  "name": "Glow PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.65,
+    "opacity": 255
+  },
+  "notes": "Daylight appearance only; phosphorescence NOT reproduced."
+}

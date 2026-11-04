@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-wood",
+  "brand": "bambu-lab",
+  "name": "PLA Wood",
+  "polymer": "PLA",
+  "finish": "wood-like",
+  "effects": [
+    "wood-filled"
+  ],
+  "manufacturer_filament_id": "GFA16",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-wood",
+  "colors": [
+    {
+      "id": "white-oak",
+      "name": "White Oak",
+      "manufacturer_color_code": "13106",
+      "manufacturer_palette_code": "W0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#D6CCA3FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#D6CCA3",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "black-walnut",
+      "name": "Black Walnut",
+      "manufacturer_color_code": "13107",
+      "manufacturer_palette_code": "K0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#4F3F24FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#4F3F24",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "rosewood",
+      "name": "Rosewood",
+      "manufacturer_color_code": "13204",
+      "manufacturer_palette_code": "R0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#4C241CFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#4C241C",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "ochre-yellow",
+      "name": "Ochre Yellow",
+      "manufacturer_color_code": "13403",
+      "manufacturer_palette_code": "Y0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#C98935FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#C98935",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "classic-birch",
+      "name": "Classic Birch",
+      "manufacturer_color_code": "13505",
+      "manufacturer_palette_code": "G0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#918669FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#918669",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "clay-brown",
+      "name": "Clay Brown",
+      "manufacturer_color_code": "13801",
+      "manufacturer_palette_code": "N0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#995F11FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#995F11",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

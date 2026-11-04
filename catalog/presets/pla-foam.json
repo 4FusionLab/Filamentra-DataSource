@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-foam",
+  "name": "Aero/Foamed PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.75,
+    "opacity": 255
+  },
+  "notes": "Foamed base look; pores and scattering need measured or procedural representation."
+}

@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-silk-plus",
+  "brand": "bambu-lab",
+  "name": "PLA Silk+",
+  "polymer": "PLA",
+  "finish": "silk",
+  "effects": [
+    "silk"
+  ],
+  "manufacturer_filament_id": "GFA06",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-silk-plus",
+  "colors": [
+    {
+      "id": "titan-gray",
+      "name": "Titan Gray",
+      "manufacturer_color_code": "13108",
+      "manufacturer_palette_code": "D0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#5F6367FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#5F6367",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "manufacturer_color_code": "13109",
+      "manufacturer_palette_code": "D1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#C8C8C8FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#C8C8C8",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "manufacturer_color_code": "13110",
+      "manufacturer_palette_code": "W0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#FFFFFFFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "candy-red",
+      "name": "Candy Red",
+      "manufacturer_color_code": "13205",
+      "manufacturer_palette_code": "R0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#D02727FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#D02727",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "rose-gold",
+      "name": "Rose Gold",
+      "manufacturer_color_code": "13206",
+      "manufacturer_palette_code": "R1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#BA9594FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#BA9594",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "manufacturer_color_code": "13207",
+      "manufacturer_palette_code": "R2",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F7ADA6FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F7ADA6",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "champagne",
+      "name": "Champagne",
+      "manufacturer_color_code": "13404",
+      "manufacturer_palette_code": "Y0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F3CFB2FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F3CFB2",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "manufacturer_color_code": "13405",
+      "manufacturer_palette_code": "Y1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F4A925FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F4A925",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "candy-green",
+      "name": "Candy Green",
+      "manufacturer_color_code": "13506",
+      "manufacturer_palette_code": "G0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#018814FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#018814",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "manufacturer_color_code": "13507",
+      "manufacturer_palette_code": "G1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#96DCB9FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#96DCB9",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "baby-blue",
+      "name": "Baby Blue",
+      "manufacturer_color_code": "13603",
+      "manufacturer_palette_code": "B0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#A8C6EEFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#A8C6EE",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "manufacturer_color_code": "13604",
+      "manufacturer_palette_code": "B1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#008BDAFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#008BDA",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "manufacturer_color_code": "13702",
+      "manufacturer_palette_code": "P0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#8671CBFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#8671CB",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

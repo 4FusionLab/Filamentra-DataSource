@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-galaxy",
+  "name": "Galaxy PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.42,
+    "opacity": 255
+  },
+  "notes": "Fine-reflective flake texture not provided in this preset."
+}

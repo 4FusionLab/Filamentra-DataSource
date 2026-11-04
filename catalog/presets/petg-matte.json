@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "petg-matte",
+  "name": "Matte PETG",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.7,
+    "opacity": 255
+  },
+  "notes": "Initial matte PETG estimate; tune against real test prints."
+}

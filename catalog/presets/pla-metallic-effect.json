@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-metallic-effect",
+  "name": "Metallic-look PLA (dielectric)",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.27,
+    "opacity": 255
+  },
+  "notes": "High-gloss dielectric proxy; metal-colored plastic is not a conductive metal."
+}

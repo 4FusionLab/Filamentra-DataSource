@@ -1,0 +1,20 @@
+{
+  "manufacturer": "Bambu Lab",
+  "data_source": "bambulab/BambuStudio",
+  "source_file": "resources/profiles/BBL/filament/filaments_color_codes.json",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "source_commit": "56a57d00a591360cf41bf21383915ee5bf357be5",
+  "verified_on": "2026-11-04",
+  "scope": "All PLA/PETG families indexed in BambuStudio color registry, including potentially historical listings. Registry presence is not proof of current retail availability.",
+  "summary": {
+    "product_lines": 24,
+    "color_variants": 246,
+    "multicolor_variants": 18,
+    "transparent_palette_swatches": 19
+  },
+  "notes": [
+    "Official 8-digit RGBA swatches preserved, alpha is a display hint rather than measured volume transmission.",
+    "Gradient/multicolor variants retain all swatches without falsely presenting a single solid HEX.",
+    "Visual finish presets are uncalibrated estimates, not measured manufacturer optics."
+  ]
+}

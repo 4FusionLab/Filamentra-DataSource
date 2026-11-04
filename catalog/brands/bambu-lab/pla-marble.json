@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-marble",
+  "brand": "bambu-lab",
+  "name": "PLA Marble",
+  "polymer": "PLA",
+  "finish": "marble",
+  "effects": [
+    "marble"
+  ],
+  "manufacturer_filament_id": "GFA07",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-marble",
+  "colors": [
+    {
+      "id": "white-marble",
+      "name": "White Marble",
+      "manufacturer_color_code": "13103",
+      "manufacturer_palette_code": "D4",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F7F3F0FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F7F3F0",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "red-granite",
+      "name": "Red Granite",
+      "manufacturer_color_code": "13201",
+      "manufacturer_palette_code": "R5",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#AD4E38FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#AD4E38",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

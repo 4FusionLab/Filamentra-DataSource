@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-dynamic",
+  "brand": "bambu-lab",
+  "name": "PLA Dynamic",
+  "polymer": "PLA",
+  "finish": "color-changing",
+  "effects": [
+    "photochromic"
+  ],
+  "manufacturer_filament_id": "GFA13",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-photochromic",
+  "colors": [
+    {
+      "id": "uv-color-changing-white-to-coral",
+      "name": "UV Color Changing - White to Coral",
+      "manufacturer_color_code": "15100",
+      "manufacturer_palette_code": "W0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#FFFFFFFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

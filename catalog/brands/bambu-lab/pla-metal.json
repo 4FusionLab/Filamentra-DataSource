@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-metal",
+  "brand": "bambu-lab",
+  "name": "PLA Metal",
+  "polymer": "PLA",
+  "finish": "metallic-look",
+  "effects": [
+    "metallic-look"
+  ],
+  "manufacturer_filament_id": "GFA02",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-metallic-effect",
+  "colors": [
+    {
+      "id": "iron-gray-metallic",
+      "name": "Iron Gray Metallic",
+      "manufacturer_color_code": "13100",
+      "manufacturer_palette_code": "D2",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#43403DFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#43403D",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "iridium-gold-metallic",
+      "name": "Iridium Gold Metallic",
+      "manufacturer_color_code": "13400",
+      "manufacturer_palette_code": "Y1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#B39B84FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#B39B84",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "oxide-green-metallic",
+      "name": "Oxide Green Metallic",
+      "manufacturer_color_code": "13500",
+      "manufacturer_palette_code": "G2",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#1D7C6AFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#1D7C6A",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "cobalt-blue-metallic",
+      "name": "Cobalt Blue Metallic",
+      "manufacturer_color_code": "13600",
+      "manufacturer_palette_code": "B2",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#39699EFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#39699E",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "copper-brown-metallic",
+      "name": "Copper Brown Metallic",
+      "manufacturer_color_code": "13800",
+      "manufacturer_palette_code": "N3",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#AA6443FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#AA6443",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

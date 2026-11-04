@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-sparkle",
+  "brand": "bambu-lab",
+  "name": "PLA Sparkle",
+  "polymer": "PLA",
+  "finish": "sparkle",
+  "effects": [
+    "sparkle"
+  ],
+  "manufacturer_filament_id": "GFA08",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "sparkle-polymer",
+  "colors": [
+    {
+      "id": "onyx-black-sparkle",
+      "name": "Onyx Black Sparkle",
+      "manufacturer_color_code": "13101",
+      "manufacturer_palette_code": "K2",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#2D2B28FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#2D2B28",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "slate-gray-sparkle",
+      "name": "Slate Gray Sparkle",
+      "manufacturer_color_code": "13102",
+      "manufacturer_palette_code": "D5",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#8E9089FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#8E9089",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "crimson-red-sparkle",
+      "name": "Crimson Red Sparkle",
+      "manufacturer_color_code": "13200",
+      "manufacturer_palette_code": "R2",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#792B36FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#792B36",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "classic-gold-sparkle",
+      "name": "Classic Gold Sparkle",
+      "manufacturer_color_code": "13402",
+      "manufacturer_palette_code": "Y1",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#CEA629FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#CEA629",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "alpine-green-sparkle",
+      "name": "Alpine Green Sparkle",
+      "manufacturer_color_code": "13501",
+      "manufacturer_palette_code": "G3",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#3F5443FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#3F5443",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "royal-purple-sparkle",
+      "name": "Royal Purple Sparkle",
+      "manufacturer_color_code": "13700",
+      "manufacturer_palette_code": "B7",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#483D8BFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#483D8B",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

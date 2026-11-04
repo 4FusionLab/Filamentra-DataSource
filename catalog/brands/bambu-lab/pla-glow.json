@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/pla-glow",
+  "brand": "bambu-lab",
+  "name": "PLA Glow",
+  "polymer": "PLA",
+  "finish": "glow",
+  "effects": [
+    "glow-in-the-dark"
+  ],
+  "manufacturer_filament_id": "GFA12",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "pla-glow",
+  "colors": [
+    {
+      "id": "glow-pink",
+      "name": "Glow Pink",
+      "manufacturer_color_code": "15200",
+      "manufacturer_palette_code": "R0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F17B8FFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F17B8F",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "glow-orange",
+      "name": "Glow Orange",
+      "manufacturer_color_code": "15300",
+      "manufacturer_palette_code": "A0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#FF9D5BFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#FF9D5B",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "glow-yellow",
+      "name": "Glow Yellow",
+      "manufacturer_color_code": "15400",
+      "manufacturer_palette_code": "Y0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#F8FF80FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#F8FF80",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "glow-green",
+      "name": "Glow Green",
+      "manufacturer_color_code": "15500",
+      "manufacturer_palette_code": "G0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#A1FFACFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#A1FFAC",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "glow-blue",
+      "name": "Glow Blue",
+      "manufacturer_color_code": "15600",
+      "manufacturer_palette_code": "B0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#7AC0E9FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#7AC0E9",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

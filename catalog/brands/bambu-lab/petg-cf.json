@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "bambu-lab/petg-cf",
+  "brand": "bambu-lab",
+  "name": "PETG-CF",
+  "polymer": "PETG",
+  "finish": "fiber-matte",
+  "effects": [
+    "carbon-fiber"
+  ],
+  "manufacturer_filament_id": "GFG50",
+  "catalog_status": "listed_in_manufacturer_software",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+  "appearance_preset": "fiber-matte",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "manufacturer_color_code": "31100",
+      "manufacturer_palette_code": "K0",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#000000FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#000000",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "titan-gray",
+      "name": "Titan Gray",
+      "manufacturer_color_code": "31101",
+      "manufacturer_palette_code": "D6",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#565656FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#565656",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "brick-red",
+      "name": "Brick Red",
+      "manufacturer_color_code": "31200",
+      "manufacturer_palette_code": "R4",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#9F332AFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#9F332A",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "malachite-green",
+      "name": "Malachite Green",
+      "manufacturer_color_code": "31500",
+      "manufacturer_palette_code": "G7",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#16B08EFF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#16B08E",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "indigo-blue",
+      "name": "Indigo Blue",
+      "manufacturer_color_code": "31600",
+      "manufacturer_palette_code": "B6",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#324585FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#324585",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "violet-purple",
+      "name": "Violet Purple",
+      "manufacturer_color_code": "31700",
+      "manufacturer_palette_code": "P7",
+      "color_mode": "solid",
+      "rgba_swatches": [
+        "#583061FF"
+      ],
+      "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
+      "verified_on": "2026-11-04",
+      "hex": "#583061",
+      "hex_source": "manufacturer"
+    }
+  ]
+}

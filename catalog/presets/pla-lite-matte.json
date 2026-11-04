@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-lite-matte",
+  "name": "PLA Lite",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.73,
+    "opacity": 255
+  },
+  "notes": "Provisional finish estimate, line-specific test prints recommended."
+}

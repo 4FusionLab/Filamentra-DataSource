@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "pla-translucent",
+  "name": "Translucent PLA",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "transparent",
+    "roughness": 0.28,
+    "opacity": 255
+  },
+  "notes": "Uncalibrated transparent volume; measure attenuation and IOR before claiming fidelity."
+}
