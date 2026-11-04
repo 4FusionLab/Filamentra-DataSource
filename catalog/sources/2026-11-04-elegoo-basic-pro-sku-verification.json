@@ -1,0 +1,119 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Existing name-only colors in ELEGOO PLA Basic and PLA Pro; 9 exact variant identities verified, no new line or color created.",
+  "manufacturer_sources": [
+    "https://www.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+    "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg"
+  ],
+  "manufacturer_skus_verified": [
+    {
+      "id": "elegoo/pla-basic/cream-yellow",
+      "name": "Cream Yellow",
+      "sku": "50.203.1112",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "refill",
+      "retailer_url": "https://www.3djake.ch/en-CH/elegoo/pla-basic-cream-yellow"
+    },
+    {
+      "id": "elegoo/pla-basic/dark-green",
+      "name": "Dark Green",
+      "sku": "50.203.1118",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "spool",
+      "retailer_url": "https://www.3djake.be/de-BE/elegoo/pla-basic-dark-green"
+    },
+    {
+      "id": "elegoo/pla-basic/deep-grey",
+      "name": "Deep Grey",
+      "sku": "50.203.1109",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "refill",
+      "retailer_url": "https://www.3djake.be/de-BE/elegoo/pla-basic-deep-grey"
+    },
+    {
+      "id": "elegoo/pla-basic/light-cyan",
+      "name": "Light Cyan",
+      "sku": "50.203.1110",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "refill",
+      "retailer_url": "https://www.3djake.ch/en-CH/elegoo/pla-basic-light-cyan"
+    },
+    {
+      "id": "elegoo/pla-basic/olive-green",
+      "name": "Olive Green",
+      "sku": "50.203.1123",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "refill",
+      "retailer_url": "https://www.3djake.ch/en-CH/elegoo/pla-basic-olive-green"
+    },
+    {
+      "id": "elegoo/pla-pro/beige",
+      "name": "Beige",
+      "sku": "50.203.0789",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "spool",
+      "retailer_url": "https://www.3djake.de/elegoo/pla-pro-beige"
+    },
+    {
+      "id": "elegoo/pla-pro/hot-pink",
+      "name": "Hot Pink",
+      "sku": "50.203.0791",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "spool",
+      "retailer_url": "https://www.3djake.ch/en-CH/elegoo/pla-pro-hot-pink"
+    },
+    {
+      "id": "elegoo/pla-pro/neon-green",
+      "name": "Neon Green",
+      "sku": "50.203.0790",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "spool",
+      "retailer_url": "https://www.3djake.com/elegoo/pla-pro-neon-green"
+    },
+    {
+      "id": "elegoo/pla-pro/true-red",
+      "name": "True Red",
+      "sku": "50.203.0788",
+      "diameter_mm": 1.75,
+      "weight_g": 1000,
+      "packaging": "spool",
+      "retailer_url": "https://www.3djake.de/elegoo/pla-pro-true-red"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "elegoo/pla-basic/megenta",
+      "reason": "Official manufacturer spells this shade 'Megenta'. Search results commonly return a *Bambu Lab* CMYK bundle with the same misspelling; it is not evidence of ELEGOO's SKU or RGB. No reliable exact-SKU reference found."
+    },
+    {
+      "ids": [
+        "elegoo/pla-pro/beige",
+        "elegoo/pla-pro/hot-pink",
+        "elegoo/pla-pro/neon-green",
+        "elegoo/pla-pro/true-red"
+      ],
+      "reason": "Color codes for the generic ELEGOO PLA, PLA Basic, or PLA Plus lines cannot be transferred to PLA Pro despite matching common names. Independent PLA Pro source/measurement required."
+    },
+    {
+      "ids": [
+        "elegoo/pla-basic/cream-yellow",
+        "elegoo/pla-basic/dark-green",
+        "elegoo/pla-basic/deep-grey",
+        "elegoo/pla-basic/light-cyan",
+        "elegoo/pla-basic/olive-green"
+      ],
+      "reason": "Supplier pages show photos but not numeric swatches, and Layer Lookup's PLA Basic palette lacks these exact shade names. Do not guess RGB from names or another color family."
+    }
+  ],
+  "color_imports": 0,
+  "remaining_unresolved_catalog_total": 113,
+  "next_evidence": "Exact SKU-specific color image with documented screen-reference extraction procedure, primary brand HEX, or measured physical printed sample. Preserve quality tier and source independently from product existence."
+}
