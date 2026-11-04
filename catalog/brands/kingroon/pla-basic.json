@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "id": "kingroon/pla-basic",
+  "brand": "kingroon",
+  "name": "PLA Basic",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "white",
+      "name": "White",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "gray",
+      "name": "Gray",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "skin",
+      "name": "Skin",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "transparent",
+      "name": "Transparent",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Manufacturer labels transparent shade; actual tint, IOR, and transmission are unknown."
+        }
+      }
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-apricot",
+      "name": "Light Apricot",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-pink",
+      "name": "Light Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sakura-pink",
+      "name": "Sakura Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sea-blue",
+      "name": "Sea Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "vibrant-orange",
+      "name": "Vibrant Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "apple-green",
+      "name": "Apple Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mint-green",
+      "name": "Mint Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "turquoise-green",
+      "name": "Turquoise Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lilac-purple",
+      "name": "Lilac Purple",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "meteor-silver",
+      "name": "Meteor Silver",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "retro-red",
+      "name": "Retro Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "wood",
+      "name": "Wood",
+      "visual_data_status": "name_only",
+      "source_url": "https://kingroon.com/products/kingroon-pla-basic",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

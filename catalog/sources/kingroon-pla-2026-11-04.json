@@ -1,0 +1,28 @@
+{
+  "manufacturer": "KINGROON",
+  "verified_on": "2026-11-04",
+  "scope": "PLA Basic, PLA Plus and Matte PLA, source-verified variant names without validated manufacturer HEX",
+  "lines": [
+    {
+      "id": "kingroon/pla-basic",
+      "url": "https://kingroon.com/products/kingroon-pla-basic",
+      "variants": 27
+    },
+    {
+      "id": "kingroon/pla-plus",
+      "url": "https://kingroon.com/products/kingroon-pla-pluspla",
+      "variants": 12
+    },
+    {
+      "id": "kingroon/pla-matte",
+      "url": "https://kingroon.com/products/10kg-matte-pla-filament-1-75mm",
+      "variants": 13
+    }
+  ],
+  "notes": [
+    "Matte PLA Multicolor product-option is excluded because it appears to represent an assortment rather than one filament shade.",
+    "Matte Rainbow is retained as an officially named option, but its actual gradient color positions are not inferred.",
+    "PLA Filament 10KG bulk offer is excluded as potentially overlapping with PLA Basic, pending confirmation that it is a distinct formulation.",
+    "No color reference is synthesized from a generic color name."
+  ]
+}
