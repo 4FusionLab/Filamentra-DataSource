@@ -11,7 +11,7 @@
 
 **Every product entry still retains its official manufacturer `source_url`** to document the existence of the product/variant. A third-party color reference is stored separately. Never convert `estimated` to `manufacturer` without obtaining a manufacturer publication for that exact shade.
 
-The demo UI distinguishes **manufacturer**, **physical-print measurement** and **estimated** HEX. Only source-backed manufacturer or directly documented physical-print references appear in its curated default view; estimates require opt-in. GitHub Pages deploys **automatically after validated `main` source changes**, or manually using the dedicated workflow.
+The demo UI distinguishes **manufacturer**, **physical-print measurement** and **estimated** HEX. Only source-backed manufacturer or directly documented physical-print references appear in its curated default view; estimates require opt-in. GitHub Pages deploys **only on manual workflow dispatch**; pushes to `main` run separate source validation.
 
 ## Official catalogs rechecked
 
@@ -42,7 +42,7 @@ Independent source examples:
 
 FilamentSelect can contain screen-level approximations as well as some measured entries; unless an individual reference explicitly documents a calibrated measurement, it is treated as **estimated**.
 
-## Current completeness
+## Historical completeness (before later imports)
 
 | Evidence level | Records |
 | --- | ---: |
@@ -54,9 +54,11 @@ FilamentSelect can contain screen-level approximations as well as some measured 
 
 Twelve individual physical-print measurement records are now linked with direct evidence: seven have no manufacturer numeric swatch, while five supplement official manufacturer swatches without overwriting them. The curated default preview therefore has **522** distinct source-backed entries (515 manufacturer + 7 measured-only); **261** estimated-only references require opt-in. See [measurement review](MEASURED_COLOR_REVIEW.md). All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
 
+**Update, 2026-11-04:** the live 1019-record catalog has **301 estimated-only** and **113 name-only** variants after six exact-name KINGROON PLA+ reference estimates. The table above is preserved as a prior 902-record snapshot. See [progress](CATALOG_PROGRESS.md) and [unresolved shades](UNRESOLVED_COLORS.md).
+
 ## Pending work
 
-1. **KINGROON:** 53 color names still without a numeric reference, mostly extra shades and PLA+/Matte variants. Seek source-verified per-SKU swatches or measurement; full record IDs are in [inventory](UNRESOLVED_COLORS.md).
+1. **KINGROON:** 47 color names still without a numeric reference, mostly extra shades and PLA+/Matte variants. Seek source-verified per-SKU swatches or measurement; full record IDs are in [inventory](UNRESOLVED_COLORS.md).
 2. **ELEGOO:** 59 names remain without numeric colors: multi-pigment Silk, PLA/PLA Basic, translucent, glow and CMYK. See [exhaustive inventory](UNRESOLVED_COLORS.md).
 3. **Creality:** 6 remain: CR-PETG Yellow/Transparent Blue, lightweight PLA White/Black and two ambiguous PETG-CF color aliases.
 4. **DeepLee:** one name-only product.
