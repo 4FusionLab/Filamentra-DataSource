@@ -1,0 +1,146 @@
+{
+  "checked_on": "2026-11-04",
+  "purpose": "First import candidate SKU queue (not a public Filamentra line); identity confirmed from manufacturer catalog without any numerical display color claim.",
+  "manufacturer": "Star Plast",
+  "manufacturer_home": "https://star-plast.com/",
+  "country": "Russia",
+  "total_candidate_skus": 13,
+  "entries": [
+    {
+      "polymer": "PLA",
+      "finish": "standard",
+      "proposed_color_id": "goluboy",
+      "manufacturer_color_name": "Голубой",
+      "manufacturer_sku": "SP3R10120/0",
+      "manufacturer_source_url": "https://star-plast.com/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PLA",
+      "finish": "standard",
+      "proposed_color_id": "temno-zelenyy",
+      "manufacturer_color_name": "Тёмно-зелёный",
+      "manufacturer_sku": "SP3V10120/0",
+      "manufacturer_source_url": "https://star-plast.com/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PLA",
+      "finish": "standard",
+      "proposed_color_id": "naturalnyy",
+      "manufacturer_color_name": "Натуральный",
+      "manufacturer_sku": "SP3C10120/0",
+      "manufacturer_source_url": "https://star-plast.com/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PLA",
+      "finish": "standard",
+      "proposed_color_id": "seryy",
+      "manufacturer_color_name": "Серый",
+      "manufacturer_sku": "SP3G10120/0",
+      "manufacturer_source_url": "https://star-plast.com/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PLA",
+      "finish": "standard",
+      "proposed_color_id": "korallovyy",
+      "manufacturer_color_name": "Коралловый",
+      "manufacturer_sku": "SP3W10120/0",
+      "manufacturer_source_url": "https://star-plast.com/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "standard",
+      "proposed_color_id": "zheltyy",
+      "manufacturer_color_name": "Жёлтый",
+      "manufacturer_sku": "SP2D10120/0",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "fluorescent",
+      "proposed_color_id": "zheltyy-fluorescent",
+      "manufacturer_color_name": "Жёлтый флуоресцентный",
+      "manufacturer_sku": "SP2D10120/5",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "standard",
+      "proposed_color_id": "rozovyy",
+      "manufacturer_color_name": "Розовый",
+      "manufacturer_sku": "SP2K10120/0",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "standard",
+      "proposed_color_id": "goluboy",
+      "manufacturer_color_name": "Голубой",
+      "manufacturer_sku": "SP2R10120/0",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "standard",
+      "proposed_color_id": "fioletovyy",
+      "manufacturer_color_name": "Фиолетовый",
+      "manufacturer_sku": "SP2S10120/0",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "translucent",
+      "proposed_color_id": "zelenyy-transparent",
+      "manufacturer_color_name": "Зелёный прозрачный",
+      "manufacturer_sku": "SP2AM10120/0",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/petg_prozrachnyy/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "translucent",
+      "proposed_color_id": "krasnyy-transparent",
+      "manufacturer_color_name": "Красный прозрачный",
+      "manufacturer_sku": "SP2AE10120/0",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/petg_prozrachnyy/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    },
+    {
+      "polymer": "PETG",
+      "finish": "fluorescent",
+      "proposed_color_id": "madzhenta-fluorescent",
+      "manufacturer_color_name": "Маджента флуоресцентный",
+      "manufacturer_sku": "SP2K10120/5",
+      "manufacturer_source_url": "https://star-plast.com/catalog/petg_filament/petg_fluorestsentnyy/812/",
+      "color_reference_status": "name_only_pending_numeric_evidence",
+      "hex": null
+    }
+  ],
+  "acceptance_notes": [
+    "Do not auto-import queue into published colors. Exact manufacturer numeric swatches or documented third-party screen estimates per SKU are still required for a usable appearance.",
+    "Do not conflate same color name between PLA and PETG.",
+    "Fluorescent, translucent and silk finishes need distinct appearance behavior even when names share a base hue.",
+    "Price/stock/packaging statuses are not evidence of color."
+  ]
+}
