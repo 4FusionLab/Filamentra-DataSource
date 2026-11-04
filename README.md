@@ -47,7 +47,7 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 ### Initial verified data
 
 - **Bambu Lab:** [24 lines / 246 PLA+PETG color variants](catalog/brands/bambu-lab/) from a pinned official [BambuStudio source revision](catalog/sources/bambu-lab.json), preserving multi-color swatches and manufacturer identifiers.
-- **Curated preview first:** **605** source-backed color candidates from manufacturer swatches or documented physical print measurements; **295** reference-only estimates and **119** unresolved research records are excluded by default. Full source: **13 brands with material data / 83 PLA+PETG lines / 1019 variants**. [Quality policy](docs/VISUAL_DATA_QUALITY.md) · [119 unresolved variants](docs/UNRESOLVED_COLORS.md) · [Coverage](docs/CATALOG_PROGRESS.md).
+- **Curated preview first:** **605** source-backed color candidates from manufacturer swatches or documented physical print measurements; **301** reference-only estimates and **113** unresolved research records are excluded by default. Full source: **13 brands with material data / 83 PLA+PETG lines / 1019 variants**. [Quality policy](docs/VISUAL_DATA_QUALITY.md) · [119 unresolved variants](docs/UNRESOLVED_COLORS.md) · [Coverage](docs/CATALOG_PROGRESS.md).
 - **New imported brands:** [Anycubic](catalog/brands/anycubic/) (68 official color samples), [Polymaker](catalog/brands/polymaker/) (15 official color samples), [REC](catalog/brands/rec/) (24 RAL/SKU color references). FDplast (4 PETG) and BestFilament (6 PLA/PETG) now include source-attributed, non-calibrated screen estimates tied to official product SKUs. НИТ remains research-only. [Russian source audit](docs/RUSSIAN_COLOR_SOURCE_AUDIT.md).
 - **Visual profiles:** [18 experimental surface presets](catalog/presets/), explicitly not measured optical manufacturer properties.
 - **Progress and priorities:** [catalog population status](docs/CATALOG_PROGRESS.md), including remaining Chinese lines and Russian brands.
@@ -59,7 +59,7 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 
 **[Filamentra Catalog Demo](https://4fusionlab.github.io/Filamentra-DataSource/)** — a searchable, responsive preview of PLA/PETG manufacturers, product lines, colors, and their data provenance. Colorful gradients are illustrative, not physically calibrated Fusion renderings.
 
-The site is built and published through [GitHub Actions](.github/workflows/publish-demo.yml) **on relevant `main` changes after successful validation**, with optional **Run workflow** for manual publication. [Deployment rules and local preview](docs/DEMO_PAGES.md).
+The site is built and published through [GitHub Actions](.github/workflows/publish-demo.yml) **only when manually triggered with Run workflow** (catalog updates still receive automatic validation). [Deployment rules and local preview](docs/DEMO_PAGES.md).
 
 ## Catalog quality comes first
 
