@@ -28,6 +28,16 @@ Please **do not invent HEX values, SKUs, or unsupported manufacturer claims**. I
 
 Data and assets should have documented redistribution rights. This repository does not yet have a chosen license; coordinate substantial contributed content with maintainers before submission.
 
+## Optical fidelity and visual presets
+
+- For every product line, select an appropriate `appearance_preset` from `catalog/presets/`, or propose a new one with a clear rationale.
+- The preset is only a **Filamentra visual estimate** unless a repeatable calibration session has been completed. Do not label estimated roughness, IOR, transmission distance, or texture scale as manufacturer-provided data.
+- If the line or a specific shade overrides `appearance` keys, add matching `appearance_sources` entries with `manufacturer`, `measured`, or `filamentra_estimate` and the relevant reference or method.
+- Manufacturer HEX and manufacturer optical measurements are different sources. Preserve `hex_source` independently.
+- Prefer documented Fusion API paths; do not commit a shader property the add-in cannot map, and never silently degrade unsupported settings.
+- For textures, include licensing/creation provenance, normal-map convention, and intended real-world scale. Reproduction of print-layer microgeometry must be verified in Fusion.
+- Follow [the full appearance contract](docs/MATERIAL_APPEARANCE_SPEC.md). Run `python tools/validate_catalog.py` after installing `jsonschema`.
+
 ## Review priorities
 
 - Source-backed factual accuracy and provenance.
