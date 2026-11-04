@@ -1,0 +1,54 @@
+{
+  "imported_on": "2026-11-04",
+  "scope": "Existing kingroon/pla-plus shades without numeric color; no new colors or lines added.",
+  "manufacturer_line_url": "https://kingroon.com/products/kingroon-pla-pluspla",
+  "numeric_reference_url": "https://layerlookup.com/kingroon/pla/",
+  "reference_origin": "Layer Lookup; site credits Open Filament Database and SpoolmanDB. Its manufacturer-code label was not independently verified against a primary manufacturer palette.",
+  "acceptance": "Only records explicitly named 'Plus (+) <shade>' were mapped, preserving the PLA+ product identity. All are third-party display approximations and intentionally hidden from the strict curated preview.",
+  "imported": [
+    {
+      "color_id": "kingroon/pla-plus/black",
+      "reference_name": "Plus (+) Black",
+      "hex": "#292824"
+    },
+    {
+      "color_id": "kingroon/pla-plus/grey",
+      "reference_name": "Plus (+) Grey",
+      "hex": "#808080"
+    },
+    {
+      "color_id": "kingroon/pla-plus/red",
+      "reference_name": "Plus (+) Red",
+      "hex": "#EC0000"
+    },
+    {
+      "color_id": "kingroon/pla-plus/skin",
+      "reference_name": "Plus (+) Skin",
+      "hex": "#DBC9AD"
+    },
+    {
+      "color_id": "kingroon/pla-plus/white",
+      "reference_name": "Plus (+) White",
+      "hex": "#F5F5F5"
+    },
+    {
+      "color_id": "kingroon/pla-plus/yellow",
+      "reference_name": "Plus (+) Yellow",
+      "hex": "#FADB24"
+    }
+  ],
+  "retained_unresolved": [
+    "blue",
+    "orange",
+    "green",
+    "purple",
+    "transparent",
+    "silver"
+  ],
+  "rejection_notes": [
+    "Other generic Kingroon PLA and PLA Basic swatches cannot be carried into PLA+ without exact family evidence.",
+    "Kingroon Matte Rainbow requires a verified multicolor provenance model, not a single base HEX.",
+    "Kingroon Matte Brown has conflicting third-party screen estimates and an alias 'Default'; do not infer an exact color from this.",
+    "Independent physical-print measurement and viewing conditions are unavailable; do not mark these as measured/manufacturer."
+  ]
+}
