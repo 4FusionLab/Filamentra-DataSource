@@ -27,6 +27,6 @@ The saturated `#0000FF` and `#008000` values in particular may be generic digita
 - **242** estimated-only color entries (was 237).
 - **138** unresolved name-only entries (was 143).
 
-**Historical snapshot:** the 138 unresolved figure above was the count at this batch. A later batch resolved 19 more; for the current **119 unresolved variants**, see [the exhaustive audit](UNRESOLVED_COLORS.md). Prioritize exact SKU-specific evidence, without overwriting existing colors.
+**Historical snapshot:** the 138 unresolved figure above was the count at this batch. A later batch resolved 19 more; for the later **113 unresolved variants** (after six additional KINGROON PLA+ estimates), see [the exhaustive audit](UNRESOLVED_COLORS.md). Prioritize exact SKU-specific evidence, without overwriting existing colors.
 
-GitHub Pages now rebuilds automatically after catalog changes in `main` that pass validation.
+GitHub Pages builds and publishes only when its workflow is manually dispatched. Catalog changes in `main` still trigger validation.
