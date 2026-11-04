@@ -135,7 +135,7 @@ def main() -> None:
         counts = Counter(item["manufacturer"] for item in items)
         sku_count = sum(bool(i["manufacturer_skus"]) for i in items)
         output = f"Unresolved PLA/PETG: {len(items)}\n"
-        output += f"Exact SKU verified: {sku_count}\\n"
+        output += f"Exact SKU verified: {sku_count}\n"
         output += "\n".join(f"{k}: {v}" for k, v in sorted(counts.items())) + "\n"
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)
