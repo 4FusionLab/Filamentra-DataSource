@@ -61,6 +61,7 @@ function swatchNode(color, detail = false) {
   if (!detail) {
     let status = "HEX";
     if (!background) status = "NAME ONLY";
+    else if (color.visual_data_status === "estimated" || color.hex_source === "estimated") status = "ESTIMATE";
     else if (color.color_mode === "gradient") status = "GRADIENT";
     else if (color.color_mode === "multicolor") status = "MULTICOLOR";
     else if (color.rgba_swatches?.length === 1 && color.rgba_swatches[0].slice(-2).toUpperCase() !== "FF") status = "ALPHA";
@@ -187,13 +188,16 @@ function openDetails(line, color) {
   target.appendChild(swatchNode(color, true));
   const status = sourceType(color) === "missing"
     ? "Цвет не определён: есть название производителя, но нет достоверного HEX/RGB."
-    : "Цветовой образец производителя. Не является результатом измерения готовой печати.";
+    : color.visual_data_status === "estimated" || color.hex_source === "estimated"
+      ? "Оценочный оттенок по внешнему справочнику. Не является официальным HEX производителя или проверенным совпадением с печатью."
+      : "Цветовой образец производителя. Не является результатом измерения готовой печати.";
   target.appendChild(el("div", "detail-status" + (sourceType(color) === "missing" ? " missing" : ""), status));
   const rows = el("div", "spec");
   addRow(rows, "Полимер", line.polymer);
   addRow(rows, "Линейка", line.name);
   addRow(rows, "Фактура", line.finish);
   addRow(rows, "HEX", color.hex);
+  addRow(rows, "Источник HEX", color.hex_source === "estimated" ? "Оценка третьей стороны" : color.hex_source === "manufacturer" ? "Производитель" : color.hex_source);
   addRow(rows, "RGBA-образцы", (color.rgba_swatches || []).join("  ·  "));
   addRow(rows, "Тип цвета", color.color_mode || "solid");
   addRow(rows, "Код производителя", color.manufacturer_color_code);
@@ -212,6 +216,14 @@ function openDetails(line, color) {
     link.rel = "noopener noreferrer";
     target.appendChild(link);
   }
+  if (color.color_reference_url && /^https:\/\//.test(color.color_reference_url)) {
+    const refLink = el("a", "source-link", "Открыть источник приблизительного цвета ↗");
+    refLink.href = color.color_reference_url;
+    refLink.target = "_blank";
+    refLink.rel = "noopener noreferrer";
+    target.appendChild(refLink);
+  }
+  if (color.color_reference_note) target.appendChild(el("p", "caution", color.color_reference_note));
   if (color.visual_note) target.appendChild(el("p", "caution", color.visual_note));
   target.appendChild(el("p", "caution", "Это демонстрация данных каталога, а не физически корректный Fusion Render. Градиент на карточке показывает сочетание цветовых образцов, но не реальную ориентацию и высоту переходов в FDM-печати."));
   byId("overlay").hidden = false;
