@@ -47,18 +47,18 @@ FilamentSelect can contain screen-level approximations as well as some measured 
 | Evidence level | Records |
 | --- | ---: |
 | Manufacturer numeric swatch, including multi-color RGBA | 515 |
-| Independently sourced estimated HEX, no physical measurement | 242 |
+| Independently sourced estimated HEX, no physical measurement | 261 |
 | Third-party physical measurement, no manufacturer swatch | 7 |
-| Confirmed variant name, no defensible numeric color | 138 |
+| Confirmed variant name, no defensible numeric color | 119 |
 | **Total** | **902** |
 
-Twelve individual physical-print measurement records are now linked with direct evidence: seven have no manufacturer numeric swatch, while five supplement official manufacturer swatches without overwriting them. The curated default preview therefore has **522** distinct source-backed entries (515 manufacturer + 7 measured-only); **242** estimated-only references require opt-in. See [measurement review](MEASURED_COLOR_REVIEW.md). All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
+Twelve individual physical-print measurement records are now linked with direct evidence: seven have no manufacturer numeric swatch, while five supplement official manufacturer swatches without overwriting them. The curated default preview therefore has **522** distinct source-backed entries (515 manufacturer + 7 measured-only); **261** estimated-only references require opt-in. See [measurement review](MEASURED_COLOR_REVIEW.md). All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
 
 ## Pending work
 
-1. **KINGROON:** 53 color names still without a numeric reference, mostly extra shades and PLA+/Matte variants. Seek source-verified per-SKU swatches or measurement.
-2. **ELEGOO:** 77 names still unresolved; many are multi-pigment Silk, PLA-CF, translucent, glow, and CMYK shades, for which a single invented HEX would be misleading.
-3. **Creality:** 13 unresolved shades including PETG-CF special colors and transparent shades. In-file product names alone are insufficient for claiming numeric optics.
+1. **KINGROON:** 53 color names still without a numeric reference, mostly extra shades and PLA+/Matte variants. Seek source-verified per-SKU swatches or measurement; full record IDs are in [inventory](UNRESOLVED_COLORS.md).
+2. **ELEGOO:** 59 names remain without numeric colors: multi-pigment Silk, PLA/PLA Basic, translucent, glow and CMYK. See [exhaustive inventory](UNRESOLVED_COLORS.md).
+3. **Creality:** 6 remain: CR-PETG Yellow/Transparent Blue, lightweight PLA White/Black and two ambiguous PETG-CF color aliases.
 4. **DeepLee:** one name-only product.
 5. **ERYONE:** existing high-speed PLA is now colorized; more **manufacturer-verified product lines** are available to import from the official catalog, but their visual data must be independently researched rather than mass-generated from names.
 

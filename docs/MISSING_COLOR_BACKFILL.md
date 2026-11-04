@@ -27,6 +27,6 @@ The saturated `#0000FF` and `#008000` values in particular may be generic digita
 - **242** estimated-only color entries (was 237).
 - **138** unresolved name-only entries (was 143).
 
-The next backfill should target additional **specific retail variant/SKU source pages** for these 138 unresolved entries, prioritizing single-color opaque PLA/PETG. Do not invent values from color names and do not change already populated HEX records.
+**Historical snapshot:** the 138 unresolved figure above was the count at this batch. A later batch resolved 19 more; for the current **119 unresolved variants**, see [the exhaustive audit](UNRESOLVED_COLORS.md). Prioritize exact SKU-specific evidence, without overwriting existing colors.
 
 GitHub Pages now rebuilds automatically after catalog changes in `main` that pass validation.

@@ -47,7 +47,7 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 ### Initial verified data
 
 - **Bambu Lab:** [24 lines / 246 PLA+PETG color variants](catalog/brands/bambu-lab/) from a pinned official [BambuStudio source revision](catalog/sources/bambu-lab.json), preserving multi-color swatches and manufacturer identifiers.
-- **Curated preview first:** **522** source-backed color candidates from manufacturer swatches or documented physical print measurements; **242** reference-only estimates and **138** name-only research records are excluded by default. Full source: **8 brands / 72 PLA+PETG lines / 902 variants**. [Quality policy](docs/VISUAL_DATA_QUALITY.md) · [Measured-color review](docs/MEASURED_COLOR_REVIEW.md) · [Coverage](docs/CATALOG_PROGRESS.md).
+- **Curated preview first:** **522** source-backed color candidates from manufacturer swatches or documented physical print measurements; **261** reference-only estimates and **119** unresolved research records are excluded by default. Full source: **8 brands / 72 PLA+PETG lines / 902 variants**. [Quality policy](docs/VISUAL_DATA_QUALITY.md) · [119 unresolved variants](docs/UNRESOLVED_COLORS.md) · [Coverage](docs/CATALOG_PROGRESS.md).
 - **Chinese brands:** eSUN, ERYONE, ELEGOO, DeepLee, Creality, KINGROON and SUNLU have source-backed records, but coverage and optical fidelity remain incomplete. Russian manufacturers follow the Chinese stage.
 - **Visual profiles:** [18 experimental surface presets](catalog/presets/), explicitly not measured optical manufacturer properties.
 - **Progress and priorities:** [catalog population status](docs/CATALOG_PROGRESS.md), including remaining Chinese lines and Russian brands.

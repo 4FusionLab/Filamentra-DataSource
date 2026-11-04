@@ -71,10 +71,10 @@ These appear in `variants[]` and `evidence[]`; they **do not** replace stable fu
 
 ## Current status
 
-At 2026-11-04, the source catalog has **8 brands, 72 lines, 902 variants**: 515 with manufacturer numeric swatches, **12** with linked third-party physical measurements (five of those also retain official manufacturer swatches), **242** remaining estimated-only references, and **138** unresolved names.
+At 2026-11-04, the source catalog has **8 brands, 72 lines, 902 variants**: 515 with manufacturer numeric swatches, **12** with linked third-party physical measurements (five of those also retain official manufacturer swatches), **261** remaining estimated-only references, and **119** unresolved names.
 
 This yields **522 curated preview candidates** from official numeric source or physical-sample evidence, **not** 522 physically accurate Fusion materials. Finish, BRDF, transmission and print-layer effects remain uncalibrated.
 
 See [six additional measured sample confirmations](MEASURED_COLOR_REVIEW.md). The CI now checks HEX-versus-Lab conversion consistency, but cannot certify the external measurement protocol.
 
-**Next work:** address the 138 name-only color variants using exact product-specific color references; avoid overwriting already populated colors. Do not pad catalog totals with weakly sourced colors.
+**Next work:** use the [complete list of 119 unresolved colors](UNRESOLVED_COLORS.md) and [regenerable audit](../tools/audit_missing_colors.py) to target exact SKU-specific evidence. Avoid overwriting colors already populated. Do not pad catalog totals with weakly sourced colors.
