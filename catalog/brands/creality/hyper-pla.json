@@ -36,7 +36,32 @@
       "name": "Black",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "measured",
+      "measured_sample": {
+        "hex": "#3C3C3D",
+        "lab": [
+          25.41,
+          -0.06,
+          -0.71
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/creality--hyper-pla--black",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/creality--hyper-pla--black",
+          "checked_on": "2026-11-04",
+          "note": "Third party reports a physical print measurement; complete reproducibility conditions are not specified."
+        }
+      ],
+      "hex": "#3C3C3D",
+      "hex_source": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/creality--hyper-pla--black",
+      "color_reference_note": "Измеренный образец FilamentSelect. Условия печати и измерения не полностью документированы; возможны отклонения между партиями и принтерами."
     },
     {
       "id": "grey",
@@ -50,11 +75,32 @@
       "name": "Red",
       "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
       "verified_on": "2026-11-04",
-      "visual_data_status": "estimated",
+      "visual_data_status": "measured",
       "hex": "#C63D44",
-      "hex_source": "estimated",
-      "color_reference_url": "https://www.filamentselect.com/filaments?brands=creality&materials=PLA",
-      "color_reference_note": "Приближённый оттенок по стороннему FilamentSelect; не официальный код производителя. Факт наличия продукта подтверждается отдельно официальной страницей."
+      "hex_source": "measured",
+      "color_reference_url": "https://www.filamentselect.com/filaments/creality--hyper-pla--red",
+      "color_reference_note": "Измеренный образец FilamentSelect. Условия печати и измерения не полностью документированы; возможны отклонения между партиями и принтерами.",
+      "measured_sample": {
+        "hex": "#C63D44",
+        "lab": [
+          46.62,
+          54.76,
+          27.17
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/creality--hyper-pla--red",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/creality--hyper-pla--red",
+          "checked_on": "2026-11-04",
+          "note": "Third party reports a physical print measurement; complete reproducibility conditions are not specified."
+        }
+      ]
     },
     {
       "id": "blue",

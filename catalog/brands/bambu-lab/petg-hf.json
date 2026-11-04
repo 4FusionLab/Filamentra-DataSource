@@ -37,7 +37,28 @@
       "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
       "verified_on": "2026-11-04",
       "hex": "#ADB1B2",
-      "hex_source": "manufacturer"
+      "hex_source": "manufacturer",
+      "measured_sample": {
+        "hex": "#A3A6A6",
+        "lab": [
+          67.88,
+          -0.56,
+          -1.25
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/bambu-lab--petg-hf--gray",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/bambu-lab--petg-hf--gray",
+          "checked_on": "2026-11-04",
+          "note": "Third party reports a physical print measurement; complete reproducibility conditions are not specified."
+        }
+      ]
     },
     {
       "id": "black",
@@ -51,7 +72,28 @@
       "source_url": "https://github.com/bambulab/BambuStudio/blob/56a57d00a591360cf41bf21383915ee5bf357be5/resources/profiles/BBL/filament/filaments_color_codes.json",
       "verified_on": "2026-11-04",
       "hex": "#000000",
-      "hex_source": "manufacturer"
+      "hex_source": "manufacturer",
+      "measured_sample": {
+        "hex": "#3D3E3F",
+        "lab": [
+          26.21,
+          -0.07,
+          -0.79
+        ],
+        "source_url": "https://www.filamentselect.com/filaments/bambu-lab--petg-hf--black",
+        "source_type": "third_party_physical_print",
+        "measurement_conditions": "not_provided",
+        "verified_on": "2026-11-04"
+      },
+      "evidence": [
+        {
+          "source_type": "community_measurement",
+          "claim": "measured_color",
+          "url": "https://www.filamentselect.com/filaments/bambu-lab--petg-hf--black",
+          "checked_on": "2026-11-04",
+          "note": "Third party reports a physical print measurement; complete reproducibility conditions are not specified."
+        }
+      ]
     },
     {
       "id": "dark-gray",
