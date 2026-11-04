@@ -59,7 +59,7 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 
 **[Filamentra Catalog Demo](https://4fusionlab.github.io/Filamentra-DataSource/)** — a searchable, responsive preview of PLA/PETG manufacturers, product lines, colors, and their data provenance. Colorful gradients are illustrative, not physically calibrated Fusion renderings.
 
-The site updates **only when the [manual GitHub Actions workflow](.github/workflows/publish-demo.yml) is run** — not on every commit. **GitHub Pages must be enabled first**: [setup and local preview instructions](docs/DEMO_PAGES.md). Until Pages is enabled and a deployment succeeds, the site link will not be live.
+The site updates **only when the [manual GitHub Actions workflow](.github/workflows/publish-demo.yml) is run** — not on every commit. The first GitHub Pages deployment **succeeded on November 4, 2026** ([workflow run](https://github.com/4FusionLab/Filamentra-DataSource/actions/runs/41860887983)). Future publishing remains manual-only: [how to rebuild the preview](docs/DEMO_PAGES.md).
 
 ## Catalog quality comes first
 
