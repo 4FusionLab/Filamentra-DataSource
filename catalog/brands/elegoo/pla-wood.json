@@ -10,36 +10,8 @@
   "appearance_preset": "pla-wood",
   "colors": [
     {
-      "id": "wood-filled",
-      "name": "Wood filled",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-wood",
-      "verified_on": "2026-11-04"
-    },
-    {
       "id": "light-brown",
       "name": "Light Brown",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-wood",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "walnut-wood",
-      "name": "Walnut Wood",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-wood",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "rosewood",
-      "name": "Rosewood",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-wood",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "tan-birch",
-      "name": "Tan Birch",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-wood",
       "verified_on": "2026-11-04"
@@ -50,6 +22,50 @@
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-wood",
       "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rosewood",
+      "name": "Rosewood",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04",
+      "hex": "#60433F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "tan-birch",
+      "name": "Tan Birch",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04",
+      "hex": "#DFD1C4",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "walnut-wood",
+      "name": "Walnut Wood",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04",
+      "hex": "#773F1A",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "wood-filled",
+      "name": "Wood filled",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04",
+      "hex": "#C8A36F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     }
   ]
 }

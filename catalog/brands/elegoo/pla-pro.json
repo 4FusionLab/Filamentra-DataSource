@@ -10,29 +10,70 @@
   "appearance_preset": "pla-glossy",
   "colors": [
     {
+      "id": "beige",
+      "name": "Beige",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "white",
-      "name": "White",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "burgundy-red",
-      "name": "Burgundy Red",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#000000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
       "id": "blue",
       "name": "Blue",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#2240AF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "burgundy-red",
+      "name": "Burgundy Red",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#9C2129",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#08E327",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#8F949B",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "hot-pink",
+      "name": "Hot Pink",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
@@ -40,51 +81,13 @@
     {
       "id": "light-blue",
       "name": "Light Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "green",
-      "name": "Green",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "yellow",
-      "name": "Yellow",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "grey",
-      "name": "Grey",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "purple",
-      "name": "Purple",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silver",
-      "name": "Silver",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "true-red",
-      "name": "True Red",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#339BF7",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
       "id": "neon-green",
@@ -94,18 +97,55 @@
       "verified_on": "2026-11-04"
     },
     {
-      "id": "beige",
-      "name": "Beige",
+      "id": "purple",
+      "name": "Purple",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#5D539D",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#9F9F9F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "true-red",
+      "name": "True Red",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
     },
     {
-      "id": "hot-pink",
-      "name": "Hot Pink",
-      "visual_data_status": "name_only",
+      "id": "white",
+      "name": "White",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#FBEC07",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     }
   ]
 }

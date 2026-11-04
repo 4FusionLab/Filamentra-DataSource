@@ -10,78 +10,8 @@
   "appearance_preset": "pla-silk",
   "colors": [
     {
-      "id": "silk-blue-magenta",
-      "name": "Silk Blue Magenta",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-green-red",
-      "name": "Silk Green Red",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-gold",
-      "name": "Silk Gold",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-silver-grey",
-      "name": "Silk Silver Grey",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-copper",
-      "name": "Silk Copper",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-white",
-      "name": "Silk White",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-coral-pink",
-      "name": "Silk Coral Pink",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-mint-green",
-      "name": "Silk Mint Green",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-holly-green",
-      "name": "Silk Holly Green",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-red",
-      "name": "Silk Red",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-black-red",
-      "name": "Silk Black Red",
+      "id": "silk-black-green",
+      "name": "Silk Black Green",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
@@ -94,15 +24,15 @@
       "verified_on": "2026-11-04"
     },
     {
-      "id": "silk-blue-green",
-      "name": "Silk Blue Green",
+      "id": "silk-black-red",
+      "name": "Silk Black Red",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
     },
     {
-      "id": "silk-blue-purple-black",
-      "name": "Silk Blue Purple Black",
+      "id": "silk-blue-green",
+      "name": "Silk Blue Green",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
@@ -115,15 +45,8 @@
       "verified_on": "2026-11-04"
     },
     {
-      "id": "silk-yellow-purple",
-      "name": "Silk Yellow Purple",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silk-black-green",
-      "name": "Silk Black Green",
+      "id": "silk-blue-magenta",
+      "name": "Silk Blue Magenta",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
@@ -136,8 +59,8 @@
       "verified_on": "2026-11-04"
     },
     {
-      "id": "silk-sky-blue",
-      "name": "Silk Sky Blue",
+      "id": "silk-blue-purple-black",
+      "name": "Silk Blue Purple Black",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"
@@ -150,6 +73,68 @@
       "verified_on": "2026-11-04"
     },
     {
+      "id": "silk-copper",
+      "name": "Silk Copper",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#C97A63",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-coral-pink",
+      "name": "Silk Coral Pink",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#DB6E6D",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-gold",
+      "name": "Silk Gold",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#E2AC00",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-green-red",
+      "name": "Silk Green Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silk-holly-green",
+      "name": "Silk Holly Green",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#1D7C6A",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-mint-green",
+      "name": "Silk Mint Green",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#9AE0DD",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
       "id": "silk-peach-pink",
       "name": "Silk Peach Pink",
       "visual_data_status": "name_only",
@@ -157,8 +142,55 @@
       "verified_on": "2026-11-04"
     },
     {
+      "id": "silk-red",
+      "name": "Silk Red",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#ED646B",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-silver-grey",
+      "name": "Silk Silver Grey",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#93969B",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-sky-blue",
+      "name": "Silk Sky Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
       "id": "silk-true-red",
       "name": "Silk True Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silk-white",
+      "name": "Silk White",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silk-yellow-purple",
+      "name": "Silk Yellow Purple",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
       "verified_on": "2026-11-04"

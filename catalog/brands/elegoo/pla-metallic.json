@@ -10,32 +10,48 @@
   "appearance_preset": "pla-metallic-effect",
   "colors": [
     {
-      "id": "metallic-gold",
-      "name": "Metallic Gold",
-      "visual_data_status": "name_only",
+      "id": "metallic-blue",
+      "name": "Metallic Blue",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-metal-filament-1-75-mm-colored-1-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#2E4560",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
       "id": "metallic-bronze",
       "name": "Metallic Bronze",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-metal-filament-1-75-mm-colored-1-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#4A2F26",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
-      "id": "metallic-blue",
-      "name": "Metallic Blue",
-      "visual_data_status": "name_only",
+      "id": "metallic-gold",
+      "name": "Metallic Gold",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-metal-filament-1-75-mm-colored-1-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#6B5A4A",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
       "id": "metallic-green",
       "name": "Metallic Green",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-metal-filament-1-75-mm-colored-1-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#34523F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     }
   ]
 }

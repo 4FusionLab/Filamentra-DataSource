@@ -10,81 +10,125 @@
   "appearance_preset": "pla-glossy",
   "colors": [
     {
+      "id": "beige",
+      "name": "Beige",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#F4E0B8",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "white",
-      "name": "White",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "grey",
-      "name": "Grey",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#000000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
       "id": "blue",
       "name": "Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "green",
-      "name": "Green",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "red",
-      "name": "Red",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "orange",
-      "name": "Orange",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "yellow",
-      "name": "Yellow",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
-    },
-    {
-      "id": "silver",
-      "name": "Silver",
-      "visual_data_status": "name_only",
-      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#2240AF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
       "id": "brown",
       "name": "Brown",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#9E6A4B",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     },
     {
-      "id": "beige",
-      "name": "Beige",
-      "visual_data_status": "name_only",
+      "id": "green",
+      "name": "Green",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#08E327",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#8F949B",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#FD7C18",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#EA140E",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#9F9F9F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "visual_data_status": "estimated",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "hex": "#FBEC07",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочное значение FilamentSelect (сторонний справочник), не опубликованный производителем HEX и не замер готового изделия."
     }
   ]
 }
