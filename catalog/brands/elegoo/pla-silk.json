@@ -137,9 +137,22 @@
     {
       "id": "silk-peach-pink",
       "name": "Silk Peach Pink",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#F7CFD4",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--silk-pla--peach-pink",
+      "color_reference_note": "Индивидуальная карточка FilamentSelect: приблизительный экранный HEX, достоверность первичного источника не подтверждена. Это не измерение отпечатка и не официальный числовой цвет ELEGOO.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--silk-pla--peach-pink",
+          "checked_on": "2026-11-04",
+          "note": "Exact product-line/color detail explicitly states approximate screen color and unverified source authority."
+        }
+      ]
     },
     {
       "id": "silk-red",
@@ -166,9 +179,22 @@
     {
       "id": "silk-sky-blue",
       "name": "Silk Sky Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#62A0EA",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--silk-pla--sky-blue",
+      "color_reference_note": "Индивидуальная карточка FilamentSelect: приблизительный экранный HEX, достоверность первичного источника не подтверждена. Это не измерение отпечатка и не официальный числовой цвет ELEGOO.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--silk-pla--sky-blue",
+          "checked_on": "2026-11-04",
+          "note": "Exact product-line/color detail explicitly states approximate screen color and unverified source authority."
+        }
+      ]
     },
     {
       "id": "silk-true-red",

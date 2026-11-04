@@ -518,7 +518,8 @@
                   "authorized_distributor",
                   "retailer",
                   "marketplace",
-                  "community_measurement"
+                  "community_measurement",
+                  "specialist_catalog"
                 ]
               },
               "claim": {

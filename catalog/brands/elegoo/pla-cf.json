@@ -12,9 +12,22 @@
     {
       "id": "carbon-fiber-black",
       "name": "Carbon Fiber Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-cf-filament-1-75mm-black-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#0C0908",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--pla-cf--black",
+      "color_reference_note": "Индивидуальная карточка FilamentSelect: приблизительный экранный HEX, достоверность первичного источника не подтверждена. Это не измерение отпечатка и не официальный числовой цвет ELEGOO.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--pla-cf--black",
+          "checked_on": "2026-11-04",
+          "note": "Exact product-line/color detail explicitly states approximate screen color and unverified source authority."
+        }
+      ]
     },
     {
       "id": "carbon-fiber-grey",
@@ -37,16 +50,42 @@
     {
       "id": "carbon-fiber-blue",
       "name": "Carbon Fiber Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-cf-filament-1-75mm-black-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#0000FF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--pla-cf--carbon-fiber-blue",
+      "color_reference_note": "Индивидуальная карточка FilamentSelect: приблизительный экранный HEX, достоверность первичного источника не подтверждена. Это не измерение отпечатка и не официальный числовой цвет ELEGOO.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--pla-cf--carbon-fiber-blue",
+          "checked_on": "2026-11-04",
+          "note": "Exact product-line/color detail explicitly states approximate screen color and unverified source authority."
+        }
+      ]
     },
     {
       "id": "carbon-fiber-green",
       "name": "Carbon Fiber Green",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-cf-filament-1-75mm-black-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#008000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/elegoo--pla-cf--carbon-fiber-green",
+      "color_reference_note": "Индивидуальная карточка FilamentSelect: приблизительный экранный HEX, достоверность первичного источника не подтверждена. Это не измерение отпечатка и не официальный числовой цвет ELEGOO.",
+      "evidence": [
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://www.filamentselect.com/filaments/elegoo--pla-cf--carbon-fiber-green",
+          "checked_on": "2026-11-04",
+          "note": "Exact product-line/color detail explicitly states approximate screen color and unverified source authority."
+        }
+      ]
     },
     {
       "id": "carbon-fiber-purple",
