@@ -1,0 +1,55 @@
+name: Publish catalog demo (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: filamentra-catalog-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Validate, build and publish
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validator
+        run: python -m pip install "jsonschema>=4.21,<5"
+      - name: Validate all catalog entries
+        run: python tools/validate_catalog.py
+      - name: Build snapshot from current main
+        run: python tools/build_demo.py --out dist
+      - name: Verify built snapshot
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("dist")
+          doc = json.loads((root / "data/catalog.json").read_text(encoding="utf-8"))
+          counts = doc["meta"]["counts"]
+          assert counts["colors"] == sum(len(line["colors"]) for line in doc["lines"])
+          assert counts["with_swatch"] + counts["name_only"] == counts["colors"]
+          assert counts["brands"] > 0
+          assert (root / "index.html").exists()
+          assert (root / "assets/app.js").exists()
+          assert (root / "assets/app.css").exists()
+          print("Validated demo:", counts)
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
