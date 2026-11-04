@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "petg-standard",
+  "name": "Standard PETG",
+  "provenance": "filamentra_estimate",
+  "status": "uncalibrated",
+  "appearance": {
+    "surface_type": "opaque",
+    "roughness": 0.4,
+    "opacity": 255
+  },
+  "notes": "Semi-gloss dielectric proxy; transparent PETG uses another surface mode."
+}
