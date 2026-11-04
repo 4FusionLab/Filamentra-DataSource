@@ -43,6 +43,12 @@ For meaning, provenance, source fidelity and Fusion API constraints see [materia
 
 **Latest backfill (2026-11-04):** six exact `Plus (+)` labels in KINGROON PLA+ now have separately attributed, third-party **estimated** display swatches ([source](https://layerlookup.com/kingroon/pla/)). No new product variants were added and the strict curated preview remains at **605**. [Unresolved inventory](UNRESOLVED_COLORS.md) has been reduced to **113**.
 
+## Distributor SKU verification — 2026-11-04
+
+Seven previously name-only KINGROON shades now have **exact manufacturer SKUs** and independent 3DJake source evidence: PLA Basic (Cyan, Apple Green, Turquoise Green) and PETG Basic (Sky Blue, Pink, Skin, Metallic Silver). Their exact 1 kg / 1.75 mm variant identity is independently attributable; see [source manifest](../catalog/sources/2026-11-04-kingroon-sku-verification.json). **No HEX values were imported** from these SKU records: the catalog still has **113 unresolved colors** (including 47 KINGROON), **301 estimated-only** and **605 curated preview candidates**. This is a provenance improvement, not an increase in color coverage.
+
+A retailer claiming Kingroon PETG Sky Blue `#45C4EF` was **rejected** as untraceable to a primary palette/profile or measured sample. A retail `Copper` SKU was **not** merged into `Metallic Copper` without verified alias mapping. The missing-color audit now reports which unresolved records have SKU evidence, so further research can target measured swatches instead of repeatedly confirming product existence.
+
 ## Next Chinese import priorities
 
 1. **ERYONE:** expanded to PLA+, PETG, PETG-CF and full High Speed PLA color references. Next verify remaining standard/matte/Silk/Speed PLA and PETG products from its [official collection](https://eryone3d.com/collections/filament) and [download center](https://www.eryone.com/download-center/).
