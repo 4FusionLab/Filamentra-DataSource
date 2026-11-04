@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/4FusionLab/Filamentra-DataSource/blob/main/catalog/schema/line.schema.json",
-  "title": "Filamentra Product Line (Schema v1)",
-  "description": "Source catalog entry for a real manufacturer's filament product line. Appearance hints are visual estimates, not physical material specifications.",
+  "title": "Filamentra Product Line (pre-release Schema v1)",
+  "description": "Manufacturer-sourced product line and colors with optional Fusion-oriented appearance presets and per-field provenance.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -41,6 +41,15 @@
       "type": "string",
       "format": "uri"
     },
+    "appearance_preset": {
+      "$ref": "#/$defs/slug"
+    },
+    "appearance": {
+      "$ref": "#/$defs/appearance"
+    },
+    "appearance_sources": {
+      "$ref": "#/$defs/source_map"
+    },
     "colors": {
       "type": "array",
       "minItems": 1,
@@ -53,6 +62,250 @@
     "slug": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "surface_type": {
+          "type": "string",
+          "enum": [
+            "opaque",
+            "metallic",
+            "transparent"
+          ],
+          "description": "Fusion AppearanceSurfaceTypes selection."
+        },
+        "roughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Microfacet roughness, not physical surface-height roughness."
+        },
+        "opacity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255,
+          "description": "RGBA alpha, not volumetric transmission."
+        },
+        "ior": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 3,
+          "description": "Transparent index of refraction, advanced appearanceProperties mapping; runtime validation required."
+        },
+        "attenuation_distance_mm": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Physical reference length in mm for transparent optical attenuation; convert to Fusion property units after runtime inspection."
+        },
+        "textures": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "base_color": {
+              "type": "string",
+              "pattern": "^assets/[A-Za-z0-9/_-]+\\.(?:png|jpg|jpeg)$"
+            },
+            "normal_gl": {
+              "type": "string",
+              "pattern": "^assets/[A-Za-z0-9/_-]+\\.(?:png|jpg|jpeg)$"
+            },
+            "roughness": {
+              "type": "string",
+              "pattern": "^assets/[A-Za-z0-9/_-]+\\.(?:png|jpg|jpeg)$"
+            },
+            "tile_width_mm": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "tile_height_mm": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      }
+    },
+    "source_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "surface_type": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "roughness": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "opacity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "ior": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "attenuation_distance_mm": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "textures": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
     },
     "color": {
       "type": "object",
@@ -70,9 +323,13 @@
           "type": "string",
           "minLength": 1
         },
+        "manufacturer_color_code": {
+          "type": "string",
+          "minLength": 1
+        },
         "hex": {
           "type": "string",
-          "pattern": "^#[0-9A-Fa-f]{6}$"
+          "pattern": "^#[A-Fa-f0-9]{6}$"
         },
         "hex_source": {
           "type": "string",
@@ -91,15 +348,10 @@
           "format": "date"
         },
         "appearance": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "roughness": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            }
-          }
+          "$ref": "#/$defs/appearance"
+        },
+        "appearance_sources": {
+          "$ref": "#/$defs/source_map"
         },
         "variants": {
           "type": "array",
