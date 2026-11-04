@@ -69,7 +69,24 @@
       "name": "Cream Yellow",
       "visual_data_status": "name_only",
       "source_url": "https://www.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.1112",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "refill"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.ch/en-CH/elegoo/pla-basic-cream-yellow",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Basic Cream Yellow 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.1112. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "cyan",
@@ -87,14 +104,48 @@
       "name": "Dark Green",
       "visual_data_status": "name_only",
       "source_url": "https://www.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.1118",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.be/de-BE/elegoo/pla-basic-dark-green",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Basic Dark Green 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.1118. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "deep-grey",
       "name": "Deep Grey",
       "visual_data_status": "name_only",
       "source_url": "https://www.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.1109",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "refill"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.be/de-BE/elegoo/pla-basic-deep-grey",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Basic Deep Grey 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.1109. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "green",
@@ -134,7 +185,24 @@
       "name": "Light Cyan",
       "visual_data_status": "name_only",
       "source_url": "https://www.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.1110",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "refill"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.ch/en-CH/elegoo/pla-basic-light-cyan",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Basic Light Cyan 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.1110. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "megenta",
@@ -159,7 +227,24 @@
       "name": "Olive Green",
       "visual_data_status": "name_only",
       "source_url": "https://www.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.1123",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "refill"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.ch/en-CH/elegoo/pla-basic-olive-green",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Basic Olive Green 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.1123. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "orange",
