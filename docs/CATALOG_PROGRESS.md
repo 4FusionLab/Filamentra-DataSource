@@ -30,7 +30,7 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 ## Visual fidelity
 
 - **515 variants** have at least one *manufacturer-published numeric display swatch*: 246 Bambu Lab (RGBA, including 18 gradient/multicolor), 139 eSUN (including 7 dual-shade entries), and 130 SUNLU.
-- **243 variants** now have independent **estimated** HEX references, labeled distinctly from manufacturer data and linked to their source. **144 variants** remain name-only with no defensible numeric color. See [color reference audit](COLOR_REFERENCE_AUDIT.md).
+- **Six exact physical-print measurements** now have direct evidence (KINGROON: 3, ERYONE: 1, Bambu Lab: 1, SUNLU: 1). Two measured records also retain manufacturer HEX independently. **239 variants** remain estimated-only, **144** remain name-only. The default curated preview contains **519** source-backed numeric references, not the entire 902-entry research corpus. See [quality policy](VISUAL_DATA_QUALITY.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
