@@ -12,93 +12,145 @@
     {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#000000",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "white",
       "name": "White",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FFFFFF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "blue",
       "name": "Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#2240AF",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "grey",
       "name": "Grey",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#8F949B",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "silver",
       "name": "Silver",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#9F9F9F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "pink",
       "name": "Pink",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#F9B0BD",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "red",
       "name": "Red",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#EA140E",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "olive-green",
       "name": "Olive Green",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#25460F",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "burgundy-red",
       "name": "Burgundy Red",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#9C2129",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "light-blue",
       "name": "Light Blue",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#339BF7",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "green",
       "name": "Green",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#08E327",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "yellow",
       "name": "Yellow",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#FBEC07",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "purple",
       "name": "Purple",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#603BA0",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PETG",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     }
   ]
 }

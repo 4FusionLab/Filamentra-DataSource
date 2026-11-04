@@ -12,23 +12,35 @@
     {
       "id": "marble",
       "name": "Marble",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-marble-filament-10-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#ACB1B1",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "marble-brick-red",
       "name": "Marble Brick Red",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-marble-filament-10-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#A5472C",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     },
     {
       "id": "marble-cement-grey",
       "name": "Marble Cement Grey",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://us.elegoo.com/products/pla-marble-filament-10-kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#6C6C6C",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments?brands=elegoo&materials=PLA",
+      "color_reference_note": "Оценочный цвет по независимому FilamentSelect. Название товара подтверждено официальной карточкой ELEGOO, но HEX не опубликован производителем."
     }
   ]
 }
