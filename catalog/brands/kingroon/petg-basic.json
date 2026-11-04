@@ -80,7 +80,24 @@
       "name": "Sky Blue",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "NPETG002",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/petg-basic-sky-blue",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PETG Basic Sky Blue page on 3DJake; manufacturer number NPETG002. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     },
     {
       "id": "green",
@@ -120,14 +137,48 @@
       "name": "Pink",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "NPETG004",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/petg-basic-pink",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PETG Basic Pink page on 3DJake; manufacturer number NPETG004. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     },
     {
       "id": "skin",
       "name": "Skin",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "NPETG005",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/petg-basic-skin",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PETG Basic Skin page on 3DJake; manufacturer number NPETG005. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     },
     {
       "id": "transparent",
@@ -310,7 +361,24 @@
       "name": "Metallic Silver",
       "source_url": "https://kingroon.com/products/kingroon-petg-basic",
       "verified_on": "2026-11-04",
-      "visual_data_status": "name_only"
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "NPETG008",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/kingroon/petg-basic-metallic-silver",
+          "checked_on": "2026-11-04",
+          "note": "Exact Kingroon PETG Basic Metallic Silver page on 3DJake; manufacturer number NPETG008. Confirms product identity only, not HEX/reflectance."
+        }
+      ]
     }
   ]
 }
