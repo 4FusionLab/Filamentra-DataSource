@@ -14,7 +14,24 @@
       "name": "Beige",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.0789",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.de/elegoo/pla-pro-beige",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Pro Beige 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.0789. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "black",
@@ -76,7 +93,24 @@
       "name": "Hot Pink",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.0791",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.ch/en-CH/elegoo/pla-pro-hot-pink",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Pro Hot Pink 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.0791. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "light-blue",
@@ -94,7 +128,24 @@
       "name": "Neon Green",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.0790",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.com/elegoo/pla-pro-neon-green",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Pro Neon Green 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.0790. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "purple",
@@ -123,7 +174,24 @@
       "name": "True Red",
       "visual_data_status": "name_only",
       "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "variants": [
+        {
+          "sku": "50.203.0788",
+          "diameter_mm": 1.75,
+          "weight_g": 1000,
+          "packaging": "spool"
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://www.3djake.de/elegoo/pla-pro-true-red",
+          "checked_on": "2026-11-04",
+          "note": "Exact ELEGOO PLA Pro True Red 1 kg / 1.75 mm retailer listing, manufacturer number 50.203.0788. Confirms SKU/packaging only; no manufacturer numerical swatch or measured HEX. Packaging reflects retailer-selected product variant."
+        }
+      ]
     },
     {
       "id": "white",
