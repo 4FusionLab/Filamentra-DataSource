@@ -23,6 +23,7 @@ def public_color(color: dict) -> dict:
               "hex_source", "manufacturer_color_code",
               "manufacturer_palette_code", "source_url", "verified_on",
               "visual_note", "color_reference_url", "color_reference_note",
+              "measured_sample", "evidence",
               "appearance", "appearance_sources")
     result = {key: color[key] for key in fields if key in color}
     result["visual_data_status"] = status
@@ -71,9 +72,11 @@ def make_catalog() -> dict:
     lines.sort(key=lambda item: (
         positions[item["brand"]], item["polymer"], item["name"].lower()))
     colors = [color for line in lines for color in line["colors"]]
-    with_swatch = sum(bool(c.get("hex") or c.get("rgba_swatches")) for c in colors)
-    estimated = sum(c.get("hex_source") == "estimated" for c in colors)
-    manufacturer = with_swatch - estimated
+    with_swatch = sum(bool(c.get("hex") or c.get("rgba_swatches") or c.get("measured_sample")) for c in colors)
+    estimated = sum(c.get("hex_source") == "estimated" and not c.get("measured_sample") for c in colors)
+    manufacturer = sum(bool(c.get("rgba_swatches")) or c.get("hex_source") == "manufacturer" for c in colors)
+    measured = sum(bool(c.get("measured_sample")) for c in colors)
+    curated = sum(bool(c.get("measured_sample")) or bool(c.get("rgba_swatches")) or c.get("hex_source") == "manufacturer" for c in colors)
     multicolor = sum(c.get("color_mode") in ("multicolor", "gradient") for c in colors)
     return {
         "meta": {
@@ -83,6 +86,8 @@ def make_catalog() -> dict:
                 "brands": len(brands), "lines": len(lines), "colors": len(colors),
                 "with_swatch": with_swatch,
                 "manufacturer_swatch": manufacturer,
+                "measured_samples": measured,
+                "curated_preview": curated,
                 "estimated": estimated,
                 "name_only": len(colors) - with_swatch,
                 "multicolor": multicolor,
