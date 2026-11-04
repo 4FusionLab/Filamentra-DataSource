@@ -50,6 +50,62 @@ function colorBackground(color) {
   return null;
 }
 
+
+function renderHeroSamples() {
+  const host = byId("heroSamples");
+  const candidates = allColors().filter(({ color }) => {
+    const ref = color.measured_sample?.hex || color.rgba_swatches?.[0] || color.hex;
+    return hexValid(ref) && color.hex_source !== "estimated" && color.visual_data_status !== "estimated";
+  });
+  // Choose six different hues from source-backed data, not illustrative placeholder colors.
+  const targets = [8, 45, 95, 155, 215, 285];
+  const selected = [];
+  const used = new Set();
+  const hueDistance = (a, b) => Math.min(Math.abs(a - b), 360 - Math.abs(a - b));
+  const info = color => {
+    const hex = (color.measured_sample?.hex || color.rgba_swatches?.[0] || color.hex).slice(1, 7);
+    const r = parseInt(hex.slice(0, 2), 16) / 255;
+    const g = parseInt(hex.slice(2, 4), 16) / 255;
+    const b = parseInt(hex.slice(4, 6), 16) / 255;
+    const max = Math.max(r, g, b), min = Math.min(r, g, b), delta = max - min;
+    let hue = 0;
+    if (delta > 0) {
+      if (max === r) hue = ((g - b) / delta) % 6;
+      else if (max === g) hue = (b - r) / delta + 2;
+      else hue = (r - g) / delta + 4;
+      hue = (hue * 60 + 360) % 360;
+    }
+    return {hue, saturation: max === 0 ? 0 : delta / max};
+  };
+  for (const target of targets) {
+    const remaining = candidates.filter(item => !used.has(item.color.id + ":" + item.line.id));
+    if (!remaining.length) break;
+    remaining.sort((a, b) => {
+      const ia = info(a.color), ib = info(b.color);
+      const da = hueDistance(ia.hue, target) + (1 - ia.saturation) * 75;
+      const db = hueDistance(ib.hue, target) + (1 - ib.saturation) * 75;
+      return da - db;
+    });
+    const choice = remaining[0];
+    selected.push(choice);
+    used.add(choice.color.id + ":" + choice.line.id);
+  }
+  host.replaceChildren();
+  if (!selected.length) {
+    host.appendChild(el("p", "preview-loading", "Нет подтверждённых образцов для предпросмотра"));
+    return;
+  }
+  for (const {line, color} of selected) {
+    const item = el("div", "hero-sample");
+    const pigment = el("div", "hero-sample-pigment");
+    pigment.style.background = colorBackground(color);
+    item.appendChild(pigment);
+    item.appendChild(el("span", "hero-sample-name", color.name));
+    item.appendChild(el("span", "hero-sample-meta", brandName(line.brand) + " · " + line.polymer));
+    host.appendChild(item);
+  }
+}
+
 function swatchNode(color, detail = false) {
   const node = el("div", detail ? "detail-swatch checker" : "swatch checker");
   const background = colorBackground(color);
@@ -62,12 +118,12 @@ function swatchNode(color, detail = false) {
   }
   if (!detail) {
     let status = "HEX";
-    if (!background) status = "NAME ONLY";
-    else if (color.measured_sample) status = "MEASURED";
-    else if (color.visual_data_status === "estimated" || color.hex_source === "estimated") status = "ESTIMATE";
-    else if (color.color_mode === "gradient") status = "GRADIENT";
-    else if (color.color_mode === "multicolor") status = "MULTICOLOR";
-    else if (color.rgba_swatches?.length === 1 && color.rgba_swatches[0].slice(-2).toUpperCase() !== "FF") status = "ALPHA";
+    if (!background) status = "Нет образца";
+    else if (color.measured_sample) status = "Измеренный";
+    else if (color.visual_data_status === "estimated" || color.hex_source === "estimated") status = "Оценочный";
+    else if (color.color_mode === "gradient") status = "Градиент";
+    else if (color.color_mode === "multicolor") status = "Многоцветный";
+    else if (color.rgba_swatches?.length === 1 && color.rgba_swatches[0].slice(-2).toUpperCase() !== "FF") status = "Полупрозрачный";
     node.appendChild(el("span", "chip", status));
   }
   return node;
@@ -87,7 +143,7 @@ function renderBrands() {
     const button = el("button", "brand-option" + (state.brand === brand.id ? " active" : ""));
     button.type = "button";
     button.setAttribute("aria-pressed", String(state.brand === brand.id));
-    button.appendChild(el("span", "letter", brand.id === "all" ? "✦" : brand.name.slice(0, 1).toUpperCase()));
+    button.appendChild(el("span", "letter", brand.id === "all" ? "–" : brand.name.slice(0, 1).toUpperCase()));
     button.appendChild(el("span", "", brand.name));
     const count = brand.id === "all"
       ? Array.from(counts.values()).reduce((a, b) => a + b, 0)
@@ -164,8 +220,8 @@ function renderResults() {
     fragment.appendChild(card);
   }
   if (matches.length > state.limit) {
-    const more = el("button", "swatch-card", "Показать ещё 144 из " + (matches.length - state.limit));
-    more.style.minHeight = "100px";
+    const more = el("button", "load-more", "Показать ещё " + Math.min(144, matches.length - state.limit) + " из " + (matches.length - state.limit));
+    more.type = "button";
     more.addEventListener("click", () => {
       state.limit += 144;
       renderResults();
@@ -279,7 +335,8 @@ async function initialize() {
     byId("totalColors").textContent = counts.colors;
     const date = new Date(state.data.meta.generated_at);
     byId("snapshotDate").textContent = "Сборка " + date.toLocaleDateString("ru-RU");
-    byId("footerVersion").textContent = "MANUAL SNAPSHOT";
+    byId("footerVersion").textContent = "Снимок каталога";
+    renderHeroSamples();
     update();
   } catch (err) {
     byId("grid").replaceChildren();
@@ -334,9 +391,24 @@ byId("reset").addEventListener("click", () => {
   byId("onlyMulticolor").checked = false;
   if (state.data) update();
 });
+byId("toggleFilters").addEventListener("click", () => {
+  const button = byId("toggleFilters");
+  const expanded = button.getAttribute("aria-expanded") !== "true";
+  button.setAttribute("aria-expanded", String(expanded));
+  byId("filtersPanel").classList.toggle("is-open", expanded);
+  byId("filterChevron").textContent = expanded ? "−" : "+";
+});
 byId("closeDetails").addEventListener("click", closeDetails);
 byId("overlay").addEventListener("click", closeDetails);
 window.addEventListener("keydown", event => {
   if (event.key === "Escape" && !byId("overlay").hidden) closeDetails();
+  if (event.key === "Tab" && !byId("overlay").hidden) {
+    const focusable = Array.from(byId("details").querySelectorAll("button, a[href], input, select")).filter(item => !item.disabled);
+    if (focusable.length) {
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+  }
 });
 initialize();
