@@ -22,7 +22,8 @@ def public_color(color: dict) -> dict:
     fields = ("id", "name", "hex", "rgba_swatches", "color_mode",
               "hex_source", "manufacturer_color_code",
               "manufacturer_palette_code", "source_url", "verified_on",
-              "visual_note", "appearance", "appearance_sources")
+              "visual_note", "color_reference_url", "color_reference_note",
+              "appearance", "appearance_sources")
     result = {key: color[key] for key in fields if key in color}
     result["visual_data_status"] = status
     return result
