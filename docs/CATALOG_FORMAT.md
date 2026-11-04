@@ -68,7 +68,7 @@ This excerpt contains one color. The [current Bambu Lab PLA Matte file](../catal
 
 The add-in resolves `preset.appearance`, then the line's optional `appearance`, then the specific color's optional `appearance`, **key by key**. The base color is the color variant's `hex`, not a preset property.
 
-The renderer supports direct or advanced Fusion mappings for `surface_type`, `roughness`, `opacity`, `ior`, `attenuation_distance_mm`, and optional `textures`. Advanced transparency scale requires verification inside Fusion.
+The renderer supports `surface_type`, `roughness`, `opacity`, estimated `transmission` (0–1), `ior`, `attenuation_distance_mm`, and optional `textures`. In Pages, Three.js uses the estimated transmission for a 2-mm sample; the future Fusion adapter must map transparency using the supported Fusion property model. Advanced transparency scale requires verification inside Fusion.
 
 A line or color that specifies an `appearance` override should include `appearance_sources` with each modified key marked `manufacturer`, `measured` or `filamentra_estimate`. Published HEX has independent `hex_source` provenance.
 

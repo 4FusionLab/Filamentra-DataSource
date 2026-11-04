@@ -28,3 +28,31 @@ Existing graphite and muted sage UI remains unchanged. The physical-looking spec
     npm run build:viewer
 
 Use an HTTP static server for local testing of modules and fetched textures.
+
+## Estimated optical transparency (schema v1)
+
+`appearance.transmission` is a scalar PBR visual parameter in [0,1], inherited
+preset → line → color and optionally individually overridden. It is **not**
+a manufacturer's alpha channel or a measured fraction of transmitted photons.
+The existing `ior` and `attenuation_distance_mm` provide refraction and
+optical absorption estimates; `opacity:255` remains independent alpha.
+
+Two built-in archetypes are translucent PLA (transmission 0.49, absorption
+length 7.5 mm) and translucent PETG (0.68, 12 mm). The verified Bambu PETG
+Clear variant overrides PETG with transmission 0.94 and attenuation distance
+75 mm. All such numbers are marked **filamentra_estimate**; line/color
+values can replace them when meaningful source evidence is available.
+
+Both the static preview generator and the interactive WebGL viewer model a
+reference **2-mm wall thickness**, with a fixed pair of neutral reference bars
+behind the specimen. Transparent materials visibly reveal the bars; opaque
+materials hide them. The result is qualitative, not a calibrated physics
+prediction. The WebGL viewer converts attenuation distance from millimetres
+into sample scene units and uses Three.js `attenuationColor` to tint transmitted
+light. The stored color HEX remains separate from estimated optics.
+
+Manufacturer Clear swatches such as `#00000000` have no numeric dye color.
+Only for rendering such a *verified fully transparent screen swatch* the
+preview uses a neutral tint (`#F6F9F7`), without writing a fictional HEX
+or claiming physical color measurements. All other unknown colors still
+remain without a preview.

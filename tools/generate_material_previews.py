@@ -37,6 +37,38 @@ def numeric_color(color: dict) -> str | None:
     return None
 
 
+def resolve_appearance(preset: dict, line: dict | None = None, color: dict | None = None) -> dict:
+    """Merge optical fields and texture references, matching the browser resolver."""
+    base = dict(preset or {})
+    for override in (line or {}, color or {}):
+        for key, value in override.items():
+            if key == "textures":
+                base[key] = {**base.get(key, {}), **value}
+            else:
+                base[key] = value
+    transmission = base.get("transmission", 0)
+    if transmission > 0 and base.get("surface_type") != "transparent":
+        raise ValueError("Transmissive appearance must use surface_type=transparent")
+    return base
+
+
+def preview_tint(color: dict, appearance: dict) -> str | None:
+    """Use source-backed color, or neutral *render-only* tint for verified clear swatch."""
+    value = numeric_color(color)
+    if value is not None:
+        return value
+    swatches = color.get("rgba_swatches") or []
+    if (appearance.get("surface_type") == "transparent"
+            and appearance.get("transmission", 0) > 0
+            and color.get("color_mode", "solid") == "solid"
+            and len(swatches) == 1
+            and isinstance(swatches[0], str)
+            and re.fullmatch(r"#[0-9A-Fa-f]{6}00", swatches[0])):
+        # Optical rendering convention only. Never write a fictitious HEX.
+        return "#F6F9F7"
+    return None
+
+
 def preview_path(line_id: str, color_id: str) -> str:
     """A deterministic path, using existing validated repository identifiers."""
     if not re.fullmatch(r"[a-z0-9-]+/[a-z0-9-]+", line_id):
@@ -46,7 +78,7 @@ def preview_path(line_id: str, color_id: str) -> str:
     return f"assets/material-previews/{line_id}/{color_id}.webp"
 
 
-def prepare_specimen(normal_path: Path, rough_path: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def prepare_specimen(normal_path: Path, rough_path: Path, roughness_offset: float = 0.0) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Return diffuse, specular and edge masks for one preset at a fixed camera."""
     with Image.open(normal_path) as image:
         normals = np.asarray(image.convert("RGB"), dtype=np.float32) / 255 * 2 - 1
@@ -69,7 +101,7 @@ def prepare_specimen(normal_path: Path, rough_path: Path) -> tuple[np.ndarray, n
     tx = np.floor(u * normals.shape[1]).astype(np.int32) % normals.shape[1]
     ty = np.floor(v * normals.shape[0]).astype(np.int32) % normals.shape[0]
     bump = normals[ty, tx]
-    roughness = rough[ty, tx]
+    roughness = np.clip(rough[ty, tx] + roughness_offset, 0.03, 1)
 
     # Local tangent-space map -> approximate sphere-space normal.
     tangent = np.stack([z, np.zeros_like(x), -x], axis=-1)
@@ -94,47 +126,80 @@ def prepare_specimen(normal_path: Path, rough_path: Path) -> tuple[np.ndarray, n
     specular = np.power(ndh, exponent) * (0.10 + 0.27 * (1 - roughness))
     specular += np.power(np.clip(1 - z, 0, 1), 5) * 0.11
     edge = np.clip((1 - np.sqrt(r2)) * radius / 1.5, 0, 1)
-    return diffuse.astype(np.float32), specular.astype(np.float32), np.where(inside, edge, 0).astype(np.float32)
+    return diffuse.astype(np.float32), specular.astype(np.float32), np.where(inside, edge, 0).astype(np.float32), z.astype(np.float32)
 
 
-def make_thumbnail(hex_rgb: str, prepared: tuple[np.ndarray, np.ndarray, np.ndarray]) -> Image.Image:
-    diffuse, specular, edge = prepared
+def make_thumbnail(
+    hex_rgb: str,
+    prepared: tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray],
+    appearance: dict | None = None,
+) -> Image.Image:
+    """Render the same fixed 30-mm specimen; transparent profiles use a 2-mm shell."""
+    diffuse, specular, edge, face_cosine = prepared
+    appearance = appearance or {}
+    transmission = float(appearance.get("transmission", 0))
     base = np.array([int(hex_rgb[i:i+2], 16) / 255 for i in (1, 3, 5)], dtype=np.float32)
     linear = np.where(base <= 0.04045, base / 12.92, ((base + 0.055) / 1.055) ** 2.4)
     lit = np.clip(linear[None, None, :] * diffuse[..., None] + specular[..., None], 0, 1)
-    srgb = np.where(lit <= 0.0031308, lit * 12.92, 1.055 * np.power(lit, 1/2.4) - 0.055)
+    srgb = np.where(lit <= 0.0031308, lit * 12.92, 1.055 * np.power(lit, 1 / 2.4) - 0.055)
+
     background = np.array([0.094, 0.117, 0.106], dtype=np.float32)
-    # Soft physical specimen silhouette against consistent tinted neutral.
-    composite = srgb * edge[..., None] + background * (1 - edge[..., None])
+    if transmission > 0:
+        # Two neutral optical reference bars behind the specimen make the
+        # amount of transmitted light visually legible. No sampled photos.
+        width, height = IMAGE_SIZE
+        y, x = np.mgrid[:height, :width]
+        backdrop = np.broadcast_to(background, (height, width, 3)).copy()
+        bar1 = (x >= width // 2 - 30) & (x <= width // 2 - 15)
+        bar2 = (x >= width // 2 + 15) & (x <= width // 2 + 30)
+        bar_range = (y >= 15) & (y <= height - 15)
+        backdrop[bar1 & bar_range] = [0.72, 0.76, 0.72]
+        backdrop[bar2 & bar_range] = [0.46, 0.55, 0.50]
+
+        # Optical behavior is approximate and explicitly thickness-dependent.
+        # At grazing angles the same 2-mm shell absorbs more light.
+        distance = float(appearance.get("attenuation_distance_mm", 9.0))
+        wall_path_mm = 2.0 / np.maximum(face_cosine, 0.24)
+        transmitted = transmission * np.exp(-wall_path_mm / max(distance, 1e-6))
+        tint = 0.36 + 0.64 * np.power(base, 0.6)
+        mix = transmitted[..., None] * 0.92
+        # Retain reflective highlights even for nearly clear plastics.
+        sphere = np.clip(srgb * (1 - mix) + backdrop * tint * mix
+                         + specular[..., None] * 0.10, 0, 1)
+        composite = sphere * edge[..., None] + backdrop * (1 - edge[..., None])
+    else:
+        composite = srgb * edge[..., None] + background * (1 - edge[..., None])
     return Image.fromarray(np.uint8(np.rint(np.clip(composite, 0, 1) * 255)), mode="RGB")
 
 
 def build_material_previews(payload: dict, out: Path) -> int:
-    cached: dict[str, tuple[np.ndarray, np.ndarray, np.ndarray]] = {}
+    cached: dict[tuple[str, float], tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]] = {}
     created = 0
     for line in payload["lines"]:
         preset = line.get("appearance_preset")
         if preset not in payload["presets"]:
             continue
+        base = payload["presets"][preset]["appearance"]
         for color in line["colors"]:
-            # Paths are derived earlier in build_demo, so missing palette values
-            # never turn into fabricated colors or preview images.
             relative = color.get("preview_image")
             if not relative:
                 continue
-            rgb = numeric_color(color)
+            resolved = resolve_appearance(base, line.get("appearance"), color.get("appearance"))
+            rgb = preview_tint(color, resolved)
             if rgb is None:
                 raise ValueError(f"Unexpected preview on unresolved/multicolor record {line['id']}/{color['id']}")
-            if preset not in cached:
-                maps = payload["presets"][preset]["appearance"].get("textures") or {}
+            delta = round(resolved.get("roughness", base["roughness"]) - base["roughness"], 4)
+            key = (preset, delta)
+            if key not in cached:
+                maps = resolved.get("textures") or {}
                 try:
                     normal_path = out / maps["normal_gl"]
                     rough_path = out / maps["roughness"]
                 except KeyError as exc:
                     raise ValueError(f"Missing PBR map in {preset}") from exc
-                cached[preset] = prepare_specimen(normal_path, rough_path)
+                cached[key] = prepare_specimen(normal_path, rough_path, roughness_offset=delta)
             path = out / relative
             path.parent.mkdir(parents=True, exist_ok=True)
-            make_thumbnail(rgb, cached[preset]).save(path, "WEBP", quality=81, method=2)
+            make_thumbnail(rgb, cached[key], resolved).save(path, "WEBP", quality=81, method=2)
             created += 1
     return created

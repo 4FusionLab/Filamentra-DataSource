@@ -9,6 +9,10 @@ import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
 
 const SPECIMEN_RADIUS_MM = 15;
+const SPECIMEN_RADIUS_UNITS = 1.05;
+const MM_PER_UNIT = SPECIMEN_RADIUS_MM / SPECIMEN_RADIUS_UNITS;
+const WALL_THICKNESS_MM = 2;
+const clamp01 = value => Math.max(0, Math.min(1, value));
 
 function mapTexture(texture, tileMM, kind, shape) {
   const width = tileMM?.tile_width_mm || 8;
@@ -26,7 +30,7 @@ function mapTexture(texture, tileMM, kind, shape) {
 
 export async function createMaterialViewer(host, options) {
   const {
-    hex, appearance, basePath = "./", shape = "sphere",
+    hex, appearance, basePath = "./", shape = "sphere", baseRoughness = appearance.roughness,
   } = options;
   const maps = appearance.textures || {};
   if (!maps.normal_gl || !maps.roughness) throw new Error("Для профиля нет PBR-карт");
@@ -58,6 +62,9 @@ export async function createMaterialViewer(host, options) {
   let pmrem;
   let controls;
   let observer;
+  let referenceMap;
+  let referenceGeometry;
+  let referenceMaterial;
   try {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 50);
@@ -74,6 +81,26 @@ export async function createMaterialViewer(host, options) {
     fill.position.set(4, -1, 3);
     scene.add(fill);
 
+    // Neutral optical reference bars behind the specimen. The difference
+    // between translucent and opaque grades is visible without extra effects.
+    const reference = document.createElement("canvas");
+    reference.width = 256;
+    reference.height = 256;
+    const brush = reference.getContext("2d");
+    brush.fillStyle = "#222e28";
+    brush.fillRect(0, 0, 256, 256);
+    brush.fillStyle = "#acb9aa";
+    brush.fillRect(83, 0, 28, 256);
+    brush.fillStyle = "#718b7a";
+    brush.fillRect(145, 0, 28, 256);
+    referenceMap = new THREE.CanvasTexture(reference);
+    referenceMap.colorSpace = THREE.SRGBColorSpace;
+    referenceMaterial = new THREE.MeshBasicMaterial({ map: referenceMap, toneMapped: false });
+    referenceGeometry = new THREE.PlaneGeometry(2.85, 2.85);
+    const opticalReference = new THREE.Mesh(referenceGeometry, referenceMaterial);
+    opticalReference.position.z = -1.35;
+    scene.add(opticalReference);
+
     const loader = new THREE.TextureLoader();
     [normalTexture, roughTexture] = await Promise.all([
       loader.loadAsync(basePath + maps.normal_gl),
@@ -82,16 +109,28 @@ export async function createMaterialViewer(host, options) {
     if (destroyed) return null;
 
     const transparent = appearance.surface_type === "transparent";
+    const transmission = transparent ? clamp01(appearance.transmission ?? 0) : 0;
+    // The roughness texture contains the preset's absolute value. A smaller
+    // grade-specific roughness can multiply that baseline, not reapply it.
+    const roughnessFactor = baseRoughness > 0
+      ? clamp01((appearance.roughness ?? baseRoughness) / baseRoughness)
+      : 1;
     material = new THREE.MeshPhysicalMaterial({
-      color: new THREE.Color(hex),
+      // For transmitted dyed light, tint absorption instead of the surface.
+      color: new THREE.Color(transmission > 0 ? "#ffffff" : hex),
       metalness: 0, // Silk/metal-colored PLA is still a dielectric.
       // Roughness texture pixels already contain absolute roughness values.
-      roughness: 1,
+      roughness: roughnessFactor,
       roughnessMap: roughTexture,
       normalMap: normalTexture,
       normalScale: new THREE.Vector2(0.65, 0.65),
-      transmission: transparent ? 0.38 : 0,
-      thickness: transparent ? 0.45 : 0,
+      transmission,
+      opacity: 1, // alpha is not optical transmission
+      thickness: transmission > 0 ? WALL_THICKNESS_MM / MM_PER_UNIT : 0,
+      attenuationColor: new THREE.Color(hex),
+      attenuationDistance: transmission > 0
+        ? (appearance.attenuation_distance_mm ?? 10) / MM_PER_UNIT
+        : Infinity,
       ior: appearance.ior || 1.46,
       side: THREE.FrontSide,
     });
@@ -160,6 +199,9 @@ export async function createMaterialViewer(host, options) {
         roughTexture?.dispose();
         environment?.dispose();
         pmrem?.dispose();
+        referenceMap?.dispose();
+        referenceMaterial?.dispose();
+        referenceGeometry?.dispose();
         renderer.dispose();
         renderer.forceContextLoss();
         renderer.domElement.remove();
@@ -176,6 +218,9 @@ export async function createMaterialViewer(host, options) {
     roughTexture?.dispose();
     environment?.dispose();
     pmrem?.dispose();
+    referenceMap?.dispose();
+    referenceMaterial?.dispose();
+    referenceGeometry?.dispose();
     renderer.dispose();
     renderer.forceContextLoss();
     renderer.domElement.remove();

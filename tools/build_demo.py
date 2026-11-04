@@ -8,9 +8,8 @@ import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
-from generate_material_previews import build_material_previews, numeric_color, preview_path
-from generate_texture_maps import build_textures
-
+from generate_material_previews import (build_material_previews, preview_tint,
+                                        preview_path, resolve_appearance)
 from generate_texture_maps import build_textures
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +17,8 @@ BRANDS = ROOT / "catalog" / "brands"
 DEMO = ROOT / "demo"
 
 
-def public_color(color: dict, line_id: str, preset_id: str | None) -> dict:
+def public_color(color: dict, line_id: str, preset_id: str | None,
+                 preset_appearance: dict | None = None, line_appearance: dict | None = None) -> dict:
     swatches = color.get("rgba_swatches") or []
     hexadecimal = color.get("hex")
     status = color.get("visual_data_status") or (
@@ -32,8 +32,10 @@ def public_color(color: dict, line_id: str, preset_id: str | None) -> dict:
               "appearance", "appearance_sources")
     result = {key: color[key] for key in fields if key in color}
     result["visual_data_status"] = status
-    if preset_id and numeric_color(result):
-        result["preview_image"] = preview_path(line_id, result["id"])
+    if preset_id:
+        resolved = resolve_appearance(preset_appearance or {}, line_appearance, result.get("appearance"))
+        if preview_tint(result, resolved):
+            result["preview_image"] = preview_path(line_id, result["id"])
     return result
 
 
@@ -71,7 +73,9 @@ def make_catalog() -> dict:
                 "source_url": line.get("source_url"),
                 "catalog_status": line.get("catalog_status", "unknown"),
                 "appearance": line.get("appearance", {}),
-                "colors": [public_color(c, line["id"], line.get("appearance_preset")) for c in line["colors"]],
+                "colors": [public_color(c, line["id"], line.get("appearance_preset"),
+                          presets.get(line.get("appearance_preset"), {}).get("appearance"),
+                          line.get("appearance")) for c in line["colors"]],
             })
 
     # Research-only manufacturers are not shown until a numeric color-bearing line exists.

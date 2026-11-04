@@ -96,6 +96,12 @@
               "exclusiveMinimum": 0
             }
           }
+        },
+        "transmission": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Filamentra-estimated PBR light transmission parameter (0=opaque, 1=maximum). Not physical sample transmittance or manufacturer RGBA alpha. Only meaningful for transparent surfaces."
         }
       }
     },
