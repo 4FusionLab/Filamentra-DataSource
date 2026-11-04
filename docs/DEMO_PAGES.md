@@ -2,7 +2,7 @@
 
 This is a read-only, interactive static visualization of the Filamentra PLA/PETG source catalog. It is **not** a live feed, does not make API calls to GitHub, and does not modify the catalog.
 
-Once GitHub Pages is enabled and the manual workflow has been successfully run, the intended URL is:
+GitHub Pages was enabled and the initial publish succeeded on 2026-11-04 ([deployment workflow](https://github.com/4FusionLab/Filamentra-DataSource/actions/runs/41860887983)). The deployed URL is:
 
 https://4fusionlab.github.io/Filamentra-DataSource/
 
