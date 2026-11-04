@@ -11,7 +11,7 @@
 
 **Every product entry still retains its official manufacturer `source_url`** to document the existence of the product/variant. A third-party color reference is stored separately. Never convert `estimated` to `manufacturer` without obtaining a manufacturer publication for that exact shade.
 
-The demo UI uses **ESTIMATE** for estimated HEX and shows a second link to its color source. The GitHub Pages published site updates only when a maintainer manually runs the dedicated workflow; this source update alone does not republish it.
+The demo UI distinguishes **manufacturer**, **physical-print measurement** and **estimated** HEX. Only source-backed manufacturer or directly documented physical-print references appear in its curated default view; estimates require opt-in. GitHub Pages still publishes **only manually** via its dedicated workflow.
 
 ## Official catalogs rechecked
 
@@ -47,11 +47,12 @@ FilamentSelect can contain screen-level approximations as well as some measured 
 | Evidence level | Records |
 | --- | ---: |
 | Manufacturer numeric swatch, including multi-color RGBA | 515 |
-| Independently sourced estimated HEX | 243 |
+| Independently sourced estimated HEX, no physical measurement | 239 |
+| Third-party physical measurement, no manufacturer swatch | 4 |
 | Confirmed variant name, no defensible numeric color | 144 |
 | **Total** | **902** |
 
-The 515 manufacturer swatches have not been physically calibrated either. All **18** baseline roughness/finish presets are still experimental. These numbers are counts of catalog entries, not validated Autodesk Fusion materials.
+Six individual physical-print measurement records are now linked with direct evidence: four promote previous estimated-only HEX references to measured, and two supplement official manufacturer swatches without overwriting them. The curated default preview thus has **519** distinct source-backed entries (515 manufacturer + 4 measured-only); **239** estimated-only references require opt-in. All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
 
 ## Pending work
 
