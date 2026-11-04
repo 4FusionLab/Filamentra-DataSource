@@ -1,0 +1,47 @@
+{
+  "verified_on": "2026-11-04",
+  "summary": {
+    "manufacturers": 3,
+    "product_lines": 5,
+    "color_variants": 46,
+    "colors_with_hex": 0
+  },
+  "sources": [
+    {
+      "manufacturer": "eryone",
+      "line": "Hyper Speed PLA",
+      "product_url": "https://www.eryone.com/hyper-speed-pla-product/",
+      "named_variants": 6
+    },
+    {
+      "manufacturer": "elegoo",
+      "line": "PLA Matte",
+      "product_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "named_variants": 14
+    },
+    {
+      "manufacturer": "elegoo",
+      "line": "PETG Pro",
+      "product_url": "https://us.elegoo.com/products/petg-pro-filament-1-75mm-colored-1kg",
+      "named_variants": 13
+    },
+    {
+      "manufacturer": "elegoo",
+      "line": "Rapid PETG",
+      "product_url": "https://www.elegoo.com/products/rapid-petg-filament-1-75mm-colored-1kg",
+      "named_variants": 12
+    },
+    {
+      "manufacturer": "deeplee",
+      "line": "PLA",
+      "product_url": "https://deeplee3d.com/",
+      "named_variants": 1
+    }
+  ],
+  "notes": [
+    "These manufacturer pages list product variants or color names, but do not provide trustworthy numeric HEX/RGB; values are intentionally omitted.",
+    "For ERYONE Hyper Speed PLA, color names are taken from manufacturer image labels and may need further verification against SKU names.",
+    "DeepLee is a distinct manufacturer and must not be merged with ELEGOO, although the input list grouped them.",
+    "Colors without numeric references are indexed for discovery but should not be installed as fake color-matched Fusion Appearances."
+  ]
+}

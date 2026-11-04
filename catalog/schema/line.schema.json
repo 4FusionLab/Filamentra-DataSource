@@ -429,6 +429,16 @@
         "visual_note": {
           "type": "string",
           "minLength": 1
+        },
+        "visual_data_status": {
+          "type": "string",
+          "enum": [
+            "name_only",
+            "manufacturer_swatch",
+            "measured",
+            "estimated"
+          ],
+          "description": "name_only colors are cataloged but cannot receive a reliable Fusion base color until numeric visual data is added."
         }
       },
       "allOf": [

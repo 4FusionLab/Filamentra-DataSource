@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "deeplee/pla",
+  "brand": "deeplee",
+  "name": "PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://deeplee3d.com/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://deeplee3d.com/",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

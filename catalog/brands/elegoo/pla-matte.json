@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/pla-matte",
+  "brand": "elegoo",
+  "name": "PLA Matte",
+  "polymer": "PLA",
+  "finish": "matte",
+  "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "navy-blue",
+      "name": "Navy Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "matte-black",
+      "name": "Matte Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "matte-white",
+      "name": "Matte White",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "ruby-red",
+      "name": "Ruby Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "teal-green",
+      "name": "Teal Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sunshine-yellow",
+      "name": "Sunshine Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "slate-grey",
+      "name": "Slate Grey",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "lavender-purple",
+      "name": "Lavender Purple",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sakura-pink",
+      "name": "Sakura Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "ice-blue",
+      "name": "Ice Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "mint-green",
+      "name": "Mint Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "earth-brown",
+      "name": "Earth Brown",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-matte-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}
