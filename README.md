@@ -55,6 +55,12 @@ See [catalog format](docs/CATALOG_FORMAT.md) and the [high-fidelity Fusion Appea
 
 **Visual fidelity policy:** retain official colors when published; approximate missing optical properties with clearly labeled, line-specific presets, then calibrate against real print samples. Rendering may differ across Fusion viewport, Render workspace and physical output.
 
+## Browse the catalog in your browser
+
+**[Filamentra Catalog Demo](https://4fusionlab.github.io/Filamentra-DataSource/)** — a searchable, responsive preview of PLA/PETG manufacturers, product lines, colors, and their data provenance. Colorful gradients are illustrative, not physically calibrated Fusion renderings.
+
+The site updates **only when the [manual GitHub Actions workflow](.github/workflows/publish-demo.yml) is run** — not on every commit. **GitHub Pages must be enabled first**: [setup and local preview instructions](docs/DEMO_PAGES.md). Until Pages is enabled and a deployment succeeds, the site link will not be live.
+
 ## Catalog quality comes first
 
 - **Real products only.** Do not invent a manufacturer, series, color, or SKU.
