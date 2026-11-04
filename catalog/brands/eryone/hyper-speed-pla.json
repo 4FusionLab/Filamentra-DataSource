@@ -12,44 +12,68 @@
     {
       "id": "agate-gray",
       "name": "Agate Gray",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.eryone.com/hyper-speed-pla-product/",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#6C7371",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-high-speed--agate-gray",
+      "color_reference_note": "Независимый визуальный референс FilamentSelect (экранный HEX), не официальный цветовой код ERYONE и не физическое измерение отпечатка."
     },
     {
       "id": "black",
       "name": "Black",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.eryone.com/hyper-speed-pla-product/",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#292929",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-high-speed--black",
+      "color_reference_note": "Независимый визуальный референс FilamentSelect (экранный HEX), не официальный цветовой код ERYONE и не физическое измерение отпечатка."
     },
     {
       "id": "gray",
       "name": "Gray",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.eryone.com/hyper-speed-pla-product/",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#4A5352",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-high-speed--gray",
+      "color_reference_note": "Независимый визуальный референс FilamentSelect (экранный HEX), не официальный цветовой код ERYONE и не физическое измерение отпечатка."
     },
     {
       "id": "signal-gray",
       "name": "Signal Gray",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.eryone.com/hyper-speed-pla-product/",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#AAAFB0",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-high-speed--signal-gray",
+      "color_reference_note": "Независимый визуальный референс FilamentSelect (экранный HEX), не официальный цветовой код ERYONE и не физическое измерение отпечатка."
     },
     {
       "id": "skin",
       "name": "Skin",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.eryone.com/hyper-speed-pla-product/",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#E5B8A7",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-high-speed--skin-color",
+      "color_reference_note": "Независимый визуальный референс FilamentSelect (экранный HEX), не официальный цветовой код ERYONE и не физическое измерение отпечатка."
     },
     {
       "id": "white",
       "name": "White",
-      "visual_data_status": "name_only",
+      "visual_data_status": "estimated",
       "source_url": "https://www.eryone.com/hyper-speed-pla-product/",
-      "verified_on": "2026-11-04"
+      "verified_on": "2026-11-04",
+      "hex": "#CDD2D0",
+      "hex_source": "estimated",
+      "color_reference_url": "https://www.filamentselect.com/filaments/eryone--pla-high-speed--white",
+      "color_reference_note": "Независимый визуальный референс FilamentSelect (экранный HEX), не официальный цветовой код ERYONE и не физическое измерение отпечатка."
     }
   ]
 }
