@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "id": "kingroon/petg-basic",
+  "brand": "kingroon",
+  "name": "PETG Basic",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "gray",
+      "name": "Gray",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "sky-blue",
+      "name": "Sky Blue",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "skin",
+      "name": "Skin",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "transparent",
+      "name": "Transparent",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Named transparent by manufacturer; optical attenuation and accurate tint are not provided."
+        }
+      }
+    },
+    {
+      "id": "grass-green",
+      "name": "Grass Green",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "mint-green",
+      "name": "Mint Green",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "light-apricot",
+      "name": "Light Apricot",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "light-pink",
+      "name": "Light Pink",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "dark-green",
+      "name": "Dark Green",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "porcelain-blue",
+      "name": "Porcelain Blue",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "peony-pink",
+      "name": "Peony Pink",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "transparent-pink",
+      "name": "Transparent Pink",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Named transparent by manufacturer; optical attenuation and accurate tint are not provided."
+        }
+      }
+    },
+    {
+      "id": "ocean-blue",
+      "name": "Ocean Blue",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "lemon-yellow",
+      "name": "Lemon Yellow",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "wood-color",
+      "name": "Wood Color",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "carrot-orange",
+      "name": "Carrot Orange",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "bamboo-green",
+      "name": "Bamboo Green",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "navy-blue",
+      "name": "Navy Blue",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "khaki",
+      "name": "Khaki",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "metallic-copper",
+      "name": "Metallic Copper",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "metallic-silver",
+      "name": "Metallic Silver",
+      "source_url": "https://kingroon.com/products/kingroon-petg-basic",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    }
+  ]
+}

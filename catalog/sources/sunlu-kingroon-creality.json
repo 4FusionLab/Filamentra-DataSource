@@ -1,0 +1,50 @@
+{
+  "verified_on": "2026-11-04",
+  "manufacturers": [
+    "SUNLU",
+    "KINGROON",
+    "Creality"
+  ],
+  "source_pages": [
+    {
+      "brand": "sunlu",
+      "line": "PLA+",
+      "url": "https://www.sunlu.com/products/221",
+      "colors": 20,
+      "numeric_hex": true
+    },
+    {
+      "brand": "sunlu",
+      "line": "PLA+2.0",
+      "url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "colors": 20,
+      "numeric_hex": true
+    },
+    {
+      "brand": "sunlu",
+      "line": "PETG",
+      "url": "https://www.sunlu.com/products/petg-3d-printing-filament",
+      "colors": 20,
+      "numeric_hex": true
+    },
+    {
+      "brand": "kingroon",
+      "line": "PETG Basic",
+      "url": "https://kingroon.com/products/kingroon-petg-basic",
+      "colors": 35,
+      "numeric_hex": false
+    },
+    {
+      "brand": "creality",
+      "line": "Hyper PLA",
+      "url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "colors": 15,
+      "numeric_hex": false
+    }
+  ],
+  "notes": [
+    "SUNLU PLA+, PLA+2.0 and PETG each publish their own color-code table; their currently published 20 swatches happen to match.",
+    "KINGROON PETG Basic and Creality Hyper PLA pages provide shade names but not validated numeric optical colors. No HEX values were inferred.",
+    "All line profiles rely on uncalibrated appearance presets pending comparison with printed samples."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "creality/hyper-pla",
+  "brand": "creality",
+  "name": "Hyper PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "very-peri",
+      "name": "Very Peri",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "skin",
+      "name": "Skin",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "peach-fuzz",
+      "name": "Peach Fuzz",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "viva-magenta",
+      "name": "Viva Magenta",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "source_url": "https://store.creality.com/products/live-hyper-series-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    }
+  ]
+}

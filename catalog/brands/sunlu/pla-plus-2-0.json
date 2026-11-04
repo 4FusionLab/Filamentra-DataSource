@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "sunlu/pla-plus-2-0",
+  "brand": "sunlu",
+  "name": "PLA+2.0",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "grey",
+      "name": "Grey",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#75787B",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#FFFFFF",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#000000",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#BC2726",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#FFF13F",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#1DAA27",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#00A3E0",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#F0E0D6",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "ceramic",
+      "name": "Ceramic",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#F4F9FF",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "bone-white",
+      "name": "Bone White",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#EEE7D4",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "oak",
+      "name": "Oak",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#C2B29A",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "vivid-yellow",
+      "name": "Vivid yellow",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#EAC642",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "coffee-brown",
+      "name": "Coffee Brown",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#362111",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "magenta",
+      "name": "Magenta",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#C52E79",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "roasted-chestnut",
+      "name": "Roasted Chestnut",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#1D0E07",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "olive-green",
+      "name": "Olive Green",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#5A6D3D",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "sunny-orange",
+      "name": "Sunny Orange",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#ED7334",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#28334A",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "klein-blue",
+      "name": "Klein Blue",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#1729AB",
+      "hex_source": "manufacturer"
+    },
+    {
+      "id": "lavender-purple",
+      "name": "Lavender Purple",
+      "source_url": "https://www.sunlu.com/products/pla-plus-2-0-filament",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "manufacturer_swatch",
+      "hex": "#685BC7",
+      "hex_source": "manufacturer"
+    }
+  ]
+}
