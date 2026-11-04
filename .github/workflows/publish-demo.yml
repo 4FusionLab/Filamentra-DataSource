@@ -2,6 +2,10 @@ name: Publish catalog demo (manual)
 
 on:
   workflow_dispatch:
+  # Temporary bootstrap: only a unique one-time marker commit can run this.
+  push:
+    paths:
+      - 'demo/.initial-publish-20261104'
 
 permissions:
   contents: read
