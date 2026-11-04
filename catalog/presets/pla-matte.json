@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.86,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/pla-matte/normal_gl.png",
+      "roughness": "assets/presets/pla-matte/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Broad diffuse highlights. Baseline only, not a measured Bambu Lab value."
+  "notes": "Broad diffuse highlights. Baseline only, not a measured Bambu Lab value. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

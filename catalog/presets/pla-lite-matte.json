@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.73,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/pla-lite-matte/normal_gl.png",
+      "roughness": "assets/presets/pla-lite-matte/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Provisional finish estimate, line-specific test prints recommended."
+  "notes": "Provisional finish estimate, line-specific test prints recommended. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.77,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/pla-wood/normal_gl.png",
+      "roughness": "assets/presets/pla-wood/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Wood-like base finish; fibers and grain need real texture maps."
+  "notes": "Wood-like base finish; fibers and grain need real texture maps. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

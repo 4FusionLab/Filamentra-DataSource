@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.38,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/sparkle-polymer/normal_gl.png",
+      "roughness": "assets/presets/sparkle-polymer/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Only a base approximation. Real glitter needs properly licensed/generated normal and color texture maps."
+  "notes": "Only a base approximation. Real glitter needs properly licensed/generated normal and color texture maps. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

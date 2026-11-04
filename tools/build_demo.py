@@ -8,6 +8,8 @@ import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
+from generate_texture_maps import build_textures
+
 ROOT = Path(__file__).resolve().parents[1]
 BRANDS = ROOT / "catalog" / "brands"
 DEMO = ROOT / "demo"
@@ -123,6 +125,7 @@ def main() -> None:
         encoding="utf-8",
     )
     (destination / ".nojekyll").write_text("", encoding="utf-8")
+    build_textures(destination)
     print("Filamentra demo:", payload["meta"]["counts"], "->", destination)
 
 

@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.93,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/fiber-matte/normal_gl.png",
+      "roughness": "assets/presets/fiber-matte/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Low reflectance proxy for CF/GF composites; microstructure textures must be sourced or generated separately."
+  "notes": "Low reflectance proxy for CF/GF composites; microstructure textures must be sourced or generated separately. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }

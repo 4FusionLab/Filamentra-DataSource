@@ -9,6 +9,7 @@ on:
       - "catalog/**"
       - "demo/**"
       - "tools/build_demo.py"
+      - "tools/generate_texture_maps.py"
       - "tools/validate_catalog.py"
       - ".github/workflows/publish-demo.yml"
 
@@ -33,7 +34,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install validator
-        run: python -m pip install "jsonschema>=4.21,<5"
+        run: python -m pip install "jsonschema>=4.21,<5" "numpy>=2,<3" "Pillow>=11,<13"
       - name: Validate all catalog entries
         run: python tools/validate_catalog.py
       - name: Check browser JavaScript syntax
@@ -54,6 +55,10 @@ jobs:
           assert (root / "index.html").exists()
           assert (root / "assets/app.js").exists()
           assert (root / "assets/app.css").exists()
+          assert (root / "textures.html").exists()
+          textures = json.loads((root / "data/textures.json").read_text(encoding="utf-8"))["items"]
+          assert len(textures) == 18
+          assert all((root / p[k]).is_file() for p in textures for k in ("normal_gl", "roughness_map", "preview"))
           print("Validated demo:", counts)
           PY
       - uses: actions/configure-pages@v5

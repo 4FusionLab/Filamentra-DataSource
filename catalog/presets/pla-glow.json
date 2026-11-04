@@ -7,7 +7,13 @@
   "appearance": {
     "surface_type": "opaque",
     "roughness": 0.65,
-    "opacity": 255
+    "opacity": 255,
+    "textures": {
+      "normal_gl": "assets/presets/pla-glow/normal_gl.png",
+      "roughness": "assets/presets/pla-glow/roughness.png",
+      "tile_width_mm": 8,
+      "tile_height_mm": 8
+    }
   },
-  "notes": "Daylight appearance only; phosphorescence NOT reproduced."
+  "notes": "Daylight appearance only; phosphorescence NOT reproduced. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps."
 }
