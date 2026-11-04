@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "creality/hyper-petg-cf-rfid",
+  "brand": "creality",
+  "name": "Hyper PETG-CF RFID",
+  "polymer": "PETG",
+  "finish": "fiber-matte",
+  "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "fiber-matte",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "night-gray",
+      "name": "Night Gray",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "dusk-blue",
+      "name": "Dusk Blue",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "night-gray-tea",
+      "name": "Night Gray Tea",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "rocks-red-milk",
+      "name": "Rocks Red Milk",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "timber-green",
+      "name": "Timber Green",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "phantom-purple",
+      "name": "Phantom Purple",
+      "source_url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    }
+  ]
+}

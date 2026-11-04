@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "creality/hyper-lightweight-pla-rfid",
+  "brand": "creality",
+  "name": "Hyper PLA RFID Lightweight",
+  "polymer": "PLA",
+  "finish": "foamed",
+  "source_url": "https://store.creality.com/products/hyper-lightweight-pla-3d-printing-filament-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-foam",
+  "colors": [
+    {
+      "id": "white",
+      "name": "White",
+      "source_url": "https://store.creality.com/products/hyper-lightweight-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "source_url": "https://store.creality.com/products/hyper-lightweight-pla-3d-printing-filament-1kg",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only"
+    }
+  ]
+}

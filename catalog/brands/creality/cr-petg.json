@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "creality/cr-petg",
+  "brand": "creality",
+  "name": "CR-PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://vip.creality.com/en/goods-detail/1786",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "red",
+      "name": "Red",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "3301030038"
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "name": "Black",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "3301030035"
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "3301030032"
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "3301030033"
+        }
+      ]
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "3301030034"
+        }
+      ]
+    },
+    {
+      "id": "transparent",
+      "name": "Transparent",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Manufacturer identifies this color as transparent; optical tint/attenuation still unmeasured."
+        }
+      },
+      "variants": [
+        {
+          "sku": "3301030037"
+        }
+      ]
+    },
+    {
+      "id": "transparent-blue",
+      "name": "Transparent Blue",
+      "source_url": "https://vip.creality.com/en/goods-detail/1786",
+      "verified_on": "2026-11-04",
+      "visual_data_status": "name_only",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Manufacturer identifies this color as transparent; optical tint/attenuation still unmeasured."
+        }
+      },
+      "variants": [
+        {
+          "sku": "3301030036"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-11-04",
+  "manufacturer": "Creality",
+  "lines": [
+    {
+      "id": "creality/hyper-petg",
+      "url": "https://store.creality.com/products/hyper-series-petg-3d-printing-filament-1kg",
+      "colors": 8
+    },
+    {
+      "id": "creality/hyper-petg-cf-rfid",
+      "url": "https://store.creality.com/products/hyper-petg-cf-3d-printing-filament-1kg",
+      "colors": 7
+    },
+    {
+      "id": "creality/hyper-lightweight-pla-rfid",
+      "url": "https://store.creality.com/products/hyper-lightweight-pla-3d-printing-filament-1kg",
+      "colors": 2
+    },
+    {
+      "id": "creality/cr-petg",
+      "url": "https://vip.creality.com/en/goods-detail/1786",
+      "colors": 7
+    }
+  ],
+  "notes": [
+    "Only official color names; no safe numerical optical colors were published.",
+    "CR-PETG color-specific item numbers are preserved as packaging SKU variants, not color identity.",
+    "Hyper PLA RFID was deliberately not added as a separate color appearance line because the current official RFID list matches Hyper PLA: RFID is a spool identification feature, not a guaranteed optical formulation difference.",
+    "Regional color naming for Hyper PETG-CF can differ, so product-page spelling retained without combining them."
+  ]
+}
