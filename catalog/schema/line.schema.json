@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/4FusionLab/Filamentra-DataSource/blob/main/catalog/schema/line.schema.json",
+  "title": "Filamentra Product Line (Schema v1)",
+  "description": "Source catalog entry for a real manufacturer's filament product line. Appearance hints are visual estimates, not physical material specifications.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "brand",
+    "name",
+    "polymer",
+    "source_url",
+    "colors"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "brand": {
+      "$ref": "#/$defs/slug"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "polymer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finish": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "colors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/color"
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "source_url"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hex": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "hex_source": {
+          "type": "string",
+          "enum": [
+            "manufacturer",
+            "measured",
+            "estimated"
+          ]
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "verified_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "appearance": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "roughness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sku"
+            ],
+            "properties": {
+              "sku": {
+                "type": "string",
+                "minLength": 1
+              },
+              "diameter_mm": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "weight_g": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "packaging": {
+                "type": "string",
+                "enum": [
+                  "spool",
+                  "refill",
+                  "sample",
+                  "other"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "hex"
+            ]
+          },
+          "then": {
+            "required": [
+              "hex_source"
+            ]
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "hex_source"
+            ]
+          },
+          "then": {
+            "required": [
+              "hex"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
