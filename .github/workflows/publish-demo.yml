@@ -1,17 +1,8 @@
 name: Build and publish catalog demo
 
-# Publish on relevant validated main-branch changes; manual Run workflow remains available.
+# Deployment is intentionally manual to avoid automatic Pages builds on catalog commits.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "catalog/**"
-      - "demo/**"
-      - "tools/build_demo.py"
-      - "tools/generate_texture_maps.py"
-      - "tools/validate_catalog.py"
-      - ".github/workflows/publish-demo.yml"
 
 concurrency:
   group: filamentra-catalog-pages
