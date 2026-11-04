@@ -1,0 +1,98 @@
+{
+  "source_type": "manufacturer_store_variants",
+  "checked_on": "2026-11-04",
+  "manufacturer": "ELEGOO",
+  "source_scope": "Official manufacturer US product pages: distinct PLA and PETG product-line variants, without physical measurements or trustworthy numerical swatches.",
+  "imported_lines": 16,
+  "color_variants": 156,
+  "colors_with_official_hex": 0,
+  "lines": [
+    {
+      "id": "elegoo/pla",
+      "source_url": "https://us.elegoo.com/products/pla-filament-1-75mm-colored-1kg",
+      "colors": 17
+    },
+    {
+      "id": "elegoo/pla-basic",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "colors": 19
+    },
+    {
+      "id": "elegoo/pla-plus",
+      "source_url": "https://us.elegoo.com/products/elegoo-pla-plus-3d-printer-filament-1-75mm-colored-1kg",
+      "colors": 17
+    },
+    {
+      "id": "elegoo/rapid-pla-plus",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "colors": 11
+    },
+    {
+      "id": "elegoo/pla-pro",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "colors": 14
+    },
+    {
+      "id": "elegoo/pla-silk",
+      "source_url": "https://us.elegoo.com/products/elegoo-silk-pla-filament-1-75mm-colored-1kg",
+      "colors": 22
+    },
+    {
+      "id": "elegoo/pla-sparkle",
+      "source_url": "https://us.elegoo.com/products/pla-sparkle-filament-1-75mm-colored-1-kg",
+      "colors": 7
+    },
+    {
+      "id": "elegoo/pla-wood",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "colors": 6
+    },
+    {
+      "id": "elegoo/pla-glow",
+      "source_url": "https://us.elegoo.com/products/pla-glow",
+      "colors": 5
+    },
+    {
+      "id": "elegoo/pla-translucent",
+      "source_url": "https://us.elegoo.com/products/pla-translucent",
+      "colors": 9
+    },
+    {
+      "id": "elegoo/pla-cf",
+      "source_url": "https://us.elegoo.com/products/pla-cf-filament-1-75mm-black-1kg",
+      "colors": 7
+    },
+    {
+      "id": "elegoo/pla-marble",
+      "source_url": "https://us.elegoo.com/products/pla-marble-filament-10-kg",
+      "colors": 3
+    },
+    {
+      "id": "elegoo/pla-metallic",
+      "source_url": "https://us.elegoo.com/products/pla-metal-filament-1-75-mm-colored-1-kg",
+      "colors": 4
+    },
+    {
+      "id": "elegoo/pla-cmyk",
+      "source_url": "https://us.elegoo.com/products/pla-cmyk",
+      "colors": 4
+    },
+    {
+      "id": "elegoo/petg-translucent",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "colors": 8
+    },
+    {
+      "id": "elegoo/petg-gf",
+      "source_url": "https://us.elegoo.com/products/petg-gf-filament-1-75mm-colored-1kg",
+      "colors": 3
+    }
+  ],
+  "notes": [
+    "Some storefront color names include 2+ pigments, but not enough information to infer coextruded geometry or color RGB components; preserved as names only.",
+    "The manufacturer spells the PLA Translucent option 'Crytal White'; original spelling is preserved.",
+    "Base PLA 'Copper Filled' is postponed because its composition and appearance differ from ordinary colors; will require a separate reviewed visual profile.",
+    "RFID/emoji edition packaging is not treated as a new optical material line.",
+    "No guessed HEX or physical optical parameters have been introduced."
+  ]
+}

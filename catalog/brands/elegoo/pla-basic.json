@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/pla-basic",
+  "brand": "elegoo",
+  "name": "PLA Basic",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cocoa-brown",
+      "name": "Cocoa Brown",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "hot-pink",
+      "name": "Hot Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "sunflower-yellow",
+      "name": "Sunflower Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "cobalt-blue",
+      "name": "Cobalt Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "apple-green",
+      "name": "Apple Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "turquoise-green",
+      "name": "Turquoise Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent",
+      "name": "Translucent",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04",
+      "appearance": {
+        "surface_type": "transparent"
+      },
+      "appearance_sources": {
+        "surface_type": {
+          "kind": "filamentra_estimate",
+          "notes": "Named translucent by manufacturer; optical transmission and tint have not been measured."
+        }
+      }
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "misty-blue",
+      "name": "Misty Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-basic-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

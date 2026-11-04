@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/petg-gf",
+  "brand": "elegoo",
+  "name": "PETG-GF",
+  "polymer": "PETG",
+  "finish": "fiber-matte",
+  "source_url": "https://us.elegoo.com/products/petg-gf-filament-1-75mm-colored-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "fiber-matte",
+  "colors": [
+    {
+      "id": "glass-fiber-black",
+      "name": "Glass Fiber Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-gf-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glass-fiber-grey",
+      "name": "Glass Fiber Grey",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-gf-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glass-fiber-white",
+      "name": "Glass Fiber White",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-gf-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

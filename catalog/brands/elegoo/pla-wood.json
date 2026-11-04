@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/pla-wood",
+  "brand": "elegoo",
+  "name": "PLA Wood",
+  "polymer": "PLA",
+  "finish": "wood-like",
+  "source_url": "https://us.elegoo.com/products/pla-wood",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-wood",
+  "colors": [
+    {
+      "id": "wood-filled",
+      "name": "Wood filled",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-brown",
+      "name": "Light Brown",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "walnut-wood",
+      "name": "Walnut Wood",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "rosewood",
+      "name": "Rosewood",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "tan-birch",
+      "name": "Tan Birch",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "medium-brown",
+      "name": "Medium Brown",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-wood",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

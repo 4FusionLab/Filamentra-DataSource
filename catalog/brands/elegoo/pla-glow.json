@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/pla-glow",
+  "brand": "elegoo",
+  "name": "PLA Glow",
+  "polymer": "PLA",
+  "finish": "glow",
+  "source_url": "https://us.elegoo.com/products/pla-glow",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glow",
+  "colors": [
+    {
+      "id": "glow-blue",
+      "name": "Glow Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-glow",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glow-green",
+      "name": "Glow Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-glow",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glow-yellow",
+      "name": "Glow Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-glow",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glow-orange",
+      "name": "Glow Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-glow",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "glow-pink",
+      "name": "Glow Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-glow",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/petg-translucent",
+  "brand": "elegoo",
+  "name": "PETG Translucent",
+  "polymer": "PETG",
+  "finish": "translucent",
+  "source_url": "https://us.elegoo.com/products/petg-translucent",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-translucent",
+  "colors": [
+    {
+      "id": "translucent-blue",
+      "name": "Translucent Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-green",
+      "name": "Translucent Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-orange",
+      "name": "Translucent Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-purple",
+      "name": "Translucent Purple",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-grey",
+      "name": "Translucent Grey",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-olive-green",
+      "name": "Translucent Olive Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-amber",
+      "name": "Translucent Amber",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "translucent-pink",
+      "name": "Translucent Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/petg-translucent",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

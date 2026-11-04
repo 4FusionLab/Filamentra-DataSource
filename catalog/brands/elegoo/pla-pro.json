@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/pla-pro",
+  "brand": "elegoo",
+  "name": "PLA Pro",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "burgundy-red",
+      "name": "Burgundy Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "light-blue",
+      "name": "Light Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "true-red",
+      "name": "True Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "neon-green",
+      "name": "Neon Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "hot-pink",
+      "name": "Hot Pink",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/pla-pro-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

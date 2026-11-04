@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "elegoo/rapid-pla-plus",
+  "brand": "elegoo",
+  "name": "Rapid PLA Plus",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "black",
+      "name": "Black",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "grey",
+      "name": "Grey",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "brown",
+      "name": "Brown",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "id": "beige",
+      "name": "Beige",
+      "visual_data_status": "name_only",
+      "source_url": "https://us.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}
