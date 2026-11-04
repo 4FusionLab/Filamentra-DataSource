@@ -72,6 +72,8 @@ def make_catalog() -> dict:
         positions[item["brand"]], item["polymer"], item["name"].lower()))
     colors = [color for line in lines for color in line["colors"]]
     with_swatch = sum(bool(c.get("hex") or c.get("rgba_swatches")) for c in colors)
+    estimated = sum(c.get("hex_source") == "estimated" for c in colors)
+    manufacturer = with_swatch - estimated
     multicolor = sum(c.get("color_mode") in ("multicolor", "gradient") for c in colors)
     return {
         "meta": {
@@ -80,6 +82,8 @@ def make_catalog() -> dict:
             "counts": {
                 "brands": len(brands), "lines": len(lines), "colors": len(colors),
                 "with_swatch": with_swatch,
+                "manufacturer_swatch": manufacturer,
+                "estimated": estimated,
                 "name_only": len(colors) - with_swatch,
                 "multicolor": multicolor,
             },

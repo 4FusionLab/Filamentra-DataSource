@@ -14,13 +14,13 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 | --- | --- | ---: | ---: | --- |
 | [Bambu Lab](../catalog/brands/bambu-lab/) | China | 24 | 246 | [Pinned official BambuStudio RGBA registry](../catalog/sources/bambu-lab.json), with multi-color variants |
 | [eSUN](../catalog/brands/esun/) | China | 7 | 139 | Official [original](../catalog/sources/esun.json), [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json), [expanded](../catalog/sources/esun-expanded-2026-11-04.json) color tables |
-| [ERYONE](../catalog/brands/eryone/) | China | 1 | 6 | Product names and manufacturer imagery; no verified numeric swatches |
-| [ELEGOO](../catalog/brands/elegoo/) | China | 19 | 195 | Official [initial](../catalog/sources/next-chinese-brands.json) and [expanded product pages](../catalog/sources/elegoo-expanded-2026-11-04.json); no verified HEX |
+| [ERYONE](../catalog/brands/eryone/) | China | 4 | 36 | 36 independent estimated HEX references; official PLA+/PETG/PETG-CF and High Speed PLA listings |
+| [ELEGOO](../catalog/brands/elegoo/) | China | 19 | 224 | Official [manufacturer product pages](../catalog/sources/elegoo-expanded-2026-11-04.json) and 147 independent estimated HEX references |
 | [DeepLee](../catalog/brands/deeplee/) | China | 1 | 1 | Manufacturer name-only product record |
-| [Creality](../catalog/brands/creality/) | China | 5 | 39 | Official [initial](../catalog/sources/sunlu-kingroon-creality.json) and [extended](../catalog/sources/creality-expanded-2026-11-04.json) line options; selected CR-PETG SKU codes |
-| [KINGROON](../catalog/brands/kingroon/) | China | 4 | 87 | Official [PETG](../catalog/sources/sunlu-kingroon-creality.json) and [PLA product pages](../catalog/sources/kingroon-pla-2026-11-04.json) |
+| [Creality](../catalog/brands/creality/) | China | 5 | 39 | Official [product lines](../catalog/sources/creality-expanded-2026-11-04.json); 26 independent estimated HEX values |
+| [KINGROON](../catalog/brands/kingroon/) | China | 4 | 87 | Official [PLA and PETG lines](../catalog/sources/kingroon-pla-2026-11-04.json); 34 independent estimated HEX values |
 | [SUNLU](../catalog/brands/sunlu/) | China | 8 | 130 | Official [initial](../catalog/sources/sunlu-kingroon-creality.json) and [additional](../catalog/sources/2026-11-04-sunlu-esun-additional.json) HEX tables |
-| **Total** | | **69** | **843** | **8 manufacturers** |
+| **Total** | | **72** | **902** | **8 manufacturers** |
 | FDplast | Russia | 0 | 0 | Scheduled after Chinese import; [official website](https://fdplast.ru/) |
 | НИТ | Russia | 0 | 0 | Scheduled after Chinese import |
 | Bestfilament | Russia | 0 | 0 | Scheduled after Chinese import; [official website](https://bestfilament.ru/) |
@@ -30,7 +30,7 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 ## Visual fidelity
 
 - **515 variants** have at least one *manufacturer-published numeric display swatch*: 246 Bambu Lab (RGBA, including 18 gradient/multicolor), 139 eSUN (including 7 dual-shade entries), and 130 SUNLU.
-- **328 variants** currently have only an official name or visual product listing, with **no invented HEX**. These need a verified/estimated visual color before a color-matched Fusion Appearance can be installed.
+- **243 variants** now have independent **estimated** HEX references, labeled distinctly from manufacturer data and linked to their source. **144 variants** remain name-only with no defensible numeric color. See [color reference audit](COLOR_REFERENCE_AUDIT.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
@@ -40,7 +40,7 @@ For meaning, provenance, source fidelity and Fusion API constraints see [materia
 
 ## Next Chinese import priorities
 
-1. **ERYONE:** verify remaining standard/matte/PLA-Lite/Silk/Speed PLA and PETG products; its pages frequently provide photographs without precise swatch values. Avoid transcribing opaque filenames as official color names.
+1. **ERYONE:** expanded to PLA+, PETG, PETG-CF and full High Speed PLA color references. Next verify remaining standard/matte/Silk/Speed PLA and PETG products from its [official collection](https://eryone3d.com/collections/filament) and [download center](https://www.eryone.com/download-center/).
 2. **Creality:** ordinary PLA/Ender and special PLA/PETG lines; look for official color codes and check differences between the product family and RFID packaging.
 3. **eSUN:** special PLA/PETG finishes and multi-color/rainbow filaments. Do not misrepresent a gradient spool by one solid HEX.
 4. **SUNLU:** additional PETG/PLA finishes, dual-color variants, specialized Matte/HS/Silk. Prefer official `Color Code` tables.
