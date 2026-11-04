@@ -47,12 +47,12 @@ FilamentSelect can contain screen-level approximations as well as some measured 
 | Evidence level | Records |
 | --- | ---: |
 | Manufacturer numeric swatch, including multi-color RGBA | 515 |
-| Independently sourced estimated HEX, no physical measurement | 239 |
-| Third-party physical measurement, no manufacturer swatch | 4 |
-| Confirmed variant name, no defensible numeric color | 144 |
+| Independently sourced estimated HEX, no physical measurement | 237 |
+| Third-party physical measurement, no manufacturer swatch | 7 |
+| Confirmed variant name, no defensible numeric color | 143 |
 | **Total** | **902** |
 
-Six individual physical-print measurement records are now linked with direct evidence: four promote previous estimated-only HEX references to measured, and two supplement official manufacturer swatches without overwriting them. The curated default preview thus has **519** distinct source-backed entries (515 manufacturer + 4 measured-only); **239** estimated-only references require opt-in. All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
+Twelve individual physical-print measurement records are now linked with direct evidence: seven have no manufacturer numeric swatch, while five supplement official manufacturer swatches without overwriting them. The curated default preview therefore has **522** distinct source-backed entries (515 manufacturer + 7 measured-only); **237** estimated-only references require opt-in. See [measurement review](MEASURED_COLOR_REVIEW.md). All **18** finish presets remain experimental. [Sourcing policy](VISUAL_DATA_QUALITY.md).
 
 ## Pending work
 

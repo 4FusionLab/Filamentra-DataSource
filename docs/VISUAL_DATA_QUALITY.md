@@ -71,8 +71,10 @@ These appear in `variants[]` and `evidence[]`; they **do not** replace stable fu
 
 ## Current status
 
-At 2026-11-04, the source catalog has **8 brands, 72 lines, 902 variants**: 515 with manufacturer numeric swatches, **six** with linked third-party physical measurements (two of those also have official swatches), **239** remaining estimated-only references, and **144** unresolved names.
+At 2026-11-04, the source catalog has **8 brands, 72 lines, 902 variants**: 515 with manufacturer numeric swatches, **12** with linked third-party physical measurements (five of those also retain official manufacturer swatches), **237** remaining estimated-only references, and **143** unresolved names.
 
-This yields **519 curated preview candidates** from official numeric source or physical-sample evidence, **not** 519 physically accurate Fusion materials. Finish, BRDF, transmission and print-layer effects remain uncalibrated.
+This yields **522 curated preview candidates** from official numeric source or physical-sample evidence, **not** 522 physically accurate Fusion materials. Finish, BRDF, transmission and print-layer effects remain uncalibrated.
+
+See [six additional measured sample confirmations](MEASURED_COLOR_REVIEW.md). The CI now checks HEX-versus-Lab conversion consistency, but cannot certify the external measurement protocol.
 
 **Next work:** resolve exact SKU-level references and expand physical-sample coverage for existing PLA/PETG color families. Do not pad catalog totals with weakly sourced colors.
