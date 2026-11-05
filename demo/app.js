@@ -407,6 +407,70 @@ function renderResults() {
   renderActiveFilters();
 }
 
+function renderComparison() {
+  const tray = byId("compareTray");
+  const selected = state.comparison.map(findItem).filter(Boolean);
+  tray.hidden = selected.length === 0;
+  byId("compareCount").textContent = selected.length + " из 4";
+  byId("openCompare").disabled = selected.length < 2;
+  const host = byId("compareSelected");
+  host.replaceChildren();
+  for (const {line, color} of selected) {
+    const button = el("button", "selected-chip", color.name + " ×");
+    button.type = "button";
+    button.title = brandName(line.brand) + " · " + line.name + " · убрать";
+    button.addEventListener("click", () => toggleCompare(line, color));
+    host.appendChild(button);
+  }
+  if (byId("compareDialog").open) renderComparisonDialog();
+}
+function toggleCompare(line, color) {
+  const key = itemKey(line, color);
+  if (state.comparison.includes(key)) state.comparison = state.comparison.filter(x => x !== key);
+  else if (state.comparison.length < 4) state.comparison.push(key);
+  else {
+    byId("resultsAnnouncement").textContent = "Можно сравнивать не более четырёх материалов";
+    return;
+  }
+  renderComparison();
+  renderResults();
+}
+function renderComparisonDialog() {
+  const host = byId("compareGrid");
+  host.replaceChildren();
+  for (const key of state.comparison) {
+    const item = findItem(key);
+    if (!item) continue;
+    const {line, color} = item;
+    const panel = el("article", "comparison-card");
+    panel.appendChild(swatchNode(color, true));
+    panel.appendChild(el("span", "comparison-brand", brandName(line.brand) + " · " + line.polymer + " · " + line.name));
+    panel.appendChild(el("h3", "", color.name));
+    const specs = el("div", "comparison-specs");
+    addRow(specs, "Код", color.manufacturer_color_code || "—");
+    addRow(specs, "HEX", sampleHex(color) || color.hex || "—");
+    addRow(specs, "Достоверность", qualityLabel(color));
+    addRow(specs, "Фактура", line.finish || "standard");
+    panel.appendChild(specs);
+    const source = color.source_url || line.source_url;
+    if (typeof source === "string" && source.startsWith("https://")) {
+      const link = el("a", "comparison-link", "Источник цвета ↗");
+      link.href = source;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      panel.appendChild(link);
+    }
+    const open = el("button", "comparison-link", "Открыть карточку");
+    open.type = "button";
+    open.addEventListener("click", () => {
+      byId("compareDialog").close();
+      openDetails(line, color);
+    });
+    panel.appendChild(open);
+    host.appendChild(panel);
+  }
+}
+
 function addRow(container, label, value) {
   if (value === undefined || value === null || value === "") return;
   const row = el("div", "spec-row");
@@ -496,6 +560,29 @@ function openDetails(line, color) {
   state.previousFocus = document.activeElement;
   target.appendChild(el("h3", "", color.name));
   target.appendChild(el("p", "detail-sub", brandName(line.brand) + " / " + line.polymer + " / " + line.name));
+  const actions = el("div", "detail-actions");
+  const compare = el("button", "detail-action", compareHas(line, color) ? "✓ В сравнении" : "+ К сравнению");
+  compare.type = "button";
+  compare.addEventListener("click", () => {
+    toggleCompare(line, color);
+    compare.textContent = compareHas(line, color) ? "✓ В сравнении" : "+ К сравнению";
+  });
+  actions.appendChild(compare);
+  const share = el("button", "detail-action", "Скопировать ссылку");
+  share.type = "button";
+  share.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      share.textContent = "Ссылка скопирована ✓";
+    } catch {
+      share.textContent = "Не удалось скопировать";
+    }
+  });
+  actions.appendChild(share);
+  target.appendChild(actions);
+  const detailUrl = new URL(window.location.href);
+  detailUrl.searchParams.set("item", itemKey(line, color));
+  history.replaceState(null, "", detailUrl);
   addMaterialStage(target, line, color);
   const status = sourceType(color) === "missing"
     ? "Цвет не определён: есть название производителя, но нет достоверного HEX/RGB."
@@ -530,7 +617,10 @@ function openDetails(line, color) {
   }
   addRow(rows, "Точность пресета", preset.status === "uncalibrated" ? "Приближённый, не откалиброван" : preset.status);
   addRow(rows, "Проверено", color.verified_on);
-  target.appendChild(rows);
+  const technical = el("details", "technical-details");
+  technical.appendChild(el("summary", "", "Технические характеристики"));
+  technical.appendChild(rows);
+  target.appendChild(technical);
   const url = color.source_url || line.source_url;
   if (url && /^https:\/\//.test(url)) {
     const link = el("a", "source-link", "Открыть первоисточник ↗");
@@ -565,6 +655,7 @@ function openDetails(line, color) {
   if (color.visual_note) target.appendChild(el("p", "caution", color.visual_note));
   target.appendChild(el("p", "caution", "Это демонстрация данных каталога, а не физически корректный Fusion Render. Градиент на карточке показывает сочетание цветовых образцов, но не реальную ориентацию и высоту переходов в FDM-печати."));
   byId("overlay").hidden = false;
+  byId("details").inert = false;
   byId("details").classList.add("open");
   byId("details").setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
@@ -577,6 +668,10 @@ function closeDetails() {
   materialViewer = null;
   byId("details").classList.remove("open");
   byId("details").setAttribute("aria-hidden", "true");
+  byId("details").inert = true;
+  const detailUrl = new URL(window.location.href);
+  detailUrl.searchParams.delete("item");
+  history.replaceState(null, "", detailUrl);
   byId("overlay").hidden = true;
   document.body.style.overflow = "";
   if (state.previousFocus && document.contains(state.previousFocus)) state.previousFocus.focus();
@@ -588,9 +683,15 @@ function update() {
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
   });
-  renderBrands();
+  document.querySelectorAll("[data-view]").forEach(button => {
+    const active = state.view === button.dataset.view;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
   renderLineFilter();
+  renderBrands();
   renderResults();
+  persistFilters();
 }
 
 async function initialize() {
@@ -606,8 +707,13 @@ async function initialize() {
     const date = new Date(state.data.meta.generated_at);
     byId("snapshotDate").textContent = "Сборка " + date.toLocaleDateString("ru-RU");
     byId("footerVersion").textContent = "Снимок каталога";
+    restoreFilters();
     renderHeroSamples();
     update();
+    renderComparison();
+    const requested = new URLSearchParams(window.location.search).get("item");
+    const selected = requested && findItem(requested);
+    if (selected) openDetails(selected.line, selected.color);
   } catch (err) {
     byId("grid").replaceChildren();
     byId("resultCount").textContent = "Ошибка загрузки";
@@ -620,7 +726,7 @@ async function initialize() {
 byId("search").addEventListener("input", event => {
   state.search = event.target.value;
   state.limit = 144;
-  if (state.data) renderResults();
+  if (state.data) update();
 });
 byId("polymerButtons").addEventListener("click", event => {
   const button = event.target.closest("[data-polymer]");
@@ -633,33 +739,59 @@ byId("polymerButtons").addEventListener("click", event => {
 byId("lineFilter").addEventListener("change", event => {
   state.line = event.target.value;
   state.limit = 144;
-  if (state.data) renderResults();
+  if (state.data) update();
 });
 byId("onlySwatches").addEventListener("change", event => {
   state.onlySwatches = event.target.checked;
   state.limit = 144;
-  if (state.data) renderResults();
+  if (state.data) update();
 });
 byId("includeEstimates").addEventListener("change", event => {
   state.includeEstimates = event.target.checked;
   state.limit = 144;
-  if (state.data) renderResults();
+  if (state.data) update();
 });
 byId("onlyMulticolor").addEventListener("change", event => {
   state.onlyMulticolor = event.target.checked;
   state.limit = 144;
-  if (state.data) renderResults();
+  if (state.data) update();
 });
 byId("reset").addEventListener("click", () => {
   Object.assign(state, {
     brand: "all", polymer: "all", line: "all", search: "",
-    onlySwatches: true, includeEstimates: false, onlyMulticolor: false, limit: 144
+    onlySwatches: true, includeEstimates: false, onlyMulticolor: false, sort: "catalog", view: "grid", limit: 144
   });
   byId("search").value = "";
   byId("onlySwatches").checked = true;
   byId("includeEstimates").checked = false;
   byId("onlyMulticolor").checked = false;
+  byId("sortResults").value = "catalog";
   if (state.data) update();
+});
+byId("sortResults").addEventListener("change", event => {
+  state.sort = event.target.value;
+  state.limit = 144;
+  if (state.data) update();
+});
+document.querySelectorAll("[data-view]").forEach(button => button.addEventListener("click", () => {
+  state.view = button.dataset.view;
+  state.limit = 144;
+  if (state.data) update();
+}));
+byId("clearCompare").addEventListener("click", () => {
+  state.comparison = [];
+  renderComparison();
+  if (state.data) renderResults();
+  if (byId("compareDialog").open) byId("compareDialog").close();
+});
+byId("openCompare").addEventListener("click", () => {
+  if (state.comparison.length < 2) return;
+  renderComparisonDialog();
+  byId("compareDialog").showModal();
+});
+byId("closeCompare").addEventListener("click", () => byId("compareDialog").close());
+byId("compareDialog").addEventListener("click", event => {
+  if (event.target === byId("compareDialog")) byId("compareDialog").close();
 });
 byId("toggleFilters").addEventListener("click", () => {
   const button = byId("toggleFilters");
