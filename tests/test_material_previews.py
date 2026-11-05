@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from generate_material_previews import (IMAGE_SIZE, make_thumbnail, numeric_color,
                                         prepare_specimen, preview_path, preview_tint,
-                                        resolve_appearance)
+                                        resolve_appearance, logo_backdrop)
 
 
 class MaterialPreviewTests(unittest.TestCase):
@@ -48,15 +48,22 @@ class MaterialPreviewTests(unittest.TestCase):
             solid = make_thumbnail("#F6F9F7", surface, {"transmission": 0})
             tinted = make_thumbnail("#F6F9F7", surface, {"transmission": 0.49, "attenuation_distance_mm": 7.5})
             clear = make_thumbnail("#F6F9F7", surface, {"transmission": 0.94, "attenuation_distance_mm": 75})
-            # At the reference bar centre, more transparent specimens reveal more detail.
-            x, y = 106, 96
-            opaque_brightness = sum(solid.getpixel((x, y)))
-            tinted_brightness = sum(tinted.getpixel((x, y)))
-            clear_brightness = sum(clear.getpixel((x, y)))
-            self.assertGreater(abs(clear_brightness - sum(clear.getpixel((135, y)))), 70)
+            # The ivory 4F glyph crosses the dark monogram background
+            # *behind* the sphere. Increasing transmission must reveal it.
+            def glyph_contrast(image):
+                region = np.asarray(image, dtype=np.float32)[92:101, 99:128]
+                return float(np.ptp(region.mean(axis=2)))
+            self.assertGreater(glyph_contrast(clear), glyph_contrast(tinted) + 20)
+            self.assertGreater(glyph_contrast(tinted), glyph_contrast(solid) + 20)
             self.assertNotEqual(solid.tobytes(), tinted.tobytes())
             self.assertNotEqual(tinted.tobytes(), clear.tobytes())
-            self.assertGreater(abs(clear_brightness - opaque_brightness), 25)
+
+    def test_official_logo_backdrop_has_monogram_not_stripes(self):
+        backdrop = logo_backdrop()
+        self.assertEqual(backdrop.shape, (IMAGE_SIZE[1], IMAGE_SIZE[0], 3))
+        # White 4F stroke next to the midnight-blue background.
+        self.assertGreater(float(backdrop[96, 106].mean()), 0.65)
+        self.assertLess(float(backdrop[96, 120].mean()), 0.20)
 
     def test_safe_paths(self):
         self.assertEqual(preview_path("bambu-lab/pla-matte", "ash-gray"),

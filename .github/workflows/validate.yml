@@ -35,7 +35,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install validator
-        run: python -m pip install 'jsonschema>=4.21,<5' 'numpy>=2,<3' 'Pillow>=11,<13'
+        run: python -m pip install 'jsonschema>=4.21,<5' 'numpy>=2,<3' 'Pillow>=11,<13' 'CairoSVG>=2.7,<3'
       - name: Validate sources, references, IDs and schemas
         run: python tools/validate_catalog.py
       - name: Unit-test colorimetry
@@ -100,6 +100,13 @@ jobs:
               path = root / name
               assert path.is_file() and path.stat().st_size > 0, str(path)
           assert (root / "assets/material-viewer.js").stat().st_size > 50000
+
+          logo = root / "assets/brand/4fusionlab-logo.png"
+          assert (root / "assets/brand/4fusionlab-logo.svg").is_file()
+          assert logo.is_file()
+          with Image.open(logo) as brand_image:
+              assert brand_image.size == (512, 512)
+              brand_image.verify()
           print(f"Validated {len(previews)} catalog-specific WebP previews")
           PY
       - uses: actions/upload-artifact@v4
