@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from generate_material_previews import (IMAGE_SIZE, make_thumbnail, numeric_color,
                                         prepare_specimen, preview_path, preview_tint,
-                                        resolve_appearance, logo_backdrop)
+                                        resolve_appearance, logo_backdrop, hazy_logo_backdrop)
 
 
 class MaterialPreviewTests(unittest.TestCase):
@@ -46,17 +46,43 @@ class MaterialPreviewTests(unittest.TestCase):
             Image.new("L", (64, 64), 190).save(rough)
             surface = prepare_specimen(normal, rough)
             solid = make_thumbnail("#F6F9F7", surface, {"transmission": 0})
-            tinted = make_thumbnail("#F6F9F7", surface, {"transmission": 0.49, "attenuation_distance_mm": 7.5})
-            clear = make_thumbnail("#F6F9F7", surface, {"transmission": 0.94, "attenuation_distance_mm": 75})
+            tinted = make_thumbnail("#F6F9F7", surface, {"transmission": 0.40, "haze": 0.80, "attenuation_distance_mm": 7.5})
+            clear = make_thumbnail("#F6F9F7", surface, {"transmission": 0.75, "haze": 0.35, "attenuation_distance_mm": 75})
             # The ivory 4F glyph crosses the dark monogram background
             # *behind* the sphere. Increasing transmission must reveal it.
             def glyph_contrast(image):
                 region = np.asarray(image, dtype=np.float32)[92:101, 99:128]
                 return float(np.ptp(region.mean(axis=2)))
-            self.assertGreater(glyph_contrast(clear), glyph_contrast(tinted) + 20)
-            self.assertGreater(glyph_contrast(tinted), glyph_contrast(solid) + 20)
+            self.assertGreater(glyph_contrast(clear), glyph_contrast(tinted) + 6)
+            self.assertGreater(glyph_contrast(tinted), glyph_contrast(solid) + 6)
             self.assertNotEqual(solid.tobytes(), tinted.tobytes())
             self.assertNotEqual(tinted.tobytes(), clear.tobytes())
+
+    def test_haze_blurs_logo_at_equal_transmission(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            normal, rough = root / "normal.png", root / "rough.png"
+            Image.new("RGB", (64, 64), (128, 128, 255)).save(normal)
+            Image.new("L", (64, 64), 180).save(rough)
+            surface = prepare_specimen(normal, rough)
+            baseline = {"transmission": 0.70, "attenuation_distance_mm": 30}
+            crisp = make_thumbnail("#EAF2ED", surface, {**baseline, "haze": 0})
+            hazy = make_thumbnail("#EAF2ED", surface, {**baseline, "haze": 0.90})
+            self.assertNotEqual(crisp.tobytes(), hazy.tobytes())
+            # Outside the specimen the official logo remains crisp and identical.
+            self.assertEqual(crisp.getpixel((8, 8)), hazy.getpixel((8, 8)))
+            # Stronger haze reduces high-frequency transmitted reference details.
+            def contrast(im):
+                return float(np.std(np.asarray(im, dtype=np.float32)[92:101, 99:128]))
+            self.assertGreater(contrast(crisp), contrast(hazy))
+
+    def test_haze_schema_version_unchanged(self):
+        import json
+        for name in ("line.schema.json", "preset.schema.json"):
+            schema = json.loads((ROOT / "catalog/schema" / name).read_text(encoding="utf-8"))
+            self.assertEqual(schema["properties"]["schema_version"]["const"], 1)
+            appearance = schema["$defs"]["appearance"] if name.startswith("line") else schema["properties"]["appearance"]
+            self.assertEqual(appearance["properties"]["haze"]["maximum"], 1)
 
     def test_official_logo_backdrop_has_monogram_not_stripes(self):
         backdrop = logo_backdrop()

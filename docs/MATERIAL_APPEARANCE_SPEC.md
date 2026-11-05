@@ -75,7 +75,8 @@ See [Bambu Lab PLA Matte](../catalog/brands/bambu-lab/pla-matte.json) for **25**
 | `surface_type` | `opaque`, `transparent`, `metallic` | `Appearances.add(name, AppearanceSurfaceTypes.*)` | Documented |
 | `roughness` | Microfacet highlight roughness 0–1, not profilometer Ra | `Appearance.roughness` | Documented |
 | `opacity` | Alpha 0–255; **not** bulk light transmission | `Color.create(r,g,b,opacity)` → `Appearance.color` | Documented |
-| `transmission` | Filamentra PBR light-transmission estimate 0–1; not measured visible-light transmittance | Three.js `MeshPhysicalMaterial.transmission` for Pages; Fusion adapter mapping TBD | Procedural estimate |
+| `transmission` | Filamentra PBR light-transmission estimate 0–1; not measured visible-light transmittance | Three.js `MeshPhysicalMaterial.transmission`; Fusion transparent surface is approximate and does not expose independent transmission fraction | Procedural estimate |
+| `haze` | Perceptual image blur through the part, 0–1; independent of transmission, opacity and roughness | Static Pages preview Gaussian blur through the silhouette; Three.js rough-transmission map approximation; Fusion surface roughness approximation (not physical volumetric scattering) | Procedural estimate |
 | Color `hex` | Manufacturer swatch, measured or estimated sRGB | RGB via `Appearance.color`; slot depends on surface type | Documented |
 | `textures.base_color` | Optional source/locally generated albedo texture | `Appearance.colorTexture` | Documented |
 | `textures.normal_gl` | OpenGL tangent-space normal map | `Appearance.normalTexture` | Documented |
@@ -153,3 +154,26 @@ For roughness maps, Autodesk resets scalar roughness to 1.0 when attaching the m
 - A preset's `status: uncalibrated` is deliberate and must survive into UI metadata.
 - Until the first public release, Schema v1 is a draft that may evolve. After shipping, breaking changes require a new schema version and distribution compatibility metadata.
 - Distributing validated catalog data is independent from creating an engineering `Material` in Fusion; Filamentra installs a **visual Appearance** only.
+
+## Distinct visual transmission vs. haze (pre-release schema v1)
+
+`transmission` controls the fraction of light used in Filamentra's estimated
+optical renderer. `haze` controls **image detail loss through the material**:
+a material may pass ample light but obscure the text/logotype behind it. Haze
+is not `opacity`, not `roughness`, and not a measured ASTM haze coefficient.
+Both are normalized to 0..1. Preset -> line -> color overrides apply without
+changing `schema_version: 1`. All initial values have `filamentra_estimate`
+provenance and should be calibrated against real 2-mm FDM samples later.
+
+The static generator blurs only the image seen through the rendered specimen,
+while preserving the sharp 4FusionLab logo outside its silhouette. The Three.js
+adapter uses haze-adjusted rough transmission with a generated roughness map;
+this also changes specular response because the built-in physically based
+material does not model independent volumetric scatter. Fusion maps `haze` to
+its documented surface roughness as a *degraded approximation*, with explicit
+mapping status; there is no documented direct `haze` property in the API.
+
+Starting qualitative examples: PLA Translucent (0.40 transmission / 0.80 haze),
+PETG Translucent (0.55 / 0.55), PETG Clear (0.75 / 0.35). They are not
+manufacturer optical measurements. The 4FusionLab logo is intentionally kept
+at a fixed scale behind the 2-mm reference sample for comparison.

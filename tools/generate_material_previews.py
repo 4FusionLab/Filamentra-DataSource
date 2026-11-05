@@ -17,7 +17,7 @@ from pathlib import Path
 import cairosvg
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 
 IMAGE_SIZE = (256, 192)
 _COLOR_RE = re.compile(r"^#[0-9A-Fa-f]{6}$")
@@ -40,6 +40,21 @@ def logo_backdrop() -> np.ndarray:
     backdrop.alpha_composite(icon, ((IMAGE_SIZE[0] - icon.width) // 2,
                                     (IMAGE_SIZE[1] - icon.height) // 2))
     return np.asarray(backdrop.convert("RGB"), dtype=np.float32) / 255
+
+
+@lru_cache(maxsize=32)
+def hazy_logo_backdrop(haze: float) -> np.ndarray:
+    """Blur the fixed reference image only along the transmitted light path.
+
+    This is a qualitative, deterministic haze visualization. The real-world
+    scattering depends on print settings and is not inferred from palette RGBA.
+    """
+    haze = max(0.0, min(1.0, round(float(haze), 3)))
+    if haze == 0:
+        return logo_backdrop()
+    source = Image.fromarray(np.uint8(np.rint(logo_backdrop() * 255)), "RGB")
+    return np.asarray(source.filter(ImageFilter.GaussianBlur(radius=12.0 * haze)),
+                      dtype=np.float32) / 255
 
 
 def numeric_color(color: dict) -> str | None:
@@ -161,6 +176,7 @@ def make_thumbnail(
     diffuse, specular, edge, face_cosine = prepared
     appearance = appearance or {}
     transmission = float(appearance.get("transmission", 0))
+    haze = float(appearance.get("haze", 0)) if transmission > 0 else 0
     base = np.array([int(hex_rgb[i:i+2], 16) / 255 for i in (1, 3, 5)], dtype=np.float32)
     linear = np.where(base <= 0.04045, base / 12.92, ((base + 0.055) / 1.055) ** 2.4)
     lit = np.clip(linear[None, None, :] * diffuse[..., None] + specular[..., None], 0, 1)
@@ -178,8 +194,11 @@ def make_thumbnail(
         transmitted = transmission * np.exp(-wall_path_mm / max(distance, 1e-6))
         tint = 0.36 + 0.64 * np.power(base, 0.6)
         mix = transmitted[..., None] * 0.92
+        # Haze blurs the logo *through* the sphere, not outside it.
+        # Microfacet roughness remains an independent input for highlights.
+        scattered_backdrop = hazy_logo_backdrop(haze)
         # Retain reflective highlights even for nearly clear plastics.
-        sphere = np.clip(srgb * (1 - mix) + backdrop * tint * mix
+        sphere = np.clip(srgb * (1 - mix) + scattered_backdrop * tint * mix
                          + specular[..., None] * 0.10, 0, 1)
         composite = sphere * edge[..., None] + backdrop * (1 - edge[..., None])
     else:
