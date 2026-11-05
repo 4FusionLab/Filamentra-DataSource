@@ -32,6 +32,8 @@ jobs:
         run: |
           node --check demo/app.js
           node --check demo/material-viewer.js
+      - name: Regression-test catalog UI state and comparison
+        run: node --test tests/demo_ux.test.mjs
       - name: Build snapshot from current main
         run: python tools/build_demo.py --out dist
       - name: Build self-hosted WebGL viewer
