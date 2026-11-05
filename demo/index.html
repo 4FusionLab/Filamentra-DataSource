@@ -48,14 +48,15 @@
     <div class="workspace">
       <aside class="sidebar" aria-label="Фильтры каталога">
         <div class="sidebar-title">Фильтры <span>PLA / PETG</span></div>
+        <div class="search-block">
+          <label for="search">Поиск по каталогу</label>
+          <div class="search-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+            <input type="search" id="search" placeholder="Бренд, линейка, цвет или код" autocomplete="off">
+          </div>
+        </div>
         <button type="button" class="mobile-filter-toggle" id="toggleFilters" aria-controls="filtersPanel" aria-expanded="false">Настроить фильтры <span aria-hidden="true" id="filterChevron">+</span></button>
         <div id="filtersPanel" class="filters-panel">
-        <label for="search">Поиск по каталогу</label>
-        <div class="search-wrap">
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
-          <input type="search" id="search" placeholder="Бренд, линейка, цвет или код" autocomplete="off">
-        </div>
-
         <div class="filter-section">
           <div class="filter-heading">Материал</div>
           <div class="segmented" id="polymerButtons" aria-label="Тип полимера">
@@ -91,20 +92,49 @@
           <div><div class="eyebrow">Библиотека оттенков</div><h2 id="resultsTitle">Все филаменты</h2></div>
           <div class="catalog-meta"><span id="resultCount">Загрузка…</span><span class="bullet">•</span><span id="snapshotDate">—</span></div>
         </div>
+        <div class="catalog-controls">
+          <label for="sortResults">Сортировка
+            <select id="sortResults">
+              <option value="catalog">В порядке каталога</option>
+              <option value="color">По названию цвета</option>
+              <option value="brand">По производителю</option>
+            </select>
+          </label>
+          <div class="view-control" role="group" aria-label="Отображение материалов">
+            <button type="button" class="view-choice active" data-view="grid" aria-pressed="true">Сетка</button>
+            <button type="button" class="view-choice" data-view="grouped" aria-pressed="false">По линейкам</button>
+          </div>
+        </div>
+        <div class="active-filters" id="activeFilters" aria-label="Применённые фильтры" hidden></div>
         <div class="legend" aria-label="Достоверность цветовых данных">
           <span><i class="legend-dot source"></i> Производитель или измеренный образец</span>
           <span><i class="legend-dot approximation"></i> Приблизительный HEX</span>
           <span><i class="legend-dot missing"></i> Нет цветовых данных</span>
         </div>
-        <div id="grid" class="swatch-grid" aria-live="polite"></div>
+        <div id="grid" class="swatch-grid"></div>
+        <p class="sr-only" id="resultsAnnouncement" role="status" aria-live="polite" aria-atomic="true"></p>
         <div id="empty" class="empty" hidden><strong>Ничего не найдено</strong><p>Попробуй изменить фильтры или запрос.</p></div>
         <div class="catalog-footer">По умолчанию показаны материалы с числовым цветовым образцом производителя или опубликованным измерением отпечатка. Оценочные HEX включаются отдельно. Объёмный предпросмотр процедурный: он имитирует типовую фактуру линейки, но не гарантирует совпадение с конкретным отпечатком или рендером Autodesk Fusion.</div>
       </section>
     </div>
   </main>
 
+  <div class="compare-tray" id="compareTray" hidden>
+    <div class="compare-tray-caption"><strong id="compareCount">0 из 4</strong><span>материалов для сравнения</span></div>
+    <div id="compareSelected" class="compare-selected"></div>
+    <button type="button" class="compare-clear" id="clearCompare">Очистить</button>
+    <button type="button" class="compare-open" id="openCompare" disabled>Сравнить</button>
+  </div>
+  <dialog id="compareDialog" class="compare-dialog" aria-labelledby="compareTitle">
+    <div class="compare-heading">
+      <div><div class="eyebrow">Сопоставление материалов</div><h2 id="compareTitle">Сравнение филаментов</h2></div>
+      <button type="button" class="close-compare" id="closeCompare" aria-label="Закрыть сравнение">×</button>
+    </div>
+    <p class="compare-intro">Одинаковый формат предпросмотра; цвет и фактура приблизительные, не замер готовой печати.</p>
+    <div id="compareGrid" class="compare-grid"></div>
+  </dialog>
   <div id="overlay" class="overlay" hidden></div>
-  <aside id="details" class="details" role="dialog" aria-modal="true" aria-label="Характеристики цвета" aria-hidden="true" tabindex="-1">
+  <aside id="details" class="details" role="dialog" aria-modal="true" aria-label="Характеристики цвета" aria-hidden="true" tabindex="-1" inert>
     <button type="button" class="close" id="closeDetails" aria-label="Закрыть карточку">×</button>
     <div class="eyebrow">Характеристики материала</div>
     <div id="detailContent"></div>
