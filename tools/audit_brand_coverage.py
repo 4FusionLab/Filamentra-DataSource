@@ -49,14 +49,18 @@ def scan() -> dict:
             for color in line.get("colors", []):
                 counts["colors"] += 1
                 visual = color.get("visual_data_status")
+                # Legacy official Bambu/eSUN/SUNLU swatches may omit
+                # visual_data_status; derive quality from source fields, just
+                # as build_demo.py does. Measurement wins over official RGB
+                # when a record contains both (avoid double counting).
                 if not _is_numeric(color):
                     counts["name_only"] += 1
-                elif visual == "estimated":
-                    counts["estimated"] += 1
-                elif visual == "manufacturer_swatch":
-                    counts["manufacturer_swatch"] += 1
-                elif visual == "measured":
+                elif color.get("measured_sample"):
                     counts["measured"] += 1
+                elif color.get("rgba_swatches") or color.get("hex_source") == "manufacturer":
+                    counts["manufacturer_swatch"] += 1
+                elif color.get("hex_source") == "estimated" or visual == "estimated":
+                    counts["estimated"] += 1
                 else:
                     raise ValueError(f"Unrecognized numeric quality: {path}: {color['id']} ({visual})")
                 if any(variant.get("sku") for variant in color.get("variants", [])):
