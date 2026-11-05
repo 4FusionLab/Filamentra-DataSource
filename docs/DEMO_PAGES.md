@@ -50,6 +50,23 @@ The build script needs only the Python standard library and copies `demo/index.h
 - Detail panel for origin references, manufacturer color codes, and estimated surface roughness.
 - Mobile-compatible layout with collapsible filters and responsive swatch grid.
 - The hero samples six source-backed colors from the generated catalog snapshot; they are not invented placeholders.
+- The search field remains visible on narrow screens even while secondary filters are collapsed.
+- Grid or grouped-by-product-line browsing, color-name/manufacturer sorting, accurate manufacturer facet counts, and removable active-filter chips.
+- Side-by-side comparison of up to four colors using the same static procedural-preview format; each item retains its provenance, manufacturer code, and original source link.
+- Shareable catalog filter and color permalinks via URL query parameters, including direct entry into a selected color.
+- Compact color details, one-click comparison and link copying, and expandable technical appearance parameters.
+- Keyboard focus and mobile interaction refinements, including an inert closed details panel and phone-safe search font size.
+- Clickable hero samples that open the corresponding genuine catalog record.
+
+
+Comparison is an aid for relative selection, not a calibrated color-difference measurement. A source-backed HEX, a measured print sample, and a procedural surface rendering are distinct forms of evidence. The comparison intentionally uses precomputed previews rather than running four WebGL contexts at once. The interactive detail viewer retains its existing 4FusionLab-logo optical reference for translucent materials.
+
+To run UI regression tests locally before manual publication:
+
+```shell
+node --test tests/demo_ux.test.mjs
+node --check demo/app.js
+```
 
 The UI approximates multiple manufacturer swatches with a flat CSS gradient. It is **not** a Fusion 360 rendering or physically accurate simulation of extruded multicolor filament.
 
