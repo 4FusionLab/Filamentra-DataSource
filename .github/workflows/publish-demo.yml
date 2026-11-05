@@ -1,8 +1,12 @@
 name: Build and publish catalog demo
 
 # Deployment is intentionally manual to avoid automatic Pages builds on catalog commits.
+# One-time publication requested on 2026-11-05; remove push trigger immediately after dispatch.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/publish-demo.yml"]
 
 concurrency:
   group: filamentra-catalog-pages
