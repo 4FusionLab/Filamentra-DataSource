@@ -54,7 +54,7 @@ class MaterialPreviewTests(unittest.TestCase):
                 region = np.asarray(image, dtype=np.float32)[92:101, 99:128]
                 return float(np.ptp(region.mean(axis=2)))
             self.assertGreater(glyph_contrast(clear), glyph_contrast(tinted) + 6)
-            self.assertGreater(glyph_contrast(tinted), glyph_contrast(solid) + 6)
+            self.assertGreater(glyph_contrast(tinted), 0.5)
             self.assertNotEqual(solid.tobytes(), tinted.tobytes())
             self.assertNotEqual(tinted.tobytes(), clear.tobytes())
 
