@@ -5,6 +5,8 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+
+import cairosvg
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -130,6 +132,13 @@ def main() -> None:
     shutil.copy2(DEMO / "index.html", destination / "index.html")
     shutil.copy2(DEMO / "app.css", destination / "assets" / "app.css")
     shutil.copy2(DEMO / "app.js", destination / "assets" / "app.js")
+    # Preserve the official source SVG and render an identical local PNG for WebGL.
+    logo_source = DEMO / "assets" / "brand" / "4fusionlab-logo.svg"
+    logo_destination = destination / "assets" / "brand"
+    logo_destination.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(logo_source, logo_destination / logo_source.name)
+    cairosvg.svg2png(url=str(logo_source), write_to=str(logo_destination / "4fusionlab-logo.png"),
+                     output_width=512, output_height=512)
     build_textures(destination)
     preview_count = build_material_previews(payload, destination)
     payload["meta"]["counts"]["material_previews"] = preview_count

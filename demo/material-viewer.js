@@ -81,32 +81,33 @@ export async function createMaterialViewer(host, options) {
     fill.position.set(4, -1, 3);
     scene.add(fill);
 
-    // Neutral optical reference bars behind the specimen. The difference
-    // between translucent and opaque grades is visible without extra effects.
-    const reference = document.createElement("canvas");
-    reference.width = 256;
-    reference.height = 256;
-    const brush = reference.getContext("2d");
-    brush.fillStyle = "#222e28";
-    brush.fillRect(0, 0, 256, 256);
-    brush.fillStyle = "#acb9aa";
-    brush.fillRect(83, 0, 28, 256);
-    brush.fillStyle = "#718b7a";
-    brush.fillRect(145, 0, 28, 256);
-    referenceMap = new THREE.CanvasTexture(reference);
+    const loader = new THREE.TextureLoader();
+    [normalTexture, roughTexture, referenceMap] = await Promise.all([
+      loader.loadAsync(basePath + maps.normal_gl),
+      loader.loadAsync(basePath + maps.roughness),
+      loader.loadAsync(basePath + "assets/brand/4fusionlab-logo.png"),
+    ]);
+    if (destroyed) {
+      normalTexture?.dispose();
+      roughTexture?.dispose();
+      referenceMap?.dispose();
+      return null;
+    }
+
+    // The actual 4FusionLab mark, not a synthetic test pattern. Its ivory
+    // monogram is occluded by opaque plastics and visible through transparent
+    // materials. The plane stays fixed as the specimen rotates in front of it.
     referenceMap.colorSpace = THREE.SRGBColorSpace;
-    referenceMaterial = new THREE.MeshBasicMaterial({ map: referenceMap, toneMapped: false });
-    referenceGeometry = new THREE.PlaneGeometry(2.85, 2.85);
+    referenceMaterial = new THREE.MeshBasicMaterial({
+      map: referenceMap,
+      transparent: true,
+      depthWrite: false,
+      toneMapped: false,
+    });
+    referenceGeometry = new THREE.PlaneGeometry(2.65, 2.65);
     const opticalReference = new THREE.Mesh(referenceGeometry, referenceMaterial);
     opticalReference.position.z = -1.35;
     scene.add(opticalReference);
-
-    const loader = new THREE.TextureLoader();
-    [normalTexture, roughTexture] = await Promise.all([
-      loader.loadAsync(basePath + maps.normal_gl),
-      loader.loadAsync(basePath + maps.roughness),
-    ]);
-    if (destroyed) return null;
 
     const transparent = appearance.surface_type === "transparent";
     const transmission = transparent ? clamp01(appearance.transmission ?? 0) : 0;

@@ -44,9 +44,9 @@ Clear variant overrides PETG with transmission 0.94 and attenuation distance
 values can replace them when meaningful source evidence is available.
 
 Both the static preview generator and the interactive WebGL viewer model a
-reference **2-mm wall thickness**, with a fixed pair of neutral reference bars
-behind the specimen. Transparent materials visibly reveal the bars; opaque
-materials hide them. The result is qualitative, not a calibrated physics
+reference **2-mm wall thickness**, with the official 4FusionLab monogram image behind the specimen.
+Translucent materials reveal the monogram to different degrees; opaque
+materials occlude it. The result is qualitative, not a calibrated physics
 prediction. The WebGL viewer converts attenuation distance from millimetres
 into sample scene units and uses Three.js `attenuationColor` to tint transmitted
 light. The stored color HEX remains separate from estimated optics.
@@ -56,3 +56,19 @@ Only for rendering such a *verified fully transparent screen swatch* the
 preview uses a neutral tint (`#F6F9F7`), without writing a fictional HEX
 or claiming physical color measurements. All other unknown colors still
 remain without a preview.
+
+## Branded optical reference (4FusionLab)
+
+The source asset `demo/assets/brand/4fusionlab-logo.svg` is a **verbatim copy**
+of the official 4FusionLab organization mark from
+`4FusionLab/.github/assets/avatar.svg` (same repository owner; no AI-generated
+replacement). `tools/build_demo.py` rasterizes it to a 512 × 512 PNG for the
+Three.js texture loader. The Python WebP generator composites the same SVG at a
+fixed 176 × 176 px size behind its 30-mm specimen. Opaque previews completely
+cover the monogram inside the model; translucent previews reveal it in proportion
+to their approximate transmission and optical attenuation. The background is
+identical for every filament, so users can compare the effect directly.
+
+The CI build checks that the rasterized logo is present and decodable and tests
+that the monogram creates distinct tones inside a clear specimen. CairoSVG is
+a build-time dependency only; the published site remains static.

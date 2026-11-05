@@ -10,13 +10,36 @@ from __future__ import annotations
 
 import math
 import re
+from functools import lru_cache
+from io import BytesIO
 from pathlib import Path
+
+import cairosvg
 
 import numpy as np
 from PIL import Image
 
 IMAGE_SIZE = (256, 192)
 _COLOR_RE = re.compile(r"^#[0-9A-Fa-f]{6}$")
+BRAND_LOGO = Path(__file__).resolve().parents[1] / "demo/assets/brand/4fusionlab-logo.svg"
+
+
+@lru_cache(maxsize=1)
+def logo_backdrop() -> np.ndarray:
+    """Official 4FusionLab avatar, centrally placed at a fixed size for every material.
+
+    The SVG is copied verbatim from 4FusionLab/.github/assets/avatar.svg; rasterization
+    is deterministic. A single backdrop makes relative transparency comparable.
+    """
+    if not BRAND_LOGO.is_file():
+        raise FileNotFoundError(f"Missing official 4FusionLab logo: {BRAND_LOGO}")
+    picture = cairosvg.svg2png(url=str(BRAND_LOGO), output_width=176, output_height=176)
+    with Image.open(BytesIO(picture)) as source_logo:
+        icon = source_logo.convert("RGBA")
+    backdrop = Image.new("RGBA", IMAGE_SIZE, (24, 30, 27, 255))
+    backdrop.alpha_composite(icon, ((IMAGE_SIZE[0] - icon.width) // 2,
+                                    (IMAGE_SIZE[1] - icon.height) // 2))
+    return np.asarray(backdrop.convert("RGB"), dtype=np.float32) / 255
 
 
 def numeric_color(color: dict) -> str | None:
@@ -143,19 +166,11 @@ def make_thumbnail(
     lit = np.clip(linear[None, None, :] * diffuse[..., None] + specular[..., None], 0, 1)
     srgb = np.where(lit <= 0.0031308, lit * 12.92, 1.055 * np.power(lit, 1 / 2.4) - 0.055)
 
-    background = np.array([0.094, 0.117, 0.106], dtype=np.float32)
+    # Every sample is placed in front of the *same* official 4FusionLab logo.
+    # It remains hidden by opaque plastic and progressively visible through
+    # translucent and clear grades, with no arbitrary reference stripes.
+    backdrop = logo_backdrop()
     if transmission > 0:
-        # Two neutral optical reference bars behind the specimen make the
-        # amount of transmitted light visually legible. No sampled photos.
-        width, height = IMAGE_SIZE
-        y, x = np.mgrid[:height, :width]
-        backdrop = np.broadcast_to(background, (height, width, 3)).copy()
-        bar1 = (x >= width // 2 - 30) & (x <= width // 2 - 15)
-        bar2 = (x >= width // 2 + 15) & (x <= width // 2 + 30)
-        bar_range = (y >= 15) & (y <= height - 15)
-        backdrop[bar1 & bar_range] = [0.72, 0.76, 0.72]
-        backdrop[bar2 & bar_range] = [0.46, 0.55, 0.50]
-
         # Optical behavior is approximate and explicitly thickness-dependent.
         # At grazing angles the same 2-mm shell absorbs more light.
         distance = float(appearance.get("attenuation_distance_mm", 9.0))
@@ -168,7 +183,7 @@ def make_thumbnail(
                          + specular[..., None] * 0.10, 0, 1)
         composite = sphere * edge[..., None] + backdrop * (1 - edge[..., None])
     else:
-        composite = srgb * edge[..., None] + background * (1 - edge[..., None])
+        composite = srgb * edge[..., None] + backdrop * (1 - edge[..., None])
     return Image.fromarray(np.uint8(np.rint(np.clip(composite, 0, 1) * 255)), mode="RGB")
 
 
