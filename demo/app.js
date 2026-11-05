@@ -334,6 +334,7 @@ function createCard(line, color) {
   const body = el("div", "card-body");
   body.appendChild(el("div", "card-overline", brandName(line.brand) + " / " + line.name));
   body.appendChild(el("div", "card-name", color.name));
+  body.appendChild(el("div", "quality-text", qualityLabel(color)));
   const bottom = el("div", "card-bottom");
   bottom.appendChild(el("span", "", line.polymer + " · " + (line.finish || "standard")));
   bottom.appendChild(el("span", "code", color.manufacturer_color_code || color.hex || "—"));
@@ -346,6 +347,7 @@ function createCard(line, color) {
   compare.title = compareHas(line, color) ? "Убрать из сравнения" : "Добавить к сравнению";
   compare.setAttribute("aria-label", compare.title + ": " + color.name + " (" + line.name + ")");
   compare.setAttribute("aria-pressed", String(compareHas(line, color)));
+  compare.dataset.key = itemKey(line, color);
   compare.addEventListener("click", () => toggleCompare(line, color));
   wrapper.appendChild(compare);
   return wrapper;
@@ -433,7 +435,14 @@ function toggleCompare(line, color) {
     return;
   }
   renderComparison();
-  renderResults();
+  document.querySelectorAll(".compare-add").forEach(button => {
+    const selected = state.comparison.includes(button.dataset.key);
+    button.classList.toggle("selected", selected);
+    button.textContent = selected ? "✓" : "+";
+    button.title = selected ? "Убрать из сравнения" : "Добавить к сравнению";
+    button.setAttribute("aria-pressed", String(selected));
+    button.setAttribute("aria-label", button.title);
+  });
 }
 function renderComparisonDialog() {
   const host = byId("compareGrid");
