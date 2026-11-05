@@ -150,6 +150,12 @@
           "minimum": 0,
           "maximum": 1,
           "description": "Filamentra-estimated PBR light transmission parameter (0=opaque, 1=maximum). Not physical sample transmittance or manufacturer RGBA alpha. Only meaningful for transparent surfaces."
+        },
+        "haze": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Fractional perceptual haze controlling image blur through transmissive FDM material (0=clear image, 1=strongly diffused). Uncalibrated display estimate, independent of transmission, opacity and microfacet roughness."
         }
       }
     },
@@ -332,6 +338,35 @@
           }
         },
         "transmission": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "manufacturer",
+                "measured",
+                "filamentra_estimate"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verified_on": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "haze": {
           "type": "object",
           "additionalProperties": false,
           "required": [

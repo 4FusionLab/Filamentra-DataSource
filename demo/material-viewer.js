@@ -7,6 +7,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
+import { hazeEffectiveRoughness } from "./optics.js";
 
 const SPECIMEN_RADIUS_MM = 15;
 const SPECIMEN_RADIUS_UNITS = 1.05;
@@ -26,6 +27,34 @@ function mapTexture(texture, tileMM, kind, shape) {
   texture.repeat.set(repeatX, repeatY);
   texture.colorSpace = THREE.NoColorSpace;
   texture.needsUpdate = true;
+}
+
+function hazyRoughnessTexture(source, haze, roughness) {
+  if (haze <= 0) return null;
+  // THREE MeshPhysicalMaterial uses roughness for *both* surface highlights and
+  // the blurring of transmitted light. No independent volumetric haze shader
+  // exists in this built-in material. Transform the preset map for one viewer,
+  // retaining its microvariation while increasing roughness to a haze floor.
+  const image = source.image;
+  if (!image || !image.width || !image.height) return null;
+  const canvas = document.createElement("canvas");
+  canvas.width = image.width;
+  canvas.height = image.height;
+  const ctx = canvas.getContext("2d", {willReadFrequently: true});
+  if (!ctx) return null;
+  ctx.drawImage(image, 0, 0);
+  const bitmap = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const floor = Math.round(255 * hazeEffectiveRoughness(haze, roughness));
+  for (let p = 0; p < bitmap.data.length; p += 4) {
+    const value = Math.max(bitmap.data[p + 1], floor);
+    bitmap.data[p] = value;
+    bitmap.data[p + 1] = value;
+    bitmap.data[p + 2] = value;
+  }
+  ctx.putImageData(bitmap, 0, 0);
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.NoColorSpace;
+  return texture;
 }
 
 export async function createMaterialViewer(host, options) {
@@ -56,6 +85,7 @@ export async function createMaterialViewer(host, options) {
   let geometry;
   let normalTexture;
   let roughTexture;
+  let hazeTexture;
   let material;
   let mesh;
   let environment;
@@ -111,6 +141,8 @@ export async function createMaterialViewer(host, options) {
 
     const transparent = appearance.surface_type === "transparent";
     const transmission = transparent ? clamp01(appearance.transmission ?? 0) : 0;
+    const haze = transmission > 0 ? clamp01(appearance.haze ?? 0) : 0;
+    hazeTexture = hazyRoughnessTexture(roughTexture, haze, appearance.roughness ?? baseRoughness ?? 0);
     // The roughness texture contains the preset's absolute value. A smaller
     // grade-specific roughness can multiply that baseline, not reapply it.
     const roughnessFactor = baseRoughness > 0
@@ -121,8 +153,8 @@ export async function createMaterialViewer(host, options) {
       color: new THREE.Color(transmission > 0 ? "#ffffff" : hex),
       metalness: 0, // Silk/metal-colored PLA is still a dielectric.
       // Roughness texture pixels already contain absolute roughness values.
-      roughness: roughnessFactor,
-      roughnessMap: roughTexture,
+      roughness: hazeTexture ? 1 : roughnessFactor,
+      roughnessMap: hazeTexture || roughTexture,
       normalMap: normalTexture,
       normalScale: new THREE.Vector2(0.65, 0.65),
       transmission,
@@ -148,6 +180,7 @@ export async function createMaterialViewer(host, options) {
     scene.add(mesh);
     mapTexture(normalTexture, maps, "normal", currentShape);
     mapTexture(roughTexture, maps, "rough", currentShape);
+    if (hazeTexture) mapTexture(hazeTexture, maps, "rough", currentShape);
 
     controls = new OrbitControls(camera, renderer.domElement);
     controls.enablePan = false;
@@ -186,6 +219,7 @@ export async function createMaterialViewer(host, options) {
         mesh.geometry = geometry;
         mapTexture(normalTexture, maps, "normal", next);
         mapTexture(roughTexture, maps, "rough", next);
+        if (hazeTexture) mapTexture(hazeTexture, maps, "rough", next);
       },
       destroy() {
         if (destroyed) return;
@@ -198,6 +232,7 @@ export async function createMaterialViewer(host, options) {
         material?.dispose();
         normalTexture?.dispose();
         roughTexture?.dispose();
+        hazeTexture?.dispose();
         environment?.dispose();
         pmrem?.dispose();
         referenceMap?.dispose();
@@ -217,6 +252,7 @@ export async function createMaterialViewer(host, options) {
     material?.dispose();
     normalTexture?.dispose();
     roughTexture?.dispose();
+    hazeTexture?.dispose();
     environment?.dispose();
     pmrem?.dispose();
     referenceMap?.dispose();
