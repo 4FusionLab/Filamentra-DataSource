@@ -110,6 +110,210 @@
           "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
         }
       ]
+    },
+    {
+      "id": "white",
+      "name": "Белый",
+      "hex": "#F2F1EC",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://moscow.bestfilament.ru/pla-1-1.75-white/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_white",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://moscow.bestfilament.ru/pla-1-1.75-white/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA Белый, SKU st_pla_1kg_1.75_white, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA / Белый #F2F1EC; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Зелёный",
+      "hex": "#3D914B",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/irk/pla-1-1.75-green-ms/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_green",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/irk/pla-1-1.75-green-ms/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA Зелёный, SKU st_pla_1kg_1.75_green, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA / Зелёный #3D914B; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "name": "Жёлтый",
+      "hex": "#EFC72D",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/irk/pla-1-1.75-yellow/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_yellow",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/irk/pla-1-1.75-yellow/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA Жёлтый, SKU st_pla_1kg_1.75_yellow, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA / Жёлтый #EFC72D; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "name": "Оранжевый",
+      "hex": "#EA7426",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://moscow.bestfilament.ru/pla-1-1.75-orange/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_orange",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://moscow.bestfilament.ru/pla-1-1.75-orange/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA Оранжевый, SKU st_pla_1kg_1.75_orange, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA / Оранжевый #EA7426; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "purple",
+      "name": "Фиолетовый",
+      "hex": "#724F96",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/irk/pla-1-1.75-purple/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_purple",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/irk/pla-1-1.75-purple/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA Фиолетовый, SKU st_pla_1kg_1.75_purple, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA / Фиолетовый #724F96; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "pink",
+      "name": "Розовый",
+      "hex": "#E78FAE",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/tlty/pla-1-1.75-rose/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_pla_1kg_1.75_rose",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/tlty/pla-1-1.75-rose/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA Розовый, SKU st_pla_1kg_1.75_rose, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA / Розовый #E78FAE; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
     }
   ]
 }

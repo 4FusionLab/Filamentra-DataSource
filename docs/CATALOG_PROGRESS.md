@@ -27,15 +27,15 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 | [REC](../catalog/brands/rec/) | Russia | 2 | 24 | Official RAL and SKU; third-party RAL→HEX tagged estimated |
 | [FDplast](../catalog/brands/fdplast/) | Russia | 1 | 4 | Official exact PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
 | [НИТ](../catalog/brands/nit/) | Russia | 0 | 0 | Official PLA/PETG variants and SKUs verified; numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
-| [BestFilament](../catalog/brands/bestfilament/) | Russia | 2 | 6 | Exact PLA/PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
-| **Total with material lines** | | **91** | **1044** | **15 manufacturers with lines; 16 total brands** |
+| [BestFilament](../catalog/brands/bestfilament/) | Russia | 3 | 18 | Exact PLA/PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
+| **Total with material lines** | | **92** | **1056** | **15 manufacturers with lines; 16 total brands** |
 
 **Important:** these totals are **cataloged manufacturer color variants**, not physically calibrated appearances or proof of inventory availability. The Bambu Lab source is an official software color list, potentially including historical variants; other brands still have unimported lines and colors.
 
 ## Visual fidelity
 
 - **598 variants** have a manufacturer numeric display swatch: 246 Bambu Lab, 139 eSUN, 130 SUNLU, 68 Anycubic, 15 Polymaker.
-- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **313** variants remain estimated-only, **126** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1044-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
+- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **325** variants remain estimated-only, **126** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1056-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
@@ -64,6 +64,12 @@ The official ELEGOO PLA Basic site spells one variant `Megenta`; a similarly mis
 - Imported **8 product lines / 25 shade variants** across two Russian manufacturers, with **13 exact STAR PLAST SKU-only name records** and **12 Filamentarno! exact-line third-party screen estimates**. No STAR PLAST HEX or per-variant RAL was inferred. Filamentarno! estimates are `estimated`, hidden in the curated default preview. Optical properties of translucent/fluorescent products were **not** claimed to be measured.
 - Source and rejected cross-line mappings: [pilot manifest](../catalog/sources/2026-11-04-star-plast-filamentarno-pilot.json). [STAR PLAST current PLA/PETG catalogs](https://star-plast.com/catalog/) and [Filamentarno! official catalog](https://filamentarno.ru/catalog.html).
 - Current totals: **16 brands**, **91 product lines** (15 brands with lines), **1044 color records**: **605 curated**, **313 estimated-only**, **126 name-only**. This import does not increase the number of calibrated materials.
+
+## Existing-brand enrichment — BestFilament (2026-11-05)
+
+- Added **12 real variant records** with official exact SKUs, matched to [pinned independent display estimates](https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json): **6 PLA, 2 PETG, 4 PLA Silk**. BestFilament now has **3 lines and 18 shades**, rather than 2 lines/6 shades.
+- All 12 new HEX values are `estimated`, **not** manufacturer swatches or physical measurements, and are excluded from curated previews. Individual sources are preserved in each color record and in the [batch manifest](../catalog/sources/2026-11-05-bestfilament-enrichment.json).
+- Intentionally excluded ambiguous gray variants, translucid PETG Natural and co-extruded multi-color Silk; these need per-SKU optical or component evidence. Current totals **92 lines / 1056 colors**: **605 curated**, **325 estimated**, **126 name-only**.
 
 ## Next Chinese import priorities
 

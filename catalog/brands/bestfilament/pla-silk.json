@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "bestfilament/pla-silk",
+  "brand": "bestfilament",
+  "name": "PLA-шёлк",
+  "polymer": "PLA",
+  "finish": "silk",
+  "source_url": "https://bestfilament.ru/category/plastik-Bestfilament/pla-shelk/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-silk",
+  "effects": [
+    "silk"
+  ],
+  "colors": [
+    {
+      "id": "red",
+      "name": "Красный",
+      "hex": "#BD3D47",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/tlty/krasnyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "silk_1kg_1.75_red",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/tlty/krasnyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA-шёлк Красный, SKU silk_1kg_1.75_red, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA-шёлк / Красный #BD3D47; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "hex": "#3979B9",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://moscow.bestfilament.ru/siniy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "silk_1kg_1.75_blue",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://moscow.bestfilament.ru/siniy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA-шёлк Синий, SKU silk_1kg_1.75_blue, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA-шёлк / Синий #3979B9; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Зелёный",
+      "hex": "#4B9A61",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/hbr/zelenyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "silk_1kg_1.75_green",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/hbr/zelenyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA-шёлк Зелёный, SKU silk_1kg_1.75_green, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA-шёлк / Зелёный #4B9A61; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "purple",
+      "name": "Фиолетовый",
+      "hex": "#78549D",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/chlb/fioletovyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "silk_1kg_1.75_purple",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/chlb/fioletovyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PLA-шёлк Фиолетовый, SKU silk_1kg_1.75_purple, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PLA-шёлк / Фиолетовый #78549D; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    }
+  ]
+}

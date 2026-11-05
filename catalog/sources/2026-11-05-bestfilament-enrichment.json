@@ -1,0 +1,104 @@
+{
+  "checked_on": "2026-11-05",
+  "manufacturer": "BestFilament",
+  "new_line": "PLA-шёлк",
+  "new_color_records": 12,
+  "updated_total_variants": 18,
+  "source_primary_domain": "https://bestfilament.ru/",
+  "third_party_screen_reference": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+  "third_party_blob_sha": "957dc582baa7fa6fb6efb5fb80d4c67326ad0f7b",
+  "third_party_quality": "estimated",
+  "not_manufacturer_RGB": true,
+  "not_physical_sample": true,
+  "explicitly_excluded": [
+    {
+      "line": "PLA",
+      "shade": "Серый",
+      "reason": "Official site uses both светло-серый and тёмно-серый. Third-party generic Серый cannot be mapped to an exact SKU."
+    },
+    {
+      "line": "PETG",
+      "shade": "Натуральный",
+      "reason": "Manufacturer calls the color transparent. Color swatch alone is inadequate for physical translucency; leave for separately sourced optical data."
+    },
+    {
+      "line": "PLA-шёлк",
+      "shade": "Multicolor",
+      "reason": "Third-party single approximate HEX fails to represent distinct coextruded components."
+    }
+  ],
+  "items": [
+    {
+      "id": "bestfilament/pla/white",
+      "official_url": "https://moscow.bestfilament.ru/pla-1-1.75-white/",
+      "sku": "st_pla_1kg_1.75_white",
+      "screen_reference_hex": "#F2F1EC"
+    },
+    {
+      "id": "bestfilament/pla/green",
+      "official_url": "https://bestfilament.ru/irk/pla-1-1.75-green-ms/",
+      "sku": "st_pla_1kg_1.75_green",
+      "screen_reference_hex": "#3D914B"
+    },
+    {
+      "id": "bestfilament/pla/yellow",
+      "official_url": "https://bestfilament.ru/irk/pla-1-1.75-yellow/",
+      "sku": "st_pla_1kg_1.75_yellow",
+      "screen_reference_hex": "#EFC72D"
+    },
+    {
+      "id": "bestfilament/pla/orange",
+      "official_url": "https://moscow.bestfilament.ru/pla-1-1.75-orange/",
+      "sku": "st_pla_1kg_1.75_orange",
+      "screen_reference_hex": "#EA7426"
+    },
+    {
+      "id": "bestfilament/pla/purple",
+      "official_url": "https://bestfilament.ru/irk/pla-1-1.75-purple/",
+      "sku": "st_pla_1kg_1.75_purple",
+      "screen_reference_hex": "#724F96"
+    },
+    {
+      "id": "bestfilament/pla/pink",
+      "official_url": "https://bestfilament.ru/tlty/pla-1-1.75-rose/",
+      "sku": "st_pla_1kg_1.75_rose",
+      "screen_reference_hex": "#E78FAE"
+    },
+    {
+      "id": "bestfilament/petg/white",
+      "official_url": "https://bestfilament.ru/belyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-1_75-mm/",
+      "sku": "st_petg_white_1kg_1.75",
+      "screen_reference_hex": "#F1F0EA"
+    },
+    {
+      "id": "bestfilament/petg/blue",
+      "official_url": "https://bestfilament.ru/msk/siniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+      "sku": "st_petg_blue_1kg_1.75_natural",
+      "screen_reference_hex": "#3F78A7"
+    },
+    {
+      "id": "bestfilament/pla-silk/red",
+      "official_url": "https://bestfilament.ru/tlty/krasnyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "sku": "silk_1kg_1.75_red",
+      "screen_reference_hex": "#BD3D47"
+    },
+    {
+      "id": "bestfilament/pla-silk/blue",
+      "official_url": "https://moscow.bestfilament.ru/siniy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "sku": "silk_1kg_1.75_blue",
+      "screen_reference_hex": "#3979B9"
+    },
+    {
+      "id": "bestfilament/pla-silk/green",
+      "official_url": "https://bestfilament.ru/hbr/zelenyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "sku": "silk_1kg_1.75_green",
+      "screen_reference_hex": "#4B9A61"
+    },
+    {
+      "id": "bestfilament/pla-silk/purple",
+      "official_url": "https://bestfilament.ru/chlb/fioletovyy-pla-shelk-plastik-bestfilament-dlya-3d-printerov-1-kg-1-75-mm/",
+      "sku": "silk_1kg_1.75_purple",
+      "screen_reference_hex": "#78549D"
+    }
+  ]
+}

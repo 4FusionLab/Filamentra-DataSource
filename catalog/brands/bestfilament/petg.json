@@ -110,6 +110,74 @@
           "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
         }
       ]
+    },
+    {
+      "id": "white",
+      "name": "Белый",
+      "hex": "#F1F0EA",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/belyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-1_75-mm/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_petg_white_1kg_1.75",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/belyy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-1_75-mm/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PETG Белый, SKU st_petg_white_1kg_1.75, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG / Белый #F1F0EA; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Синий",
+      "hex": "#3F78A7",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://bestfilament.ru/msk/siniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+      "color_reference_note": "Approximate on-screen HEX from independent Filament Labels data, cross-matched by exact BestFilament polymer/line/official Russian shade and manufacturer SKU. Not the manufacturer's RGB, not a physical print measurement; excluded from strict curated preview.",
+      "variants": [
+        {
+          "sku": "st_petg_blue_1kg_1.75_natural",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://bestfilament.ru/msk/siniy-petg-plastik-bestfilament-dlya-3d-printerov-1-kg-175-mm/",
+          "checked_on": "2026-11-05",
+          "note": "Exact PETG Синий, SKU st_petg_blue_1kg_1.75_natural, 1.75 mm / 1 kg official product listing. This confirms identity only, not numeric color."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/bestfilament-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG / Синий #3F78A7; estimated display sample, not calibrated manufacturer numeric swatch."
+        }
+      ]
     }
   ]
 }
