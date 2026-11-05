@@ -37,10 +37,10 @@ a manufacturer's alpha channel or a measured fraction of transmitted photons.
 The existing `ior` and `attenuation_distance_mm` provide refraction and
 optical absorption estimates; `opacity:255` remains independent alpha.
 
-Two built-in archetypes are translucent PLA (transmission 0.49, absorption
-length 7.5 mm) and translucent PETG (0.68, 12 mm). The verified Bambu PETG
-Clear variant overrides PETG with transmission 0.94 and attenuation distance
-75 mm. All such numbers are marked **filamentra_estimate**; line/color
+Two built-in archetypes are translucent PLA (transmission 0.40, haze 0.80,
+absorption length 7.5 mm) and translucent PETG (transmission 0.55, haze 0.55,
+12 mm). Bambu PETG Clear overrides the PETG visual profile with transmission
+0.75, haze 0.35 and attenuation distance 75 mm. All such numbers are marked **filamentra_estimate**; line/color
 values can replace them when meaningful source evidence is available.
 
 Both the static preview generator and the interactive WebGL viewer model a
@@ -72,3 +72,17 @@ identical for every filament, so users can compare the effect directly.
 The CI build checks that the rasterized logo is present and decodable and tests
 that the monogram creates distinct tones inside a clear specimen. CairoSVG is
 a build-time dependency only; the published site remains static.
+
+## Haze-specific optical rendering
+
+The version-1 appearance field `haze` (0..1) is an uncalibrated estimate
+for image-detail loss through FDM plastic, separate from `transmission` (light
+amount). The WebP generator applies a normalized Gaussian blur only to the
+4FusionLab logo **behind the silhouette**, not to the ambient background or
+surface shading. The Three.js viewer approximates haze by raising the roughness
+of *transmitted light* using an independent generated map. Because
+`MeshPhysicalMaterial` shares this roughness with reflections, WebGL cannot
+perfectly simulate physical volumetric scattering. Both viewers honor
+preset -> line -> color overrides. The same normalized field is exported for
+Fusion, where the adapter reports reduced fidelity rather than silently
+claiming to reproduce haze.

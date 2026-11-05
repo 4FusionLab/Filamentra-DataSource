@@ -32,6 +32,8 @@ jobs:
         run: |
           node --check demo/app.js
           node --check demo/material-viewer.js
+          node --check demo/optics.js
+          node --test tests/test_optics.mjs
       - name: Regression-test catalog UI state and comparison
         run: node --test tests/demo_ux.test.mjs
       - name: Build snapshot from current main

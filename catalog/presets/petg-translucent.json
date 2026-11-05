@@ -14,9 +14,10 @@
       "tile_width_mm": 8,
       "tile_height_mm": 8
     },
-    "transmission": 0.68,
+    "transmission": 0.55,
     "ior": 1.55,
-    "attenuation_distance_mm": 12
+    "attenuation_distance_mm": 12,
+    "haze": 0.55
   },
-  "notes": "Transparent-volume starting point. Transmission distance and IOR need runtime verification and per-color calibration. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps. PBR transmission 0.68 and attenuation 12 mm are uncalibrated display estimates for a 2 mm specimen; not measured light transmittance."
+  "notes": "Transparent-volume starting point. Transmission distance and IOR need runtime verification and per-color calibration. Typical procedural Normal/Roughness maps are Filamentra estimates, not measured or manufacturer maps. PBR transmission 0.55, haze 0.55, and attenuation 12 mm are uncalibrated reference estimates for a 2-mm FDM wall."
 }

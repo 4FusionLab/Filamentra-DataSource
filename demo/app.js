@@ -620,6 +620,10 @@ function openDetails(line, color) {
   if (appearance.surface_type === "transparent") {
     addRow(rows, "Светопередача · PBR-оценка",
       Math.round((appearance.transmission ?? 0) * 100) + "%");
+    if (appearance.haze !== undefined) {
+      addRow(rows, "Рассеивание / Haze · оценка",
+        Math.round(appearance.haze * 100) + "%");
+    }
     addRow(rows, "Поглощение · оценка", appearance.attenuation_distance_mm
       ? appearance.attenuation_distance_mm + " мм" : undefined);
     addRow(rows, "Коэффициент преломления · оценка", appearance.ior);
@@ -654,7 +658,7 @@ function openDetails(line, color) {
   }
   if (appearance.surface_type === "transparent") {
     target.appendChild(el("p", "caution",
-      "Светопередача указана как параметр PBR-визуализации, а не измеренный процент пропускаемого света. Предпросмотр рассчитан для условной стенки толщиной 2 мм: реальная прозрачность зависит от толщины, пигмента, печати и освещения."));
+      "Светопередача и haze — независимые оценочные параметры визуализации, не результаты оптических измерений. Haze отвечает за размытость логотипа за моделью. Предпросмотр рассчитан для условной стенки толщиной 2 мм: реальная прозрачность зависит от толщины, пигмента, печати и освещения."));
     if (!sampleHex(color) && color.preview_image) {
       target.appendChild(el("p", "caution",
         "Бесцветный Clear визуализируется с нейтральным оттенком. Официальный HEX и физический цвет ему не приписываются."));

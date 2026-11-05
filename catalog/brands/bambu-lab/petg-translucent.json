@@ -40,8 +40,9 @@
       "verified_on": "2026-11-04",
       "appearance": {
         "roughness": 0.12,
-        "transmission": 0.94,
-        "attenuation_distance_mm": 75
+        "transmission": 0.75,
+        "attenuation_distance_mm": 75,
+        "haze": 0.35
       },
       "appearance_sources": {
         "roughness": {
@@ -50,11 +51,15 @@
         },
         "transmission": {
           "kind": "filamentra_estimate",
-          "notes": "Visually clear grade; 0.94 is a renderer control, not a measurement. Transparent brand RGBA swatch alpha is not used as optical transmittance."
+          "notes": "PBR renderer transmission 0.75 is an intentionally conservative FDM display estimate; not measured light transmittance. The manufacturer's RGBA alpha is not a physical transmission measurement."
         },
         "attenuation_distance_mm": {
           "kind": "filamentra_estimate",
           "notes": "Longer optical attenuation for clear transparent grade; uncalibrated."
+        },
+        "haze": {
+          "kind": "filamentra_estimate",
+          "notes": "Qualitative FDM print haze, not a measured optical coefficient. Adjusted to show blurred logo through a 2-mm reference specimen."
         }
       }
     },
