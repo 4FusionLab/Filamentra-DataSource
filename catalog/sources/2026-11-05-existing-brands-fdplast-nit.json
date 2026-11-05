@@ -1,0 +1,161 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Existing brands only; FDplast manufacturer PLA/SKU + FDplast PETG third party color estimates; NIT PLA/PETG/Matte exact product records, schema_version 1 unchanged.",
+  "fdplast": {
+    "new_pla_line": {
+      "id": "fdplast/pla",
+      "items": [
+        {
+          "id": "snow-white",
+          "name": "Белоснежка",
+          "manufacturer_sku": "6551",
+          "manufacturer_or_retailer_source": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/pla_plastik/pla_plastik_belosnezhka/"
+        },
+        {
+          "id": "grey-wolf",
+          "name": "Серый волк",
+          "manufacturer_sku": "6578",
+          "manufacturer_or_retailer_source": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/pla_plastik/pla_plastik_seryy_volk/"
+        },
+        {
+          "id": "pink-flamingo",
+          "name": "Розовый фламинго",
+          "manufacturer_sku": "11111183",
+          "manufacturer_or_retailer_source": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/?offer=2626"
+        },
+        {
+          "id": "indigo-kids",
+          "name": "Дети индиго",
+          "manufacturer_sku": "11111176",
+          "manufacturer_or_retailer_source": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/?offer=2622"
+        },
+        {
+          "id": "black-panther",
+          "name": "Дикая пантера",
+          "manufacturer_sku": "6552",
+          "manufacturer_or_retailer_source": "https://cybershop74.ru/catalog/3D_pechat/plastik_dlya_3d_printera/41836/"
+        }
+      ]
+    },
+    "existing_petg": {
+      "new_estimated_color_records": [
+        {
+          "id": "white-guard",
+          "hex": "#F1F0EA",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2670",
+          "third_party_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json"
+        },
+        {
+          "id": "limoncello",
+          "hex": "#EAD54B",
+          "url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg-plastik-limonchello-1-0-kg/",
+          "third_party_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json"
+        },
+        {
+          "id": "forget-me-not",
+          "hex": "#6EA4D1",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+          "third_party_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json"
+        },
+        {
+          "id": "pioneer-tie",
+          "hex": "#C83038",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+          "third_party_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json"
+        }
+      ]
+    },
+    "independent_numeric_data_pin": {
+      "repo": "KazOFF/filament-lables",
+      "commit": "39a571763a52209533ca87237c09d02d18b6df23",
+      "blob_sha": "16827405aaf12c6f39c34380f54bb2ce45b3df73"
+    }
+  },
+  "nit": {
+    "new_lines": [
+      {
+        "id": "nit/pla",
+        "items": [
+          {
+            "id": "white",
+            "name": "Белый",
+            "manufacturer_sku": null,
+            "url": "https://plastik-nit.ru/product/nit-7611/"
+          }
+        ]
+      },
+      {
+        "id": "nit/pla-matte",
+        "items": [
+          {
+            "id": "marble",
+            "name": "Мраморный",
+            "manufacturer_sku": "0145",
+            "url": "https://plastik-nit.ru/"
+          }
+        ]
+      },
+      {
+        "id": "nit/petg",
+        "items": [
+          {
+            "id": "emerald",
+            "name": "Изумрудный",
+            "manufacturer_sku": "0021",
+            "url": "https://plastik-nit.ru/product/nit-7861/"
+          }
+        ]
+      },
+      {
+        "id": "nit/petg-matte",
+        "items": [
+          {
+            "id": "chocolate",
+            "name": "Шоколадный",
+            "manufacturer_sku": "0160",
+            "url": "https://plastik-nit.ru/product/nit-8069/"
+          },
+          {
+            "id": "blue",
+            "name": "Синий",
+            "manufacturer_sku": "0254",
+            "url": "https://plastik-nit.ru/product/nit-8199/"
+          },
+          {
+            "id": "emerald",
+            "name": "Изумрудный",
+            "manufacturer_sku": "0256",
+            "url": "https://plastik-nit.ru/product/nit-8201/"
+          }
+        ]
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "product": "FDplast PETG Советское шампанское",
+      "reason": "Official older manufacturer hue conflicts with community estimated gold HEX; omit."
+    },
+    {
+      "product": "FDplast PLA generic Black/White/Gray source",
+      "reason": "Names do not match official branded shade names; do not transfer third-party generic PLA estimates."
+    },
+    {
+      "product": "NIT PETG transparent and coextruded multicolor",
+      "reason": "Insufficient numeric optical/coextrusion component data; do not fabricate single flat color."
+    },
+    {
+      "product": "ELEGOO PLA Pro beige/Neon Green FilaScope",
+      "reason": "Conflicting or unstable third-party HEX values across packaging variants suggest source is unsuitable for numeric import without corroboration."
+    }
+  ],
+  "totals_after": {
+    "brands": 16,
+    "lines": 97,
+    "colors": 1072,
+    "curated": 605,
+    "estimated_only": 330,
+    "name_only": 137
+  },
+  "notes": "Several FDplast PETG records have manufacturer exact line+shade without a verified product SKU; no fake variant identifier has been assigned. NIT PLA white exact listing has no independently confirmed SKU and therefore no variant list."
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "nit/pla-matte",
+  "brand": "nit",
+  "name": "PLA Matte",
+  "polymer": "PLA",
+  "finish": "matte",
+  "source_url": "https://plastik-nit.ru/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-matte",
+  "colors": [
+    {
+      "id": "marble",
+      "name": "Мраморный",
+      "source_url": "https://plastik-nit.ru/",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "0145",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://plastik-nit.ru/",
+          "checked_on": "2026-11-05",
+          "note": "Official НИТ home catalog labels its highlighted PLA matte Мраморный 1kg product Арт.0145."
+        }
+      ]
+    }
+  ]
+}

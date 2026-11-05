@@ -25,17 +25,17 @@ The logical selection path is **Manufacturer → Material (PLA/PETG) → Product
 | [STAR PLAST](../catalog/brands/star-plast/) | Russia | 5 | 13 | 13 exact official per-variant 1 kg SKUs; name-only (no numeric display swatches) |
 | [Filamentarno!](../catalog/brands/filamentarno/) | Russia | 3 | 12 | Exact official PLA+/PETg names + 12 clearly attributed third-party estimated HEX |
 | [REC](../catalog/brands/rec/) | Russia | 2 | 24 | Official RAL and SKU; third-party RAL→HEX tagged estimated |
-| [FDplast](../catalog/brands/fdplast/) | Russia | 1 | 5 | Official exact PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
-| [НИТ](../catalog/brands/nit/) | Russia | 0 | 0 | Official PLA/PETG variants and SKUs verified; numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
+| [FDplast](../catalog/brands/fdplast/) | Russia | 2 | 14 | Official exact PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
+| [НИТ](../catalog/brands/nit/) | Russia | 4 | 6 | Official PLA/PETG variants and SKUs verified; numerical values still missing ([audit](RUSSIAN_COLOR_SOURCE_AUDIT.md)) |
 | [BestFilament](../catalog/brands/bestfilament/) | Russia | 3 | 18 | Exact PLA/PETG SKUs + [third-party estimated screen HEX](../catalog/sources/2026-11-04-russian-selective-screen-estimates.json) |
-| **Total with material lines** | | **92** | **1057** | **15 manufacturers with lines; 16 total brands** |
+| **Total with material lines** | | **97** | **1072** | **16 manufacturers with lines / total** |
 
 **Important:** these totals are **cataloged manufacturer color variants**, not physically calibrated appearances or proof of inventory availability. The Bambu Lab source is an official software color list, potentially including historical variants; other brands still have unimported lines and colors.
 
 ## Visual fidelity
 
 - **598 variants** have a manufacturer numeric display swatch: 246 Bambu Lab, 139 eSUN, 130 SUNLU, 68 Anycubic, 15 Polymaker.
-- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **326** variants remain estimated-only, **126** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1057-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
+- **12 exact physical-print measurement references** now have direct evidence (KINGROON 3, ERYONE 1, Bambu Lab 4, SUNLU 1, Creality 3). Five measured entries also retain official manufacturer swatches. **330** variants remain estimated-only, **137** name-only; see the [full record-by-record audit](UNRESOLVED_COLORS.md). The curated preview now has **605** source-backed entries from the 1072-record catalog. See [measured-color review](MEASURED_COLOR_REVIEW.md) and [quality policy](VISUAL_DATA_QUALITY.md).
 - **18 baseline visual presets** under [catalog/presets](../catalog/presets/) approximate surface roughness, glossy/silk finish, translucent appearance, fiber and sparkle effects. None has been calibrated in Fusion against physical prints.
 - Source RGBA alpha does **not** represent a measured volumetric transmission coefficient. A full transparent/multicolor Fusion render is not solved by a single web swatch.
 - For eSUN Matte Dual, two official shade components are retained per color instead of collapsing them to a single HEX.
@@ -75,7 +75,14 @@ The official ELEGOO PLA Basic site spells one variant `Megenta`; a similarly mis
 
 Added a fifth exact-name PETG color, **Мальдивы** (FDplast official SKU `11111269`) as a source-backed **estimated** screen HEX (`#4DB5B2`). [Source manifest](../catalog/sources/2026-11-05-fdplast-maldives.json). The catalog previously contained only four FDplast PETG shades; the official product shows many more shades and a PLA line, neither of which should be assumed visually calibrated. Other source names, including `Советское шампанское`, still need stronger matching and are deliberately excluded.
 
-**Current totals:** 16 brands, 92 product lines, 1057 color variants — 605 curated preview candidates, 326 estimated-only and 126 name-only.
+**Historical pre-batch totals:** 16 brands, 92 product lines, 1057 color variants — 605 curated preview candidates, 326 estimated-only and 126 name-only.
+
+## Enrich existing FDplast and НИТ — 2026-11-05
+
+- FDplast: new **PLA line**, five exact proprietary named shades with 1 kg / 1.75 mm SKU evidence; PETG enriched by **four new estimated-only** display swatches (Белая гвардия, Лимончелло, Незабудка, Пионерский галстук), sourced by exact FDplast PETG shade from independent [Filament Labels](https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json). No generic white/black estimate is copied into FDplast's proprietary PLA shade names.
+- НИТ: imported **four lines** (PLA, PLA Matte, PETG, PETG Matte) with six verified variant records (five manufacturer article numbers, one official listing without article). All six are **name-only**, as no defensible numerical swatch was found; they are not usable in the default curated Fusion appearance preview.
+- [Evidence manifest](../catalog/sources/2026-11-05-existing-brands-fdplast-nit.json): official primary variants, independently sourced numeric estimates, deliberate rejections. No schema version change; no manual Pages deployment performed by this batch.
+- **Latest totals: 16 brands / 97 lines / 1072 variants: 605 curated, 330 estimated-only, 137 name-only.** No calibrated preview gain from name-only records.
 
 ## Next Chinese import priorities
 

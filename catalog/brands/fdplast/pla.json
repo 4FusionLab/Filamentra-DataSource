@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "fdplast/pla",
+  "brand": "fdplast",
+  "name": "PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "snow-white",
+      "name": "Белоснежка",
+      "source_url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/pla_plastik/pla_plastik_belosnezhka/",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "6551",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/pla_plastik/pla_plastik_belosnezhka/",
+          "checked_on": "2026-11-05",
+          "note": "official legacy product page states 6551 for 1 kg; alternative 750 g and 2.5 kg SKUs exist"
+        }
+      ]
+    },
+    {
+      "id": "grey-wolf",
+      "name": "Серый волк",
+      "source_url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/pla_plastik/pla_plastik_seryy_volk/",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "6578",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/pla_plastik/pla_plastik_seryy_volk/",
+          "checked_on": "2026-11-05",
+          "note": "Exact maker/line/shade 1 kg / 1.75 mm product variant and article 6578; product identity only, NO numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "pink-flamingo",
+      "name": "Розовый фламинго",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/?offer=2626",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "11111183",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/?offer=2626",
+          "checked_on": "2026-11-05",
+          "note": "Exact maker/line/shade 1 kg / 1.75 mm product variant and article 11111183; product identity only, NO numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "indigo-kids",
+      "name": "Дети индиго",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/?offer=2622",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "11111176",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/pla-plastik-terrakotovyy-voin/?offer=2622",
+          "checked_on": "2026-11-05",
+          "note": "Exact maker/line/shade 1 kg / 1.75 mm product variant and article 11111176; product identity only, NO numeric swatch."
+        }
+      ]
+    },
+    {
+      "id": "black-panther",
+      "name": "Дикая пантера",
+      "source_url": "https://cybershop74.ru/catalog/3D_pechat/plastik_dlya_3d_printera/41836/",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "6552",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "retailer",
+          "claim": "sku_verified",
+          "url": "https://cybershop74.ru/catalog/3D_pechat/plastik_dlya_3d_printera/41836/",
+          "checked_on": "2026-11-05",
+          "note": "exact-product 1 kg distributor SKU; official FDplast color name corroborated separately, but article shown on distributor"
+        },
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/",
+          "checked_on": "2026-11-05",
+          "note": "FDplast official PLA palette lists exact proprietary shade, excluding its separate SILK options."
+        }
+      ]
+    }
+  ]
+}

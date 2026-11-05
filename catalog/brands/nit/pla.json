@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "nit/pla",
+  "brand": "nit",
+  "name": "PLA",
+  "polymer": "PLA",
+  "finish": "standard",
+  "source_url": "https://plastik-nit.ru/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "pla-glossy",
+  "colors": [
+    {
+      "id": "white",
+      "name": "Белый",
+      "source_url": "https://plastik-nit.ru/product/nit-7611/",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://plastik-nit.ru/product/nit-7611/",
+          "checked_on": "2026-11-05",
+          "note": "Official NIT PLA Белый 1 kg product detail; article was not independently verified, so it is omitted."
+        }
+      ]
+    }
+  ]
+}

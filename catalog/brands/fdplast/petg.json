@@ -178,6 +178,114 @@
           "note": "Filament Labels PETG / Мальдивы #4DB5B2, estimated screen color, not calibrated."
         }
       ]
+    },
+    {
+      "id": "white-guard",
+      "name": "Белая гвардия",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2670",
+      "verified_on": "2026-11-05",
+      "hex": "#F1F0EA",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+      "color_reference_note": "Exact FDplast PETG commercial color name cross-checked against the official PETG manufacturer selector; numeric value is an uncalibrated independent Filament Labels display estimate, not a manufacturer RGB/physical measurement. Manufacturer SKU not confirmed, so none is asserted; not in curated default preview.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2670",
+          "checked_on": "2026-11-05",
+          "note": "Official FDplast PETG selector lists this exact Russian shade. No numeric manufacturer color code or independently verified SKU was obtained."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG Белая гвардия #F1F0EA, colorAccuracy=estimated; only approximate screen reference."
+        }
+      ]
+    },
+    {
+      "id": "limoncello",
+      "name": "Лимончелло",
+      "source_url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg-plastik-limonchello-1-0-kg/",
+      "verified_on": "2026-11-05",
+      "hex": "#EAD54B",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+      "color_reference_note": "Exact FDplast PETG commercial color name cross-checked against the official PETG manufacturer selector; numeric value is an uncalibrated independent Filament Labels display estimate, not a manufacturer RGB/physical measurement. Manufacturer SKU not confirmed, so none is asserted; not in curated default preview.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://www.fdplast.ru/produkcziya/plastik-dlya-3d-pechati/petg_plastik/petg-plastik-limonchello-1-0-kg/",
+          "checked_on": "2026-11-05",
+          "note": "Official FDplast PETG selector lists this exact Russian shade. No numeric manufacturer color code or independently verified SKU was obtained."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG Лимончелло #EAD54B, colorAccuracy=estimated; only approximate screen reference."
+        }
+      ]
+    },
+    {
+      "id": "forget-me-not",
+      "name": "Незабудка",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+      "verified_on": "2026-11-05",
+      "hex": "#6EA4D1",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+      "color_reference_note": "Exact FDplast PETG commercial color name cross-checked against the official PETG manufacturer selector; numeric value is an uncalibrated independent Filament Labels display estimate, not a manufacturer RGB/physical measurement. Manufacturer SKU not confirmed, so none is asserted; not in curated default preview.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+          "checked_on": "2026-11-05",
+          "note": "Official FDplast PETG selector lists this exact Russian shade. No numeric manufacturer color code or independently verified SKU was obtained."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG Незабудка #6EA4D1, colorAccuracy=estimated; only approximate screen reference."
+        }
+      ]
+    },
+    {
+      "id": "pioneer-tie",
+      "name": "Пионерский галстук",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+      "verified_on": "2026-11-05",
+      "hex": "#C83038",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+      "color_reference_note": "Exact FDplast PETG commercial color name cross-checked against the official PETG manufacturer selector; numeric value is an uncalibrated independent Filament Labels display estimate, not a manufacturer RGB/physical measurement. Manufacturer SKU not confirmed, so none is asserted; not in curated default preview.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "color_variant_listed",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/",
+          "checked_on": "2026-11-05",
+          "note": "Official FDplast PETG selector lists this exact Russian shade. No numeric manufacturer color code or independently verified SKU was obtained."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG Пионерский галстук #C83038, colorAccuracy=estimated; only approximate screen reference."
+        }
+      ]
     }
   ]
 }

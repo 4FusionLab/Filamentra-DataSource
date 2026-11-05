@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "nit/petg",
+  "brand": "nit",
+  "name": "PETG",
+  "polymer": "PETG",
+  "finish": "standard",
+  "source_url": "https://plastik-nit.ru/",
+  "catalog_status": "current_product_verified",
+  "appearance_preset": "petg-standard",
+  "colors": [
+    {
+      "id": "emerald",
+      "name": "Изумрудный",
+      "source_url": "https://plastik-nit.ru/product/nit-7861/",
+      "verified_on": "2026-11-05",
+      "visual_data_status": "name_only",
+      "variants": [
+        {
+          "sku": "0021",
+          "weight_g": 1000,
+          "diameter_mm": 1.75
+        }
+      ],
+      "visual_note": "Variant confirmed, numeric manufacturer shade or independent exact-SKU measured color is unavailable. Do not infer HEX from descriptive or generic color names.",
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://plastik-nit.ru/product/nit-7861/",
+          "checked_on": "2026-11-05",
+          "note": "Exact maker/line/shade 1 kg / 1.75 mm product variant and article 0021; product identity only, NO numeric swatch."
+        }
+      ]
+    }
+  ]
+}
