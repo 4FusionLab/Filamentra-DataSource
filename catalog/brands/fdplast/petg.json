@@ -144,6 +144,40 @@
           "note": "Open community labeling catalog: estimated display HEX from commercial imagery, not a measured or manufacturer-published RGB"
         }
       ]
+    },
+    {
+      "id": "maldives",
+      "name": "Мальдивы",
+      "hex": "#4DB5B2",
+      "hex_source": "estimated",
+      "visual_data_status": "estimated",
+      "source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2666",
+      "verified_on": "2026-11-05",
+      "color_reference_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+      "color_reference_note": "Independent Filament Labels approximate screen HEX extracted from product imagery; the official FDplast listing independently identifies exact PETG Мальдивы SKU 11111269. Neither manufacturer-published RGB nor a measured physical printed sample; hidden from curated preview.",
+      "variants": [
+        {
+          "sku": "11111269",
+          "diameter_mm": 1.75,
+          "weight_g": 1000
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "manufacturer",
+          "claim": "sku_verified",
+          "url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2666",
+          "checked_on": "2026-11-05",
+          "note": "Official FDplast PETG Мальдивы product listing, manufacturer SKU 11111269, 1 kg, 1.75 mm."
+        },
+        {
+          "source_type": "specialist_catalog",
+          "claim": "numeric_swatch",
+          "url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+          "checked_on": "2026-11-05",
+          "note": "Filament Labels PETG / Мальдивы #4DB5B2, estimated screen color, not calibrated."
+        }
+      ]
     }
   ]
 }

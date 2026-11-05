@@ -10,6 +10,7 @@ on:
       - "tools/generate_material_previews.py"
       - "package.json"
       - "tools/audit_missing_colors.py"
+      - "tools/audit_brand_coverage.py"
       - "demo/**"
       - "tests/**"
       - ".github/workflows/validate.yml"
@@ -18,6 +19,7 @@ on:
       - "catalog/**"
       - "tools/validate_catalog.py"
       - "tools/build_demo.py"
+      - "tools/audit_brand_coverage.py"
       - "demo/**"
       - "tests/**"
       - ".github/workflows/validate.yml"
@@ -45,9 +47,14 @@ jobs:
           python tools/audit_missing_colors.py --format summary
           python tools/audit_missing_colors.py --format json --out dist/audit/unresolved.json
           python tools/audit_missing_colors.py --format markdown --out dist/audit/unresolved.md
+      - name: Report coverage of every existing brand
+        run: |
+          python tools/audit_brand_coverage.py --format summary
+          python tools/audit_brand_coverage.py --format json --out dist/audit/brand-coverage.json
+          python tools/audit_brand_coverage.py --format markdown --out dist/audit/brand-coverage.md
       - uses: actions/upload-artifact@v4
         with:
-          name: unresolved-pla-petg-colors
+          name: filamentra-catalog-quality-audits
           path: dist/audit/
           if-no-files-found: error
       - name: Check browser JavaScript syntax

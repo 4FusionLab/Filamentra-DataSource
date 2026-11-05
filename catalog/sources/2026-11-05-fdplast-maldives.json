@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-11-05",
+  "manufacturer": "FDplast",
+  "polymer": "PETG",
+  "exact_color_name": "Мальдивы",
+  "manufacturer_sku": "11111269",
+  "manufacturer_source_url": "https://www.fdplast.ru/catalog/plastik_dlya_3d_pechati/plastik/petg-plastik-pionerskiy-galstuk/?offer=2666",
+  "third_party_source_url": "https://github.com/KazOFF/filament-lables/blob/39a571763a52209533ca87237c09d02d18b6df23/public/data/fdplast-filaments.json",
+  "screen_estimate_hex": "#4DB5B2",
+  "quality": "estimated",
+  "not_measured": true,
+  "not_manufacturer_rgb": true,
+  "scope": "Exact official color and SKU; one independent approximate display swatch. Does not resolve the rest of FDplast catalog.",
+  "excluded_prior_conflict": "PETG Советское шампанское is not imported because earlier manufacturer palette disagrees with independent third-party hue."
+}
