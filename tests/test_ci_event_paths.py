@@ -30,7 +30,7 @@ class CatalogCITriggerTests(unittest.TestCase):
     def test_push_is_unfiltered_to_recover_missed_releases(self):
         contents = WORKFLOW.read_text(encoding="utf-8")
         self.assertRegex(
-            contents, r"(?m)^  push: \\{\\}(?: #.*)?$",
+            contents, r"(?m)^  push: \{\}(?: #.*)?$",
             "Every push must trigger release recovery, even docs-only pushes",
         )
 
