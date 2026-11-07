@@ -1,5 +1,7 @@
 # Filamentra catalog format
 
+[Русская версия](CATALOG_FORMAT.ru.md)
+
 > **Pre-release Schema v1.** This document describes the current source-data contract. For exact properties, inheritance, provenance and Autodesk Fusion API mapping, see [Material Appearance Specification](MATERIAL_APPEARANCE_SPEC.md).
 
 ## Directory structure

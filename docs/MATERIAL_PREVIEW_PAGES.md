@@ -1,5 +1,7 @@
 # Material specimen previews on GitHub Pages
 
+[Русская версия](MATERIAL_PREVIEW_PAGES.ru.md)
+
 Each eligible solid filament color gets a procedural WebP specimen derived from its numeric color reference plus the generic, uncalibrated PBR profile of its line. One Three.js WebGL viewer runs on the selected detail drawer; there are never hundreds of WebGL contexts on the catalog grid.
 
 ## Evidence and limits

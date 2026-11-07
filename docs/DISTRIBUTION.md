@@ -1,6 +1,8 @@
 # Catalog distribution and compatibility
 
-> **Design proposal, not an active release service.** Filamentra DataSource has not yet published validated catalog assets.
+[Русская версия](DISTRIBUTION.ru.md)
+
+> **Historical design proposal, not the implemented release contract.** A curated ZIP release now exists; the proposed index, schema-specific bundles and client update flow below are not established by that release. See the [current release policy](../.github/RELEASE_POLICY.md).
 
 ## Goals
 
@@ -113,7 +115,7 @@ On a release tag:
 5. Construct the index, retaining previous release entries that remain valid and available.
 6. Publish release assets and only then expose a complete index through the newest release.
 
-A CI workflow and actual release automation still need to be implemented and tested. Do not announce production distribution before the first verified bundle exists.
+This proposed index-based publishing pipeline still needs implementation and testing. Existing CI publishes a curated ZIP under the current release policy; that does not establish this proposed compatibility-index contract.
 
 ## Visibility and credentials
 

@@ -1,40 +1,42 @@
-# Filamentra — состояние существующих производителей (5 ноября 2026)
+# Filamentra — existing manufacturer coverage (November 5, 2026)
 
-Главная проблема каталога — не отсутствие новых брендов, а **неполнота продуктовых линеек** у уже добавленных. Статусы оцениваются **только по импортированным вариантам**; 100% цветов с HEX не означает, что импортировано 100% ассортимента производителя.
+English | [Русский](EXISTING_BRANDS_COVERAGE.ru.md)
 
-**Текущее состояние:** 16 брендов (все 16 с линиями), 97 линеек PLA/PETG, 1072 варианта: **605** в строгом предпросмотре, **330** — ориентировочный HEX, **137** — только имя/SKU.
+The catalog's main issue is **incomplete product lines** for brands already included, rather than a lack of new brands. Statuses are assessed **only for imported variants**; 100% of colors having HEX values does not mean that 100% of a manufacturer's range has been imported.
 
-## Приоритетные пробелы
+**Status at the time:** 16 brands (all 16 with lines), 97 PLA/PETG lines, 1,072 variants: **605** in strict preview, **330** with estimated HEX, and **137** with name/SKU only.
 
-| Приоритет | Производитель | Текущее состояние | Конкретная следующая задача |
+## Priority gaps
+
+| Priority | Manufacturer | Status | Specific next task |
 | --- | --- | --- | --- |
-| 1 | FDplast | **2 линейки, 14 оттенков**; пять новых PLA записей без HEX; PETG девять с estimated | Продолжить официальный PLA/PETG SKU-аудит, затем найти точные цифровые/физические цветовые референсы; generic Black/White не переносить на фирменные PLA названия |
-| 1 | НИТ | **4 линейки, 6 записей**, пока все без HEX | Продолжить наполнение официальными цветами PLA/PETG и найти числовые источники; первые линии импортированы в [российском аудите](RUSSIAN_COLOR_SOURCE_AUDIT.md) |
-| 1 | ELEGOO | **19 линеек, 224 варианта**, из них **59 без числового цвета** | Заполнить точные PLA, PLA Basic и PLA Pro по линейке и SKU, отдельно Silk/CMYK/Glow/translucent |
-| 1 | KINGROON | **4 линейки, 87 вариантов**, из них **47 без числового цвета** | Точные оттенки PETG Basic и PLA Basic; обычный PETG не подменять High Speed PETG |
-| 2 | BestFilament | **3 линейки, 18 вариантов** после импорта 12 оттенков 5 ноября | Ещё PLA-шёлк, PETG, PLA Pro; проверить, что фото/артикулы и HEX относятся к одной линейке |
-| 2 | Creality | **5 линеек, 39 вариантов**, из них **6 без числового цвета** | CR-PETG, RFID Lightweight, CF; отдельно свойства прозрачности/вспененного пластика |
-| 2 | Polymaker | **3 линейки, 15 вариантов** с официальными HEX | Расширить PolyLite/Panchroma из собственного каталога и официального color matcher, сохраняя линейки |
-| 2 | STAR PLAST | **5 линеек, 13 вариантов**, все только SKU/name | Добыть точный экранный референс / RAL по SKU; не придумывать цвет из названия |
-| 3 | Filamentarno! | **3 линейки, 12 оценочных оттенков** | Добавить подтверждённые официальные комбинации; проверить PETG GF/прозрачность |
-| 3 | REC | **2 линейки, 24 оценочных оттенка** | Производитель публикует RAL; физические измерения/уточнение цифрового вида |
-| 3 | ERYONE | **4 линейки, 36 вариантов**, преимущественно оценочные HEX | Заменять приблизительные оценки измеренными или официальными референсами |
-| 3 | DeepLee | **1 линейка, 1 вариант** без HEX | Проверить идентичность производителя/позиции; не расширять сомнительную номенклатуру |
+| 1 | FDplast | **2 lines, 14 shades**; five new PLA entries without HEX; nine PETG entries with estimated values | Continue the official PLA/PETG SKU audit, then find exact digital/physical color references; do not transfer generic Black/White to branded PLA names |
+| 1 | НИТ | **4 lines, 6 entries**, all without HEX so far | Continue adding official PLA/PETG colors and find numerical sources; initial lines were imported in the [Russian manufacturer audit](RUSSIAN_COLOR_SOURCE_AUDIT.md) |
+| 1 | ELEGOO | **19 lines, 224 variants**, including **59 without numerical color** | Fill in exact PLA, PLA Basic and PLA Pro by line and SKU; address Silk/CMYK/Glow/translucent separately |
+| 1 | KINGROON | **4 lines, 87 variants**, including **47 without numerical color** | Find exact PETG Basic and PLA Basic shades; do not substitute High Speed PETG for ordinary PETG |
+| 2 | BestFilament | **3 lines, 18 variants** after importing 12 shades on November 5 | Add PLA silk, PETG and PLA Pro; check that photos/SKUs and HEX belong to the same line |
+| 2 | Creality | **5 lines, 39 variants**, including **6 without numerical color** | CR-PETG, RFID Lightweight, CF; separately cover transparency and foamed-plastic properties |
+| 2 | Polymaker | **3 lines, 15 variants** with official HEX | Expand PolyLite/Panchroma using its catalog and official color matcher, keeping the lines distinct |
+| 2 | STAR PLAST | **5 lines, 13 variants**, all SKU/name only | Obtain an exact screen reference / RAL by SKU; do not invent a color from its name |
+| 3 | Filamentarno! | **3 lines, 12 estimated shades** | Add confirmed official combinations; check PETG GF/transparency |
+| 3 | REC | **2 lines, 24 estimated shades** | The manufacturer publishes RAL; physical measurements and digital appearance need refinement |
+| 3 | ERYONE | **4 lines, 36 variants**, mostly estimated HEX | Replace approximate estimates with measured or official references |
+| 3 | DeepLee | **1 line, 1 variant** without HEX | Verify the manufacturer/product identity; do not expand questionable entries |
 
-По **Bambu Lab (246), eSUN (139), SUNLU (130), Anycubic (68)** уже есть многочисленные официальные числовые референсы — это относительно хорошо подготовленная основа для предпросмотра. Однако новые линейки, региональные варианты и снятые с продажи цвета ещё требуют отдельного аудита. Отсутствие полных каталогов нельзя считать доказательством полноты импорта.
+**Bambu Lab (246), eSUN (139), SUNLU (130), and Anycubic (68)** already have many official numerical references, a relatively well-prepared basis for preview. However, new lines, regional variants and discontinued colors still need separate audits. The absence of complete catalogs cannot be taken as evidence of complete imports.
 
-## Контроль качества в CI
+## CI quality checks
 
-`python tools/audit_brand_coverage.py --format summary` — сводка по производителям, включая зарегистрированные бренды без линий.
+`python tools/audit_brand_coverage.py --format summary` provides a manufacturer summary, including registered brands without lines.
 
-`python tools/audit_brand_coverage.py --format markdown --out dist/audit/brand-coverage.md` — полный построчный отчёт; аналогично `--format json`.
+`python tools/audit_brand_coverage.py --format markdown --out dist/audit/brand-coverage.md` produces a complete line-by-line report; `--format json` works similarly.
 
-GitHub Actions генерирует оба файла в проверочном артефакте **filamentra-catalog-quality-audits** и выполняет их построение вместе с аудитом пропущенных числовых цветов. Pages по-прежнему не публикуется автоматически.
+GitHub Actions generates both files in the **filamentra-catalog-quality-audits** check artifact and builds them alongside the audit of missing numerical colors. Pages is still not published automatically.
 
-## Правило следующего импорта
+## Rule for the next import
 
-Сначала **сопоставление продукта/линейки/SKU**, затем **достоверность числового цвета**, затем **фактура/прозрачность/оптические свойства**. Если источника недостаточно, цвет оставляем `name_only`; не повышаем долю «готовых материалов» с помощью угадывания HEX.
+First **match the product/line/SKU**, then establish **numerical color reliability**, then **texture/transparency/optical properties**. If the evidence is insufficient, leave the color as `name_only`; do not inflate the share of “ready materials” by guessing HEX values.
 
-## Партия 5 ноября — FDplast и НИТ
+## November 5 batch — FDplast and НИТ
 
-Четыре цветовых оценки FDplast PETG импортированы в `estimated`, пять FDplast PLA и шесть НИТ подтверждены по SKU/карточкам как `name_only`. [Подробный манифест](../catalog/sources/2026-11-05-existing-brands-fdplast-nit.json). Контроль статусов повторяется в GitHub Actions; рост `name_only` — результат честного добавления реальных товаров, не улучшение числового покрытия.
+Four FDplast PETG color estimates were imported as `estimated`; five FDplast PLA and six НИТ entries were confirmed by SKU/product pages as `name_only`. [Detailed manifest](../catalog/sources/2026-11-05-existing-brands-fdplast-nit.json). Status checks are repeated in GitHub Actions; growth in `name_only` reflects the honest addition of real products, not an improvement in numerical coverage.

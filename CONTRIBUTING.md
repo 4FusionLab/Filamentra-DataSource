@@ -1,5 +1,7 @@
 # Contributing to Filamentra DataSource
 
+[Русская версия](CONTRIBUTING.ru.md)
+
 Thanks for helping build a reliable catalog of real 3D-printing filaments for [Filamentra](https://github.com/4FusionLab/Filamentra).
 
 The catalog is in early development. For a new manufacturer, format change, or sizable set of products, open an [issue](https://github.com/4FusionLab/Filamentra-DataSource/issues) first.
@@ -26,7 +28,7 @@ Please **do not invent HEX values, SKUs, or unsupported manufacturer claims**. I
 5. Include primary sources for product claims. Avoid copying protected photos and textures.
 6. Explain the changes in a focused pull request, noting any uncertainty.
 
-Data and assets should have documented redistribution rights. This repository does not yet have a chosen license; coordinate substantial contributed content with maintainers before submission.
+Data and assets should have documented redistribution rights. See [catalog licensing](CATALOG_LICENSE.md) and [LICENSE](LICENSE) for the applicable terms. Coordinate substantial contributed content with maintainers before submission.
 
 ## Optical fidelity and visual presets
 
