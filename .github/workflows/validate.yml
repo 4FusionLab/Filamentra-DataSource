@@ -1,21 +1,7 @@
 name: Validate catalog
 
 on:
-  push:
-    paths:
-      - "catalog/**"
-      - "scripts/build_release.py"
-      - "tools/validate_catalog.py"
-      - "tools/build_demo.py"
-      - "tools/generate_texture_maps.py"
-      - "tools/generate_material_previews.py"
-      - "package.json"
-      - "tools/audit_missing_colors.py"
-      - "tools/audit_brand_coverage.py"
-      - "demo/**"
-      - "tests/**"
-      - ".github/workflows/validate.yml"
-      - ".github/release-paths.txt"
+  push: {} # All pushes: docs-only pushes may recover a previously failed runtime release
   pull_request:
     paths:
       - "catalog/**"
@@ -167,11 +153,13 @@ jobs:
       - name: Detect runtime changes (shared platform)
         id: impact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: 4FusionLab/.github/.github/actions/runtime-changes@ad9d60ba4aabc494b4f2c85d6c566a50ca423751
+        uses: 4FusionLab/.github/.github/actions/runtime-changes@2e961620a068c3ad754f6e1be05fb6e4ac68e843
         with:
           before: ${{ github.event.before }}
           after: ${{ github.sha }}
           paths-file: .github/release-paths.txt
+          recover-unpublished: 'true'
+          token: ${{ github.token }}
 
   version:
     name: GitVersion 6.8.2
