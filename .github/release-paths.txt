@@ -1,0 +1,4 @@
+# Curated catalogs consumed by Filamentra; raw research sources and demo excluded.
+catalog/brands/**.json
+catalog/presets/**.json
+catalog/schema/**.json

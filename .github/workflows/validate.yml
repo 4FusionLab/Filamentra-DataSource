@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "catalog/**"
+      - "scripts/build_release.py"
       - "tools/validate_catalog.py"
       - "tools/build_demo.py"
       - "tools/generate_texture_maps.py"
@@ -17,6 +18,7 @@ on:
   pull_request:
     paths:
       - "catalog/**"
+      - "scripts/build_release.py"
       - "tools/validate_catalog.py"
       - "tools/build_demo.py"
       - "tools/audit_brand_coverage.py"
@@ -128,3 +130,90 @@ jobs:
             dist/data/textures.json
             dist/assets/presets/
           if-no-files-found: error
+      - name: Dry-run curated catalog release package (no publishing)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/build_release.py --version 0.0.0
+          (cd dist && sha256sum -c Filamentra-DataSource-0.0.0.zip.sha256)
+
+  changes:
+    name: Check curated catalog changes
+    runs-on: ubuntu-latest
+    outputs:
+      release: ${{ steps.impact.outputs.release }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - run: python scripts/release_changes.py --self-test
+      - name: Detect distribution changes
+        id: impact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: python scripts/release_changes.py --before "$BEFORE" --after "$GITHUB_SHA" --github-output "$GITHUB_OUTPUT"
+
+  version:
+    name: GitVersion 6.8.2
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.gitversion.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Calculate numeric version
+        id: gitversion
+        shell: bash
+        run: |
+          set -euo pipefail
+          dotnet tool install GitVersion.Tool --tool-path "$RUNNER_TEMP/gitversion" --version 6.8.2
+          version="$("$RUNNER_TEMP/gitversion/dotnet-gitversion" /showvariable MajorMinorPatch)"
+          [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+  release:
+    name: Publish versioned catalog
+    needs: [validate, version, changes]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.changes.outputs.release == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: filamentra-catalog-release
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build, verify and publish immutable catalog
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          tag="v$VERSION"
+          python scripts/release_notes.py --product Filamentra-DataSource --version "$VERSION" --output "$RUNNER_TEMP/release-notes.md"
+          python scripts/build_release.py --version "$VERSION"
+          (cd dist && sha256sum -c "Filamentra-DataSource-$VERSION.zip.sha256")
+          if git rev-parse -q --verify "refs/tags/$tag^{commit}" >/dev/null; then
+            test "$(git rev-parse "$tag^{commit}")" = "$GITHUB_SHA" || {
+              echo "Version tag already belongs to another commit: $tag" >&2
+              exit 1
+            }
+          fi
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release already exists: $tag"
+            exit 0
+          fi
+          gh release create "$tag" "dist/Filamentra-DataSource-$VERSION.zip" "dist/Filamentra-DataSource-$VERSION.zip.sha256" \
+            --target "$GITHUB_SHA" --title "Filamentra-DataSource $tag" \
+            --notes-file "$RUNNER_TEMP/release-notes.md" --latest
