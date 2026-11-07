@@ -141,6 +141,13 @@ jobs:
           python scripts/build_release.py --version 0.0.0
           (cd dist && sha256sum -c Filamentra-DataSource-0.0.0.zip.sha256)
 
+      - name: Verify catalog ZIP using shared contract (PR dry-run)
+        uses: 4FusionLab/.github/.github/actions/verify-archive@ad9d60ba4aabc494b4f2c85d6c566a50ca423751
+        with:
+          product: Filamentra-DataSource
+          version: '0.0.0'
+          archives: dist/Filamentra-DataSource-0.0.0.zip
+
   changes:
     name: Check curated catalog changes
     runs-on: ubuntu-latest
