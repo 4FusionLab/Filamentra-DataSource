@@ -1,5 +1,7 @@
 # Visual data quality and sourcing — Filamentra
 
+[Русская версия](VISUAL_DATA_QUALITY.ru.md)
+
 > **Policy date: 2026-11-04.** Scope: PLA/PETG only. Goal: **fewer reliable Appearances, not more speculative records**.
 
 ## What sources may be used?
@@ -66,7 +68,7 @@ These appear in `variants[]` and `evidence[]`; they **do not** replace stable fu
 
 - `tools/validate_catalog.py` enforces JSON schema, stable identity, consistency of swatches and direct evidence on measured samples.
 - The ordinary validation workflow can build/test the static demo without **publishing** it.
-- GitHub Pages is published **automatically on relevant `main` pushes** after source validation, using `.github/workflows/publish-demo.yml`. Manual `workflow_dispatch` is also supported.
+- GitHub Pages is published **only by manual `workflow_dispatch`** using `.github/workflows/publish-demo.yml`; pushes to `main` do not deploy the site.
 - The Pages workflow validates JSON and builds the static demo before deploying. Failed validation blocks publication. The independent validation workflow remains available for build-only checks.
 
 ## Current status
