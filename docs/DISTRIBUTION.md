@@ -1,5 +1,7 @@
 # Catalog distribution and compatibility
 
+[Русская версия](DISTRIBUTION.ru.md)
+
 > **Design proposal, not an active release service.** Filamentra DataSource has not yet published validated catalog assets.
 
 ## Goals
