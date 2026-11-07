@@ -95,6 +95,10 @@ Found a missing manufacturer, series, or shade? [Open an issue](https://github.c
 
 **Filamentra**, goddess of filaments, keeps an endless treasury of colored threads. This repository is her ledger of shades — the records behind the appearances makers will bring into their designs.
 
-<sub>An independent [4FusionLab](https://github.com/4FusionLab) project. Not affiliated with or endorsed by Autodesk or filament manufacturers. Product names and trademarks belong to their respective owners. No license has been selected for the catalog yet; public visibility does not itself grant reuse rights.</sub>
+<sub>An independent [4FusionLab](https://github.com/4FusionLab) project. Not affiliated with or endorsed by Autodesk or filament manufacturers. Product names and trademarks belong to their respective owners. 4FusionLab-owned catalog material is licensed under CC BY-NC 4.0; third-party material and trademarks retain their own terms.</sub>
 
 New Russian producer pilot: [STAR PLAST and Filamentarno! source report](docs/CATALOG_PROGRESS.md) (8 lines, 25 variants; 12 third-party screen estimates, 13 SKU-verified name-only records). Pages remains manual-only.
+
+## Licenses
+
+Project software is licensed under [PolyForm Noncommercial 1.0.0](LICENSE). 4FusionLab-owned catalog material and any database rights held by 4FusionLab are licensed under [CC BY-NC 4.0](LICENSE-DATA); third-party material and trademarks remain subject to their owners’ rights. Commercial use outside the licenses requires a separate agreement with 4FusionLab.

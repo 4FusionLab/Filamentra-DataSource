@@ -30,6 +30,8 @@ def main(version):
             info.create_system = 3
             info.external_attr = 0o100644 << 16
             z.writestr(info, path.read_bytes())
+        z.writestr(zipfile.ZipInfo("LICENSE-DATA", (2026, 1, 1, 0, 0, 0)), (ROOT / "LICENSE-DATA").read_bytes())
+        z.writestr(zipfile.ZipInfo("CATALOG_LICENSE.md", (2026, 1, 1, 0, 0, 0)), (ROOT / "CATALOG_LICENSE.md").read_bytes())
         info = zipfile.ZipInfo("release.json", (2026, 1, 1, 0, 0, 0))
         z.writestr(info, json.dumps(metadata, sort_keys=True, indent=2) + "\n")
     with zipfile.ZipFile(target) as z:
