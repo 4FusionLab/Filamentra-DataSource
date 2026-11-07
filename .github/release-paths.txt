@@ -2,3 +2,5 @@
 catalog/brands/**.json
 catalog/presets/**.json
 catalog/schema/**.json
+# Packaging changes affect the published ZIP even without runtime source edits.
+scripts/build_release.py
