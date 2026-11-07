@@ -1,23 +1,25 @@
-# Разработка Filamentra DataSource
+# Filamentra DataSource development
 
-Отдельный каталог реальных 3D-филаментов для будущей интеграции с Filamentra. Это не аддон и не база сертифицированных материалов.
+[Русская версия](AGENTS.ru.md)
 
-## Общие правила 4FusionLab
+A separate catalog of real 3D-printing filaments for future Filamentra integration. It is not an add-in or a database of certified materials.
 
-- Общие стандарты: https://github.com/4FusionLab/.github/blob/main/AGENTS.md; модель общего CI: https://github.com/4FusionLab/.github/blob/main/RELEASE_PLATFORM.md.
-- Общайся и составляй планы на русском, код и UI Fusion — на английском. Сохраняй независимые README.md и README.ru.md.
-- Перед изменениями изучай текущие файлы и Git-статус. Conventional Commits; предпочтительно PR с успешными проверками, прямой push в main допускается.
-- Не меняй UUID Fusion manifest, IDs команд, поддержку ОС и формат пакета без миграционного плана. Не коммить секреты, токены или личные CAD-файлы.
-- Где есть runtime, релиз создаёт push или merge в main только для файлов из .github/release-paths.txt после успешного CI. GitVersion.Tool 6.8.2, неизменяемый автоматический тег и GitHub Release; теги вручную не создавай.
-- Изменение docs, README, тестов, AGENTS.md или CI само по себе не должно выпускать релиз. Общие Actions подключай только по конкретному commit SHA.
-- Unit-тесты и ZIP не заменяют нативную проверку Autodesk Fusion. Сохраняй существующие ограничения и доказательства совместимости.
+## Shared 4FusionLab rules
 
-## Правила качества данных
+- Shared standards: https://github.com/4FusionLab/.github/blob/main/AGENTS.md; shared CI model: https://github.com/4FusionLab/.github/blob/main/RELEASE_PLATFORM.md.
+- Communicate and make plans in Russian; use English for code and Fusion UI. Retain separate README.md and README.ru.md.
+- Inspect current files and Git status before changes. Use Conventional Commits; a PR with passing checks is preferred, and direct push to main is allowed.
+- Do not change Fusion manifest UUIDs, command IDs, OS support or package format without a migration plan. Do not commit secrets, tokens or personal CAD files.
+- Where runtime exists, a push or merge to main creates a release only for paths in .github/release-paths.txt after successful CI. Use GitVersion.Tool 6.8.2, an automatically created immutable tag and GitHub Release; do not create tags manually.
+- Docs, README, tests, AGENTS.md or CI changes must not independently publish a release. Pin shared Actions only to a specific commit SHA.
+- Unit tests and ZIPs do not replace native Autodesk Fusion validation. Preserve existing limitations and compatibility evidence.
 
-- Источники истины: docs/CATALOG_FORMAT.md, docs/VISUAL_DATA_QUALITY.md, docs/MATERIAL_APPEARANCE_SPEC.md и catalog/schema/*.json.
-- Не выдумывай производителя, продуктовую линейку, SKU, цвет или измерения. Сохраняй ссылки на официальные источники, единицы, provenance, даты и уверенность.
-- Не выдавай маркетинговые swatches за калиброванный цвет. Соблюдай авторские права на фото и текстуры.
-- Не ломай стабильные идентификаторы каталога и схему без миграции; учитывай ранее установленные Appearances в пользовательских Fusion-документах.
-- Релизными данными считаются только курируемые catalog/brands/**.json, catalog/presets/**.json и catalog/schema/**.json. Исследовательские catalog/sources/** и demo/** не должны сами по себе создавать GitHub Releases.
-- Публикация Pages через .github/workflows/publish-demo.yml остаётся ручной; не связывай её автоматически с релизом каталога.
-- Для проверки запускай `python tools/validate_catalog.py`, `python -m unittest discover -s tests -v`, `python scripts/build_release.py --version X.Y.Z` и прочие шаги .github/workflows/validate.yml. Ошибка валидации блокирует публикацию.
+## Data-quality rules
+
+- Sources of truth: docs/CATALOG_FORMAT.md, docs/VISUAL_DATA_QUALITY.md, docs/MATERIAL_APPEARANCE_SPEC.md and catalog/schema/*.json.
+- Do not invent manufacturers, product lines, SKUs, colors or measurements. Preserve links to official sources, units, provenance, dates and confidence.
+- Do not present marketing swatches as calibrated color. Respect copyright for photos and textures.
+- Do not break stable catalog IDs or schemas without migration; account for Appearances already installed in users' Fusion documents.
+- Release data consists only of curated catalog/brands/**.json, catalog/presets/**.json and catalog/schema/**.json. Research catalog/sources/** and demo/** must not independently create GitHub Releases.
+- Pages publication through .github/workflows/publish-demo.yml remains manual; do not automatically couple it to a catalog release.
+- Verify with `python tools/validate_catalog.py`, `python -m unittest discover -s tests -v`, `python scripts/build_release.py --version X.Y.Z` and the other steps in .github/workflows/validate.yml. Validation failure blocks publication.
