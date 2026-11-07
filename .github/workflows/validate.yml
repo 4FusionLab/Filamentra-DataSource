@@ -192,7 +192,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build, verify and publish immutable catalog
+      - name: Generate catalog release notes (shared platform)
+        uses: 4FusionLab/.github/.github/actions/release-notes@ad9d60ba4aabc494b4f2c85d6c566a50ca423751
+        with:
+          product: Filamentra-DataSource
+          version: ${{ needs.version.outputs.version }}
+          output: ${{ runner.temp }}/release-notes.md
+      - name: Build curated data ZIP
+        shell: bash
+        env:
+          VERSION: ${{ needs.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          python scripts/build_release.py --version "$VERSION"
+          (cd dist && sha256sum -c "Filamentra-DataSource-$VERSION.zip.sha256")
+      - name: Verify curated ZIP (shared platform)
+        uses: 4FusionLab/.github/.github/actions/verify-archive@ad9d60ba4aabc494b4f2c85d6c566a50ca423751
+        with:
+          product: Filamentra-DataSource
+          version: ${{ needs.version.outputs.version }}
+          archives: dist/Filamentra-DataSource-${{ needs.version.outputs.version }}.zip
+          notes: ${{ runner.temp }}/release-notes.md
+      - name: Publish immutable catalog release
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -200,9 +221,6 @@ jobs:
         run: |
           set -euo pipefail
           tag="v$VERSION"
-          python scripts/release_notes.py --product Filamentra-DataSource --version "$VERSION" --output "$RUNNER_TEMP/release-notes.md"
-          python scripts/build_release.py --version "$VERSION"
-          (cd dist && sha256sum -c "Filamentra-DataSource-$VERSION.zip.sha256")
           if git rev-parse -q --verify "refs/tags/$tag^{commit}" >/dev/null; then
             test "$(git rev-parse "$tag^{commit}")" = "$GITHUB_SHA" || {
               echo "Version tag already belongs to another commit: $tag" >&2
