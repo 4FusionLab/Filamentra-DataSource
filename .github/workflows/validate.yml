@@ -15,6 +15,7 @@ on:
       - "demo/**"
       - "tests/**"
       - ".github/workflows/validate.yml"
+      - ".github/release-paths.txt"
   pull_request:
     paths:
       - "catalog/**"
@@ -25,6 +26,7 @@ on:
       - "demo/**"
       - "tests/**"
       - ".github/workflows/validate.yml"
+      - ".github/release-paths.txt"
   workflow_dispatch:
 
 concurrency:
