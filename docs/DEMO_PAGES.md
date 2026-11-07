@@ -1,5 +1,7 @@
 # Filamentra Catalog Demo — GitHub Pages CI
 
+[Русская версия](DEMO_PAGES.ru.md)
+
 This is a read-only, interactive static visualization of the Filamentra PLA/PETG source catalog. It is **not** a live feed, does not make API calls to GitHub, and does not modify the catalog.
 
 GitHub Pages was enabled and the initial publish succeeded on 2026-11-04 ([deployment workflow](https://github.com/4FusionLab/Filamentra-DataSource/actions/runs/41860887983)). The deployed URL is:
@@ -29,15 +31,17 @@ The demo is a static snapshot of the `main` commit checked out by the correspond
 Run from the repository root:
 
 ```shell
-python -m pip install "jsonschema>=4.21,<5"
+python -m pip install "jsonschema>=4.21,<5" "numpy>=2,<3" "Pillow>=11,<13" "CairoSVG>=2.7,<3"
 python tools/validate_catalog.py
 python tools/build_demo.py --out dist
+npm install --no-audit --no-fund --package-lock=false
+npm run build:viewer
 python -m http.server 8000 --directory dist
 ```
 
 Open `http://localhost:8000`. Hosting through a web server is necessary because the interface loads `data/catalog.json` via `fetch`.
 
-The build script needs only the Python standard library and copies `demo/index.html`, `demo/app.css`, and `demo/app.js` to `dist`. The published JSON is generated from existing `catalog/brands/*/*.json` and `catalog/presets/*.json` at build time.
+The build uses NumPy, Pillow and CairoSVG to generate previews and copies `demo/index.html`, `demo/app.css`, and `demo/app.js` to `dist`. The separate viewer build uses the pinned JavaScript dependencies. The published JSON is generated from existing `catalog/brands/*/*.json` and `catalog/presets/*.json` at build time.
 
 ## Features
 

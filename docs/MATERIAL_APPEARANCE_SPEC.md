@@ -1,5 +1,7 @@
 # Material appearance specification — Filamentra
 
+[Русская версия](MATERIAL_APPEARANCE_SPEC.ru.md)
+
 > **Pre-release Schema v1.** Catalog data is source-backed; visual presets are explicitly approximate until compared with real samples in Autodesk Fusion. This document is the contract for the catalog and the future Fusion Add-In, **not** proof of a tested rendering pipeline.
 
 ## Objective: visually faithful filament, not only a flat color
