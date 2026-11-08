@@ -1,5 +1,7 @@
 # Missing-color backfill — PLA/PETG — 2026-11-04
 
+English | [Русский](MISSING_COLOR_BACKFILL.ru.md)
+
 **Rule:** only records without numeric visual data may be changed. No new filament products or lines were introduced in this batch.
 
 ## Exact color references found
