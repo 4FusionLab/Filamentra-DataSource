@@ -1,5 +1,7 @@
 # Filamentra manufacturer catalog
 
+[Русская версия](README.ru.md)
+
 One directory per manufacturer, containing one `brand.json` and one JSON file for each real product line.
 
 ```text

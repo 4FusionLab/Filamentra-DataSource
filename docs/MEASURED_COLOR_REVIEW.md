@@ -1,5 +1,7 @@
 # Print-measured color review — 2026-11-04
 
+English | [Русский](MEASURED_COLOR_REVIEW.ru.md)
+
 This change intentionally **does not add more products or colors**. It improves optical evidence for six pre-existing PLA/PETG variants using direct FilamentSelect pages that explicitly say **“Measured from a physical print”** and publish both RGB/HEX and CIELAB.
 
 | Product variant | Existing display HEX | Physical print HEX | CIELAB (L*, a*, b*) | Evidence |

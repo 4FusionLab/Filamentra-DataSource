@@ -1,5 +1,7 @@
 # Procedural PBR textures — Filamentra
 
+[Русская версия](TEXTURE_GENERATION.ru.md)
+
 Filamentra provides a *typical*, uncalibrated normal/roughness pair for each of the 18 catalog presets. These are procedurally modeled filament surface archetypes, **not** lab measurements or manufacturer maps. They make a useful preview possible without implying physical accuracy.
 
 ## What is generated?

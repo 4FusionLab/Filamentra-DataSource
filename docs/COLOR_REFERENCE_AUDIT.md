@@ -1,5 +1,7 @@
 # Color reference audit — 2026-11-04
 
+English | [Русский](COLOR_REFERENCE_AUDIT.ru.md)
+
 > **Scope:** PLA and PETG. Color references and surface/optical properties have different evidence levels. This review improved incomplete color entries in existing brand lines; it did not claim physical color calibration.
 
 ## Evidence hierarchy
